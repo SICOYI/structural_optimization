@@ -1,0 +1,11 @@
+Context:XZTotal epochs: 500
+Step length: 0.005
+
+=== Iteration 0 ===
+Ite Time: 0.05567324956258138
+Total Strain Energy: 0.122189
+Load path: 1094049.625000
+Var: 0.000033
+Volume: 808.535400
+Axial ratio: 0.964468
+Back propagation time: 0.008894
