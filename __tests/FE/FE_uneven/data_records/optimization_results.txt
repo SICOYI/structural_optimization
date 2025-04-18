@@ -9,3 +9,160 @@ Var: 0.000033
 Volume: 808.535400
 Axial ratio: 0.964468
 Back propagation time: 0.008894
+
+=== Iteration 100 ===
+Ite Time: 0.08292336463928222
+Total Strain Energy: 0.002674
+Load path: 622810.125000
+Var: nan
+Volume: 12550.438477
+Axial ratio: 0.582108
+Back propagation time: 0.012232
+
+=== Iteration 200 ===
+Ite Time: 0.04373720089594523
+Total Strain Energy: 0.002584
+Load path: 624923.500000
+Var: nan
+Volume: 12585.098633
+Axial ratio: 0.604564
+Back propagation time: 0.004806
+
+=== Iteration 300 ===
+Ite Time: 0.04038627942403158
+Total Strain Energy: 0.002511
+Load path: 626320.312500
+Var: nan
+Volume: 12618.095703
+Axial ratio: 0.623581
+Back propagation time: 0.004635
+
+=== Iteration 400 ===
+Ite Time: 0.043234634399414065
+Total Strain Energy: 0.002450
+Load path: 627197.562500
+Var: nan
+Volume: 12647.413086
+Axial ratio: 0.639395
+Back propagation time: 0.005522
+
+=== Iteration 500 ===
+Ite Time: 0.04265961249669393
+Total Strain Energy: 0.002406
+Load path: 628931.312500
+Var: nan
+Volume: 12670.361328
+Axial ratio: 0.653815
+Back propagation time: 0.004912
+Context:XZTotal epochs: 500
+Step length: 0.005
+
+=== Iteration 0 ===
+Ite Time: 0.04888383547465006
+Total Strain Energy: 0.122189
+Load path: 1094049.625000
+Var: 0.000033
+Volume: 808.535400
+Axial ratio: 0.964468
+Back propagation time: 0.006631
+
+=== Iteration 100 ===
+Ite Time: 0.04202696482340495
+Total Strain Energy: 0.002674
+Load path: 622810.125000
+Var: nan
+Volume: 12550.438477
+Axial ratio: 0.582108
+Back propagation time: 0.004566
+
+=== Iteration 200 ===
+Ite Time: 0.039507647355397545
+Total Strain Energy: 0.002584
+Load path: 624923.500000
+Var: nan
+Volume: 12585.098633
+Axial ratio: 0.604564
+Back propagation time: 0.004400
+
+=== Iteration 300 ===
+Ite Time: 0.1501015345255534
+Total Strain Energy: 0.002511
+Load path: 626320.312500
+Var: nan
+Volume: 12618.095703
+Axial ratio: 0.623581
+Back propagation time: 0.019217
+
+=== Iteration 400 ===
+Ite Time: 0.04045324722925822
+Total Strain Energy: 0.002450
+Load path: 627197.562500
+Var: nan
+Volume: 12647.413086
+Axial ratio: 0.639395
+Back propagation time: 0.004472
+
+=== Iteration 500 ===
+Ite Time: 0.09013624588648478
+Total Strain Energy: 0.002406
+Load path: 628931.312500
+Var: nan
+Volume: 12670.361328
+Axial ratio: 0.653815
+Back propagation time: 0.011712
+Context:XZTotal epochs: 500
+Step length: 0.005
+
+=== Iteration 0 ===
+Ite Time: 0.0466992974281311
+Total Strain Energy: 0.122189
+Load path: 1094049.625000
+Var: 0.000033
+Volume: 808.535400
+Axial ratio: 0.964468
+Back propagation time: 0.006513
+
+=== Iteration 100 ===
+Ite Time: 0.048682967821756996
+Total Strain Energy: 0.002674
+Load path: 622810.125000
+Var: nan
+Volume: 12550.438477
+Axial ratio: 0.582108
+Back propagation time: 0.006760
+
+=== Iteration 200 ===
+Ite Time: 0.04649887879689534
+Total Strain Energy: 0.002584
+Load path: 624923.500000
+Var: nan
+Volume: 12585.098633
+Axial ratio: 0.604564
+Back propagation time: 0.005164
+
+=== Iteration 300 ===
+Ite Time: 0.04987583557764689
+Total Strain Energy: 0.002511
+Load path: 626320.312500
+Var: nan
+Volume: 12618.095703
+Axial ratio: 0.623581
+Back propagation time: 0.009385
+
+=== Iteration 400 ===
+Ite Time: 0.0425486167271932
+Total Strain Energy: 0.002450
+Load path: 627197.562500
+Var: nan
+Volume: 12647.413086
+Axial ratio: 0.639395
+Back propagation time: 0.005188
+
+=== Iteration 500 ===
+Ite Time: 0.04246963262557983
+Total Strain Energy: 0.002406
+Load path: 628931.312500
+Var: nan
+Volume: 12670.361328
+Axial ratio: 0.653815
+Back propagation time: 0.004820

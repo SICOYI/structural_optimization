@@ -727,7 +727,7 @@ def check_available_memory():
 
 
 def run_fe_test(N_coords, grid_points, connectivity, Fixed_nodes, Free_nodes,
-                total_dof, fixed_dof, Beam_lens, Volume, Max_height,
+                total_dof, fixed_dof, Beam_lens, Volume, ex_force,
                 force_value=4, force_direction=0, title_suffix=""):
 
     # 设置力条件
@@ -740,7 +740,7 @@ def run_fe_test(N_coords, grid_points, connectivity, Fixed_nodes, Free_nodes,
 
     # 运行有限元分析
     Strain_energy_test, forces_test, *_ = Strain_E(
-        N_coords.clone(), connectivity, fixed_dof, F_test
+        N_coords.clone(), connectivity, fixed_dof, F_test, ex_force
     )
 
     # 计算结果指标
@@ -1025,8 +1025,14 @@ for iteration in range(epochs + 1):
         print(f"Iter {iteration}: Grad Norm = {frob_norm.item():.4f}, LR = {step}, Load_path = {load_path.item()}")
 
 finalize_OPT()
-with open(RESULTS_FILE, 'a') as f:
-    f.write(f"Forces: {ex_force.detach().numpy():.2f}\n")
+fs = ex_force.detach().numpy()  # 转换为 numpy 数组
+
+# 保存为可直接复制到 torch.tensor([]) 的格式
+with open('forces_output.txt', 'w') as f:
+    # 使用 numpy 的 array_repr 控制格式
+    formatted_str = np.array_repr(fs, precision=4, suppress_small=True)
+    f.write(f"# 可以直接复制到 torch.tensor() 里的数据\n")
+    f.write(f"forces_tensor = torch.tensor({formatted_str})\n")
 print("Optimization completed.")
 print("Final Strain Energy:", Total_ES.item())
 
@@ -1214,21 +1220,21 @@ fig.write_html("E_strain Opt(FE).html")
 # 运行重力测试 (Z方向)
 gravity_results = run_fe_test(
     N_coords, grid_points, connectivity, Fixed_nodes, Free_nodes,
-    total_dof, fixed_dof, Beam_lens, Volume, Max_height,
+    total_dof, fixed_dof, Beam_lens, Volume, ex_force,
     force_value=-1, force_direction=2, title_suffix="(Optimized)"
 )
 
 # 运行横向X测试
 lateral_x_results = run_fe_test(
     N_coords, grid_points, connectivity, Fixed_nodes, Free_nodes,
-    total_dof, fixed_dof, Beam_lens, Volume, Max_height,
+    total_dof, fixed_dof, Beam_lens, Volume, ex_force,
     force_value=1, force_direction=0, title_suffix="(Optimized)"
 )
 
 # 运行横向Y测试
 lateral_y_results = run_fe_test(
     N_coords, grid_points, connectivity, Fixed_nodes, Free_nodes,
-    total_dof, fixed_dof, Beam_lens, Volume, Max_height,
+    total_dof, fixed_dof, Beam_lens, Volume, ex_force,
     force_value=1, force_direction=1, title_suffix="(Optimized)"
 )
 
