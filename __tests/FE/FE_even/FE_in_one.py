@@ -39,8 +39,8 @@ torch.autograd.set_detect_anomaly(True)
 # 自定义参数
 length = 24
 width = 24
-n1 = 9
-n2 = 7
+n1 = 13
+n2 = 13
 judge = 0
 
 ## 网格生成函数（修改为返回GPU张量）
