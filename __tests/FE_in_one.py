@@ -704,7 +704,7 @@ for iteration in range(epochs + 1):
     ES_g = torch.sum(Strain_energy_g)
     ES_l1 = torch.sum(Strain_energy_1) 
     ES_l2 = torch.sum(Strain_energy_2) 
-    Loss  = torch.sum(ES_g)
+    Loss  = ES_l1
     Volume = torch.sum(Beam_lens)
     LS_his.append(Loss.item())
 
@@ -763,7 +763,7 @@ for iteration in range(epochs + 1):
 optimization_data["metadata"].update({
     "Ite_time": end_time,
 })
-with open(os.path.join("data_records", "FEg_data.json"), 'w') as f:
+with open(os.path.join("data_records", "FELC1_data.json"), 'w') as f:
     json.dump(optimization_data, f, indent=2)   
     
 print("Optimization completed.")
@@ -773,154 +773,7 @@ print("Optimization completed.")
 
 
 #############################################################################################################
-## Visualization 1
-Total_ES = Loss.item()
-x_orig = grid_points[:, 0].cpu().detach().numpy()
-y_orig = grid_points[:, 1].cpu().detach().numpy()
-z_orig = grid_points[:, 2].cpu().detach().numpy()
 
-x_fdm = N_coords[:, 0].cpu().detach().numpy()
-y_fdm = N_coords[:, 1].cpu().detach().numpy()
-z_fdm = N_coords[:, 2].cpu().detach().numpy()
-
-Max_height = max(z_fdm)
-
-fig = go.Figure()
-
-for connection in connectivity:
-    i, j = connection
-    fig.add_trace(go.Scatter3d(
-        x=[x_orig[i-1], x_orig[j-1]],
-        y=[y_orig[i-1], y_orig[j-1]],
-        z=[z_orig[i-1], z_orig[j-1]],
-        mode='lines',
-        line=dict(color='blue', width=1),
-        name='Grid',
-        showlegend=False
-    ))
-
-for connection in connectivity:
-    i, j = connection
-    fig.add_trace(go.Scatter3d(
-        x=[x_fdm[i-1], x_fdm[j-1]],
-        y=[y_fdm[i-1], y_fdm[j-1]],
-        z=[z_fdm[i-1], z_fdm[j-1]],
-        mode='lines',
-        line=dict(color='red', width=4),
-        name='Found',
-        showlegend=False
-    ))
-
-
-for node in Fixed_nodes:
-    fig.add_trace(go.Scatter3d(
-        x=[x_fdm[node-1]],
-        y=[y_fdm[node-1]],
-        z=[z_fdm[node-1]],
-        mode='markers+text',
-        marker=dict(size=5, color='black'),
-        name=f'Fixed Node {node}',
-        showlegend=False
-    ))
-    
-
-force_traces = []
-force_np = force.cpu().detach().numpy() 
-for idx, connection in enumerate(connectivity):
-    i, j = connection
-    mid_x = (x_fdm[i-1] + x_fdm[j-1]) / 2
-    mid_y = (y_fdm[i-1] + y_fdm[j-1]) / 2
-    mid_z = (z_fdm[i-1] + z_fdm[j-1]) / 2
-    trace = go.Scatter3d(
-        x=[mid_x],
-        y=[mid_y],
-        z=[mid_z],
-        mode='markers+text',
-        marker=dict(size=1, color='green'),
-        text=[f"{force_np[idx]:.0f}"],
-        textposition='top center',
-        textfont=dict(size=8),
-        name=f'Force {idx+1}',
-        visible=True
-    )
-    force_traces.append(trace)
-    fig.add_trace(trace)
-
-fig.update_layout(
-    updatemenus=[
-        dict(
-            type="buttons",
-            direction="right",
-            x=0.1,
-            y=1.1,
-            buttons=[
-                dict(
-                    label="✅ Show forces",
-                    method="update",
-                    args=[{"visible": [True] * len(fig.data)}],
-                ),
-                dict(
-                    label="❌ Hide forces",
-                    method="update",
-                    args=[{"visible": [True] * (len(fig.data) - len(force_traces)) + [False] * len(force_traces)}],
-                )
-            ]
-        )
-    ],
-    scene=dict(
-        xaxis=dict(
-            showbackground=False,
-            showgrid=False,
-            showline=False,
-            showticklabels=False,
-            title=''
-        ),
-        yaxis=dict(
-            showbackground=False,
-            showgrid=False,
-            showline=False,
-            showticklabels=False,
-            title=''
-        ),
-        zaxis=dict(
-            showbackground=False,
-            showgrid=False,
-            showline=False,
-            showticklabels=False,
-            title=''
-        ),
-        aspectmode='data'
-    ),
-    title='OPT',
-    annotations=[
-        dict(
-            x=0.05,  # X position (0-1, left to right)
-            y=0.95,  # Y position (0-1, bottom to top)
-            xref="paper",
-            yref="paper",
-            text=f"Strain energy= {Total_ES:.4f}, Volume = {Volume:.4f}, Max_height = {Max_height:.4f} ",
-            showarrow=False,
-            font=dict(
-                size=14,
-                color="black"
-            ),
-            bgcolor="white",
-            bordercolor="black",
-            borderwidth=1,
-            borderpad=4
-        )
-    ]
-)
-
-fig.show()
-
-fig.write_html("E_strain Opt(FE).html")
-
-
-# In[27]:
-
-
-##### Visual
 #############################################################################################################
 ## Visualization 1
 Total_ES = Loss
