@@ -40,8 +40,8 @@ torch.autograd.set_detect_anomaly(True)
 # 自定义参数
 length = 48
 width = 48
-n1 = 13
-n2 = 13
+n1 = 3
+n2 = 3
 judge = 0
 
 ## 网格生成函数（修改为返回GPU张量）
@@ -549,75 +549,15 @@ def Strain_E(node_coords, connectivity, fixed_dof, F):
     # D = Local_d[:, 0]
     return Strain_energy, forces, displacements, ASE ,beams, lens
 
-# # 可视化函数（需要将数据移回CPU）
-# def save_OPT(iteration, grid_points, N_coords, force, 
-#              connectivity, Free_nodes, Fixed_nodes, save_dir="visualizations"):
-#     os.makedirs(save_dir, exist_ok=True)
-    
-#     # 将数据移回CPU并转为numpy
-#     x_orig = grid_points[:, 0].cpu().detach().numpy()
-#     y_orig = grid_points[:, 1].cpu().detach().numpy()
-#     z_orig = grid_points[:, 2].cpu().detach().numpy()
-    
-#     x_fdm = N_coords[:, 0].cpu().detach().numpy()
-#     y_fdm = N_coords[:, 1].cpu().detach().numpy()
-#     z_fdm = N_coords[:, 2].cpu().detach().numpy()
-#     force_np = force.cpu().detach().numpy()
-
-#     fig = plt.figure(figsize=(12, 10))
-#     ax = fig.add_subplot(111, projection='3d')
-
-#     # 绘制原始网格 (蓝色)
-#     for i, j in connectivity.cpu().numpy():
-#         ax.plot([x_orig[i-1], x_orig[j-1]], 
-#                 [y_orig[i-1], y_orig[j-1]], 
-#                 [z_orig[i-1], z_orig[j-1]], 'b-', linewidth=2, alpha=0.5, label='Grid' if i==1 else "")
-
-#     # 绘制OPT解 (红色)
-#     for i, j in connectivity.cpu().numpy():
-#         ax.plot([x_fdm[i-1], x_fdm[j-1]], 
-#                 [y_fdm[i-1], y_fdm[j-1]], 
-#                 [z_fdm[i-1], z_fdm[j-1]], 'r-', linewidth=2, label='OPT solution' if i==1 else "")
-
-#     # 绘制力值 (绿色标记+文本)
-#     for idx, (i, j) in enumerate(connectivity):
-#         mid_x = (x_fdm[i-1] + x_fdm[j-1]) / 2
-#         mid_y = (y_fdm[i-1] + y_fdm[j-1]) / 2
-#         mid_z = (z_fdm[i-1] + z_fdm[j-1]) / 2
-#         ax.scatter(mid_x, mid_y, mid_z, c='g', s=10)
-#         ax.text(mid_x, mid_y, mid_z, f"{force_np[idx]:.0f}", color='green', fontsize=8)
-
-#     # 绘制固定节点 (黑色)
-#     for node in Fixed_nodes.cpu().numpy():
-#         ax.scatter(x_fdm[node-1], y_fdm[node-1], z_fdm[node-1], 
-#                   c='k', s=50, marker='s', label='Fixed Node' if node==Fixed_nodes[0] else "")
-
-#     # 设置图例和标题
-#     handles, labels = plt.gca().get_legend_handles_labels()
-#     by_label = dict(zip(labels, handles))  # 去重
-#     ax.legend(by_label.values(), by_label.keys())
-
-#     ax.set_xlabel('X')
-#     ax.set_ylabel('Y')
-#     ax.set_zlabel('Z')
-#     ax.set_title(f'OPT Solution - Iteration {iteration}')
-
-#     # 保存图像
-#     filename = os.path.join(save_dir, f"E_strain_Opt(Y)_iter_{iteration}.png")
-#     plt.savefig(filename, dpi=300, bbox_inches='tight')
-#     plt.close()
-#     print(f"Saved visualization to {filename}")
-
-
-# In[29]:
-
 
 def optimizer(OPT_variables, gradients, step):
-    
-    OPT_variables.data -= gradients / torch.norm(gradients)  * step
-    
+    OPT_variables.data -= gradients / torch.norm(gradients) * step
+
     with torch.no_grad():
-        OPT_variables.data = torch.clamp(OPT_variables.data, min=3.2, max=4.8)
+        max_val = torch.max(OPT_variables.data)
+        mask = (OPT_variables.data == max_val)
+        OPT_variables.data[mask] = torch.clamp(OPT_variables.data[mask], min=3.2, max=4.8)
+        OPT_variables.data = torch.clamp(OPT_variables.data, min=0, max=4.8)
 
     return OPT_variables
     
@@ -639,7 +579,7 @@ for j in range(len(idx_Y)):
     q_vec[idx_Y[j,:]] = q[j+len(idx_X)]  
 
 # 梯度下降参数
-step = 0.1
+step = 0.01
 epochs = 500
 patience = 20
 count = 0
@@ -680,6 +620,7 @@ optimization_data = {
 }
 
 Id, Free_Id = Indicer(Ini_G, Fixed_nodes, length, width, n1, n2)
+print(Id,Free_Id)
 OPT_variables = Ini_G[Free_Id][:, 2].detach().clone().requires_grad_(True)
 
 Crd = Ini_G[Id].detach().clone()
@@ -695,8 +636,10 @@ for iteration in range(epochs + 1):
         print(f"⚠️  Low memory warning: {avail_mem:.2f} MB left!")
         
     # 前向传播
-    Crd[iddx, 2] = OPT_variables 
+    Crd[iddx, 2] = OPT_variables
     N_coords = symmetry_shaper(Crd).clone()
+    height = max(N_coords[:,2])
+    print('H',height)
     Strain_energy_g, forces, _, _ ,_ , Beam_lens = Strain_E(N_coords, connectivity, fixed_dof, F_fe_g)
     Strain_energy_1, _, _, _ ,_ , _ = Strain_E(N_coords, connectivity, fixed_dof, F_fe_l1)
     Strain_energy_2, _, _, _ ,_ , _ = Strain_E(N_coords, connectivity, fixed_dof, F_fe_l2)
@@ -704,10 +647,10 @@ for iteration in range(epochs + 1):
     ES_g = torch.sum(Strain_energy_g)
     ES_l1 = torch.sum(Strain_energy_1) 
     ES_l2 = torch.sum(Strain_energy_2) 
-    Loss  = ES_l1
+    Loss  = ES_g
     Volume = torch.sum(Beam_lens)
     LS_his.append(Loss.item())
-
+    print('SE:', Loss)
 
 
     # 早期停止检查
@@ -763,11 +706,39 @@ for iteration in range(epochs + 1):
 optimization_data["metadata"].update({
     "Ite_time": end_time,
 })
-with open(os.path.join("data_records", "FELC1_data.json"), 'w') as f:
+with open(os.path.join("data_records", "FEg_data.json"), 'w') as f:
     json.dump(optimization_data, f, indent=2)   
     
 print("Optimization completed.")
 
+##############################
+fig, ax1 = plt.subplots(figsize=(10, 6))
+
+color = 'black'
+ax1.set_ylabel('LOss', color=color)
+ax1.plot(range(len(LS_his)), LS_his, label='LOss', color=color, linewidth=2, linestyle='--')
+ax1.tick_params(axis='y', labelcolor=color)
+
+# Mark specific points
+marker_points = [
+    0,  # First point
+    *range(100, len(LS_his), 100),  # Every 200th point
+    len(LS_his)-1  # Last point
+]
+
+for point in marker_points:
+    ax1.scatter(point, LS_his[point], color='blue', zorder=5)
+    ax1.text(point, LS_his[point],
+             f'({LS_his[point]:.4f})',
+             ha='right' if point == len(LS_his)-1 else 'left',
+             va='bottom',
+             bbox=dict(facecolor='white', alpha=0.8, edgecolor='none'))
+
+ax1.legend(loc='upper right')
+plt.title('Loss vs. Iterations')
+plt.tight_layout()
+plt.savefig('LS_history.png', dpi=150, bbox_inches='tight')
+plt.show()
 
 # In[26]:
 
