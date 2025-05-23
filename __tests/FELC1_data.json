@@ -7,7 +7,7 @@
       "length": 48,
       "width": 48,
       "grid_size": "13x13",
-      "epochs": 500,
+      "epochs": 118,
       "step_size": 0.01
     },
     "Ite_time": 86.8232340892156,
