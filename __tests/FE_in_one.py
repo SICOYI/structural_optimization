@@ -40,8 +40,8 @@ torch.autograd.set_detect_anomaly(True)
 # 自定义参数
 length = 48
 width = 48
-n1 = 3
-n2 = 3
+n1 = 13
+n2 = 13
 judge = 0
 
 ## 网格生成函数（修改为返回GPU张量）
@@ -440,7 +440,7 @@ def assemble_stiffness_matrix(beams, n_nodes, n_dof_per_node, connectivity):
     
     return K_global
 
-def robust_solve(K_global, F, fixed_dof, max_attempts=3):
+def robust_solve(K_global, F, fixed_dof,records,judge,max_attempts=3):
     """
     鲁棒的线性系统求解器，完整处理固定自由度和奇异问题。
     
@@ -463,7 +463,8 @@ def robust_solve(K_global, F, fixed_dof, max_attempts=3):
                 K_reg.to(torch.float64), 
                 F.to(torch.float64)
             )
-            return displacements.to(K_global.dtype)
+            type = 0
+            return displacements.to(K_global.dtype),records,type
             
         except RuntimeError:
             # 2. 识别并处理极端刚度（跳过固定自由度）
@@ -486,9 +487,11 @@ def robust_solve(K_global, F, fixed_dof, max_attempts=3):
                     maxiter=5000,
                     atol=1e-6
                 )
+                records += judge == 1
+                type = 1
                 if info > 0:
                     raise RuntimeError("CG未收敛")
-                return displacements.to(K_global.dtype)
+                return displacements.to(K_global.dtype),records,type
                 
             except:
                 # 4. 最终回退：伪逆（保持固定自由度约束）
@@ -496,13 +499,14 @@ def robust_solve(K_global, F, fixed_dof, max_attempts=3):
                 K_pinv[fixed_dof, :] = 0  # 固定自由度位移强制为0
                 displacements = K_pinv @ F
                 print("警告：使用伪逆求解，精度可能降低")
-                return displacements
+                type = 2
+                return displacements,records,type
                 
         attempts += 1
     
     raise RuntimeError("无法求解线性系统")
     
-def Strain_E(node_coords, connectivity, fixed_dof, F):
+def Strain_E(node_coords, connectivity, fixed_dof, F,records,judge):
     # Element Assembly
     Beam_lens = []
     beams = []
@@ -522,7 +526,7 @@ def Strain_E(node_coords, connectivity, fixed_dof, F):
     K_global[:, fixed_dof] = 0
     K_global[fixed_dof, fixed_dof] = 1e10
 
-    displacements = robust_solve(K_global, F, fixed_dof)
+    displacements,records,type = robust_solve(K_global, F, fixed_dof,records.judge)
 
     # Compute strain energy
     strain_energy_list = []
@@ -544,10 +548,10 @@ def Strain_E(node_coords, connectivity, fixed_dof, F):
      
     Strain_energy = torch.stack(strain_energy_list)
     forces = torch.stack(force_list)
-    ASE = torch.stack(ASE_list)
+    # ASE = torch.stack(ASE_list)
     lens = torch.stack(Beam_lens)
     # D = Local_d[:, 0]
-    return Strain_energy, forces, displacements, ASE ,beams, lens
+    return Strain_energy, forces, displacements,records,type, lens
 
 
 def optimizer(OPT_variables, gradients, step):
@@ -586,8 +590,10 @@ count = 0
 
 _, F_value = Force_mat(- 1, 2)
 F_fe_g, _ = Force_mat(-1, 2)
-F_fe_l1, _ = Force_mat(1, 0)
-F_fe_l2, _ = Force_mat(1, 1)
+# F_fe_l1, _ = Force_mat(0.1, 0)
+# F_fe_l2, _ = Force_mat(0.1, 1)
+F_fe_t1, _ = Force_mat(1, 0)
+F_fe_t2, _ = Force_mat(1, 1)
 
 
 r = 1 / torch.max(F_value)
@@ -625,9 +631,11 @@ OPT_variables = Ini_G[Free_Id][:, 2].detach().clone().requires_grad_(True)
 
 Crd = Ini_G[Id].detach().clone()
 iddx = torch.nonzero(Id.unsqueeze(0) == Free_Id.unsqueeze(1), as_tuple=True)[1]
+records = 0
+str_time = time.time()
 
 for iteration in range(epochs + 1):
-    str_time = time.time() 
+
     print(f'Iteration {iteration}')
     
     avail_mem = check_available_memory()
@@ -640,14 +648,22 @@ for iteration in range(epochs + 1):
     N_coords = symmetry_shaper(Crd).clone()
     height = max(N_coords[:,2])
     print('H',height)
-    Strain_energy_g, forces, _, _ ,_ , Beam_lens = Strain_E(N_coords, connectivity, fixed_dof, F_fe_g)
-    Strain_energy_1, _, _, _ ,_ , _ = Strain_E(N_coords, connectivity, fixed_dof, F_fe_l1)
-    Strain_energy_2, _, _, _ ,_ , _ = Strain_E(N_coords, connectivity, fixed_dof, F_fe_l2)
+
+    FE_Str = time.time()
+    Strain_energy_g, forces, _, type,records, Beam_lens = Strain_E(N_coords, connectivity, fixed_dof, F_fe_g,records, judge = 0)
+    FE_time = time.time() - FE_Str
+    # Strain_energy_1, _, _, _ ,_ , _ = Strain_E(N_coords, connectivity, fixed_dof, F_fe_l1)
+    # Strain_energy_2, _, _, _ ,_ , _ = Strain_E(N_coords, connectivity, fixed_dof, F_fe_l2)
+
+    Strain_energy_t1, _, _, _ ,_ , _ = Strain_E(N_coords, connectivity, fixed_dof, F_fe_t1,records,judge = 1)
+    Strain_energy_t2, _, _, _ ,_ , _ = Strain_E(N_coords, connectivity, fixed_dof, F_fe_t2,records,judge = 0)
     force = abs(forces[:, 0, 0])
     ES_g = torch.sum(Strain_energy_g)
-    ES_l1 = torch.sum(Strain_energy_1) 
-    ES_l2 = torch.sum(Strain_energy_2) 
-    Loss  = ES_g
+    # ES_l1 = torch.sum(Strain_energy_1)
+    # ES_l2 = torch.sum(Strain_energy_2)
+    ES_t1 = torch.sum(Strain_energy_t1)
+    ES_t2 = torch.sum(Strain_energy_t2)
+    Loss  =  ES_t1/3
     Volume = torch.sum(Beam_lens)
     LS_his.append(Loss.item())
     print('SE:', Loss)
@@ -679,18 +695,20 @@ for iteration in range(epochs + 1):
     gradients = OPT_variables.grad
     frob_norm = torch.norm(gradients)
     OPT_variables = optimizer(OPT_variables, gradients, step)
-    end_time = (time.time() - str_time) / 60 
+
     
         # 定期保存结果
     iteration_record = {
     "iteration": iteration,
+        "type": type,
     "variables": OPT_variables.detach().cpu().numpy().tolist(),
     "strain_energy_g": ES_g.item(),
-    "strain_energy_l1": ES_l1.item(),
-    "strain_energy_l2": ES_l2.item(),
+    "strain_energy_l1": ES_t1.item(),
+    "strain_energy_l2": ES_t2.item(),
     "Volume": Volume.item(),
     "gradient_norm": torch.norm(gradients).item() if OPT_variables.grad is not None else 0.0,
                "timing": {
+                   "FE_time":FE_time,
             "Back_propagation time": Back_time,
         },
     }  
@@ -702,11 +720,13 @@ for iteration in range(epochs + 1):
     if iteration % 10 == 0:
         torch.cuda.empty_cache() if torch.cuda.is_available() else None
         gc.collect()
-        
+
+end_time = (time.time() - str_time) / 60
 optimization_data["metadata"].update({
     "Ite_time": end_time,
+    "Records": records,
 })
-with open(os.path.join("data_records", "FEg_data.json"), 'w') as f:
+with open(os.path.join("data_records", "FEMoo_data.json"), 'w') as f:
     json.dump(optimization_data, f, indent=2)   
     
 print("Optimization completed.")
@@ -800,7 +820,7 @@ for idx, connection in enumerate(connectivity):
         y=[y_fdm[i-1], y_fdm[j-1]],
         z=[z_fdm[i-1], z_fdm[j-1]],
         mode='lines',
-        line=dict(color='firebrick', width=current_width),
+        line=dict(color='black', width=current_width),
         name=f'FDM solution (Level {width_level+1})',
         showlegend=False
     ))
