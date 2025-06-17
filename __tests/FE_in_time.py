@@ -440,7 +440,7 @@ def assemble_stiffness_matrix(beams, n_nodes, n_dof_per_node, connectivity):
     
     return K_global
 
-def robust_solve(K_global, F, fixed_dof,records,judge,max_attempts=3):
+def robust_solve(K_global, F, fixed_dof,max_attempts=3):
     """
     鲁棒的线性系统求解器，完整处理固定自由度和奇异问题。
     
@@ -456,15 +456,14 @@ def robust_solve(K_global, F, fixed_dof,records,judge,max_attempts=3):
         reg = 1e-6 * torch.eye(K_global.shape[0], device=K_global.device)
         reg[fixed_dof, fixed_dof] = 0  # 不干扰固定自由度
         K_reg = K_global + reg
-        
         try:
             # 尝试直接求解（双精度）
             displacements = torch.linalg.solve(
                 K_reg.to(torch.float64), 
                 F.to(torch.float64)
             )
-            type = 0
-            return displacements.to(K_global.dtype),records,type
+            sol_type = 0
+            return displacements.to(K_global.dtype),sol_type
             
         except RuntimeError:
             # 2. 识别并处理极端刚度（跳过固定自由度）
@@ -487,11 +486,11 @@ def robust_solve(K_global, F, fixed_dof,records,judge,max_attempts=3):
                     maxiter=5000,
                     atol=1e-6
                 )
-                records += judge == 1
-                type = 1
+
                 if info > 0:
                     raise RuntimeError("CG未收敛")
-                return displacements.to(K_global.dtype),records,type
+                sol_type = 1
+                return displacements.to(K_global.dtype),sol_type
                 
             except:
                 # 4. 最终回退：伪逆（保持固定自由度约束）
@@ -499,15 +498,17 @@ def robust_solve(K_global, F, fixed_dof,records,judge,max_attempts=3):
                 K_pinv[fixed_dof, :] = 0  # 固定自由度位移强制为0
                 displacements = K_pinv @ F
                 print("警告：使用伪逆求解，精度可能降低")
-                type = 2
-                return displacements,records,type
+                sol_type = 2
+                return displacements, sol_type
                 
         attempts += 1
     
     raise RuntimeError("无法求解线性系统")
-    
-def Strain_E(node_coords, connectivity, fixed_dof, F,records,judge):
+
+
+def Strain_E(node_coords, connectivity, fixed_dof, F):
     # Element Assembly
+    Str = time.time()
     Beam_lens = []
     beams = []
     for connection in connectivity:
@@ -519,20 +520,25 @@ def Strain_E(node_coords, connectivity, fixed_dof, F,records,judge):
                     Beta_b=cross_section_angle_b)
         beams.append(beam)
         Beam_lens.append(beam.length)
-    
+    Element_create = time.time() - Str
+
     # Stiffness renewal
+    Stiffness_str = time.time()
     K_global = assemble_stiffness_matrix(beams, n_nodes=len(node_coords), n_dof_per_node=6, connectivity=connectivity)
     K_global[fixed_dof, :] = 0
     K_global[:, fixed_dof] = 0
     K_global[fixed_dof, fixed_dof] = 1e10
+    Stiffness_assembly = time.time() - Stiffness_str
 
-    displacements,records,type = robust_solve(K_global, F, fixed_dof,records, judge)
+    Sol_str = time.time()
+    displacements, sol_type = robust_solve(K_global, F, fixed_dof)
+    Matrix_sol = time.time() - Sol_str
 
     # Compute strain energy
+    Metrics_str = time.time()
+
     strain_energy_list = []
-    force_list = []
-    ASE_list = []
-    
+    V_list = []
     Local_d = torch.zeros(len(connectivity), 12, dtype=torch.float32, device=device)
     for n, (i, j) in enumerate(connectivity):
         matrix_T = beams[n].System_Transform()
@@ -542,16 +548,23 @@ def Strain_E(node_coords, connectivity, fixed_dof, F,records,judge):
         Local_d[n, :] = Local_d_n.clone()
         K_l = beams[n].get_element_stiffness_matrix()
         strain_energy_list.append(0.5 * torch.matmul(Local_d_n, torch.matmul(K_l, Local_d_n.reshape(-1, 1))))
-        force_list.append(torch.matmul(K_l, Local_d_n.reshape(-1, 1)))
-        ASE_list.append(0.5 * (Local_d_n[0]-Local_d_n[6]) * beams[n].S_u * (Local_d_n[0]-Local_d_n[6]))                                                                                                           
-    
-     
-    Strain_energy = torch.stack(strain_energy_list)
-    forces = torch.stack(force_list)
-    # ASE = torch.stack(ASE_list)
-    lens = torch.stack(Beam_lens)
-    # D = Local_d[:, 0]
-    return Strain_energy, forces, displacements,records,type, lens
+        V_list.append(beams[n].A * beams[n].length)
+
+        Strain_energy = torch.stack(strain_energy_list)
+        lens = torch.stack(Beam_lens)
+        V = torch.stack(V_list)
+        Metrics_cal = time.time() - Metrics_str
+
+        # FE timing data
+        FE_timing = {
+            "Element_create": Element_create,
+            "Stiffness_assembly": Stiffness_assembly,
+            "Matrix_solution": Matrix_sol,
+            "Metrics_calculation": Metrics_cal,
+            "Total_FE_time": Element_create + Stiffness_assembly + Matrix_sol + Metrics_cal
+        }
+
+    return Strain_energy, displacements, sol_type, lens, V, FE_timing
 
 
 def optimizer(OPT_variables, gradients, step):
@@ -590,8 +603,6 @@ count = 0
 
 _, F_value = Force_mat(- 1, 2)
 F_fe_g, _ = Force_mat(-1, 2)
-# F_fe_l1, _ = Force_mat(0.1, 0)
-# F_fe_l2, _ = Force_mat(0.1, 1)
 F_fe_t1, _ = Force_mat(1, 0)
 F_fe_t2, _ = Force_mat(1, 1)
 
@@ -631,8 +642,7 @@ OPT_variables = Ini_G[Free_Id][:, 2].detach().clone().requires_grad_(True)
 
 Crd = Ini_G[Id].detach().clone()
 iddx = torch.nonzero(Id.unsqueeze(0) == Free_Id.unsqueeze(1), as_tuple=True)[1]
-records = 0
-str_time = time.time()
+start_time = time.time()
 
 for iteration in range(epochs + 1):
 
@@ -644,32 +654,26 @@ for iteration in range(epochs + 1):
         print(f"⚠️  Low memory warning: {avail_mem:.2f} MB left!")
         
     # 前向传播
+    ini_str = time.time()
     Crd[iddx, 2] = OPT_variables
     N_coords = symmetry_shaper(Crd).clone()
     height = max(N_coords[:,2])
     print('H',height)
+    ini_time = time.time() - ini_str
 
-    FE_Str = time.time()
-    Strain_energy_g, forces, _, type,records, Beam_lens = Strain_E(N_coords, connectivity, fixed_dof, F_fe_g,records, judge = 0)
-    FE_time_g = time.time() - FE_Str
-    FE_Str = time.time()
-    Strain_energy_t1, _, _, _ ,_ , _ = Strain_E(N_coords, connectivity, fixed_dof, F_fe_t1,records,judge = 1)
-    FE_time_x = time.time() - FE_Str
-    FE_Str = time.time()
-    Strain_energy_t2, _, _, _ ,_ , _ = Strain_E(N_coords, connectivity, fixed_dof, F_fe_t2,records,judge = 0)
-    FE_time_y = time.time() - FE_Str
+    FE_str = time.time()
+    Strain_energy, _, _, _, _, FE_timing= Strain_E(N_coords, connectivity, fixed_dof, F_fe_g)
+    FE_time = time.time() - FE_str
 
-    force = abs(forces[:, 0, 0])
-    ES_g = torch.sum(Strain_energy_g)
-    ES_t1 = torch.sum(Strain_energy_t1)
-    ES_t2 = torch.sum(Strain_energy_t2)
-    Loss  =  ES_t1 + ES_g + ES_t2
-    Volume = torch.sum(Beam_lens)
+    Loss_str = time.time()
+    ES_g = torch.sum(Strain_energy)
+    Loss  = ES_g
     LS_his.append(Loss.item())
-    print('SE:', Loss)
+    Loss_time = time.time() - Loss_str
 
 
-    # 早期停止检查
+
+    ES_str = time.time()
     if iteration > 0:  
         Pre_Total_LS = LS_his[iteration - 1]  
         change = abs(Loss - Pre_Total_LS) / Pre_Total_LS 
@@ -679,59 +683,58 @@ for iteration in range(epochs + 1):
             count = 0 
         if count >= patience:
             print(f"Early stopping at iteration {iteration}")
-            break 
+            break
+    ES_time = time.time() - ES_str
+
     
-    
-    # 反向传播
     Back_str = time.time()
     if OPT_variables.grad is not None:
         OPT_variables.grad.detach_()
         OPT_variables.grad.zero_()
-        
-    Loss.backward(retain_graph=True)
-    Back_time = (time.time() - Back_str) / 60
-    
-    # 梯度信息
-    gradients = OPT_variables.grad
-    frob_norm = torch.norm(gradients)
-    OPT_variables = optimizer(OPT_variables, gradients, step)
 
-    
-        # 定期保存结果
+    Loss.backward(retain_graph=True)
+    Back_time = time.time() - Back_str
+    # 梯度信息
+
+    Up_str = time.time()
+    gradients = OPT_variables.grad
+    OPT_variables = optimizer(OPT_variables, gradients, step)
+    Update = time.time() - Up_str
+
+    ####### Data storage:
     iteration_record = {
-    "iteration": iteration,
-        "type": type,
-    "variables": OPT_variables.detach().cpu().numpy().tolist(),
-    "strain_energy_g": ES_g.item(),
-    "strain_energy_l1": ES_t1.item(),
-    "strain_energy_l2": ES_t2.item(),
-    "Volume": Volume.item(),
-    "gradient_norm": torch.norm(gradients).item() if OPT_variables.grad is not None else 0.0,
-               "timing": {
-                   "FE_time_g":FE_time_g,
-            "Back_propagation time": Back_time,
-        },
-    }  
+        "iteration": iteration,
+        "SE_g": ES_g.item(),
+        "Geometry Initialization_time": ini_time,
+        "FE_time": FE_time,
+        "Loss cal_time": Loss_time,
+        "Backpropagation_time": Back_time,
+        "Parametric Update": Update,
+        "FE_timing": FE_timing
+    }
     optimization_data["iterations"].append(iteration_record)
-        
-    if iteration % 5 == 0:
-        print(f"Iter {iteration}: Grad Norm = {frob_norm.item():.4f}, LR = {step}, Loss = {Loss.item()}")
 
     if iteration % 10 == 0:
         torch.cuda.empty_cache() if torch.cuda.is_available() else None
         gc.collect()
 
-end_time = (time.time() - str_time) / 60
+
+Ite_time = time.time() - start_time
 optimization_data["metadata"].update({
-    "Ite_time": end_time,
-    "Records": records,
+    "Iteration_time": Ite_time,
 })
-with open(os.path.join("data_records", "FEMoo_data.json"), 'w') as f:
-    json.dump(optimization_data, f, indent=2)   
-    
+
+with open(os.path.join("data_records", "FEg_time.json"), 'w') as f:
+    json.dump(optimization_data, f, indent=2)
+
 print("Optimization completed.")
 
-##############################
+
+
+
+
+
+############################## OPT his
 fig, ax1 = plt.subplots(figsize=(10, 6))
 
 color = 'black'
@@ -763,213 +766,6 @@ plt.show()
 # In[26]:
 
 
-#############################################################################################################
-
-#############################################################################################################
-## Visualization 1
-Total_ES = Loss
-x_orig = grid_points[:, 0].cpu().detach().numpy()
-y_orig = grid_points[:, 1].cpu().detach().numpy()
-z_orig = grid_points[:, 2].cpu().detach().numpy()
-
-
-x_fdm = N_coords[:, 0].cpu().detach().numpy()
-y_fdm = N_coords[:, 1].cpu().detach().numpy()
-z_fdm = N_coords[:, 2].cpu().detach().numpy()
-
-Max_height = max(z_fdm)
-fig = go.Figure()
-
-force_np = force.cpu().detach().numpy()
-abs_forces = np.abs(force_np)
-abs_forces = np.round(abs_forces)
-
-ratio = [0.01, 0.3, 0.7, 0.9]
-max_force = np.max(abs_forces)
-thresholds = np.array(ratio) * max_force
-width_levels = np.digitize(abs_forces, thresholds)
-line_widths = [1, 3, 5, 7, 9]
-# line_widths = [1, 1, 1, 1, 1]
-# First clear all existing traces (optional, depends on your needs)
-fig.data = []
-
-for connection in connectivity:
-    i, j = connection
-    fig.add_trace(go.Scatter3d(
-        x=[x_orig[i-1], x_orig[j-1]],
-        y=[y_orig[i-1], y_orig[j-1]],
-        z=[z_orig[i-1], z_orig[j-1]],
-        mode='lines',
-        line=dict(
-            color='blue',
-            width=1
-        ),
-        opacity=0.1,  # 修改 opacity 为数值（0.0~1.0），而不是字符串
-        name='Grid',
-        showlegend=False
-    ))
-
-# Add FDM solution traces with width based on force magnitude
-for idx, connection in enumerate(connectivity):
-    i, j = connection
-    width_level = width_levels[idx]  # digitize returns 1-based index
-    current_width = line_widths[width_level]
-
-    fig.add_trace(go.Scatter3d(
-        x=[x_fdm[i-1], x_fdm[j-1]],
-        y=[y_fdm[i-1], y_fdm[j-1]],
-        z=[z_fdm[i-1], z_fdm[j-1]],
-        mode='lines',
-        line=dict(color='black', width=current_width),
-        name=f'FDM solution (Level {width_level+1})',
-        showlegend=False
-    ))
-
-
-
-# Add fixed nodes
-for node in Fixed_nodes:
-    fig.add_trace(go.Scatter3d(
-        x=[x_fdm[node-1]],
-        y=[y_fdm[node-1]],
-        z=[z_fdm[node-1]],
-        mode='markers+text',
-        marker=dict(size=5, color='black'),
-        name=f'Fixed Node {node}',
-        showlegend=False
-    ))
-
-    # 白点配置
-
-node_marker_config = {
-    'size': 3,
-    'color': 'white',
-    'opacity': 1,
-    'line': {
-        'width': 4,
-        'color': 'black'
-    }
-}
-
-# 然后在使用时：
-#将Fixed_nodes从Tensor转换为list
-if torch.is_tensor(Fixed_nodes):
-    Fixed_nodes_list = Fixed_nodes.cpu().tolist()
-else:
-    Fixed_nodes_list = list(Fixed_nodes)
-
-if torch.is_tensor(Fixed_nodes):
-    Free_nodes_list = Free_nodes.cpu().tolist()
-else:
-    Free_nodes_list = list(Free_nodes)
-all_nodes = list(set(Fixed_nodes_list + Free_nodes_list))
-for node in all_nodes:
-    fig.add_trace(go.Scatter3d(
-        x=[x_fdm[node-1]],
-        y=[y_fdm[node-1]],
-        z=[z_fdm[node-1]],
-        mode='markers',
-        marker=node_marker_config,
-        name=f'Node {node}',
-        showlegend=False
-    ))
-
-
-
-force_traces = []
-for idx, connection in enumerate(connectivity):
-    i, j = connection
-    mid_x = (x_fdm[i-1] + x_fdm[j-1]) / 2
-    mid_y = (y_fdm[i-1] + y_fdm[j-1]) / 2
-    mid_z = (z_fdm[i-1] + z_fdm[j-1]) / 2
-    trace = go.Scatter3d(
-        x=[mid_x],
-        y=[mid_y],
-        z=[mid_z],
-        mode='markers+text',
-        marker=dict(size=1, color='green'),
-        text=[f"{force_np[idx]:.0f}"],
-        textposition='top center',
-        textfont=dict(size=8),
-        name=f'Force {idx+1}',
-        visible=True
-    )
-    force_traces.append(trace)
-    fig.add_trace(trace)
-fig.update_layout(
-    updatemenus=[
-        dict(
-            type="buttons",
-            direction="right",
-            x=0.1,
-            y=1.1,
-            buttons=[
-                dict(
-                    label="✅ Show forces",
-                    method="update",
-                    args=[{"visible": [True] * len(fig.data)}],
-                ),
-                dict(
-                    label="❌ Hide forces",
-                    method="update",
-                    args=[{"visible": [True] * (len(fig.data) - len(force_traces)) + [False] * len(force_traces)}],
-                )
-            ]
-        )
-    ],
-    scene=dict(
-        xaxis=dict(
-            showbackground=False,
-            showgrid=False,
-            showline=False,
-            showticklabels=False,
-            title=''
-        ),
-        yaxis=dict(
-            showbackground=False,
-            showgrid=False,
-            showline=False,
-            showticklabels=False,
-            title=''
-        ),
-        zaxis=dict(
-            showbackground=False,
-            showgrid=False,
-            showline=False,
-            showticklabels=False,
-
-            title=''
-        ),
-        aspectmode='data'
-    ),
-    title='OPT',
-    annotations=[
-        dict(
-            x=0.05,  # X position (0-1, left to right)
-            y=0.95,  # Y position (0-1, bottom to top)
-            xref="paper",
-            yref="paper",
-            text=f"Strain energy= {Total_ES:.4f}, Volume = {Volume:.4f}, Max_height = {Max_height:.4f}",
-            showarrow=False,
-            font=dict(
-                size=14,
-                color="black"
-            ),
-            bgcolor="white",
-            bordercolor="black",
-            borderwidth=1,
-            borderpad=4
-        )
-    ]
-)
-fig.show()
-
-fig.write_html("FE_OPT.html")
-
-print(f"Strain energy= {Total_ES:.4f}, Volume = {Volume:.4f}, Max_height = {Max_height:.4f} ")
-
-
-# In[ ]:
 
 
 

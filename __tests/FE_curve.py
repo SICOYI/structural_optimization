@@ -96,6 +96,20 @@ def generate_connectivity_matrix(new_coords):
 
     return torch.tensor(connectivity, device=device)
 
+
+def find_edge_connections(Edge_nodes, connectivity):
+    # 将Edge_nodes转换为集合便于快速查找
+    Edge_nodes = Edge_nodes + 1
+    edge_set = set(Edge_nodes.tolist() if torch.is_tensor(Edge_nodes) else Edge_nodes)
+
+    edge_connection_indices = []
+
+    for idx, (i, j) in enumerate(connectivity):
+        if i in edge_set and j in edge_set:
+            edge_connection_indices.append(idx)
+
+    return edge_connection_indices
+
 # 生成网格和连接性矩阵
 grid_points = generate_rectangular_grid_sg(length, width, n1, n2, judge)
 connectivity = generate_connectivity_matrix(grid_points)
@@ -269,57 +283,45 @@ def Symmetry_shaper(grid_points, connectivity, free_nodes):
 
 idx_X, idx_Y = Symmetry_shaper(grid_points, connectivity, Free_nodes)
 
-# FDM部分
-px = torch.zeros(len(Free_nodes), 1, dtype=torch.float32, device=device)
-py = torch.zeros(len(Free_nodes), 1, dtype=torch.float32, device=device)
-pz = torch.zeros(len(Free_nodes), 1, dtype=torch.float32, device=device)
 
-idx_CF = Fixed_nodes - 1  
-idx_CN = Free_nodes - 1
+####### FDM part
 C = torch.zeros(n_elements, n_nodes, dtype=torch.float32, device=device)
 for n, (i, j) in enumerate(connectivity):
     C[n, i - 1] = 1
     C[n, j - 1] = -1
 
-CF = C[:, idx_CF]
-CN = C[:, idx_CN]
+px = torch.zeros(len(Free_nodes), 1, dtype=torch.float32, device=device)
+py = torch.zeros(len(Free_nodes), 1, dtype=torch.float32, device=device)
+pz = torch.zeros(len(Free_nodes), 1, dtype=torch.float32, device=device)
 
-def FDM(Q, F_value, CN=CN, CF=CF, px=px, py=py, pz=pz, 
-        Fixed_nodes=Fixed_nodes, Free_nodes=Free_nodes,
-        node_coords=grid_points, h_max=24.0, max_retries=5):
-    
+fixed_idces = torch.tensor([node - 1 for node in Fixed_nodes], device=device)
+free_node_indices = torch.tensor([node - 1 for node in Free_nodes], device=device)
+
+CF = C[:, fixed_idces]
+CN = C[:, free_node_indices]
+
+
+def FDM(Q, F_value, node_coords, CN=CN, CF=CF, px=px, py=py, pz=pz,
+        fixed_idces=fixed_idces, free_node_indices=free_node_indices,
+        ):
     pz[:, 0] = F_value
-    original_Q = Q.clone()  
-    retry_count = 0
-    
-    while retry_count <= max_retries:
-        Dn = torch.matmul(CN.t(), torch.matmul(Q, CN))
-        DF = torch.matmul(CN.t(), torch.matmul(Q, CF))
-        
-        fixed_idces = Fixed_nodes - 1
-        xF = node_coords[fixed_idces, 0].unsqueeze(1)
-        yF = node_coords[fixed_idces, 1].unsqueeze(1)
-        zF = node_coords[fixed_idces, 2].unsqueeze(1)
-        
-        xN = torch.linalg.solve(Dn, (px - torch.matmul(DF, xF)))  
-        yN = torch.linalg.solve(Dn, (py - torch.matmul(DF, yF)))
-        zN = torch.linalg.solve(Dn, (pz - torch.matmul(DF, zF)))
-        
-        z_max = torch.max(zN).item()
-        if z_max <= h_max or retry_count == max_retries:
-            break
-            
-        scale = h_max / z_max
-        Q = original_Q * (scale ** 0.5)  
-        retry_count += 1
-        print(f"Retry {retry_count}: Scaling Q by {scale:.3f} (z_max={z_max:.2f} > {h_max})")
-    
+
+    Dn = torch.matmul(torch.transpose(CN, 0, 1), torch.matmul(Q, CN))
+    DF = torch.matmul(torch.transpose(CN, 0, 1), torch.matmul(Q, CF))
+
+    xF = node_coords[fixed_idces, 0].unsqueeze(1)
+    yF = node_coords[fixed_idces, 1].unsqueeze(1)
+    zF = node_coords[fixed_idces, 2].unsqueeze(1)
+
+    xN = torch.matmul(torch.inverse(Dn), (px - torch.matmul(DF, xF)))
+    yN = torch.matmul(torch.inverse(Dn), (py - torch.matmul(DF, yF)))
+    zN = torch.matmul(torch.inverse(Dn), (pz - torch.matmul(DF, zF)))
+
     new_node_coords = node_coords.clone()
-    free_indices = Free_nodes - 1
-    new_node_coords[free_indices, 0] = xN.squeeze()
-    new_node_coords[free_indices, 1] = yN.squeeze()
-    new_node_coords[free_indices, 2] = zN.squeeze()
-    
+    new_node_coords[free_node_indices, 0] = xN.squeeze()
+    new_node_coords[free_node_indices, 1] = yN.squeeze()
+    new_node_coords[free_node_indices, 2] = zN.squeeze()
+
     return new_node_coords
 
 
@@ -553,6 +555,46 @@ def Strain_E(node_coords, connectivity, fixed_dof, F,records,judge):
     # D = Local_d[:, 0]
     return Strain_energy, forces, displacements,records,type, lens
 
+Edge_nodes = torch.where(
+    (grid_points[:, 0] == x_max) |  # x = x_max
+    (grid_points[:, 0] == x_min) |  # x = x_min
+    (grid_points[:, 1] == y_max) |  # y = y_max
+    (grid_points[:, 1] == y_min)  # y = y_min
+)[0]
+
+Fxed_nodes = torch.where(
+    ((grid_points[:, 0] == x_max) & (grid_points[:, 1] == y_max) |
+     (grid_points[:, 0] == x_min) & (grid_points[:, 1] == y_max) |
+     (grid_points[:, 0] == x_max) & (grid_points[:, 1] == y_min) |
+     (grid_points[:, 0] == x_min) & (grid_points[:, 1] == y_min))
+)[0]
+
+Fxed_nodes += 1
+Fre_nodes = []
+
+for i in range(1, n_nodes + 1):
+    if i not in Fxed_nodes:
+        Fre_nodes.append(i)
+
+pz_ini = torch.zeros(len(Fre_nodes), 1, dtype=torch.float32)
+px_ini = torch.zeros(len(Fre_nodes), 1, dtype=torch.float32)
+py_ini = torch.zeros(len(Fre_nodes), 1, dtype=torch.float32)
+F_ini = pz_ini[:, 0]
+
+id_Fixed = torch.tensor(Fxed_nodes) - 1
+id_Free = torch.tensor(Fre_nodes) - 1
+
+id_CF = id_Fixed
+id_CN = id_Free
+F = C[:, id_CF]
+N = C[:, id_CN]
+
+edge_indices = find_edge_connections(Edge_nodes, connectivity)
+
+left_fixed = torch.where(grid_points[:, 1] == y_max)[0]
+right_fixed = torch.where(grid_points[:, 1] == y_min)[0]
+
+span_nodes = torch.cat([left_fixed, right_fixed])
 
 def optimizer(OPT_variables, gradients, step):
     OPT_variables.data -= gradients / torch.norm(gradients) * step
@@ -573,14 +615,6 @@ def check_available_memory():
 # In[30]:
 
 
-# 初始化
-q = torch.tensor([1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0,0.0] , device=device) * 5.44
-
-q_vec = torch.zeros(n_elements, device=device)
-for i in range(len(idx_X)):
-    q_vec[idx_X[i,:]] = q[i] 
-for j in range(len(idx_Y)):
-    q_vec[idx_Y[j,:]] = q[j+len(idx_X)]  
 
 # 梯度下降参数
 step = 0.01
@@ -594,11 +628,25 @@ F_fe_g, _ = Force_mat(-1, 2)
 # F_fe_l2, _ = Force_mat(0.1, 1)
 F_fe_t1, _ = Force_mat(1, 0)
 F_fe_t2, _ = Force_mat(1, 1)
-
-
 r = 1 / torch.max(F_value)
-Q = torch.diag(q_vec) * 1 / r 
-Ini_G = FDM(Q, F_value)
+idx_X, idx_Y = Symmetry_shaper(grid_points, connectivity, Free_nodes)
+
+q = torch.tensor([5.0, 5.4, 5.4, 5.4, 5.4, 5.4, 5.4,5.4,0,0,0,0,0,0], requires_grad=True, device=device)
+q_ini = torch.ones(n_elements)
+q_ini[edge_indices] = q[0]
+print('q_ini:', q[0])
+Q_ini = torch.diag(q_ini)
+ini_grid = FDM(Q_ini, F_ini, grid_points, N, F, px_ini, py_ini, pz_ini, id_CF, id_CN)
+
+q_vec = torch.zeros(n_elements, requires_grad=True, device=device).clone()
+for i in range(len(idx_X)):
+    q_vec[idx_X[i, :]] = q[i + 1]
+for j in range(len(idx_Y)):
+    q_vec[idx_Y[j, :]] = q[j + len(idx_X) + 1]
+
+Q = torch.diag(q_vec) * 1 / r
+Ini_G = FDM(Q, F_value, ini_grid)
+
 
 # cut = epochs / 5
 
@@ -651,19 +699,17 @@ for iteration in range(epochs + 1):
 
     FE_Str = time.time()
     Strain_energy_g, forces, _, type,records, Beam_lens = Strain_E(N_coords, connectivity, fixed_dof, F_fe_g,records, judge = 0)
-    FE_time_g = time.time() - FE_Str
-    FE_Str = time.time()
-    Strain_energy_t1, _, _, _ ,_ , _ = Strain_E(N_coords, connectivity, fixed_dof, F_fe_t1,records,judge = 1)
-    FE_time_x = time.time() - FE_Str
-    FE_Str = time.time()
-    Strain_energy_t2, _, _, _ ,_ , _ = Strain_E(N_coords, connectivity, fixed_dof, F_fe_t2,records,judge = 0)
-    FE_time_y = time.time() - FE_Str
+    FE_time = time.time() - FE_Str
+    # Strain_energy_1, _, _, _ ,_ , _ = Strain_E(N_coords, connectivity, fixed_dof, F_fe_l1)
+    # Strain_energy_2, _, _, _ ,_ , _ = Strain_E(N_coords, connectivity, fixed_dof, F_fe_l2)
 
+    Strain_energy_t1, _, _, _ ,_ , _ = Strain_E(N_coords, connectivity, fixed_dof, F_fe_t1,records,judge = 1)
+    Strain_energy_t2, _, _, _ ,_ , _ = Strain_E(N_coords, connectivity, fixed_dof, F_fe_t2,records,judge = 0)
     force = abs(forces[:, 0, 0])
     ES_g = torch.sum(Strain_energy_g)
     ES_t1 = torch.sum(Strain_energy_t1)
     ES_t2 = torch.sum(Strain_energy_t2)
-    Loss  =  ES_t1 + ES_g + ES_t2
+    Loss  =  ES_g
     Volume = torch.sum(Beam_lens)
     LS_his.append(Loss.item())
     print('SE:', Loss)
@@ -708,7 +754,7 @@ for iteration in range(epochs + 1):
     "Volume": Volume.item(),
     "gradient_norm": torch.norm(gradients).item() if OPT_variables.grad is not None else 0.0,
                "timing": {
-                   "FE_time_g":FE_time_g,
+                   "FE_time":FE_time,
             "Back_propagation time": Back_time,
         },
     }  
@@ -784,12 +830,12 @@ force_np = force.cpu().detach().numpy()
 abs_forces = np.abs(force_np)
 abs_forces = np.round(abs_forces)
 
-ratio = [0.01, 0.3, 0.7, 0.9]
-max_force = np.max(abs_forces)
-thresholds = np.array(ratio) * max_force
-width_levels = np.digitize(abs_forces, thresholds)
-line_widths = [1, 3, 5, 7, 9]
-# line_widths = [1, 1, 1, 1, 1]
+ratio = [0.01, 0.3, 0.7, 0.9]  
+max_force = np.max(abs_forces)  
+thresholds = np.array(ratio) * max_force  
+width_levels = np.digitize(abs_forces, thresholds) 
+line_widths = [1, 3, 5, 7, 9] 
+# line_widths = [1, 1, 1, 1, 1] 
 # First clear all existing traces (optional, depends on your needs)
 fig.data = []
 
@@ -814,7 +860,7 @@ for idx, connection in enumerate(connectivity):
     i, j = connection
     width_level = width_levels[idx]  # digitize returns 1-based index
     current_width = line_widths[width_level]
-
+    
     fig.add_trace(go.Scatter3d(
         x=[x_fdm[i-1], x_fdm[j-1]],
         y=[y_fdm[i-1], y_fdm[j-1]],
@@ -840,14 +886,14 @@ for node in Fixed_nodes:
     ))
 
     # 白点配置
-
+    
 node_marker_config = {
-    'size': 3,
-    'color': 'white',
-    'opacity': 1,
-    'line': {
-        'width': 4,
-        'color': 'black'
+    'size': 3,          
+    'color': 'white',   
+    'opacity': 1,       
+    'line': {           
+        'width': 4,     
+        'color': 'black' 
     }
 }
 
@@ -862,7 +908,7 @@ if torch.is_tensor(Fixed_nodes):
     Free_nodes_list = Free_nodes.cpu().tolist()
 else:
     Free_nodes_list = list(Free_nodes)
-all_nodes = list(set(Fixed_nodes_list + Free_nodes_list))
+all_nodes = list(set(Fixed_nodes_list + Free_nodes_list)) 
 for node in all_nodes:
     fig.add_trace(go.Scatter3d(
         x=[x_fdm[node-1]],
@@ -874,8 +920,8 @@ for node in all_nodes:
         showlegend=False
     ))
 
-
-
+    
+         
 force_traces = []
 for idx, connection in enumerate(connectivity):
     i, j = connection
@@ -937,7 +983,7 @@ fig.update_layout(
             showgrid=False,
             showline=False,
             showticklabels=False,
-
+            
             title=''
         ),
         aspectmode='data'
