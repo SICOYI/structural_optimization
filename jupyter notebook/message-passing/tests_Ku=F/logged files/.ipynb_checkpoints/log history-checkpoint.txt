@@ -1,0 +1,1 @@
+logged: MP-FE_global_CG_ver0.1.ipynb : 这一个版本保留了力信息作为边信息；以下的MP-FE_global_CG 版本我将使用x-Ku 直接计算residual 而 Message-passing 仅用于更新 k——global 
