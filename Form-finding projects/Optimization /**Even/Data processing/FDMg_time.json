@@ -1,0 +1,2877 @@
+{
+  "metadata": {
+    "project": "Structural Optimization",
+    "Context": "FDM + FE",
+    "device": "cpu",
+    "parameters": {
+      "length": 48,
+      "width": 48,
+      "grid_size": "13x13",
+      "epochs": 500,
+      "step_size": 0.01
+    },
+    "Iteration_time": 1573.6601343154907
+  },
+  "iterations": [
+    {
+      "iteration": 0,
+      "SE_g": 7.326977729797363,
+      "Geometry Initialization_time": 0.04363131523132324,
+      "FDM_time": 0.009374141693115234,
+      "FE_time": 1.9264922142028809,
+      "Loss cal_time": 0.0005695819854736328,
+      "Backpropagation_time": 4.651987075805664,
+      "Parametric Update": 0.0010623931884765625
+    },
+    {
+      "iteration": 1,
+      "SE_g": 7.3182148933410645,
+      "Geometry Initialization_time": 0.019876718521118164,
+      "FDM_time": 0.009029865264892578,
+      "FE_time": 1.4919676780700684,
+      "Loss cal_time": 0.07608819007873535,
+      "Backpropagation_time": 3.7837860584259033,
+      "Parametric Update": 0.0006694793701171875
+    },
+    {
+      "iteration": 2,
+      "SE_g": 7.309433460235596,
+      "Geometry Initialization_time": 0.017516613006591797,
+      "FDM_time": 0.008983612060546875,
+      "FE_time": 1.4856557846069336,
+      "Loss cal_time": 0.00012731552124023438,
+      "Backpropagation_time": 3.624819278717041,
+      "Parametric Update": 0.000408172607421875
+    },
+    {
+      "iteration": 3,
+      "SE_g": 7.300686836242676,
+      "Geometry Initialization_time": 0.018578529357910156,
+      "FDM_time": 0.00823354721069336,
+      "FE_time": 1.5642836093902588,
+      "Loss cal_time": 0.00012159347534179688,
+      "Backpropagation_time": 3.718536615371704,
+      "Parametric Update": 0.0011143684387207031
+    },
+    {
+      "iteration": 4,
+      "SE_g": 7.291926383972168,
+      "Geometry Initialization_time": 0.01740431785583496,
+      "FDM_time": 0.008022785186767578,
+      "FE_time": 1.384080410003662,
+      "Loss cal_time": 0.00011205673217773438,
+      "Backpropagation_time": 3.818927526473999,
+      "Parametric Update": 0.0008008480072021484
+    },
+    {
+      "iteration": 5,
+      "SE_g": 7.283116817474365,
+      "Geometry Initialization_time": 0.0267486572265625,
+      "FDM_time": 0.00913548469543457,
+      "FE_time": 1.779245376586914,
+      "Loss cal_time": 0.00011396408081054688,
+      "Backpropagation_time": 3.8636250495910645,
+      "Parametric Update": 0.0007615089416503906
+    },
+    {
+      "iteration": 6,
+      "SE_g": 7.274375915527344,
+      "Geometry Initialization_time": 0.01941704750061035,
+      "FDM_time": 0.00783085823059082,
+      "FE_time": 1.5090782642364502,
+      "Loss cal_time": 0.0001201629638671875,
+      "Backpropagation_time": 3.751824140548706,
+      "Parametric Update": 0.0003902912139892578
+    },
+    {
+      "iteration": 7,
+      "SE_g": 7.265504837036133,
+      "Geometry Initialization_time": 0.018122196197509766,
+      "FDM_time": 0.010385513305664062,
+      "FE_time": 1.4546153545379639,
+      "Loss cal_time": 0.00011277198791503906,
+      "Backpropagation_time": 3.8287627696990967,
+      "Parametric Update": 0.001272439956665039
+    },
+    {
+      "iteration": 8,
+      "SE_g": 7.2568206787109375,
+      "Geometry Initialization_time": 0.017560958862304688,
+      "FDM_time": 0.0077555179595947266,
+      "FE_time": 1.5426733493804932,
+      "Loss cal_time": 0.00010991096496582031,
+      "Backpropagation_time": 3.7440171241760254,
+      "Parametric Update": 0.0011339187622070312
+    },
+    {
+      "iteration": 9,
+      "SE_g": 7.24796199798584,
+      "Geometry Initialization_time": 0.01797008514404297,
+      "FDM_time": 0.00913691520690918,
+      "FE_time": 1.4880907535552979,
+      "Loss cal_time": 0.0001289844512939453,
+      "Backpropagation_time": 3.8238775730133057,
+      "Parametric Update": 0.0006058216094970703
+    },
+    {
+      "iteration": 10,
+      "SE_g": 7.239303112030029,
+      "Geometry Initialization_time": 0.018549442291259766,
+      "FDM_time": 0.008783817291259766,
+      "FE_time": 1.554595947265625,
+      "Loss cal_time": 0.00010967254638671875,
+      "Backpropagation_time": 3.815873384475708,
+      "Parametric Update": 0.0014069080352783203
+    },
+    {
+      "iteration": 11,
+      "SE_g": 7.23043966293335,
+      "Geometry Initialization_time": 0.027303218841552734,
+      "FDM_time": 0.011320114135742188,
+      "FE_time": 2.007870674133301,
+      "Loss cal_time": 0.0001976490020751953,
+      "Backpropagation_time": 4.77743935585022,
+      "Parametric Update": 0.0012860298156738281
+    },
+    {
+      "iteration": 12,
+      "SE_g": 7.221702575683594,
+      "Geometry Initialization_time": 0.02839040756225586,
+      "FDM_time": 0.011564970016479492,
+      "FE_time": 2.160135507583618,
+      "Loss cal_time": 0.00018858909606933594,
+      "Backpropagation_time": 3.8723104000091553,
+      "Parametric Update": 0.0008039474487304688
+    },
+    {
+      "iteration": 13,
+      "SE_g": 7.212919235229492,
+      "Geometry Initialization_time": 0.019318580627441406,
+      "FDM_time": 0.008611440658569336,
+      "FE_time": 1.624372959136963,
+      "Loss cal_time": 0.00010466575622558594,
+      "Backpropagation_time": 3.726555585861206,
+      "Parametric Update": 0.0009267330169677734
+    },
+    {
+      "iteration": 14,
+      "SE_g": 7.204241752624512,
+      "Geometry Initialization_time": 0.017590999603271484,
+      "FDM_time": 0.00922846794128418,
+      "FE_time": 1.4078311920166016,
+      "Loss cal_time": 0.00010728836059570312,
+      "Backpropagation_time": 3.6989502906799316,
+      "Parametric Update": 0.00046181678771972656
+    },
+    {
+      "iteration": 15,
+      "SE_g": 7.195394039154053,
+      "Geometry Initialization_time": 0.0182039737701416,
+      "FDM_time": 0.010638236999511719,
+      "FE_time": 1.527526617050171,
+      "Loss cal_time": 0.00011610984802246094,
+      "Backpropagation_time": 3.8242580890655518,
+      "Parametric Update": 0.0009949207305908203
+    },
+    {
+      "iteration": 16,
+      "SE_g": 7.186703681945801,
+      "Geometry Initialization_time": 0.019808530807495117,
+      "FDM_time": 0.008746862411499023,
+      "FE_time": 1.4751131534576416,
+      "Loss cal_time": 0.0001087188720703125,
+      "Backpropagation_time": 3.789769172668457,
+      "Parametric Update": 0.0012865066528320312
+    },
+    {
+      "iteration": 17,
+      "SE_g": 7.1779046058654785,
+      "Geometry Initialization_time": 0.018026351928710938,
+      "FDM_time": 0.00846242904663086,
+      "FE_time": 1.4714596271514893,
+      "Loss cal_time": 0.00010824203491210938,
+      "Backpropagation_time": 3.754295825958252,
+      "Parametric Update": 0.0006556510925292969
+    },
+    {
+      "iteration": 18,
+      "SE_g": 7.169190406799316,
+      "Geometry Initialization_time": 0.018916845321655273,
+      "FDM_time": 0.008865594863891602,
+      "FE_time": 1.8255198001861572,
+      "Loss cal_time": 0.00016307830810546875,
+      "Backpropagation_time": 3.9058237075805664,
+      "Parametric Update": 0.002155303955078125
+    },
+    {
+      "iteration": 19,
+      "SE_g": 7.160411357879639,
+      "Geometry Initialization_time": 0.017817258834838867,
+      "FDM_time": 0.008487224578857422,
+      "FE_time": 1.4754204750061035,
+      "Loss cal_time": 0.00010371208190917969,
+      "Backpropagation_time": 3.8256752490997314,
+      "Parametric Update": 0.001132965087890625
+    },
+    {
+      "iteration": 20,
+      "SE_g": 7.151688575744629,
+      "Geometry Initialization_time": 0.018397808074951172,
+      "FDM_time": 0.011317729949951172,
+      "FE_time": 1.6051104068756104,
+      "Loss cal_time": 0.0001087188720703125,
+      "Backpropagation_time": 3.806655168533325,
+      "Parametric Update": 0.00045013427734375
+    },
+    {
+      "iteration": 21,
+      "SE_g": 7.142941951751709,
+      "Geometry Initialization_time": 0.020650386810302734,
+      "FDM_time": 0.012398242950439453,
+      "FE_time": 1.4709138870239258,
+      "Loss cal_time": 0.00010347366333007812,
+      "Backpropagation_time": 3.817765951156616,
+      "Parametric Update": 0.001232147216796875
+    },
+    {
+      "iteration": 22,
+      "SE_g": 7.134266376495361,
+      "Geometry Initialization_time": 0.018179655075073242,
+      "FDM_time": 0.012099027633666992,
+      "FE_time": 1.4473364353179932,
+      "Loss cal_time": 0.00011348724365234375,
+      "Backpropagation_time": 3.7900099754333496,
+      "Parametric Update": 0.0009205341339111328
+    },
+    {
+      "iteration": 23,
+      "SE_g": 7.125506401062012,
+      "Geometry Initialization_time": 0.01708078384399414,
+      "FDM_time": 0.009192705154418945,
+      "FE_time": 1.501479148864746,
+      "Loss cal_time": 0.00010609626770019531,
+      "Backpropagation_time": 3.7626967430114746,
+      "Parametric Update": 0.0009200572967529297
+    },
+    {
+      "iteration": 24,
+      "SE_g": 7.116809844970703,
+      "Geometry Initialization_time": 0.01763439178466797,
+      "FDM_time": 0.008507013320922852,
+      "FE_time": 1.396634817123413,
+      "Loss cal_time": 0.00010633468627929688,
+      "Backpropagation_time": 3.7968051433563232,
+      "Parametric Update": 0.00063323974609375
+    },
+    {
+      "iteration": 25,
+      "SE_g": 7.108075141906738,
+      "Geometry Initialization_time": 0.017874956130981445,
+      "FDM_time": 0.008794546127319336,
+      "FE_time": 1.6038181781768799,
+      "Loss cal_time": 0.00012111663818359375,
+      "Backpropagation_time": 3.79323673248291,
+      "Parametric Update": 0.0007457733154296875
+    },
+    {
+      "iteration": 26,
+      "SE_g": 7.09935188293457,
+      "Geometry Initialization_time": 0.01822686195373535,
+      "FDM_time": 0.01118326187133789,
+      "FE_time": 1.425842046737671,
+      "Loss cal_time": 0.00010919570922851562,
+      "Backpropagation_time": 3.635627269744873,
+      "Parametric Update": 0.0009365081787109375
+    },
+    {
+      "iteration": 27,
+      "SE_g": 7.090606689453125,
+      "Geometry Initialization_time": 0.01773238182067871,
+      "FDM_time": 0.00835871696472168,
+      "FE_time": 1.4053328037261963,
+      "Loss cal_time": 0.00010132789611816406,
+      "Backpropagation_time": 3.7875046730041504,
+      "Parametric Update": 0.0005497932434082031
+    },
+    {
+      "iteration": 28,
+      "SE_g": 7.081969261169434,
+      "Geometry Initialization_time": 0.017907142639160156,
+      "FDM_time": 0.010973453521728516,
+      "FE_time": 1.5383076667785645,
+      "Loss cal_time": 0.00010228157043457031,
+      "Backpropagation_time": 3.816304922103882,
+      "Parametric Update": 0.0005400180816650391
+    },
+    {
+      "iteration": 29,
+      "SE_g": 7.073196887969971,
+      "Geometry Initialization_time": 0.018622875213623047,
+      "FDM_time": 0.008635282516479492,
+      "FE_time": 1.4460923671722412,
+      "Loss cal_time": 0.00010561943054199219,
+      "Backpropagation_time": 3.8056225776672363,
+      "Parametric Update": 0.0009443759918212891
+    },
+    {
+      "iteration": 30,
+      "SE_g": 7.064560890197754,
+      "Geometry Initialization_time": 0.01743483543395996,
+      "FDM_time": 0.008907794952392578,
+      "FE_time": 1.5351691246032715,
+      "Loss cal_time": 0.00010919570922851562,
+      "Backpropagation_time": 3.787933349609375,
+      "Parametric Update": 0.0012822151184082031
+    },
+    {
+      "iteration": 31,
+      "SE_g": 7.055812835693359,
+      "Geometry Initialization_time": 0.017614126205444336,
+      "FDM_time": 0.008692741394042969,
+      "FE_time": 1.947265625,
+      "Loss cal_time": 0.00014853477478027344,
+      "Backpropagation_time": 4.033389091491699,
+      "Parametric Update": 0.0005340576171875
+    },
+    {
+      "iteration": 32,
+      "SE_g": 7.047175407409668,
+      "Geometry Initialization_time": 0.01898813247680664,
+      "FDM_time": 0.011700630187988281,
+      "FE_time": 1.4966456890106201,
+      "Loss cal_time": 0.0001163482666015625,
+      "Backpropagation_time": 3.8174796104431152,
+      "Parametric Update": 0.000804901123046875
+    },
+    {
+      "iteration": 33,
+      "SE_g": 7.038416862487793,
+      "Geometry Initialization_time": 0.019060850143432617,
+      "FDM_time": 0.008636474609375,
+      "FE_time": 1.6196613311767578,
+      "Loss cal_time": 0.00010609626770019531,
+      "Backpropagation_time": 3.7542967796325684,
+      "Parametric Update": 0.00038695335388183594
+    },
+    {
+      "iteration": 34,
+      "SE_g": 7.029815196990967,
+      "Geometry Initialization_time": 0.01822209358215332,
+      "FDM_time": 0.009707212448120117,
+      "FE_time": 1.4130945205688477,
+      "Loss cal_time": 0.00010061264038085938,
+      "Backpropagation_time": 3.847005605697632,
+      "Parametric Update": 0.0005571842193603516
+    },
+    {
+      "iteration": 35,
+      "SE_g": 7.021041393280029,
+      "Geometry Initialization_time": 0.019268035888671875,
+      "FDM_time": 0.011617898941040039,
+      "FE_time": 1.6016006469726562,
+      "Loss cal_time": 0.00011014938354492188,
+      "Backpropagation_time": 3.7344629764556885,
+      "Parametric Update": 0.001331329345703125
+    },
+    {
+      "iteration": 36,
+      "SE_g": 7.012435436248779,
+      "Geometry Initialization_time": 0.01840686798095703,
+      "FDM_time": 0.011782169342041016,
+      "FE_time": 1.4684247970581055,
+      "Loss cal_time": 0.00010538101196289062,
+      "Backpropagation_time": 3.710423469543457,
+      "Parametric Update": 0.0009641647338867188
+    },
+    {
+      "iteration": 37,
+      "SE_g": 7.003725528717041,
+      "Geometry Initialization_time": 0.017788410186767578,
+      "FDM_time": 0.008151054382324219,
+      "FE_time": 1.4099962711334229,
+      "Loss cal_time": 0.00010132789611816406,
+      "Backpropagation_time": 3.7406530380249023,
+      "Parametric Update": 0.0009906291961669922
+    },
+    {
+      "iteration": 38,
+      "SE_g": 6.995060920715332,
+      "Geometry Initialization_time": 0.017353296279907227,
+      "FDM_time": 0.008936643600463867,
+      "FE_time": 1.5365991592407227,
+      "Loss cal_time": 0.00010561943054199219,
+      "Backpropagation_time": 3.8059475421905518,
+      "Parametric Update": 0.0011603832244873047
+    },
+    {
+      "iteration": 39,
+      "SE_g": 6.986358165740967,
+      "Geometry Initialization_time": 0.018660545349121094,
+      "FDM_time": 0.011557579040527344,
+      "FE_time": 1.4513909816741943,
+      "Loss cal_time": 0.00011205673217773438,
+      "Backpropagation_time": 3.7000646591186523,
+      "Parametric Update": 0.0007853507995605469
+    },
+    {
+      "iteration": 40,
+      "SE_g": 6.977752685546875,
+      "Geometry Initialization_time": 0.018927335739135742,
+      "FDM_time": 0.008734941482543945,
+      "FE_time": 1.629321813583374,
+      "Loss cal_time": 0.000148773193359375,
+      "Backpropagation_time": 3.796013832092285,
+      "Parametric Update": 0.000988006591796875
+    },
+    {
+      "iteration": 41,
+      "SE_g": 6.969085693359375,
+      "Geometry Initialization_time": 0.018822193145751953,
+      "FDM_time": 0.009022712707519531,
+      "FE_time": 1.429556131362915,
+      "Loss cal_time": 0.00010538101196289062,
+      "Backpropagation_time": 3.7559380531311035,
+      "Parametric Update": 0.0009455680847167969
+    },
+    {
+      "iteration": 42,
+      "SE_g": 6.96039342880249,
+      "Geometry Initialization_time": 0.017487764358520508,
+      "FDM_time": 0.01015925407409668,
+      "FE_time": 1.41196608543396,
+      "Loss cal_time": 0.00010752677917480469,
+      "Backpropagation_time": 4.501876592636108,
+      "Parametric Update": 0.0007967948913574219
+    },
+    {
+      "iteration": 43,
+      "SE_g": 6.951759338378906,
+      "Geometry Initialization_time": 0.025807857513427734,
+      "FDM_time": 0.010913848876953125,
+      "FE_time": 2.184453010559082,
+      "Loss cal_time": 0.000133514404296875,
+      "Backpropagation_time": 4.016263961791992,
+      "Parametric Update": 0.0005970001220703125
+    },
+    {
+      "iteration": 44,
+      "SE_g": 6.94312047958374,
+      "Geometry Initialization_time": 0.019405603408813477,
+      "FDM_time": 0.008892536163330078,
+      "FE_time": 1.4735465049743652,
+      "Loss cal_time": 0.0001049041748046875,
+      "Backpropagation_time": 3.7443742752075195,
+      "Parametric Update": 0.0010797977447509766
+    },
+    {
+      "iteration": 45,
+      "SE_g": 6.934418678283691,
+      "Geometry Initialization_time": 0.01774764060974121,
+      "FDM_time": 0.008200883865356445,
+      "FE_time": 1.549304485321045,
+      "Loss cal_time": 0.00010776519775390625,
+      "Backpropagation_time": 3.776289224624634,
+      "Parametric Update": 0.0005364418029785156
+    },
+    {
+      "iteration": 46,
+      "SE_g": 6.925868034362793,
+      "Geometry Initialization_time": 0.0190277099609375,
+      "FDM_time": 0.007882356643676758,
+      "FE_time": 1.4692845344543457,
+      "Loss cal_time": 0.00010633468627929688,
+      "Backpropagation_time": 3.7927024364471436,
+      "Parametric Update": 0.0007128715515136719
+    },
+    {
+      "iteration": 47,
+      "SE_g": 6.917160511016846,
+      "Geometry Initialization_time": 0.018204450607299805,
+      "FDM_time": 0.008272171020507812,
+      "FE_time": 1.4646937847137451,
+      "Loss cal_time": 0.00011467933654785156,
+      "Backpropagation_time": 3.960453748703003,
+      "Parametric Update": 0.0012137889862060547
+    },
+    {
+      "iteration": 48,
+      "SE_g": 6.908577919006348,
+      "Geometry Initialization_time": 0.017466068267822266,
+      "FDM_time": 0.008141756057739258,
+      "FE_time": 1.5491654872894287,
+      "Loss cal_time": 9.918212890625e-05,
+      "Backpropagation_time": 3.7737138271331787,
+      "Parametric Update": 0.0016307830810546875
+    },
+    {
+      "iteration": 49,
+      "SE_g": 6.899908065795898,
+      "Geometry Initialization_time": 0.017115354537963867,
+      "FDM_time": 0.0073757171630859375,
+      "FE_time": 1.4105181694030762,
+      "Loss cal_time": 0.0001049041748046875,
+      "Backpropagation_time": 3.6889448165893555,
+      "Parametric Update": 0.001596212387084961
+    },
+    {
+      "iteration": 50,
+      "SE_g": 6.891323566436768,
+      "Geometry Initialization_time": 0.017158985137939453,
+      "FDM_time": 0.008299112319946289,
+      "FE_time": 1.5167253017425537,
+      "Loss cal_time": 0.0001246929168701172,
+      "Backpropagation_time": 3.7792906761169434,
+      "Parametric Update": 0.0005617141723632812
+    },
+    {
+      "iteration": 51,
+      "SE_g": 6.882659435272217,
+      "Geometry Initialization_time": 0.019683837890625,
+      "FDM_time": 0.01207733154296875,
+      "FE_time": 1.4132704734802246,
+      "Loss cal_time": 0.00010776519775390625,
+      "Backpropagation_time": 3.8252530097961426,
+      "Parametric Update": 0.0007195472717285156
+    },
+    {
+      "iteration": 52,
+      "SE_g": 6.874094009399414,
+      "Geometry Initialization_time": 0.019586801528930664,
+      "FDM_time": 0.012922286987304688,
+      "FE_time": 1.530733585357666,
+      "Loss cal_time": 0.00013327598571777344,
+      "Backpropagation_time": 3.780543804168701,
+      "Parametric Update": 0.0007193088531494141
+    },
+    {
+      "iteration": 53,
+      "SE_g": 6.865444660186768,
+      "Geometry Initialization_time": 0.0187227725982666,
+      "FDM_time": 0.00899362564086914,
+      "FE_time": 1.5886476039886475,
+      "Loss cal_time": 0.00010561943054199219,
+      "Backpropagation_time": 3.8139915466308594,
+      "Parametric Update": 0.0006899833679199219
+    },
+    {
+      "iteration": 54,
+      "SE_g": 6.8568644523620605,
+      "Geometry Initialization_time": 0.0186917781829834,
+      "FDM_time": 0.008764505386352539,
+      "FE_time": 1.4657132625579834,
+      "Loss cal_time": 0.00011038780212402344,
+      "Backpropagation_time": 3.7052395343780518,
+      "Parametric Update": 0.0010497570037841797
+    },
+    {
+      "iteration": 55,
+      "SE_g": 6.848195552825928,
+      "Geometry Initialization_time": 0.018833160400390625,
+      "FDM_time": 0.009709835052490234,
+      "FE_time": 1.6220853328704834,
+      "Loss cal_time": 0.00010275840759277344,
+      "Backpropagation_time": 3.832639217376709,
+      "Parametric Update": 0.0013637542724609375
+    },
+    {
+      "iteration": 56,
+      "SE_g": 6.839641571044922,
+      "Geometry Initialization_time": 0.02357316017150879,
+      "FDM_time": 0.008200407028198242,
+      "FE_time": 1.5004055500030518,
+      "Loss cal_time": 0.00011420249938964844,
+      "Backpropagation_time": 3.79771089553833,
+      "Parametric Update": 0.0006575584411621094
+    },
+    {
+      "iteration": 57,
+      "SE_g": 6.830999374389648,
+      "Geometry Initialization_time": 0.018369436264038086,
+      "FDM_time": 0.008851766586303711,
+      "FE_time": 1.4603331089019775,
+      "Loss cal_time": 0.00011038780212402344,
+      "Backpropagation_time": 3.637824535369873,
+      "Parametric Update": 0.0008513927459716797
+    },
+    {
+      "iteration": 58,
+      "SE_g": 6.822400093078613,
+      "Geometry Initialization_time": 0.017778873443603516,
+      "FDM_time": 0.00828242301940918,
+      "FE_time": 1.5308241844177246,
+      "Loss cal_time": 0.00010251998901367188,
+      "Backpropagation_time": 3.7440686225891113,
+      "Parametric Update": 0.0003731250762939453
+    },
+    {
+      "iteration": 59,
+      "SE_g": 6.813819885253906,
+      "Geometry Initialization_time": 0.01831221580505371,
+      "FDM_time": 0.010312795639038086,
+      "FE_time": 1.4277775287628174,
+      "Loss cal_time": 0.00010251998901367188,
+      "Backpropagation_time": 3.79915714263916,
+      "Parametric Update": 0.0014078617095947266
+    },
+    {
+      "iteration": 60,
+      "SE_g": 6.805252552032471,
+      "Geometry Initialization_time": 0.0189054012298584,
+      "FDM_time": 0.007804155349731445,
+      "FE_time": 1.6232082843780518,
+      "Loss cal_time": 0.00011420249938964844,
+      "Backpropagation_time": 3.8074231147766113,
+      "Parametric Update": 0.0007367134094238281
+    },
+    {
+      "iteration": 61,
+      "SE_g": 6.796660900115967,
+      "Geometry Initialization_time": 0.021334409713745117,
+      "FDM_time": 0.010286092758178711,
+      "FE_time": 1.512855052947998,
+      "Loss cal_time": 0.00012493133544921875,
+      "Backpropagation_time": 3.839390277862549,
+      "Parametric Update": 0.0017809867858886719
+    },
+    {
+      "iteration": 62,
+      "SE_g": 6.788103103637695,
+      "Geometry Initialization_time": 0.018551349639892578,
+      "FDM_time": 0.010897397994995117,
+      "FE_time": 1.6524856090545654,
+      "Loss cal_time": 0.0001671314239501953,
+      "Backpropagation_time": 3.824957847595215,
+      "Parametric Update": 0.0006837844848632812
+    },
+    {
+      "iteration": 63,
+      "SE_g": 6.779493808746338,
+      "Geometry Initialization_time": 0.019138336181640625,
+      "FDM_time": 0.011217594146728516,
+      "FE_time": 1.6732876300811768,
+      "Loss cal_time": 0.000110626220703125,
+      "Backpropagation_time": 3.8521413803100586,
+      "Parametric Update": 0.0011572837829589844
+    },
+    {
+      "iteration": 64,
+      "SE_g": 6.770965576171875,
+      "Geometry Initialization_time": 0.018173694610595703,
+      "FDM_time": 0.008423805236816406,
+      "FE_time": 1.4376442432403564,
+      "Loss cal_time": 0.00010538101196289062,
+      "Backpropagation_time": 3.812929630279541,
+      "Parametric Update": 0.0010635852813720703
+    },
+    {
+      "iteration": 65,
+      "SE_g": 6.762341499328613,
+      "Geometry Initialization_time": 0.017455577850341797,
+      "FDM_time": 0.008581876754760742,
+      "FE_time": 1.5608785152435303,
+      "Loss cal_time": 0.00010442733764648438,
+      "Backpropagation_time": 3.793304204940796,
+      "Parametric Update": 0.0006487369537353516
+    },
+    {
+      "iteration": 66,
+      "SE_g": 6.753810405731201,
+      "Geometry Initialization_time": 0.018575429916381836,
+      "FDM_time": 0.010497808456420898,
+      "FE_time": 1.4301552772521973,
+      "Loss cal_time": 0.00010347366333007812,
+      "Backpropagation_time": 3.7628395557403564,
+      "Parametric Update": 0.0010826587677001953
+    },
+    {
+      "iteration": 67,
+      "SE_g": 6.745195388793945,
+      "Geometry Initialization_time": 0.017527103424072266,
+      "FDM_time": 0.010805368423461914,
+      "FE_time": 1.4269492626190186,
+      "Loss cal_time": 0.00010418891906738281,
+      "Backpropagation_time": 3.6878726482391357,
+      "Parametric Update": 0.0004935264587402344
+    },
+    {
+      "iteration": 68,
+      "SE_g": 6.736720085144043,
+      "Geometry Initialization_time": 0.01787567138671875,
+      "FDM_time": 0.013123512268066406,
+      "FE_time": 1.5422098636627197,
+      "Loss cal_time": 0.00010442733764648438,
+      "Backpropagation_time": 3.8429181575775146,
+      "Parametric Update": 0.0005328655242919922
+    },
+    {
+      "iteration": 69,
+      "SE_g": 6.728113174438477,
+      "Geometry Initialization_time": 0.031922101974487305,
+      "FDM_time": 0.0801384449005127,
+      "FE_time": 1.4714975357055664,
+      "Loss cal_time": 0.00011849403381347656,
+      "Backpropagation_time": 3.8246214389801025,
+      "Parametric Update": 0.0007867813110351562
+    },
+    {
+      "iteration": 70,
+      "SE_g": 6.719592571258545,
+      "Geometry Initialization_time": 0.018764495849609375,
+      "FDM_time": 0.00965738296508789,
+      "FE_time": 1.5632920265197754,
+      "Loss cal_time": 0.0001049041748046875,
+      "Backpropagation_time": 3.828211545944214,
+      "Parametric Update": 0.0011451244354248047
+    },
+    {
+      "iteration": 71,
+      "SE_g": 6.711000919342041,
+      "Geometry Initialization_time": 0.019741058349609375,
+      "FDM_time": 0.01373744010925293,
+      "FE_time": 1.5663371086120605,
+      "Loss cal_time": 0.00014352798461914062,
+      "Backpropagation_time": 3.844609260559082,
+      "Parametric Update": 0.0011980533599853516
+    },
+    {
+      "iteration": 72,
+      "SE_g": 6.702491760253906,
+      "Geometry Initialization_time": 0.01891613006591797,
+      "FDM_time": 0.010633468627929688,
+      "FE_time": 1.536414623260498,
+      "Loss cal_time": 0.00012087821960449219,
+      "Backpropagation_time": 3.8899037837982178,
+      "Parametric Update": 0.0010378360748291016
+    },
+    {
+      "iteration": 73,
+      "SE_g": 6.693924427032471,
+      "Geometry Initialization_time": 0.019423484802246094,
+      "FDM_time": 0.01128530502319336,
+      "FE_time": 1.6627657413482666,
+      "Loss cal_time": 0.000125885009765625,
+      "Backpropagation_time": 3.853754758834839,
+      "Parametric Update": 0.0005631446838378906
+    },
+    {
+      "iteration": 74,
+      "SE_g": 6.685439586639404,
+      "Geometry Initialization_time": 0.018705129623413086,
+      "FDM_time": 0.011766910552978516,
+      "FE_time": 1.4992647171020508,
+      "Loss cal_time": 0.00014352798461914062,
+      "Backpropagation_time": 3.823979139328003,
+      "Parametric Update": 0.0005784034729003906
+    },
+    {
+      "iteration": 75,
+      "SE_g": 6.676849365234375,
+      "Geometry Initialization_time": 0.018451452255249023,
+      "FDM_time": 0.012505292892456055,
+      "FE_time": 1.5871965885162354,
+      "Loss cal_time": 0.00010800361633300781,
+      "Backpropagation_time": 3.808411121368408,
+      "Parametric Update": 0.0007441043853759766
+    },
+    {
+      "iteration": 76,
+      "SE_g": 6.668389797210693,
+      "Geometry Initialization_time": 0.019140958786010742,
+      "FDM_time": 0.008980512619018555,
+      "FE_time": 1.4831326007843018,
+      "Loss cal_time": 0.00011420249938964844,
+      "Backpropagation_time": 3.806279182434082,
+      "Parametric Update": 0.0013039112091064453
+    },
+    {
+      "iteration": 77,
+      "SE_g": 6.659788131713867,
+      "Geometry Initialization_time": 0.01860189437866211,
+      "FDM_time": 0.008897781372070312,
+      "FE_time": 1.4868557453155518,
+      "Loss cal_time": 0.00010752677917480469,
+      "Backpropagation_time": 3.8818509578704834,
+      "Parametric Update": 0.0007011890411376953
+    },
+    {
+      "iteration": 78,
+      "SE_g": 6.651326656341553,
+      "Geometry Initialization_time": 0.019086360931396484,
+      "FDM_time": 0.008597373962402344,
+      "FE_time": 1.6062283515930176,
+      "Loss cal_time": 0.00010752677917480469,
+      "Backpropagation_time": 3.825284957885742,
+      "Parametric Update": 0.0003829002380371094
+    },
+    {
+      "iteration": 79,
+      "SE_g": 6.642767906188965,
+      "Geometry Initialization_time": 0.018606901168823242,
+      "FDM_time": 0.008223772048950195,
+      "FE_time": 1.4216082096099854,
+      "Loss cal_time": 0.00010156631469726562,
+      "Backpropagation_time": 3.7667109966278076,
+      "Parametric Update": 0.00043201446533203125
+    },
+    {
+      "iteration": 80,
+      "SE_g": 6.634273529052734,
+      "Geometry Initialization_time": 0.018146514892578125,
+      "FDM_time": 0.008519411087036133,
+      "FE_time": 1.5309505462646484,
+      "Loss cal_time": 0.00010132789611816406,
+      "Backpropagation_time": 3.7537355422973633,
+      "Parametric Update": 0.0005698204040527344
+    },
+    {
+      "iteration": 81,
+      "SE_g": 6.625731468200684,
+      "Geometry Initialization_time": 0.021386384963989258,
+      "FDM_time": 0.01297760009765625,
+      "FE_time": 1.5202689170837402,
+      "Loss cal_time": 0.00011658668518066406,
+      "Backpropagation_time": 3.7938594818115234,
+      "Parametric Update": 0.0004558563232421875
+    },
+    {
+      "iteration": 82,
+      "SE_g": 6.617294788360596,
+      "Geometry Initialization_time": 0.01856231689453125,
+      "FDM_time": 0.00826406478881836,
+      "FE_time": 1.4287762641906738,
+      "Loss cal_time": 0.00010943412780761719,
+      "Backpropagation_time": 3.7771687507629395,
+      "Parametric Update": 0.0009098052978515625
+    },
+    {
+      "iteration": 83,
+      "SE_g": 6.608750820159912,
+      "Geometry Initialization_time": 0.017804384231567383,
+      "FDM_time": 0.008276939392089844,
+      "FE_time": 1.5451457500457764,
+      "Loss cal_time": 0.00012564659118652344,
+      "Backpropagation_time": 3.7650303840637207,
+      "Parametric Update": 0.001125335693359375
+    },
+    {
+      "iteration": 84,
+      "SE_g": 6.60028076171875,
+      "Geometry Initialization_time": 0.023928165435791016,
+      "FDM_time": 0.012392044067382812,
+      "FE_time": 1.551600694656372,
+      "Loss cal_time": 0.00011801719665527344,
+      "Backpropagation_time": 3.8494763374328613,
+      "Parametric Update": 0.0008053779602050781
+    },
+    {
+      "iteration": 85,
+      "SE_g": 6.591756820678711,
+      "Geometry Initialization_time": 0.018926382064819336,
+      "FDM_time": 0.010119199752807617,
+      "FE_time": 1.675532341003418,
+      "Loss cal_time": 0.00011396408081054688,
+      "Backpropagation_time": 3.8580422401428223,
+      "Parametric Update": 0.0013394355773925781
+    },
+    {
+      "iteration": 86,
+      "SE_g": 6.583273410797119,
+      "Geometry Initialization_time": 0.01795482635498047,
+      "FDM_time": 0.008128166198730469,
+      "FE_time": 1.447939157485962,
+      "Loss cal_time": 0.00011110305786132812,
+      "Backpropagation_time": 3.835127592086792,
+      "Parametric Update": 0.0015344619750976562
+    },
+    {
+      "iteration": 87,
+      "SE_g": 6.574804782867432,
+      "Geometry Initialization_time": 0.01832270622253418,
+      "FDM_time": 0.010480165481567383,
+      "FE_time": 1.477344036102295,
+      "Loss cal_time": 0.00011110305786132812,
+      "Backpropagation_time": 3.8166632652282715,
+      "Parametric Update": 0.0015811920166015625
+    },
+    {
+      "iteration": 88,
+      "SE_g": 6.566314220428467,
+      "Geometry Initialization_time": 0.01838207244873047,
+      "FDM_time": 0.010171175003051758,
+      "FE_time": 1.6261332035064697,
+      "Loss cal_time": 0.00010442733764648438,
+      "Backpropagation_time": 3.7592527866363525,
+      "Parametric Update": 0.0012788772583007812
+    },
+    {
+      "iteration": 89,
+      "SE_g": 6.557807922363281,
+      "Geometry Initialization_time": 0.017545223236083984,
+      "FDM_time": 0.007135629653930664,
+      "FE_time": 1.4259583950042725,
+      "Loss cal_time": 0.00010037422180175781,
+      "Backpropagation_time": 3.931097984313965,
+      "Parametric Update": 0.0005316734313964844
+    },
+    {
+      "iteration": 90,
+      "SE_g": 6.549406051635742,
+      "Geometry Initialization_time": 0.018281936645507812,
+      "FDM_time": 0.007570743560791016,
+      "FE_time": 1.5306377410888672,
+      "Loss cal_time": 0.00010538101196289062,
+      "Backpropagation_time": 3.735224723815918,
+      "Parametric Update": 0.0009419918060302734
+    },
+    {
+      "iteration": 91,
+      "SE_g": 6.54091215133667,
+      "Geometry Initialization_time": 0.018492460250854492,
+      "FDM_time": 0.008170127868652344,
+      "FE_time": 1.4094736576080322,
+      "Loss cal_time": 0.00010323524475097656,
+      "Backpropagation_time": 3.691368579864502,
+      "Parametric Update": 0.0016663074493408203
+    },
+    {
+      "iteration": 92,
+      "SE_g": 6.532473087310791,
+      "Geometry Initialization_time": 0.017926931381225586,
+      "FDM_time": 0.008558034896850586,
+      "FE_time": 1.4004933834075928,
+      "Loss cal_time": 0.000110626220703125,
+      "Backpropagation_time": 3.8148038387298584,
+      "Parametric Update": 0.001216888427734375
+    },
+    {
+      "iteration": 93,
+      "SE_g": 6.523981094360352,
+      "Geometry Initialization_time": 0.018643856048583984,
+      "FDM_time": 0.009449481964111328,
+      "FE_time": 1.5917677879333496,
+      "Loss cal_time": 0.000102996826171875,
+      "Backpropagation_time": 3.7831876277923584,
+      "Parametric Update": 0.0007631778717041016
+    },
+    {
+      "iteration": 94,
+      "SE_g": 6.515573024749756,
+      "Geometry Initialization_time": 0.01888108253479004,
+      "FDM_time": 0.00755763053894043,
+      "FE_time": 1.4877464771270752,
+      "Loss cal_time": 0.0001125335693359375,
+      "Backpropagation_time": 3.751024007797241,
+      "Parametric Update": 0.0016589164733886719
+    },
+    {
+      "iteration": 95,
+      "SE_g": 6.5070481300354,
+      "Geometry Initialization_time": 0.017601490020751953,
+      "FDM_time": 0.008302450180053711,
+      "FE_time": 1.55824875831604,
+      "Loss cal_time": 0.00010752677917480469,
+      "Backpropagation_time": 3.718083620071411,
+      "Parametric Update": 0.0019230842590332031
+    },
+    {
+      "iteration": 96,
+      "SE_g": 6.498653888702393,
+      "Geometry Initialization_time": 0.01733875274658203,
+      "FDM_time": 0.011376619338989258,
+      "FE_time": 1.424274206161499,
+      "Loss cal_time": 0.00010085105895996094,
+      "Backpropagation_time": 3.7569823265075684,
+      "Parametric Update": 0.0008196830749511719
+    },
+    {
+      "iteration": 97,
+      "SE_g": 6.490143299102783,
+      "Geometry Initialization_time": 0.017726421356201172,
+      "FDM_time": 0.007674694061279297,
+      "FE_time": 1.4239990711212158,
+      "Loss cal_time": 0.00010180473327636719,
+      "Backpropagation_time": 3.7859063148498535,
+      "Parametric Update": 0.001224517822265625
+    },
+    {
+      "iteration": 98,
+      "SE_g": 6.481749057769775,
+      "Geometry Initialization_time": 0.018431425094604492,
+      "FDM_time": 0.008825302124023438,
+      "FE_time": 1.5884408950805664,
+      "Loss cal_time": 0.0001049041748046875,
+      "Backpropagation_time": 3.760590076446533,
+      "Parametric Update": 0.0009162425994873047
+    },
+    {
+      "iteration": 99,
+      "SE_g": 6.47327995300293,
+      "Geometry Initialization_time": 0.01799607276916504,
+      "FDM_time": 0.008161067962646484,
+      "FE_time": 1.4281704425811768,
+      "Loss cal_time": 0.00012445449829101562,
+      "Backpropagation_time": 3.786585569381714,
+      "Parametric Update": 0.0016188621520996094
+    },
+    {
+      "iteration": 100,
+      "SE_g": 6.464881896972656,
+      "Geometry Initialization_time": 0.0174715518951416,
+      "FDM_time": 0.009139060974121094,
+      "FE_time": 1.5347092151641846,
+      "Loss cal_time": 0.00010132789611816406,
+      "Backpropagation_time": 3.7890148162841797,
+      "Parametric Update": 0.0005080699920654297
+    },
+    {
+      "iteration": 101,
+      "SE_g": 6.456428050994873,
+      "Geometry Initialization_time": 0.02096414566040039,
+      "FDM_time": 0.00877237319946289,
+      "FE_time": 1.4906408786773682,
+      "Loss cal_time": 0.00010538101196289062,
+      "Backpropagation_time": 3.766688823699951,
+      "Parametric Update": 0.001043081283569336
+    },
+    {
+      "iteration": 102,
+      "SE_g": 6.4480390548706055,
+      "Geometry Initialization_time": 0.01775217056274414,
+      "FDM_time": 0.009170293807983398,
+      "FE_time": 1.4384315013885498,
+      "Loss cal_time": 0.00010418891906738281,
+      "Backpropagation_time": 3.845532178878784,
+      "Parametric Update": 0.0006561279296875
+    },
+    {
+      "iteration": 103,
+      "SE_g": 6.439571380615234,
+      "Geometry Initialization_time": 0.019309282302856445,
+      "FDM_time": 0.007799625396728516,
+      "FE_time": 1.6208689212799072,
+      "Loss cal_time": 0.0001201629638671875,
+      "Backpropagation_time": 3.794548749923706,
+      "Parametric Update": 0.0005192756652832031
+    },
+    {
+      "iteration": 104,
+      "SE_g": 6.43118953704834,
+      "Geometry Initialization_time": 0.01789069175720215,
+      "FDM_time": 0.008786201477050781,
+      "FE_time": 1.407979965209961,
+      "Loss cal_time": 0.00010371208190917969,
+      "Backpropagation_time": 3.575958490371704,
+      "Parametric Update": 0.0014569759368896484
+    },
+    {
+      "iteration": 105,
+      "SE_g": 6.422733306884766,
+      "Geometry Initialization_time": 0.01740550994873047,
+      "FDM_time": 0.010846853256225586,
+      "FE_time": 1.5190112590789795,
+      "Loss cal_time": 0.00010395050048828125,
+      "Backpropagation_time": 3.746145486831665,
+      "Parametric Update": 0.0006208419799804688
+    },
+    {
+      "iteration": 106,
+      "SE_g": 6.414307594299316,
+      "Geometry Initialization_time": 0.01848292350769043,
+      "FDM_time": 0.00976872444152832,
+      "FE_time": 1.531653881072998,
+      "Loss cal_time": 0.0001323223114013672,
+      "Backpropagation_time": 3.8585805892944336,
+      "Parametric Update": 0.0006549358367919922
+    },
+    {
+      "iteration": 107,
+      "SE_g": 6.405887126922607,
+      "Geometry Initialization_time": 0.025901079177856445,
+      "FDM_time": 0.008921623229980469,
+      "FE_time": 2.11441707611084,
+      "Loss cal_time": 0.00018262863159179688,
+      "Backpropagation_time": 4.595006704330444,
+      "Parametric Update": 0.0019478797912597656
+    },
+    {
+      "iteration": 108,
+      "SE_g": 6.397536277770996,
+      "Geometry Initialization_time": 0.024367332458496094,
+      "FDM_time": 0.011061429977416992,
+      "FE_time": 2.1472561359405518,
+      "Loss cal_time": 0.00014901161193847656,
+      "Backpropagation_time": 4.830293416976929,
+      "Parametric Update": 0.0019273757934570312
+    },
+    {
+      "iteration": 109,
+      "SE_g": 6.3891191482543945,
+      "Geometry Initialization_time": 0.02576589584350586,
+      "FDM_time": 0.010096549987792969,
+      "FE_time": 2.077425241470337,
+      "Loss cal_time": 0.0001513957977294922,
+      "Backpropagation_time": 4.318004369735718,
+      "Parametric Update": 0.0005066394805908203
+    },
+    {
+      "iteration": 110,
+      "SE_g": 6.380762100219727,
+      "Geometry Initialization_time": 0.018451690673828125,
+      "FDM_time": 0.00793004035949707,
+      "FE_time": 1.6232051849365234,
+      "Loss cal_time": 0.00013065338134765625,
+      "Backpropagation_time": 3.726224899291992,
+      "Parametric Update": 0.0007007122039794922
+    },
+    {
+      "iteration": 111,
+      "SE_g": 6.372315883636475,
+      "Geometry Initialization_time": 0.020136356353759766,
+      "FDM_time": 0.0077571868896484375,
+      "FE_time": 1.4484310150146484,
+      "Loss cal_time": 0.00010704994201660156,
+      "Backpropagation_time": 3.7220571041107178,
+      "Parametric Update": 0.0014119148254394531
+    },
+    {
+      "iteration": 112,
+      "SE_g": 6.364011287689209,
+      "Geometry Initialization_time": 0.01747441291809082,
+      "FDM_time": 0.011298418045043945,
+      "FE_time": 1.4410862922668457,
+      "Loss cal_time": 0.00011110305786132812,
+      "Backpropagation_time": 3.941997528076172,
+      "Parametric Update": 0.0005905628204345703
+    },
+    {
+      "iteration": 113,
+      "SE_g": 6.355566024780273,
+      "Geometry Initialization_time": 0.018720388412475586,
+      "FDM_time": 0.008734703063964844,
+      "FE_time": 1.5919160842895508,
+      "Loss cal_time": 0.00010752677917480469,
+      "Backpropagation_time": 3.771822452545166,
+      "Parametric Update": 0.0005843639373779297
+    },
+    {
+      "iteration": 114,
+      "SE_g": 6.34722375869751,
+      "Geometry Initialization_time": 0.01865410804748535,
+      "FDM_time": 0.01000833511352539,
+      "FE_time": 1.4646008014678955,
+      "Loss cal_time": 0.00011396408081054688,
+      "Backpropagation_time": 3.8035032749176025,
+      "Parametric Update": 0.000644683837890625
+    },
+    {
+      "iteration": 115,
+      "SE_g": 6.338817119598389,
+      "Geometry Initialization_time": 0.019091367721557617,
+      "FDM_time": 0.008718013763427734,
+      "FE_time": 1.601590871810913,
+      "Loss cal_time": 0.00010538101196289062,
+      "Backpropagation_time": 3.7537310123443604,
+      "Parametric Update": 0.0007717609405517578
+    },
+    {
+      "iteration": 116,
+      "SE_g": 6.330474376678467,
+      "Geometry Initialization_time": 0.018248796463012695,
+      "FDM_time": 0.011849641799926758,
+      "FE_time": 1.4296088218688965,
+      "Loss cal_time": 0.00010347366333007812,
+      "Backpropagation_time": 3.743647813796997,
+      "Parametric Update": 0.0005590915679931641
+    },
+    {
+      "iteration": 117,
+      "SE_g": 6.322081089019775,
+      "Geometry Initialization_time": 0.017531156539916992,
+      "FDM_time": 0.010086536407470703,
+      "FE_time": 1.400172472000122,
+      "Loss cal_time": 0.00010371208190917969,
+      "Backpropagation_time": 3.7619290351867676,
+      "Parametric Update": 0.00039267539978027344
+    },
+    {
+      "iteration": 118,
+      "SE_g": 6.313742637634277,
+      "Geometry Initialization_time": 0.017820358276367188,
+      "FDM_time": 0.00807499885559082,
+      "FE_time": 1.5237836837768555,
+      "Loss cal_time": 0.00010347366333007812,
+      "Backpropagation_time": 3.803128242492676,
+      "Parametric Update": 0.0012619495391845703
+    },
+    {
+      "iteration": 119,
+      "SE_g": 6.30540132522583,
+      "Geometry Initialization_time": 0.018236160278320312,
+      "FDM_time": 0.010662555694580078,
+      "FE_time": 1.4359688758850098,
+      "Loss cal_time": 0.00011134147644042969,
+      "Backpropagation_time": 4.151609659194946,
+      "Parametric Update": 0.0006499290466308594
+    },
+    {
+      "iteration": 120,
+      "SE_g": 6.2970452308654785,
+      "Geometry Initialization_time": 0.018978595733642578,
+      "FDM_time": 0.008771657943725586,
+      "FE_time": 1.6250319480895996,
+      "Loss cal_time": 0.00010991096496582031,
+      "Backpropagation_time": 3.7571372985839844,
+      "Parametric Update": 0.0012850761413574219
+    },
+    {
+      "iteration": 121,
+      "SE_g": 6.28866720199585,
+      "Geometry Initialization_time": 0.019563913345336914,
+      "FDM_time": 0.00904536247253418,
+      "FE_time": 1.4718410968780518,
+      "Loss cal_time": 0.00011205673217773438,
+      "Backpropagation_time": 3.773122549057007,
+      "Parametric Update": 0.001190185546875
+    },
+    {
+      "iteration": 122,
+      "SE_g": 6.280372619628906,
+      "Geometry Initialization_time": 0.0195467472076416,
+      "FDM_time": 0.009539604187011719,
+      "FE_time": 1.4861125946044922,
+      "Loss cal_time": 0.00010609626770019531,
+      "Backpropagation_time": 3.7091972827911377,
+      "Parametric Update": 0.00039267539978027344
+    },
+    {
+      "iteration": 123,
+      "SE_g": 6.271994113922119,
+      "Geometry Initialization_time": 0.018003225326538086,
+      "FDM_time": 0.0079193115234375,
+      "FE_time": 1.5654563903808594,
+      "Loss cal_time": 0.00011420249938964844,
+      "Backpropagation_time": 3.826094627380371,
+      "Parametric Update": 0.0006666183471679688
+    },
+    {
+      "iteration": 124,
+      "SE_g": 6.263703346252441,
+      "Geometry Initialization_time": 0.018918275833129883,
+      "FDM_time": 0.008517265319824219,
+      "FE_time": 1.5009994506835938,
+      "Loss cal_time": 0.0002148151397705078,
+      "Backpropagation_time": 3.6910648345947266,
+      "Parametric Update": 0.0004398822784423828
+    },
+    {
+      "iteration": 125,
+      "SE_g": 6.255300998687744,
+      "Geometry Initialization_time": 0.018248319625854492,
+      "FDM_time": 0.0077245235443115234,
+      "FE_time": 1.5658292770385742,
+      "Loss cal_time": 0.00010848045349121094,
+      "Backpropagation_time": 3.787898063659668,
+      "Parametric Update": 0.00261688232421875
+    },
+    {
+      "iteration": 126,
+      "SE_g": 6.247028350830078,
+      "Geometry Initialization_time": 0.024460792541503906,
+      "FDM_time": 0.008830785751342773,
+      "FE_time": 2.0396931171417236,
+      "Loss cal_time": 0.0001404285430908203,
+      "Backpropagation_time": 4.053173542022705,
+      "Parametric Update": 0.0017871856689453125
+    },
+    {
+      "iteration": 127,
+      "SE_g": 6.238656520843506,
+      "Geometry Initialization_time": 0.018597126007080078,
+      "FDM_time": 0.010466575622558594,
+      "FE_time": 1.539473295211792,
+      "Loss cal_time": 0.00011014938354492188,
+      "Backpropagation_time": 4.405050992965698,
+      "Parametric Update": 0.0023956298828125
+    },
+    {
+      "iteration": 128,
+      "SE_g": 6.230349540710449,
+      "Geometry Initialization_time": 0.024936914443969727,
+      "FDM_time": 0.010865926742553711,
+      "FE_time": 1.9598212242126465,
+      "Loss cal_time": 0.00017642974853515625,
+      "Backpropagation_time": 3.8345484733581543,
+      "Parametric Update": 0.0006797313690185547
+    },
+    {
+      "iteration": 129,
+      "SE_g": 6.22199821472168,
+      "Geometry Initialization_time": 0.021176815032958984,
+      "FDM_time": 0.008532524108886719,
+      "FE_time": 1.5256507396697998,
+      "Loss cal_time": 0.0001392364501953125,
+      "Backpropagation_time": 3.797470808029175,
+      "Parametric Update": 0.0009255409240722656
+    },
+    {
+      "iteration": 130,
+      "SE_g": 6.213715553283691,
+      "Geometry Initialization_time": 0.01957082748413086,
+      "FDM_time": 0.010119438171386719,
+      "FE_time": 1.6282129287719727,
+      "Loss cal_time": 0.00011229515075683594,
+      "Backpropagation_time": 3.8590025901794434,
+      "Parametric Update": 0.0004684925079345703
+    },
+    {
+      "iteration": 131,
+      "SE_g": 6.205388069152832,
+      "Geometry Initialization_time": 0.02028942108154297,
+      "FDM_time": 0.010523557662963867,
+      "FE_time": 1.458383321762085,
+      "Loss cal_time": 0.00010371208190917969,
+      "Backpropagation_time": 3.802553415298462,
+      "Parametric Update": 0.0005481243133544922
+    },
+    {
+      "iteration": 132,
+      "SE_g": 6.197124004364014,
+      "Geometry Initialization_time": 0.01825237274169922,
+      "FDM_time": 0.01392507553100586,
+      "FE_time": 1.4421417713165283,
+      "Loss cal_time": 0.00011873245239257812,
+      "Backpropagation_time": 3.8043019771575928,
+      "Parametric Update": 0.0005965232849121094
+    },
+    {
+      "iteration": 133,
+      "SE_g": 6.188770294189453,
+      "Geometry Initialization_time": 0.018423080444335938,
+      "FDM_time": 0.013291358947753906,
+      "FE_time": 1.5439846515655518,
+      "Loss cal_time": 0.00010228157043457031,
+      "Backpropagation_time": 3.8021159172058105,
+      "Parametric Update": 0.0010313987731933594
+    },
+    {
+      "iteration": 134,
+      "SE_g": 6.180535793304443,
+      "Geometry Initialization_time": 0.018403053283691406,
+      "FDM_time": 0.009170055389404297,
+      "FE_time": 1.5158500671386719,
+      "Loss cal_time": 0.00013208389282226562,
+      "Backpropagation_time": 3.712585210800171,
+      "Parametric Update": 0.0010797977447509766
+    },
+    {
+      "iteration": 135,
+      "SE_g": 6.172158241271973,
+      "Geometry Initialization_time": 0.01819920539855957,
+      "FDM_time": 0.007937192916870117,
+      "FE_time": 1.628791093826294,
+      "Loss cal_time": 0.00011134147644042969,
+      "Backpropagation_time": 3.816136121749878,
+      "Parametric Update": 0.0009436607360839844
+    },
+    {
+      "iteration": 136,
+      "SE_g": 6.16391658782959,
+      "Geometry Initialization_time": 0.0191497802734375,
+      "FDM_time": 0.009486675262451172,
+      "FE_time": 1.514472484588623,
+      "Loss cal_time": 0.000110626220703125,
+      "Backpropagation_time": 3.7461130619049072,
+      "Parametric Update": 0.0004506111145019531
+    },
+    {
+      "iteration": 137,
+      "SE_g": 6.15560245513916,
+      "Geometry Initialization_time": 0.01834702491760254,
+      "FDM_time": 0.00826716423034668,
+      "FE_time": 1.4208018779754639,
+      "Loss cal_time": 0.00010371208190917969,
+      "Backpropagation_time": 3.7315070629119873,
+      "Parametric Update": 0.0007958412170410156
+    },
+    {
+      "iteration": 138,
+      "SE_g": 6.147373676300049,
+      "Geometry Initialization_time": 0.018967628479003906,
+      "FDM_time": 0.009387016296386719,
+      "FE_time": 1.6072490215301514,
+      "Loss cal_time": 0.00010776519775390625,
+      "Backpropagation_time": 3.828010082244873,
+      "Parametric Update": 0.0006096363067626953
+    },
+    {
+      "iteration": 139,
+      "SE_g": 6.139054298400879,
+      "Geometry Initialization_time": 0.01896834373474121,
+      "FDM_time": 0.010742902755737305,
+      "FE_time": 1.5057716369628906,
+      "Loss cal_time": 0.00014591217041015625,
+      "Backpropagation_time": 3.7908976078033447,
+      "Parametric Update": 0.0012500286102294922
+    },
+    {
+      "iteration": 140,
+      "SE_g": 6.130800247192383,
+      "Geometry Initialization_time": 0.01835799217224121,
+      "FDM_time": 0.0076296329498291016,
+      "FE_time": 1.6197736263275146,
+      "Loss cal_time": 0.00020694732666015625,
+      "Backpropagation_time": 3.799013137817383,
+      "Parametric Update": 0.0008268356323242188
+    },
+    {
+      "iteration": 141,
+      "SE_g": 6.12253475189209,
+      "Geometry Initialization_time": 0.020385265350341797,
+      "FDM_time": 0.011797904968261719,
+      "FE_time": 1.4938247203826904,
+      "Loss cal_time": 0.00010609626770019531,
+      "Backpropagation_time": 3.7959468364715576,
+      "Parametric Update": 0.00042724609375
+    },
+    {
+      "iteration": 142,
+      "SE_g": 6.114265441894531,
+      "Geometry Initialization_time": 0.01825714111328125,
+      "FDM_time": 0.008160829544067383,
+      "FE_time": 1.429983139038086,
+      "Loss cal_time": 0.00010156631469726562,
+      "Backpropagation_time": 3.6905722618103027,
+      "Parametric Update": 0.0006906986236572266
+    },
+    {
+      "iteration": 143,
+      "SE_g": 6.106005668640137,
+      "Geometry Initialization_time": 0.017434120178222656,
+      "FDM_time": 0.01443338394165039,
+      "FE_time": 1.4752204418182373,
+      "Loss cal_time": 0.00010228157043457031,
+      "Backpropagation_time": 3.630281448364258,
+      "Parametric Update": 0.0012018680572509766
+    },
+    {
+      "iteration": 144,
+      "SE_g": 6.097785949707031,
+      "Geometry Initialization_time": 0.018585205078125,
+      "FDM_time": 0.00870823860168457,
+      "FE_time": 1.464651346206665,
+      "Loss cal_time": 0.00010991096496582031,
+      "Backpropagation_time": 3.974856376647949,
+      "Parametric Update": 0.003944873809814453
+    },
+    {
+      "iteration": 145,
+      "SE_g": 6.08950138092041,
+      "Geometry Initialization_time": 0.02634286880493164,
+      "FDM_time": 0.01090240478515625,
+      "FE_time": 2.5444486141204834,
+      "Loss cal_time": 0.0002808570861816406,
+      "Backpropagation_time": 4.421957492828369,
+      "Parametric Update": 0.0019881725311279297
+    },
+    {
+      "iteration": 146,
+      "SE_g": 6.081286430358887,
+      "Geometry Initialization_time": 0.018189668655395508,
+      "FDM_time": 0.01102137565612793,
+      "FE_time": 2.024461030960083,
+      "Loss cal_time": 0.00014495849609375,
+      "Backpropagation_time": 4.913369417190552,
+      "Parametric Update": 0.0015931129455566406
+    },
+    {
+      "iteration": 147,
+      "SE_g": 6.072990894317627,
+      "Geometry Initialization_time": 0.026673555374145508,
+      "FDM_time": 0.01185154914855957,
+      "FE_time": 2.090001344680786,
+      "Loss cal_time": 0.0002124309539794922,
+      "Backpropagation_time": 4.60651159286499,
+      "Parametric Update": 0.0015735626220703125
+    },
+    {
+      "iteration": 148,
+      "SE_g": 6.064787864685059,
+      "Geometry Initialization_time": 0.017619848251342773,
+      "FDM_time": 0.00815272331237793,
+      "FE_time": 1.6969094276428223,
+      "Loss cal_time": 0.0001811981201171875,
+      "Backpropagation_time": 3.827408790588379,
+      "Parametric Update": 0.0011827945709228516
+    },
+    {
+      "iteration": 149,
+      "SE_g": 6.056529998779297,
+      "Geometry Initialization_time": 0.018330097198486328,
+      "FDM_time": 0.009497404098510742,
+      "FE_time": 1.4828104972839355,
+      "Loss cal_time": 0.0002148151397705078,
+      "Backpropagation_time": 3.7598485946655273,
+      "Parametric Update": 0.0011360645294189453
+    },
+    {
+      "iteration": 150,
+      "SE_g": 6.048314571380615,
+      "Geometry Initialization_time": 0.018157482147216797,
+      "FDM_time": 0.009569644927978516,
+      "FE_time": 1.5767822265625,
+      "Loss cal_time": 0.0001556873321533203,
+      "Backpropagation_time": 3.731574535369873,
+      "Parametric Update": 0.0013155937194824219
+    },
+    {
+      "iteration": 151,
+      "SE_g": 6.040070533752441,
+      "Geometry Initialization_time": 0.017915725708007812,
+      "FDM_time": 0.008799314498901367,
+      "FE_time": 1.4185266494750977,
+      "Loss cal_time": 0.0001583099365234375,
+      "Backpropagation_time": 3.783928394317627,
+      "Parametric Update": 0.0006990432739257812
+    },
+    {
+      "iteration": 152,
+      "SE_g": 6.031875133514404,
+      "Geometry Initialization_time": 0.019513845443725586,
+      "FDM_time": 0.012632131576538086,
+      "FE_time": 1.5711109638214111,
+      "Loss cal_time": 0.00017023086547851562,
+      "Backpropagation_time": 3.7571699619293213,
+      "Parametric Update": 0.0017893314361572266
+    },
+    {
+      "iteration": 153,
+      "SE_g": 6.0236287117004395,
+      "Geometry Initialization_time": 0.017141342163085938,
+      "FDM_time": 0.00914764404296875,
+      "FE_time": 1.5551226139068604,
+      "Loss cal_time": 0.00015854835510253906,
+      "Backpropagation_time": 3.827414035797119,
+      "Parametric Update": 0.001813650131225586
+    },
+    {
+      "iteration": 154,
+      "SE_g": 6.015460014343262,
+      "Geometry Initialization_time": 0.01793193817138672,
+      "FDM_time": 0.008727312088012695,
+      "FE_time": 1.4802124500274658,
+      "Loss cal_time": 0.00016641616821289062,
+      "Backpropagation_time": 3.7122793197631836,
+      "Parametric Update": 0.0016751289367675781
+    },
+    {
+      "iteration": 155,
+      "SE_g": 6.0071916580200195,
+      "Geometry Initialization_time": 0.017179489135742188,
+      "FDM_time": 0.009574651718139648,
+      "FE_time": 1.520679235458374,
+      "Loss cal_time": 0.00015687942504882812,
+      "Backpropagation_time": 3.7847084999084473,
+      "Parametric Update": 0.0007069110870361328
+    },
+    {
+      "iteration": 156,
+      "SE_g": 5.999033451080322,
+      "Geometry Initialization_time": 0.01849818229675293,
+      "FDM_time": 0.008409738540649414,
+      "FE_time": 1.455129861831665,
+      "Loss cal_time": 0.00016832351684570312,
+      "Backpropagation_time": 3.7331042289733887,
+      "Parametric Update": 0.0005140304565429688
+    },
+    {
+      "iteration": 157,
+      "SE_g": 5.990778923034668,
+      "Geometry Initialization_time": 0.01823735237121582,
+      "FDM_time": 0.008473873138427734,
+      "FE_time": 1.4283950328826904,
+      "Loss cal_time": 0.0001308917999267578,
+      "Backpropagation_time": 3.72033429145813,
+      "Parametric Update": 0.0015316009521484375
+    },
+    {
+      "iteration": 158,
+      "SE_g": 5.982621192932129,
+      "Geometry Initialization_time": 0.017197608947753906,
+      "FDM_time": 0.011501073837280273,
+      "FE_time": 1.5241649150848389,
+      "Loss cal_time": 0.00017118453979492188,
+      "Backpropagation_time": 3.758021831512451,
+      "Parametric Update": 0.0007333755493164062
+    },
+    {
+      "iteration": 159,
+      "SE_g": 5.974400043487549,
+      "Geometry Initialization_time": 0.0189669132232666,
+      "FDM_time": 0.008149147033691406,
+      "FE_time": 1.4992022514343262,
+      "Loss cal_time": 0.00014829635620117188,
+      "Backpropagation_time": 3.7314400672912598,
+      "Parametric Update": 0.00051116943359375
+    },
+    {
+      "iteration": 160,
+      "SE_g": 5.9662675857543945,
+      "Geometry Initialization_time": 0.018025875091552734,
+      "FDM_time": 0.010374069213867188,
+      "FE_time": 1.5395493507385254,
+      "Loss cal_time": 0.00014162063598632812,
+      "Backpropagation_time": 3.626758337020874,
+      "Parametric Update": 0.0016307830810546875
+    },
+    {
+      "iteration": 161,
+      "SE_g": 5.958014011383057,
+      "Geometry Initialization_time": 0.01747751235961914,
+      "FDM_time": 0.00810098648071289,
+      "FE_time": 1.3980321884155273,
+      "Loss cal_time": 0.00012111663818359375,
+      "Backpropagation_time": 3.648834466934204,
+      "Parametric Update": 0.0006186962127685547
+    },
+    {
+      "iteration": 162,
+      "SE_g": 5.949900150299072,
+      "Geometry Initialization_time": 0.017566204071044922,
+      "FDM_time": 0.013208627700805664,
+      "FE_time": 1.499915599822998,
+      "Loss cal_time": 0.00014352798461914062,
+      "Backpropagation_time": 3.8176074028015137,
+      "Parametric Update": 0.0007812976837158203
+    },
+    {
+      "iteration": 163,
+      "SE_g": 5.941661834716797,
+      "Geometry Initialization_time": 0.01869034767150879,
+      "FDM_time": 0.01141047477722168,
+      "FE_time": 1.606130838394165,
+      "Loss cal_time": 0.00015664100646972656,
+      "Backpropagation_time": 3.82588529586792,
+      "Parametric Update": 0.0009386539459228516
+    },
+    {
+      "iteration": 164,
+      "SE_g": 5.933542251586914,
+      "Geometry Initialization_time": 0.019034147262573242,
+      "FDM_time": 0.008158206939697266,
+      "FE_time": 1.504868507385254,
+      "Loss cal_time": 0.00016927719116210938,
+      "Backpropagation_time": 3.7917213439941406,
+      "Parametric Update": 0.0005929470062255859
+    },
+    {
+      "iteration": 165,
+      "SE_g": 5.925329685211182,
+      "Geometry Initialization_time": 0.018996238708496094,
+      "FDM_time": 0.009039163589477539,
+      "FE_time": 1.617680311203003,
+      "Loss cal_time": 0.00016117095947265625,
+      "Backpropagation_time": 3.7758166790008545,
+      "Parametric Update": 0.0007333755493164062
+    },
+    {
+      "iteration": 166,
+      "SE_g": 5.917191505432129,
+      "Geometry Initialization_time": 0.019048452377319336,
+      "FDM_time": 0.009354114532470703,
+      "FE_time": 1.4792518615722656,
+      "Loss cal_time": 0.00016760826110839844,
+      "Backpropagation_time": 3.821485996246338,
+      "Parametric Update": 0.0019812583923339844
+    },
+    {
+      "iteration": 167,
+      "SE_g": 5.90901517868042,
+      "Geometry Initialization_time": 0.018344879150390625,
+      "FDM_time": 0.008947372436523438,
+      "FE_time": 1.5025339126586914,
+      "Loss cal_time": 0.00016260147094726562,
+      "Backpropagation_time": 3.6660351753234863,
+      "Parametric Update": 0.0023822784423828125
+    },
+    {
+      "iteration": 168,
+      "SE_g": 5.900889873504639,
+      "Geometry Initialization_time": 0.018690109252929688,
+      "FDM_time": 0.009278297424316406,
+      "FE_time": 1.6119201183319092,
+      "Loss cal_time": 0.00016951560974121094,
+      "Backpropagation_time": 3.8071677684783936,
+      "Parametric Update": 0.0004932880401611328
+    },
+    {
+      "iteration": 169,
+      "SE_g": 5.8927178382873535,
+      "Geometry Initialization_time": 0.01809239387512207,
+      "FDM_time": 0.008603811264038086,
+      "FE_time": 1.4377405643463135,
+      "Loss cal_time": 0.0001590251922607422,
+      "Backpropagation_time": 3.8008010387420654,
+      "Parametric Update": 0.0004444122314453125
+    },
+    {
+      "iteration": 170,
+      "SE_g": 5.884575843811035,
+      "Geometry Initialization_time": 0.018481731414794922,
+      "FDM_time": 0.011914491653442383,
+      "FE_time": 1.5899059772491455,
+      "Loss cal_time": 0.00014400482177734375,
+      "Backpropagation_time": 4.16286563873291,
+      "Parametric Update": 0.0006866455078125
+    },
+    {
+      "iteration": 171,
+      "SE_g": 5.8763933181762695,
+      "Geometry Initialization_time": 0.019948959350585938,
+      "FDM_time": 0.007873773574829102,
+      "FE_time": 1.4301869869232178,
+      "Loss cal_time": 0.00015592575073242188,
+      "Backpropagation_time": 3.7496559619903564,
+      "Parametric Update": 0.0007154941558837891
+    },
+    {
+      "iteration": 172,
+      "SE_g": 5.868295192718506,
+      "Geometry Initialization_time": 0.018817901611328125,
+      "FDM_time": 0.009078025817871094,
+      "FE_time": 1.4704875946044922,
+      "Loss cal_time": 0.00027298927307128906,
+      "Backpropagation_time": 3.690415620803833,
+      "Parametric Update": 0.0006096363067626953
+    },
+    {
+      "iteration": 173,
+      "SE_g": 5.860143184661865,
+      "Geometry Initialization_time": 0.01785421371459961,
+      "FDM_time": 0.009100914001464844,
+      "FE_time": 1.5297894477844238,
+      "Loss cal_time": 0.0001456737518310547,
+      "Backpropagation_time": 3.7262966632843018,
+      "Parametric Update": 0.0017137527465820312
+    },
+    {
+      "iteration": 174,
+      "SE_g": 5.852038383483887,
+      "Geometry Initialization_time": 0.0177767276763916,
+      "FDM_time": 0.009113311767578125,
+      "FE_time": 1.4091541767120361,
+      "Loss cal_time": 0.0001583099365234375,
+      "Backpropagation_time": 3.7522242069244385,
+      "Parametric Update": 0.0011172294616699219
+    },
+    {
+      "iteration": 175,
+      "SE_g": 5.843874931335449,
+      "Geometry Initialization_time": 0.018288850784301758,
+      "FDM_time": 0.007239580154418945,
+      "FE_time": 1.5487709045410156,
+      "Loss cal_time": 0.000164031982421875,
+      "Backpropagation_time": 3.788583755493164,
+      "Parametric Update": 0.0016407966613769531
+    },
+    {
+      "iteration": 176,
+      "SE_g": 5.835790634155273,
+      "Geometry Initialization_time": 0.017647266387939453,
+      "FDM_time": 0.009689807891845703,
+      "FE_time": 1.434786081314087,
+      "Loss cal_time": 0.0001666545867919922,
+      "Backpropagation_time": 3.787144184112549,
+      "Parametric Update": 0.0012984275817871094
+    },
+    {
+      "iteration": 177,
+      "SE_g": 5.827622413635254,
+      "Geometry Initialization_time": 0.018358707427978516,
+      "FDM_time": 0.008704900741577148,
+      "FE_time": 1.4634933471679688,
+      "Loss cal_time": 0.0001704692840576172,
+      "Backpropagation_time": 3.7807981967926025,
+      "Parametric Update": 0.0014407634735107422
+    },
+    {
+      "iteration": 178,
+      "SE_g": 5.8195576667785645,
+      "Geometry Initialization_time": 0.017131805419921875,
+      "FDM_time": 0.007466316223144531,
+      "FE_time": 1.5304145812988281,
+      "Loss cal_time": 0.00016188621520996094,
+      "Backpropagation_time": 3.7867279052734375,
+      "Parametric Update": 0.0013120174407958984
+    },
+    {
+      "iteration": 179,
+      "SE_g": 5.811426639556885,
+      "Geometry Initialization_time": 0.018429994583129883,
+      "FDM_time": 0.011714458465576172,
+      "FE_time": 1.4607651233673096,
+      "Loss cal_time": 0.00016760826110839844,
+      "Backpropagation_time": 3.7896835803985596,
+      "Parametric Update": 0.0007078647613525391
+    },
+    {
+      "iteration": 180,
+      "SE_g": 5.803332328796387,
+      "Geometry Initialization_time": 0.01846599578857422,
+      "FDM_time": 0.009206771850585938,
+      "FE_time": 1.5645763874053955,
+      "Loss cal_time": 0.00017142295837402344,
+      "Backpropagation_time": 3.660642147064209,
+      "Parametric Update": 0.0004515647888183594
+    },
+    {
+      "iteration": 181,
+      "SE_g": 5.79521369934082,
+      "Geometry Initialization_time": 0.019835710525512695,
+      "FDM_time": 0.008727073669433594,
+      "FE_time": 1.4063246250152588,
+      "Loss cal_time": 0.00015854835510253906,
+      "Backpropagation_time": 3.6912686824798584,
+      "Parametric Update": 0.0009660720825195312
+    },
+    {
+      "iteration": 182,
+      "SE_g": 5.787153720855713,
+      "Geometry Initialization_time": 0.01739978790283203,
+      "FDM_time": 0.008883953094482422,
+      "FE_time": 1.3958570957183838,
+      "Loss cal_time": 0.00015282630920410156,
+      "Backpropagation_time": 3.8106584548950195,
+      "Parametric Update": 0.001718759536743164
+    },
+    {
+      "iteration": 183,
+      "SE_g": 5.779009819030762,
+      "Geometry Initialization_time": 0.017890214920043945,
+      "FDM_time": 0.013027667999267578,
+      "FE_time": 1.596116304397583,
+      "Loss cal_time": 0.00016570091247558594,
+      "Backpropagation_time": 3.7407920360565186,
+      "Parametric Update": 0.0005881786346435547
+    },
+    {
+      "iteration": 184,
+      "SE_g": 5.770997524261475,
+      "Geometry Initialization_time": 0.018066883087158203,
+      "FDM_time": 0.009017467498779297,
+      "FE_time": 1.4093544483184814,
+      "Loss cal_time": 0.00015664100646972656,
+      "Backpropagation_time": 3.7522764205932617,
+      "Parametric Update": 0.0005807876586914062
+    },
+    {
+      "iteration": 185,
+      "SE_g": 5.762829780578613,
+      "Geometry Initialization_time": 0.017882108688354492,
+      "FDM_time": 0.00934290885925293,
+      "FE_time": 1.5071203708648682,
+      "Loss cal_time": 0.00014400482177734375,
+      "Backpropagation_time": 3.788541078567505,
+      "Parametric Update": 0.0018641948699951172
+    },
+    {
+      "iteration": 186,
+      "SE_g": 5.754820823669434,
+      "Geometry Initialization_time": 0.017787456512451172,
+      "FDM_time": 0.011931657791137695,
+      "FE_time": 1.458186388015747,
+      "Loss cal_time": 0.000152587890625,
+      "Backpropagation_time": 3.783355236053467,
+      "Parametric Update": 0.0013539791107177734
+    },
+    {
+      "iteration": 187,
+      "SE_g": 5.74669075012207,
+      "Geometry Initialization_time": 0.01825404167175293,
+      "FDM_time": 0.009482860565185547,
+      "FE_time": 1.4414417743682861,
+      "Loss cal_time": 0.00014090538024902344,
+      "Backpropagation_time": 3.7360610961914062,
+      "Parametric Update": 0.0014967918395996094
+    },
+    {
+      "iteration": 188,
+      "SE_g": 5.738614082336426,
+      "Geometry Initialization_time": 0.017269611358642578,
+      "FDM_time": 0.008929729461669922,
+      "FE_time": 1.5366511344909668,
+      "Loss cal_time": 0.00013971328735351562,
+      "Backpropagation_time": 3.7497808933258057,
+      "Parametric Update": 0.0018448829650878906
+    },
+    {
+      "iteration": 189,
+      "SE_g": 5.730539798736572,
+      "Geometry Initialization_time": 0.01706409454345703,
+      "FDM_time": 0.009989023208618164,
+      "FE_time": 1.4102609157562256,
+      "Loss cal_time": 0.00014138221740722656,
+      "Backpropagation_time": 3.7986178398132324,
+      "Parametric Update": 0.0005373954772949219
+    },
+    {
+      "iteration": 190,
+      "SE_g": 5.722536087036133,
+      "Geometry Initialization_time": 0.018380165100097656,
+      "FDM_time": 0.008258342742919922,
+      "FE_time": 1.5255682468414307,
+      "Loss cal_time": 0.00015425682067871094,
+      "Backpropagation_time": 3.805370330810547,
+      "Parametric Update": 0.0013759136199951172
+    },
+    {
+      "iteration": 191,
+      "SE_g": 5.714457035064697,
+      "Geometry Initialization_time": 0.019926786422729492,
+      "FDM_time": 0.012367486953735352,
+      "FE_time": 1.5078749656677246,
+      "Loss cal_time": 0.00017714500427246094,
+      "Backpropagation_time": 3.800865888595581,
+      "Parametric Update": 0.0018010139465332031
+    },
+    {
+      "iteration": 192,
+      "SE_g": 5.706421852111816,
+      "Geometry Initialization_time": 0.017853260040283203,
+      "FDM_time": 0.013861894607543945,
+      "FE_time": 1.4603288173675537,
+      "Loss cal_time": 0.00014328956604003906,
+      "Backpropagation_time": 3.877997398376465,
+      "Parametric Update": 0.0006833076477050781
+    },
+    {
+      "iteration": 193,
+      "SE_g": 5.698339939117432,
+      "Geometry Initialization_time": 0.01884627342224121,
+      "FDM_time": 0.009029626846313477,
+      "FE_time": 1.6175837516784668,
+      "Loss cal_time": 0.00016450881958007812,
+      "Backpropagation_time": 3.855870485305786,
+      "Parametric Update": 0.0017066001892089844
+    },
+    {
+      "iteration": 194,
+      "SE_g": 5.690325736999512,
+      "Geometry Initialization_time": 0.01736593246459961,
+      "FDM_time": 0.009726524353027344,
+      "FE_time": 1.4199204444885254,
+      "Loss cal_time": 0.00016307830810546875,
+      "Backpropagation_time": 3.8076484203338623,
+      "Parametric Update": 0.0012195110321044922
+    },
+    {
+      "iteration": 195,
+      "SE_g": 5.682258605957031,
+      "Geometry Initialization_time": 0.019376039505004883,
+      "FDM_time": 0.014940023422241211,
+      "FE_time": 1.6363284587860107,
+      "Loss cal_time": 0.00015687942504882812,
+      "Backpropagation_time": 3.68074893951416,
+      "Parametric Update": 0.0010747909545898438
+    },
+    {
+      "iteration": 196,
+      "SE_g": 5.674252510070801,
+      "Geometry Initialization_time": 0.017673015594482422,
+      "FDM_time": 0.009851217269897461,
+      "FE_time": 1.4305567741394043,
+      "Loss cal_time": 0.00013518333435058594,
+      "Backpropagation_time": 3.7711594104766846,
+      "Parametric Update": 0.0004830360412597656
+    },
+    {
+      "iteration": 197,
+      "SE_g": 5.666186332702637,
+      "Geometry Initialization_time": 0.01874518394470215,
+      "FDM_time": 0.008472204208374023,
+      "FE_time": 1.440920114517212,
+      "Loss cal_time": 0.00013875961303710938,
+      "Backpropagation_time": 3.598836660385132,
+      "Parametric Update": 0.0005190372467041016
+    },
+    {
+      "iteration": 198,
+      "SE_g": 5.658199787139893,
+      "Geometry Initialization_time": 0.018414974212646484,
+      "FDM_time": 0.008948802947998047,
+      "FE_time": 1.6559882164001465,
+      "Loss cal_time": 0.00016832351684570312,
+      "Backpropagation_time": 3.812516927719116,
+      "Parametric Update": 0.0018112659454345703
+    },
+    {
+      "iteration": 199,
+      "SE_g": 5.6501593589782715,
+      "Geometry Initialization_time": 0.01860356330871582,
+      "FDM_time": 0.009395599365234375,
+      "FE_time": 1.5693864822387695,
+      "Loss cal_time": 0.0001862049102783203,
+      "Backpropagation_time": 3.7473769187927246,
+      "Parametric Update": 0.0017740726470947266
+    },
+    {
+      "iteration": 200,
+      "SE_g": 5.642159938812256,
+      "Geometry Initialization_time": 0.01799941062927246,
+      "FDM_time": 0.009554386138916016,
+      "FE_time": 1.5981736183166504,
+      "Loss cal_time": 0.00016355514526367188,
+      "Backpropagation_time": 3.7370378971099854,
+      "Parametric Update": 0.0004413127899169922
+    },
+    {
+      "iteration": 201,
+      "SE_g": 5.634128093719482,
+      "Geometry Initialization_time": 0.01980280876159668,
+      "FDM_time": 0.008820533752441406,
+      "FE_time": 1.4142286777496338,
+      "Loss cal_time": 0.00016117095947265625,
+      "Backpropagation_time": 3.6838066577911377,
+      "Parametric Update": 0.0012955665588378906
+    },
+    {
+      "iteration": 202,
+      "SE_g": 5.626151084899902,
+      "Geometry Initialization_time": 0.01734185218811035,
+      "FDM_time": 0.008847713470458984,
+      "FE_time": 1.4101471900939941,
+      "Loss cal_time": 0.0001537799835205078,
+      "Backpropagation_time": 3.71331787109375,
+      "Parametric Update": 0.0005130767822265625
+    },
+    {
+      "iteration": 203,
+      "SE_g": 5.618083953857422,
+      "Geometry Initialization_time": 0.019141674041748047,
+      "FDM_time": 0.008078575134277344,
+      "FE_time": 1.5771207809448242,
+      "Loss cal_time": 0.00016355514526367188,
+      "Backpropagation_time": 4.014296054840088,
+      "Parametric Update": 0.0012967586517333984
+    },
+    {
+      "iteration": 204,
+      "SE_g": 5.610136032104492,
+      "Geometry Initialization_time": 0.018706560134887695,
+      "FDM_time": 0.008668899536132812,
+      "FE_time": 1.4664528369903564,
+      "Loss cal_time": 0.00016164779663085938,
+      "Backpropagation_time": 3.8520290851593018,
+      "Parametric Update": 0.0010361671447753906
+    },
+    {
+      "iteration": 205,
+      "SE_g": 5.602076530456543,
+      "Geometry Initialization_time": 0.01848292350769043,
+      "FDM_time": 0.008639335632324219,
+      "FE_time": 1.599733829498291,
+      "Loss cal_time": 0.0001647472381591797,
+      "Backpropagation_time": 3.621245861053467,
+      "Parametric Update": 0.0007159709930419922
+    },
+    {
+      "iteration": 206,
+      "SE_g": 5.594145774841309,
+      "Geometry Initialization_time": 0.01906561851501465,
+      "FDM_time": 0.007918834686279297,
+      "FE_time": 1.4553265571594238,
+      "Loss cal_time": 0.00015234947204589844,
+      "Backpropagation_time": 3.7610790729522705,
+      "Parametric Update": 0.0018792152404785156
+    },
+    {
+      "iteration": 207,
+      "SE_g": 5.58610725402832,
+      "Geometry Initialization_time": 0.017752885818481445,
+      "FDM_time": 0.012725353240966797,
+      "FE_time": 1.4381566047668457,
+      "Loss cal_time": 0.0001842975616455078,
+      "Backpropagation_time": 3.784123182296753,
+      "Parametric Update": 0.000621795654296875
+    },
+    {
+      "iteration": 208,
+      "SE_g": 5.578165054321289,
+      "Geometry Initialization_time": 0.018432140350341797,
+      "FDM_time": 0.007592201232910156,
+      "FE_time": 1.5669777393341064,
+      "Loss cal_time": 0.0001316070556640625,
+      "Backpropagation_time": 3.781308650970459,
+      "Parametric Update": 0.00064849853515625
+    },
+    {
+      "iteration": 209,
+      "SE_g": 5.570180416107178,
+      "Geometry Initialization_time": 0.019112825393676758,
+      "FDM_time": 0.008214235305786133,
+      "FE_time": 1.4713797569274902,
+      "Loss cal_time": 0.0001468658447265625,
+      "Backpropagation_time": 3.720282793045044,
+      "Parametric Update": 0.0006082057952880859
+    },
+    {
+      "iteration": 210,
+      "SE_g": 5.562209129333496,
+      "Geometry Initialization_time": 0.018928050994873047,
+      "FDM_time": 0.007033824920654297,
+      "FE_time": 1.5951457023620605,
+      "Loss cal_time": 0.00014448165893554688,
+      "Backpropagation_time": 3.8019795417785645,
+      "Parametric Update": 0.0006709098815917969
+    },
+    {
+      "iteration": 211,
+      "SE_g": 5.554210662841797,
+      "Geometry Initialization_time": 0.020314931869506836,
+      "FDM_time": 0.012465953826904297,
+      "FE_time": 1.44478178024292,
+      "Loss cal_time": 0.00015306472778320312,
+      "Backpropagation_time": 3.79746413230896,
+      "Parametric Update": 0.0005743503570556641
+    },
+    {
+      "iteration": 212,
+      "SE_g": 5.546292781829834,
+      "Geometry Initialization_time": 0.018939495086669922,
+      "FDM_time": 0.008189678192138672,
+      "FE_time": 1.46590256690979,
+      "Loss cal_time": 0.00013875961303710938,
+      "Backpropagation_time": 3.7570321559906006,
+      "Parametric Update": 0.001646280288696289
+    },
+    {
+      "iteration": 213,
+      "SE_g": 5.538296222686768,
+      "Geometry Initialization_time": 0.01746535301208496,
+      "FDM_time": 0.008109569549560547,
+      "FE_time": 1.5282607078552246,
+      "Loss cal_time": 0.0001239776611328125,
+      "Backpropagation_time": 3.738906145095825,
+      "Parametric Update": 0.001950979232788086
+    },
+    {
+      "iteration": 214,
+      "SE_g": 5.530383586883545,
+      "Geometry Initialization_time": 0.017120838165283203,
+      "FDM_time": 0.01014566421508789,
+      "FE_time": 1.4203598499298096,
+      "Loss cal_time": 0.00019884109497070312,
+      "Backpropagation_time": 3.692140579223633,
+      "Parametric Update": 0.0005424022674560547
+    },
+    {
+      "iteration": 215,
+      "SE_g": 5.522393226623535,
+      "Geometry Initialization_time": 0.01878523826599121,
+      "FDM_time": 0.010239124298095703,
+      "FE_time": 1.6055142879486084,
+      "Loss cal_time": 0.00014543533325195312,
+      "Backpropagation_time": 3.781339406967163,
+      "Parametric Update": 0.0009660720825195312
+    },
+    {
+      "iteration": 216,
+      "SE_g": 5.514462471008301,
+      "Geometry Initialization_time": 0.01782846450805664,
+      "FDM_time": 0.01157689094543457,
+      "FE_time": 1.4202933311462402,
+      "Loss cal_time": 0.0001609325408935547,
+      "Backpropagation_time": 3.624325752258301,
+      "Parametric Update": 0.0007524490356445312
+    },
+    {
+      "iteration": 217,
+      "SE_g": 5.506495952606201,
+      "Geometry Initialization_time": 0.01900935173034668,
+      "FDM_time": 0.00787806510925293,
+      "FE_time": 1.4734013080596924,
+      "Loss cal_time": 0.00016760826110839844,
+      "Backpropagation_time": 3.6765296459198,
+      "Parametric Update": 0.0020525455474853516
+    },
+    {
+      "iteration": 218,
+      "SE_g": 5.498597621917725,
+      "Geometry Initialization_time": 0.017748594284057617,
+      "FDM_time": 0.007874727249145508,
+      "FE_time": 1.5641248226165771,
+      "Loss cal_time": 0.00017023086547851562,
+      "Backpropagation_time": 3.802783966064453,
+      "Parametric Update": 0.0014774799346923828
+    },
+    {
+      "iteration": 219,
+      "SE_g": 5.490610599517822,
+      "Geometry Initialization_time": 0.018430233001708984,
+      "FDM_time": 0.011883258819580078,
+      "FE_time": 1.4936916828155518,
+      "Loss cal_time": 0.0001666545867919922,
+      "Backpropagation_time": 3.8394789695739746,
+      "Parametric Update": 0.000736236572265625
+    },
+    {
+      "iteration": 220,
+      "SE_g": 5.482730865478516,
+      "Geometry Initialization_time": 0.0192258358001709,
+      "FDM_time": 0.012540340423583984,
+      "FE_time": 1.6114695072174072,
+      "Loss cal_time": 0.0001595020294189453,
+      "Backpropagation_time": 3.722212791442871,
+      "Parametric Update": 0.0009903907775878906
+    },
+    {
+      "iteration": 221,
+      "SE_g": 5.474770545959473,
+      "Geometry Initialization_time": 0.018866777420043945,
+      "FDM_time": 0.009054899215698242,
+      "FE_time": 1.4079952239990234,
+      "Loss cal_time": 0.00017380714416503906,
+      "Backpropagation_time": 3.685533046722412,
+      "Parametric Update": 0.0008997917175292969
+    },
+    {
+      "iteration": 222,
+      "SE_g": 5.46687650680542,
+      "Geometry Initialization_time": 0.01812911033630371,
+      "FDM_time": 0.00877070426940918,
+      "FE_time": 1.4125587940216064,
+      "Loss cal_time": 0.0001537799835205078,
+      "Backpropagation_time": 3.760136604309082,
+      "Parametric Update": 0.0011036396026611328
+    },
+    {
+      "iteration": 223,
+      "SE_g": 5.458922863006592,
+      "Geometry Initialization_time": 0.017697572708129883,
+      "FDM_time": 0.00991511344909668,
+      "FE_time": 1.5467817783355713,
+      "Loss cal_time": 0.00015044212341308594,
+      "Backpropagation_time": 3.774420738220215,
+      "Parametric Update": 0.0012900829315185547
+    },
+    {
+      "iteration": 224,
+      "SE_g": 5.451050758361816,
+      "Geometry Initialization_time": 0.018337488174438477,
+      "FDM_time": 0.012495040893554688,
+      "FE_time": 1.4559111595153809,
+      "Loss cal_time": 0.00016117095947265625,
+      "Backpropagation_time": 3.773221492767334,
+      "Parametric Update": 0.0005011558532714844
+    },
+    {
+      "iteration": 225,
+      "SE_g": 5.4430999755859375,
+      "Geometry Initialization_time": 0.018100500106811523,
+      "FDM_time": 0.01231837272644043,
+      "FE_time": 1.564408540725708,
+      "Loss cal_time": 0.00015544891357421875,
+      "Backpropagation_time": 3.7768139839172363,
+      "Parametric Update": 0.0004703998565673828
+    },
+    {
+      "iteration": 226,
+      "SE_g": 5.435232162475586,
+      "Geometry Initialization_time": 0.01839280128479004,
+      "FDM_time": 0.00817728042602539,
+      "FE_time": 1.4314548969268799,
+      "Loss cal_time": 0.00015401840209960938,
+      "Backpropagation_time": 3.8629696369171143,
+      "Parametric Update": 0.0008528232574462891
+    },
+    {
+      "iteration": 227,
+      "SE_g": 5.427310466766357,
+      "Geometry Initialization_time": 0.01893472671508789,
+      "FDM_time": 0.011545419692993164,
+      "FE_time": 1.5091207027435303,
+      "Loss cal_time": 0.00016450881958007812,
+      "Backpropagation_time": 3.811279535293579,
+      "Parametric Update": 0.0004665851593017578
+    },
+    {
+      "iteration": 228,
+      "SE_g": 5.419442176818848,
+      "Geometry Initialization_time": 0.018628358840942383,
+      "FDM_time": 0.008313655853271484,
+      "FE_time": 1.569033145904541,
+      "Loss cal_time": 0.00015592575073242188,
+      "Backpropagation_time": 3.730876922607422,
+      "Parametric Update": 0.0012738704681396484
+    },
+    {
+      "iteration": 229,
+      "SE_g": 5.41152286529541,
+      "Geometry Initialization_time": 0.017696619033813477,
+      "FDM_time": 0.008068323135375977,
+      "FE_time": 1.4382569789886475,
+      "Loss cal_time": 0.0001590251922607422,
+      "Backpropagation_time": 3.733977794647217,
+      "Parametric Update": 0.0004885196685791016
+    },
+    {
+      "iteration": 230,
+      "SE_g": 5.403671741485596,
+      "Geometry Initialization_time": 0.018754243850708008,
+      "FDM_time": 0.012039899826049805,
+      "FE_time": 1.5606377124786377,
+      "Loss cal_time": 0.000156402587890625,
+      "Backpropagation_time": 3.6902263164520264,
+      "Parametric Update": 0.00046825408935546875
+    },
+    {
+      "iteration": 231,
+      "SE_g": 5.395749092102051,
+      "Geometry Initialization_time": 0.020170211791992188,
+      "FDM_time": 0.00893092155456543,
+      "FE_time": 1.4399449825286865,
+      "Loss cal_time": 0.00017023086547851562,
+      "Backpropagation_time": 3.757396936416626,
+      "Parametric Update": 0.00048542022705078125
+    },
+    {
+      "iteration": 232,
+      "SE_g": 5.387925148010254,
+      "Geometry Initialization_time": 0.017974138259887695,
+      "FDM_time": 0.008064985275268555,
+      "FE_time": 1.446547031402588,
+      "Loss cal_time": 0.00025963783264160156,
+      "Backpropagation_time": 3.8531076908111572,
+      "Parametric Update": 0.0012061595916748047
+    },
+    {
+      "iteration": 233,
+      "SE_g": 5.380000114440918,
+      "Geometry Initialization_time": 0.018293380737304688,
+      "FDM_time": 0.010208845138549805,
+      "FE_time": 1.5567426681518555,
+      "Loss cal_time": 0.00017976760864257812,
+      "Backpropagation_time": 3.762247323989868,
+      "Parametric Update": 0.001054525375366211
+    },
+    {
+      "iteration": 234,
+      "SE_g": 5.372163772583008,
+      "Geometry Initialization_time": 0.01746678352355957,
+      "FDM_time": 0.007380247116088867,
+      "FE_time": 1.3902316093444824,
+      "Loss cal_time": 0.00015044212341308594,
+      "Backpropagation_time": 3.7125325202941895,
+      "Parametric Update": 0.0016739368438720703
+    },
+    {
+      "iteration": 235,
+      "SE_g": 5.364280700683594,
+      "Geometry Initialization_time": 0.017103910446166992,
+      "FDM_time": 0.00798487663269043,
+      "FE_time": 1.4899415969848633,
+      "Loss cal_time": 0.00020003318786621094,
+      "Backpropagation_time": 3.8000755310058594,
+      "Parametric Update": 0.0020198822021484375
+    },
+    {
+      "iteration": 236,
+      "SE_g": 5.356443405151367,
+      "Geometry Initialization_time": 0.018146038055419922,
+      "FDM_time": 0.009351730346679688,
+      "FE_time": 1.4961209297180176,
+      "Loss cal_time": 0.0001678466796875,
+      "Backpropagation_time": 3.7883973121643066,
+      "Parametric Update": 0.0010387897491455078
+    },
+    {
+      "iteration": 237,
+      "SE_g": 5.348563194274902,
+      "Geometry Initialization_time": 0.01805400848388672,
+      "FDM_time": 0.010615348815917969,
+      "FE_time": 1.4301261901855469,
+      "Loss cal_time": 0.0001366138458251953,
+      "Backpropagation_time": 3.7695443630218506,
+      "Parametric Update": 0.0008974075317382812
+    },
+    {
+      "iteration": 238,
+      "SE_g": 5.340747356414795,
+      "Geometry Initialization_time": 0.018048524856567383,
+      "FDM_time": 0.008924245834350586,
+      "FE_time": 1.5637340545654297,
+      "Loss cal_time": 0.00015306472778320312,
+      "Backpropagation_time": 3.81683349609375,
+      "Parametric Update": 0.001291513442993164
+    },
+    {
+      "iteration": 239,
+      "SE_g": 5.332876205444336,
+      "Geometry Initialization_time": 0.018380165100097656,
+      "FDM_time": 0.008106470108032227,
+      "FE_time": 1.447765588760376,
+      "Loss cal_time": 0.00016045570373535156,
+      "Backpropagation_time": 3.7728934288024902,
+      "Parametric Update": 0.0016431808471679688
+    },
+    {
+      "iteration": 240,
+      "SE_g": 5.325057029724121,
+      "Geometry Initialization_time": 0.018228769302368164,
+      "FDM_time": 0.012451171875,
+      "FE_time": 1.6021795272827148,
+      "Loss cal_time": 0.0001647472381591797,
+      "Backpropagation_time": 3.7693886756896973,
+      "Parametric Update": 0.0006852149963378906
+    },
+    {
+      "iteration": 241,
+      "SE_g": 5.31719970703125,
+      "Geometry Initialization_time": 0.02144312858581543,
+      "FDM_time": 0.009863138198852539,
+      "FE_time": 1.4909980297088623,
+      "Loss cal_time": 0.0001780986785888672,
+      "Backpropagation_time": 3.7612617015838623,
+      "Parametric Update": 0.0005548000335693359
+    },
+    {
+      "iteration": 242,
+      "SE_g": 5.309405326843262,
+      "Geometry Initialization_time": 0.01862335205078125,
+      "FDM_time": 0.010910511016845703,
+      "FE_time": 1.4537312984466553,
+      "Loss cal_time": 0.00015544891357421875,
+      "Backpropagation_time": 3.868347406387329,
+      "Parametric Update": 0.001542806625366211
+    },
+    {
+      "iteration": 243,
+      "SE_g": 5.301537036895752,
+      "Geometry Initialization_time": 0.01788926124572754,
+      "FDM_time": 0.0077342987060546875,
+      "FE_time": 1.5389618873596191,
+      "Loss cal_time": 0.0001697540283203125,
+      "Backpropagation_time": 3.808795213699341,
+      "Parametric Update": 0.0008065700531005859
+    },
+    {
+      "iteration": 244,
+      "SE_g": 5.293736457824707,
+      "Geometry Initialization_time": 0.01900458335876465,
+      "FDM_time": 0.008785247802734375,
+      "FE_time": 1.4852304458618164,
+      "Loss cal_time": 0.0001583099365234375,
+      "Backpropagation_time": 3.6947615146636963,
+      "Parametric Update": 0.0004940032958984375
+    },
+    {
+      "iteration": 245,
+      "SE_g": 5.285896301269531,
+      "Geometry Initialization_time": 0.018364429473876953,
+      "FDM_time": 0.00783538818359375,
+      "FE_time": 1.5516552925109863,
+      "Loss cal_time": 0.0001583099365234375,
+      "Backpropagation_time": 3.7732672691345215,
+      "Parametric Update": 0.0005950927734375
+    },
+    {
+      "iteration": 246,
+      "SE_g": 5.278114318847656,
+      "Geometry Initialization_time": 0.018690824508666992,
+      "FDM_time": 0.009511947631835938,
+      "FE_time": 1.4371051788330078,
+      "Loss cal_time": 0.000148773193359375,
+      "Backpropagation_time": 3.846954822540283,
+      "Parametric Update": 0.0019648075103759766
+    },
+    {
+      "iteration": 247,
+      "SE_g": 5.270286560058594,
+      "Geometry Initialization_time": 0.01873469352722168,
+      "FDM_time": 0.01328134536743164,
+      "FE_time": 1.546194314956665,
+      "Loss cal_time": 0.00016880035400390625,
+      "Backpropagation_time": 3.7603347301483154,
+      "Parametric Update": 0.0007762908935546875
+    },
+    {
+      "iteration": 248,
+      "SE_g": 5.262495994567871,
+      "Geometry Initialization_time": 0.01902174949645996,
+      "FDM_time": 0.008343219757080078,
+      "FE_time": 1.6292965412139893,
+      "Loss cal_time": 0.00018262863159179688,
+      "Backpropagation_time": 3.9178872108459473,
+      "Parametric Update": 0.0009815692901611328
+    },
+    {
+      "iteration": 249,
+      "SE_g": 5.254662990570068,
+      "Geometry Initialization_time": 0.0188748836517334,
+      "FDM_time": 0.00913095474243164,
+      "FE_time": 1.50722074508667,
+      "Loss cal_time": 0.0001633167266845703,
+      "Backpropagation_time": 4.446727752685547,
+      "Parametric Update": 0.0006725788116455078
+    },
+    {
+      "iteration": 250,
+      "SE_g": 5.246903419494629,
+      "Geometry Initialization_time": 0.018823862075805664,
+      "FDM_time": 0.008682012557983398,
+      "FE_time": 1.5597689151763916,
+      "Loss cal_time": 0.0001544952392578125,
+      "Backpropagation_time": 3.7903499603271484,
+      "Parametric Update": 0.0004754066467285156
+    },
+    {
+      "iteration": 251,
+      "SE_g": 5.239079475402832,
+      "Geometry Initialization_time": 0.020000696182250977,
+      "FDM_time": 0.011068582534790039,
+      "FE_time": 1.406982183456421,
+      "Loss cal_time": 0.00015354156494140625,
+      "Backpropagation_time": 3.7444851398468018,
+      "Parametric Update": 0.0010311603546142578
+    },
+    {
+      "iteration": 252,
+      "SE_g": 5.231314182281494,
+      "Geometry Initialization_time": 0.01752614974975586,
+      "FDM_time": 0.009436368942260742,
+      "FE_time": 1.392613172531128,
+      "Loss cal_time": 0.00015354156494140625,
+      "Backpropagation_time": 3.779493808746338,
+      "Parametric Update": 0.0009386539459228516
+    },
+    {
+      "iteration": 253,
+      "SE_g": 5.223496437072754,
+      "Geometry Initialization_time": 0.017441749572753906,
+      "FDM_time": 0.008562803268432617,
+      "FE_time": 1.4946889877319336,
+      "Loss cal_time": 0.00022292137145996094,
+      "Backpropagation_time": 3.7689895629882812,
+      "Parametric Update": 0.0005154609680175781
+    },
+    {
+      "iteration": 254,
+      "SE_g": 5.2157745361328125,
+      "Geometry Initialization_time": 0.018042325973510742,
+      "FDM_time": 0.009123086929321289,
+      "FE_time": 1.4084515571594238,
+      "Loss cal_time": 0.00015854835510253906,
+      "Backpropagation_time": 3.7755367755889893,
+      "Parametric Update": 0.0015139579772949219
+    },
+    {
+      "iteration": 255,
+      "SE_g": 5.207976341247559,
+      "Geometry Initialization_time": 0.01732039451599121,
+      "FDM_time": 0.009070158004760742,
+      "FE_time": 1.51878023147583,
+      "Loss cal_time": 0.0001556873321533203,
+      "Backpropagation_time": 3.7582321166992188,
+      "Parametric Update": 0.0009810924530029297
+    },
+    {
+      "iteration": 256,
+      "SE_g": 5.200218677520752,
+      "Geometry Initialization_time": 0.017781972885131836,
+      "FDM_time": 0.00809931755065918,
+      "FE_time": 1.4148404598236084,
+      "Loss cal_time": 0.00016164779663085938,
+      "Backpropagation_time": 3.8200337886810303,
+      "Parametric Update": 0.0005729198455810547
+    },
+    {
+      "iteration": 257,
+      "SE_g": 5.192436218261719,
+      "Geometry Initialization_time": 0.018573522567749023,
+      "FDM_time": 0.009176015853881836,
+      "FE_time": 1.4318408966064453,
+      "Loss cal_time": 0.0001499652862548828,
+      "Backpropagation_time": 3.8634696006774902,
+      "Parametric Update": 0.0009429454803466797
+    },
+    {
+      "iteration": 258,
+      "SE_g": 5.18471097946167,
+      "Geometry Initialization_time": 0.017274856567382812,
+      "FDM_time": 0.008157491683959961,
+      "FE_time": 1.5108673572540283,
+      "Loss cal_time": 0.0001475811004638672,
+      "Backpropagation_time": 3.7504563331604004,
+      "Parametric Update": 0.0005605220794677734
+    },
+    {
+      "iteration": 259,
+      "SE_g": 5.176926136016846,
+      "Geometry Initialization_time": 0.017937660217285156,
+      "FDM_time": 0.007853269577026367,
+      "FE_time": 1.401322603225708,
+      "Loss cal_time": 0.00013327598571777344,
+      "Backpropagation_time": 3.8166751861572266,
+      "Parametric Update": 0.0007305145263671875
+    },
+    {
+      "iteration": 260,
+      "SE_g": 5.1691999435424805,
+      "Geometry Initialization_time": 0.018719911575317383,
+      "FDM_time": 0.009267568588256836,
+      "FE_time": 1.5824527740478516,
+      "Loss cal_time": 0.00016307830810546875,
+      "Backpropagation_time": 3.8219311237335205,
+      "Parametric Update": 0.0013647079467773438
+    },
+    {
+      "iteration": 261,
+      "SE_g": 5.1614298820495605,
+      "Geometry Initialization_time": 0.01864147186279297,
+      "FDM_time": 0.007830142974853516,
+      "FE_time": 1.4820444583892822,
+      "Loss cal_time": 0.00016164779663085938,
+      "Backpropagation_time": 3.8528831005096436,
+      "Parametric Update": 0.0014224052429199219
+    },
+    {
+      "iteration": 262,
+      "SE_g": 5.153719902038574,
+      "Geometry Initialization_time": 0.017285823822021484,
+      "FDM_time": 0.008380889892578125,
+      "FE_time": 1.503488540649414,
+      "Loss cal_time": 0.00017380714416503906,
+      "Backpropagation_time": 3.7984044551849365,
+      "Parametric Update": 0.0006055831909179688
+    },
+    {
+      "iteration": 263,
+      "SE_g": 5.145959854125977,
+      "Geometry Initialization_time": 0.018866777420043945,
+      "FDM_time": 0.011562585830688477,
+      "FE_time": 1.6198444366455078,
+      "Loss cal_time": 0.00016355514526367188,
+      "Backpropagation_time": 3.785933494567871,
+      "Parametric Update": 0.0005643367767333984
+    },
+    {
+      "iteration": 264,
+      "SE_g": 5.138261795043945,
+      "Geometry Initialization_time": 0.01915717124938965,
+      "FDM_time": 0.008953332901000977,
+      "FE_time": 1.4882845878601074,
+      "Loss cal_time": 0.00015974044799804688,
+      "Backpropagation_time": 3.7859349250793457,
+      "Parametric Update": 0.0018985271453857422
+    },
+    {
+      "iteration": 265,
+      "SE_g": 5.130502223968506,
+      "Geometry Initialization_time": 0.01816415786743164,
+      "FDM_time": 0.011268377304077148,
+      "FE_time": 1.609935998916626,
+      "Loss cal_time": 0.0001595020294189453,
+      "Backpropagation_time": 3.710965394973755,
+      "Parametric Update": 0.0013232231140136719
+    },
+    {
+      "iteration": 266,
+      "SE_g": 5.128876686096191,
+      "Geometry Initialization_time": 0.01747894287109375,
+      "FDM_time": 0.01072549819946289,
+      "FE_time": 1.4084231853485107,
+      "Loss cal_time": 0.0001533031463623047,
+      "Backpropagation_time": 3.7257680892944336,
+      "Parametric Update": 0.0006008148193359375
+    },
+    {
+      "iteration": 267,
+      "SE_g": 5.128630638122559,
+      "Geometry Initialization_time": 0.017838001251220703,
+      "FDM_time": 0.007992267608642578,
+      "FE_time": 1.4073245525360107,
+      "Loss cal_time": 0.00015783309936523438,
+      "Backpropagation_time": 3.7270114421844482,
+      "Parametric Update": 0.0010962486267089844
+    },
+    {
+      "iteration": 268,
+      "SE_g": 5.128451347351074,
+      "Geometry Initialization_time": 0.01795792579650879,
+      "FDM_time": 0.010057210922241211,
+      "FE_time": 1.6008903980255127,
+      "Loss cal_time": 0.0002448558807373047,
+      "Backpropagation_time": 3.8114418983459473,
+      "Parametric Update": 0.0007259845733642578
+    },
+    {
+      "iteration": 269,
+      "SE_g": 5.128203392028809,
+      "Geometry Initialization_time": 0.018973588943481445,
+      "FDM_time": 0.012477874755859375,
+      "FE_time": 1.4679765701293945,
+      "Loss cal_time": 0.00016069412231445312,
+      "Backpropagation_time": 3.821749210357666,
+      "Parametric Update": 0.0036880970001220703
+    },
+    {
+      "iteration": 270,
+      "SE_g": 5.128035545349121,
+      "Geometry Initialization_time": 0.027988672256469727,
+      "FDM_time": 0.009154081344604492,
+      "FE_time": 1.665928840637207,
+      "Loss cal_time": 0.00015473365783691406,
+      "Backpropagation_time": 3.9728667736053467,
+      "Parametric Update": 0.0012164115905761719
+    },
+    {
+      "iteration": 271,
+      "SE_g": 5.127786636352539,
+      "Geometry Initialization_time": 0.022698402404785156,
+      "FDM_time": 0.009827136993408203,
+      "FE_time": 1.5903611183166504,
+      "Loss cal_time": 0.000213623046875,
+      "Backpropagation_time": 3.864686965942383,
+      "Parametric Update": 0.001070261001586914
+    },
+    {
+      "iteration": 272,
+      "SE_g": 5.127617835998535,
+      "Geometry Initialization_time": 0.020053386688232422,
+      "FDM_time": 0.009386062622070312,
+      "FE_time": 1.5871987342834473,
+      "Loss cal_time": 0.00017714500427246094,
+      "Backpropagation_time": 3.763410806655884,
+      "Parametric Update": 0.0011463165283203125
+    },
+    {
+      "iteration": 273,
+      "SE_g": 5.127358913421631,
+      "Geometry Initialization_time": 0.018956899642944336,
+      "FDM_time": 0.0077190399169921875,
+      "FE_time": 1.5797913074493408,
+      "Loss cal_time": 0.00015401840209960938,
+      "Backpropagation_time": 3.883575916290283,
+      "Parametric Update": 0.001986980438232422
+    },
+    {
+      "iteration": 274,
+      "SE_g": 5.127196311950684,
+      "Geometry Initialization_time": 0.025244712829589844,
+      "FDM_time": 0.01117396354675293,
+      "FE_time": 2.1055972576141357,
+      "Loss cal_time": 0.000152587890625,
+      "Backpropagation_time": 4.55437970161438,
+      "Parametric Update": 0.0010426044464111328
+    },
+    {
+      "iteration": 275,
+      "SE_g": 5.1269426345825195,
+      "Geometry Initialization_time": 0.024932146072387695,
+      "FDM_time": 0.011902093887329102,
+      "FE_time": 2.1557681560516357,
+      "Loss cal_time": 0.0001838207244873047,
+      "Backpropagation_time": 4.779339551925659,
+      "Parametric Update": 0.0005862712860107422
+    },
+    {
+      "iteration": 276,
+      "SE_g": 5.126764297485352,
+      "Geometry Initialization_time": 0.025712966918945312,
+      "FDM_time": 0.009314298629760742,
+      "FE_time": 2.111699342727661,
+      "Loss cal_time": 0.00023245811462402344,
+      "Backpropagation_time": 4.823487997055054,
+      "Parametric Update": 0.0005705356597900391
+    },
+    {
+      "iteration": 277,
+      "SE_g": 5.126516342163086,
+      "Geometry Initialization_time": 0.019135713577270508,
+      "FDM_time": 0.008008480072021484,
+      "FE_time": 1.4323673248291016,
+      "Loss cal_time": 0.00015687942504882812,
+      "Backpropagation_time": 3.7732715606689453,
+      "Parametric Update": 0.0006160736083984375
+    },
+    {
+      "iteration": 278,
+      "SE_g": 5.126315116882324,
+      "Geometry Initialization_time": 0.01829838752746582,
+      "FDM_time": 0.008858680725097656,
+      "FE_time": 1.5727694034576416,
+      "Loss cal_time": 0.0001518726348876953,
+      "Backpropagation_time": 3.8964200019836426,
+      "Parametric Update": 0.002234220504760742
+    },
+    {
+      "iteration": 279,
+      "SE_g": 5.126075744628906,
+      "Geometry Initialization_time": 0.02425551414489746,
+      "FDM_time": 0.01057124137878418,
+      "FE_time": 1.718064308166504,
+      "Loss cal_time": 0.0002288818359375,
+      "Backpropagation_time": 3.814873456954956,
+      "Parametric Update": 0.0007708072662353516
+    },
+    {
+      "iteration": 280,
+      "SE_g": 5.125905513763428,
+      "Geometry Initialization_time": 0.01888728141784668,
+      "FDM_time": 0.010197162628173828,
+      "FE_time": 1.616558313369751,
+      "Loss cal_time": 0.00014543533325195312,
+      "Backpropagation_time": 3.806553840637207,
+      "Parametric Update": 0.0004930496215820312
+    },
+    {
+      "iteration": 281,
+      "SE_g": 5.125640869140625,
+      "Geometry Initialization_time": 0.02146315574645996,
+      "FDM_time": 0.0077991485595703125,
+      "FE_time": 1.4310288429260254,
+      "Loss cal_time": 0.00015282630920410156,
+      "Backpropagation_time": 3.6303975582122803,
+      "Parametric Update": 0.0004811286926269531
+    },
+    {
+      "iteration": 282,
+      "SE_g": 5.1254754066467285,
+      "Geometry Initialization_time": 0.018160581588745117,
+      "FDM_time": 0.008386373519897461,
+      "FE_time": 1.4079082012176514,
+      "Loss cal_time": 0.000152587890625,
+      "Backpropagation_time": 3.580132484436035,
+      "Parametric Update": 0.0018894672393798828
+    },
+    {
+      "iteration": 283,
+      "SE_g": 5.12522554397583,
+      "Geometry Initialization_time": 0.01738452911376953,
+      "FDM_time": 0.008473396301269531,
+      "FE_time": 1.5879199504852295,
+      "Loss cal_time": 0.00016927719116210938,
+      "Backpropagation_time": 3.8998985290527344,
+      "Parametric Update": 0.0014214515686035156
+    },
+    {
+      "iteration": 284,
+      "SE_g": 5.125050067901611,
+      "Geometry Initialization_time": 0.018848896026611328,
+      "FDM_time": 0.007306814193725586,
+      "FE_time": 1.4998738765716553,
+      "Loss cal_time": 0.00018548965454101562,
+      "Backpropagation_time": 3.7920401096343994,
+      "Parametric Update": 0.0006401538848876953
+    },
+    {
+      "iteration": 285,
+      "SE_g": 5.1247968673706055,
+      "Geometry Initialization_time": 0.018976211547851562,
+      "FDM_time": 0.008233070373535156,
+      "FE_time": 1.623518466949463,
+      "Loss cal_time": 0.00015974044799804688,
+      "Backpropagation_time": 3.7459535598754883,
+      "Parametric Update": 0.0014185905456542969
+    }
+  ]
+}

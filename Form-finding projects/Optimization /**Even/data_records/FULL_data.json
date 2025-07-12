@@ -1,0 +1,16 @@
+{
+  "metadata": {
+    "project": "Structural Optimization",
+    "Context": "FDM + FE",
+    "device": "cpu",
+    "parameters": {
+      "length": 24,
+      "width": 24,
+      "grid_size": "13x13",
+      "epochs": 0,
+      "step_size": 0.05
+    },
+    "Ite_time": 0.1482447663942973
+  },
+  "iterations": []
+}

@@ -1,0 +1,4025 @@
+{
+  "metadata": {
+    "project": "Structural Optimization",
+    "Context": "FDM + FE",
+    "device": "cpu",
+    "parameters": {
+      "length": 48,
+      "width": 48,
+      "grid_size": "13x13",
+      "epochs": 500,
+      "step_size": 0.01
+    },
+    "Ite_time": 504.0211420059204
+  },
+  "iterations": [
+    {
+      "iteration": 0,
+      "Geometry_initialization_time": 0.005023002624511719,
+      "FDM_time": 0.0018718242645263672,
+      "Loss_time": 0.7979559898376465,
+      "Back_time ": 0.028078079223632812,
+      "Parameter_update": 0.0001518726348876953
+    },
+    {
+      "iteration": 1,
+      "Geometry_initialization_time": 0.0043430328369140625,
+      "FDM_time": 0.0021622180938720703,
+      "Loss_time": 0.8440582752227783,
+      "Back_time ": 0.028753042221069336,
+      "Parameter_update": 0.0001308917999267578
+    },
+    {
+      "iteration": 2,
+      "Geometry_initialization_time": 0.0036859512329101562,
+      "FDM_time": 0.001728057861328125,
+      "Loss_time": 0.7694540023803711,
+      "Back_time ": 0.027639150619506836,
+      "Parameter_update": 0.00012302398681640625
+    },
+    {
+      "iteration": 3,
+      "Geometry_initialization_time": 0.004068851470947266,
+      "FDM_time": 0.002479076385498047,
+      "Loss_time": 0.8671989440917969,
+      "Back_time ": 0.03353595733642578,
+      "Parameter_update": 0.000164031982421875
+    },
+    {
+      "iteration": 4,
+      "Geometry_initialization_time": 0.005425930023193359,
+      "FDM_time": 0.0020580291748046875,
+      "Loss_time": 0.9863929748535156,
+      "Back_time ": 0.026599884033203125,
+      "Parameter_update": 0.00012803077697753906
+    },
+    {
+      "iteration": 5,
+      "Geometry_initialization_time": 0.0036470890045166016,
+      "FDM_time": 0.0013709068298339844,
+      "Loss_time": 0.7839610576629639,
+      "Back_time ": 0.0308840274810791,
+      "Parameter_update": 0.0001437664031982422
+    },
+    {
+      "iteration": 6,
+      "Geometry_initialization_time": 0.004015207290649414,
+      "FDM_time": 0.0022978782653808594,
+      "Loss_time": 0.7944800853729248,
+      "Back_time ": 0.02908611297607422,
+      "Parameter_update": 0.0001270771026611328
+    },
+    {
+      "iteration": 7,
+      "Geometry_initialization_time": 0.0036401748657226562,
+      "FDM_time": 0.0013091564178466797,
+      "Loss_time": 0.9637300968170166,
+      "Back_time ": 0.04577994346618652,
+      "Parameter_update": 0.00024819374084472656
+    },
+    {
+      "iteration": 8,
+      "Geometry_initialization_time": 0.009029865264892578,
+      "FDM_time": 0.0017347335815429688,
+      "Loss_time": 0.8353710174560547,
+      "Back_time ": 0.02931809425354004,
+      "Parameter_update": 0.00012230873107910156
+    },
+    {
+      "iteration": 9,
+      "Geometry_initialization_time": 0.003674030303955078,
+      "FDM_time": 0.001683950424194336,
+      "Loss_time": 0.8033339977264404,
+      "Back_time ": 0.028836965560913086,
+      "Parameter_update": 0.00014495849609375
+    },
+    {
+      "iteration": 10,
+      "Geometry_initialization_time": 0.004077911376953125,
+      "FDM_time": 0.0013659000396728516,
+      "Loss_time": 0.8646571636199951,
+      "Back_time ": 0.03427720069885254,
+      "Parameter_update": 0.00013375282287597656
+    },
+    {
+      "iteration": 11,
+      "Geometry_initialization_time": 0.004539012908935547,
+      "FDM_time": 0.0013837814331054688,
+      "Loss_time": 0.8066668510437012,
+      "Back_time ": 0.02908492088317871,
+      "Parameter_update": 0.00012803077697753906
+    },
+    {
+      "iteration": 12,
+      "Geometry_initialization_time": 0.003634214401245117,
+      "FDM_time": 0.001277923583984375,
+      "Loss_time": 0.8680129051208496,
+      "Back_time ": 0.027664899826049805,
+      "Parameter_update": 0.00012993812561035156
+    },
+    {
+      "iteration": 13,
+      "Geometry_initialization_time": 0.004603147506713867,
+      "FDM_time": 0.0013349056243896484,
+      "Loss_time": 0.8050119876861572,
+      "Back_time ": 0.027376890182495117,
+      "Parameter_update": 0.00015211105346679688
+    },
+    {
+      "iteration": 14,
+      "Geometry_initialization_time": 0.00384521484375,
+      "FDM_time": 0.0012669563293457031,
+      "Loss_time": 0.75347900390625,
+      "Back_time ": 0.03435015678405762,
+      "Parameter_update": 0.0001437664031982422
+    },
+    {
+      "iteration": 15,
+      "Geometry_initialization_time": 0.007347822189331055,
+      "FDM_time": 0.002986907958984375,
+      "Loss_time": 0.8388590812683105,
+      "Back_time ": 0.029001951217651367,
+      "Parameter_update": 0.00014901161193847656
+    },
+    {
+      "iteration": 16,
+      "Geometry_initialization_time": 0.0040509700775146484,
+      "FDM_time": 0.0016052722930908203,
+      "Loss_time": 0.729921817779541,
+      "Back_time ": 0.03417611122131348,
+      "Parameter_update": 0.00013589859008789062
+    },
+    {
+      "iteration": 17,
+      "Geometry_initialization_time": 0.0038352012634277344,
+      "FDM_time": 0.0013587474822998047,
+      "Loss_time": 0.8656308650970459,
+      "Back_time ": 0.03774523735046387,
+      "Parameter_update": 0.00013494491577148438
+    },
+    {
+      "iteration": 18,
+      "Geometry_initialization_time": 0.0056171417236328125,
+      "FDM_time": 0.0018596649169921875,
+      "Loss_time": 0.8503251075744629,
+      "Back_time ": 0.03550004959106445,
+      "Parameter_update": 0.00017309188842773438
+    },
+    {
+      "iteration": 19,
+      "Geometry_initialization_time": 0.005319118499755859,
+      "FDM_time": 0.0017747879028320312,
+      "Loss_time": 0.9150750637054443,
+      "Back_time ": 0.02641606330871582,
+      "Parameter_update": 0.00015306472778320312
+    },
+    {
+      "iteration": 20,
+      "Geometry_initialization_time": 0.00551295280456543,
+      "FDM_time": 0.0018949508666992188,
+      "Loss_time": 1.0113837718963623,
+      "Back_time ": 0.043451786041259766,
+      "Parameter_update": 0.0001800060272216797
+    },
+    {
+      "iteration": 21,
+      "Geometry_initialization_time": 0.005682945251464844,
+      "FDM_time": 0.0018978118896484375,
+      "Loss_time": 0.9220860004425049,
+      "Back_time ": 0.03981804847717285,
+      "Parameter_update": 0.00014400482177734375
+    },
+    {
+      "iteration": 22,
+      "Geometry_initialization_time": 0.007641792297363281,
+      "FDM_time": 0.002707958221435547,
+      "Loss_time": 0.9895029067993164,
+      "Back_time ": 0.031510114669799805,
+      "Parameter_update": 0.00013303756713867188
+    },
+    {
+      "iteration": 23,
+      "Geometry_initialization_time": 0.005391120910644531,
+      "FDM_time": 0.001544952392578125,
+      "Loss_time": 1.0805749893188477,
+      "Back_time ": 0.03714609146118164,
+      "Parameter_update": 0.0001468658447265625
+    },
+    {
+      "iteration": 24,
+      "Geometry_initialization_time": 0.0059888362884521484,
+      "FDM_time": 0.0017230510711669922,
+      "Loss_time": 1.0213468074798584,
+      "Back_time ": 0.03357386589050293,
+      "Parameter_update": 0.00014781951904296875
+    },
+    {
+      "iteration": 25,
+      "Geometry_initialization_time": 0.006079912185668945,
+      "FDM_time": 0.001984119415283203,
+      "Loss_time": 0.9113199710845947,
+      "Back_time ": 0.028740882873535156,
+      "Parameter_update": 0.00013303756713867188
+    },
+    {
+      "iteration": 26,
+      "Geometry_initialization_time": 0.0053768157958984375,
+      "FDM_time": 0.0016372203826904297,
+      "Loss_time": 0.9487018585205078,
+      "Back_time ": 0.03130197525024414,
+      "Parameter_update": 0.00014209747314453125
+    },
+    {
+      "iteration": 27,
+      "Geometry_initialization_time": 0.004577159881591797,
+      "FDM_time": 0.0023119449615478516,
+      "Loss_time": 0.958294153213501,
+      "Back_time ": 0.0759587287902832,
+      "Parameter_update": 0.0001621246337890625
+    },
+    {
+      "iteration": 28,
+      "Geometry_initialization_time": 0.03204512596130371,
+      "FDM_time": 0.012806892395019531,
+      "Loss_time": 1.1722438335418701,
+      "Back_time ": 0.044335126876831055,
+      "Parameter_update": 0.0001671314239501953
+    },
+    {
+      "iteration": 29,
+      "Geometry_initialization_time": 0.0076160430908203125,
+      "FDM_time": 0.001661062240600586,
+      "Loss_time": 1.2580349445343018,
+      "Back_time ": 0.08565592765808105,
+      "Parameter_update": 0.00025200843811035156
+    },
+    {
+      "iteration": 30,
+      "Geometry_initialization_time": 0.03843569755554199,
+      "FDM_time": 0.06705689430236816,
+      "Loss_time": 0.9399681091308594,
+      "Back_time ": 0.032668113708496094,
+      "Parameter_update": 0.000164031982421875
+    },
+    {
+      "iteration": 31,
+      "Geometry_initialization_time": 0.005676984786987305,
+      "FDM_time": 0.0021162033081054688,
+      "Loss_time": 1.0459678173065186,
+      "Back_time ": 0.03807210922241211,
+      "Parameter_update": 0.0002110004425048828
+    },
+    {
+      "iteration": 32,
+      "Geometry_initialization_time": 0.005832195281982422,
+      "FDM_time": 0.0022711753845214844,
+      "Loss_time": 1.2004401683807373,
+      "Back_time ": 0.03795790672302246,
+      "Parameter_update": 0.00019097328186035156
+    },
+    {
+      "iteration": 33,
+      "Geometry_initialization_time": 0.00560307502746582,
+      "FDM_time": 0.0020780563354492188,
+      "Loss_time": 1.0577900409698486,
+      "Back_time ": 0.04427504539489746,
+      "Parameter_update": 0.0002009868621826172
+    },
+    {
+      "iteration": 34,
+      "Geometry_initialization_time": 0.006368875503540039,
+      "FDM_time": 0.0022957324981689453,
+      "Loss_time": 1.3400869369506836,
+      "Back_time ": 0.03433394432067871,
+      "Parameter_update": 0.00013899803161621094
+    },
+    {
+      "iteration": 35,
+      "Geometry_initialization_time": 0.005378007888793945,
+      "FDM_time": 0.00164794921875,
+      "Loss_time": 1.1056499481201172,
+      "Back_time ": 0.03142809867858887,
+      "Parameter_update": 0.00016617774963378906
+    },
+    {
+      "iteration": 36,
+      "Geometry_initialization_time": 0.004347801208496094,
+      "FDM_time": 0.001476287841796875,
+      "Loss_time": 1.1321017742156982,
+      "Back_time ": 0.04155611991882324,
+      "Parameter_update": 0.00018906593322753906
+    },
+    {
+      "iteration": 37,
+      "Geometry_initialization_time": 0.019301891326904297,
+      "FDM_time": 0.021342992782592773,
+      "Loss_time": 0.8979201316833496,
+      "Back_time ": 0.030332326889038086,
+      "Parameter_update": 0.0001361370086669922
+    },
+    {
+      "iteration": 38,
+      "Geometry_initialization_time": 0.00484919548034668,
+      "FDM_time": 0.0019488334655761719,
+      "Loss_time": 1.040909767150879,
+      "Back_time ": 0.036695003509521484,
+      "Parameter_update": 0.00014209747314453125
+    },
+    {
+      "iteration": 39,
+      "Geometry_initialization_time": 0.0055921077728271484,
+      "FDM_time": 0.0014767646789550781,
+      "Loss_time": 1.279646873474121,
+      "Back_time ": 0.04329180717468262,
+      "Parameter_update": 0.00018095970153808594
+    },
+    {
+      "iteration": 40,
+      "Geometry_initialization_time": 0.005023002624511719,
+      "FDM_time": 0.00191497802734375,
+      "Loss_time": 1.149590015411377,
+      "Back_time ": 0.03397202491760254,
+      "Parameter_update": 0.00014495849609375
+    },
+    {
+      "iteration": 41,
+      "Geometry_initialization_time": 0.005574941635131836,
+      "FDM_time": 0.0016701221466064453,
+      "Loss_time": 1.062957763671875,
+      "Back_time ": 0.03559613227844238,
+      "Parameter_update": 0.0001442432403564453
+    },
+    {
+      "iteration": 42,
+      "Geometry_initialization_time": 0.005188941955566406,
+      "FDM_time": 0.002031087875366211,
+      "Loss_time": 1.0485641956329346,
+      "Back_time ": 0.03973889350891113,
+      "Parameter_update": 0.0001819133758544922
+    },
+    {
+      "iteration": 43,
+      "Geometry_initialization_time": 0.006779909133911133,
+      "FDM_time": 0.002407073974609375,
+      "Loss_time": 1.0042779445648193,
+      "Back_time ": 0.0333709716796875,
+      "Parameter_update": 0.00014495849609375
+    },
+    {
+      "iteration": 44,
+      "Geometry_initialization_time": 0.00586390495300293,
+      "FDM_time": 0.0026009082794189453,
+      "Loss_time": 0.944188117980957,
+      "Back_time ": 0.03774118423461914,
+      "Parameter_update": 0.0001678466796875
+    },
+    {
+      "iteration": 45,
+      "Geometry_initialization_time": 0.006228923797607422,
+      "FDM_time": 0.0020830631256103516,
+      "Loss_time": 1.036674976348877,
+      "Back_time ": 0.03350114822387695,
+      "Parameter_update": 0.00014495849609375
+    },
+    {
+      "iteration": 46,
+      "Geometry_initialization_time": 0.004550933837890625,
+      "FDM_time": 0.0014100074768066406,
+      "Loss_time": 1.148277997970581,
+      "Back_time ": 0.035672903060913086,
+      "Parameter_update": 0.00015211105346679688
+    },
+    {
+      "iteration": 47,
+      "Geometry_initialization_time": 0.005087137222290039,
+      "FDM_time": 0.0016639232635498047,
+      "Loss_time": 0.9528193473815918,
+      "Back_time ": 0.03169083595275879,
+      "Parameter_update": 0.00014209747314453125
+    },
+    {
+      "iteration": 48,
+      "Geometry_initialization_time": 0.004256010055541992,
+      "FDM_time": 0.0013489723205566406,
+      "Loss_time": 0.7886762619018555,
+      "Back_time ": 0.031697988510131836,
+      "Parameter_update": 0.00014829635620117188
+    },
+    {
+      "iteration": 49,
+      "Geometry_initialization_time": 0.0043218135833740234,
+      "FDM_time": 0.001928091049194336,
+      "Loss_time": 0.8552718162536621,
+      "Back_time ": 0.033885955810546875,
+      "Parameter_update": 0.00014591217041015625
+    },
+    {
+      "iteration": 50,
+      "Geometry_initialization_time": 0.004952907562255859,
+      "FDM_time": 0.0015909671783447266,
+      "Loss_time": 0.848682165145874,
+      "Back_time ": 0.030351877212524414,
+      "Parameter_update": 0.0001480579376220703
+    },
+    {
+      "iteration": 51,
+      "Geometry_initialization_time": 0.005191802978515625,
+      "FDM_time": 0.0014579296112060547,
+      "Loss_time": 0.792443037033081,
+      "Back_time ": 0.030913114547729492,
+      "Parameter_update": 0.00014281272888183594
+    },
+    {
+      "iteration": 52,
+      "Geometry_initialization_time": 0.004289150238037109,
+      "FDM_time": 0.0014011859893798828,
+      "Loss_time": 0.7767579555511475,
+      "Back_time ": 0.03446674346923828,
+      "Parameter_update": 0.0001461505889892578
+    },
+    {
+      "iteration": 53,
+      "Geometry_initialization_time": 0.004537820816040039,
+      "FDM_time": 0.0013499259948730469,
+      "Loss_time": 0.8561899662017822,
+      "Back_time ": 0.033722877502441406,
+      "Parameter_update": 0.0001480579376220703
+    },
+    {
+      "iteration": 54,
+      "Geometry_initialization_time": 0.004887104034423828,
+      "FDM_time": 0.0013289451599121094,
+      "Loss_time": 0.7750558853149414,
+      "Back_time ": 0.039541006088256836,
+      "Parameter_update": 0.00015211105346679688
+    },
+    {
+      "iteration": 55,
+      "Geometry_initialization_time": 0.005234956741333008,
+      "FDM_time": 0.001953125,
+      "Loss_time": 0.89021897315979,
+      "Back_time ": 0.038186073303222656,
+      "Parameter_update": 0.00014710426330566406
+    },
+    {
+      "iteration": 56,
+      "Geometry_initialization_time": 0.004494905471801758,
+      "FDM_time": 0.0015921592712402344,
+      "Loss_time": 0.871823787689209,
+      "Back_time ": 0.029095888137817383,
+      "Parameter_update": 0.00013208389282226562
+    },
+    {
+      "iteration": 57,
+      "Geometry_initialization_time": 0.004138946533203125,
+      "FDM_time": 0.0013210773468017578,
+      "Loss_time": 0.8938019275665283,
+      "Back_time ": 0.035553932189941406,
+      "Parameter_update": 0.0001437664031982422
+    },
+    {
+      "iteration": 58,
+      "Geometry_initialization_time": 0.03142714500427246,
+      "FDM_time": 0.007925033569335938,
+      "Loss_time": 0.7805702686309814,
+      "Back_time ": 0.03606128692626953,
+      "Parameter_update": 0.00014901161193847656
+    },
+    {
+      "iteration": 59,
+      "Geometry_initialization_time": 0.0048258304595947266,
+      "FDM_time": 0.0018658638000488281,
+      "Loss_time": 0.9622321128845215,
+      "Back_time ": 0.04941701889038086,
+      "Parameter_update": 0.0001480579376220703
+    },
+    {
+      "iteration": 60,
+      "Geometry_initialization_time": 0.005861759185791016,
+      "FDM_time": 0.002254962921142578,
+      "Loss_time": 0.8614368438720703,
+      "Back_time ": 0.030532121658325195,
+      "Parameter_update": 0.00018095970153808594
+    },
+    {
+      "iteration": 61,
+      "Geometry_initialization_time": 0.004936933517456055,
+      "FDM_time": 0.0015418529510498047,
+      "Loss_time": 0.8417510986328125,
+      "Back_time ": 0.03277897834777832,
+      "Parameter_update": 0.0001537799835205078
+    },
+    {
+      "iteration": 62,
+      "Geometry_initialization_time": 0.004559993743896484,
+      "FDM_time": 0.001367807388305664,
+      "Loss_time": 0.8437459468841553,
+      "Back_time ": 0.03782796859741211,
+      "Parameter_update": 0.00016689300537109375
+    },
+    {
+      "iteration": 63,
+      "Geometry_initialization_time": 0.0050466060638427734,
+      "FDM_time": 0.0018770694732666016,
+      "Loss_time": 0.9570639133453369,
+      "Back_time ": 0.03280901908874512,
+      "Parameter_update": 0.000141143798828125
+    },
+    {
+      "iteration": 64,
+      "Geometry_initialization_time": 0.0041921138763427734,
+      "FDM_time": 0.0016841888427734375,
+      "Loss_time": 0.805656909942627,
+      "Back_time ": 0.030827045440673828,
+      "Parameter_update": 0.0001361370086669922
+    },
+    {
+      "iteration": 65,
+      "Geometry_initialization_time": 0.004527091979980469,
+      "FDM_time": 0.0014510154724121094,
+      "Loss_time": 0.9140610694885254,
+      "Back_time ": 0.030063867568969727,
+      "Parameter_update": 0.00014209747314453125
+    },
+    {
+      "iteration": 66,
+      "Geometry_initialization_time": 0.005012989044189453,
+      "FDM_time": 0.0017910003662109375,
+      "Loss_time": 0.7999007701873779,
+      "Back_time ": 0.030278921127319336,
+      "Parameter_update": 0.0001289844512939453
+    },
+    {
+      "iteration": 67,
+      "Geometry_initialization_time": 0.004068851470947266,
+      "FDM_time": 0.0017621517181396484,
+      "Loss_time": 0.8770890235900879,
+      "Back_time ": 0.03813004493713379,
+      "Parameter_update": 0.00014591217041015625
+    },
+    {
+      "iteration": 68,
+      "Geometry_initialization_time": 0.004767894744873047,
+      "FDM_time": 0.0015628337860107422,
+      "Loss_time": 0.8042051792144775,
+      "Back_time ": 0.0286867618560791,
+      "Parameter_update": 0.00014328956604003906
+    },
+    {
+      "iteration": 69,
+      "Geometry_initialization_time": 0.00415802001953125,
+      "FDM_time": 0.0020318031311035156,
+      "Loss_time": 1.049037218093872,
+      "Back_time ": 0.030658960342407227,
+      "Parameter_update": 0.00013589859008789062
+    },
+    {
+      "iteration": 70,
+      "Geometry_initialization_time": 0.004723072052001953,
+      "FDM_time": 0.0015268325805664062,
+      "Loss_time": 0.8671741485595703,
+      "Back_time ": 0.03226804733276367,
+      "Parameter_update": 0.00013971328735351562
+    },
+    {
+      "iteration": 71,
+      "Geometry_initialization_time": 0.005703926086425781,
+      "FDM_time": 0.0020568370819091797,
+      "Loss_time": 0.987217903137207,
+      "Back_time ": 0.039914846420288086,
+      "Parameter_update": 0.00014209747314453125
+    },
+    {
+      "iteration": 72,
+      "Geometry_initialization_time": 0.0054149627685546875,
+      "FDM_time": 0.002285003662109375,
+      "Loss_time": 0.9603679180145264,
+      "Back_time ": 0.044899940490722656,
+      "Parameter_update": 0.00018477439880371094
+    },
+    {
+      "iteration": 73,
+      "Geometry_initialization_time": 0.00755000114440918,
+      "FDM_time": 0.006318807601928711,
+      "Loss_time": 0.9828159809112549,
+      "Back_time ": 0.03192901611328125,
+      "Parameter_update": 0.000141143798828125
+    },
+    {
+      "iteration": 74,
+      "Geometry_initialization_time": 0.004240274429321289,
+      "FDM_time": 0.0013186931610107422,
+      "Loss_time": 0.8598811626434326,
+      "Back_time ": 0.03382611274719238,
+      "Parameter_update": 0.00021195411682128906
+    },
+    {
+      "iteration": 75,
+      "Geometry_initialization_time": 0.005093812942504883,
+      "FDM_time": 0.0014240741729736328,
+      "Loss_time": 1.0081150531768799,
+      "Back_time ": 0.036843061447143555,
+      "Parameter_update": 0.00014901161193847656
+    },
+    {
+      "iteration": 76,
+      "Geometry_initialization_time": 0.005182981491088867,
+      "FDM_time": 0.0020601749420166016,
+      "Loss_time": 0.8180649280548096,
+      "Back_time ": 0.0345308780670166,
+      "Parameter_update": 0.00014519691467285156
+    },
+    {
+      "iteration": 77,
+      "Geometry_initialization_time": 0.004226207733154297,
+      "FDM_time": 0.0014488697052001953,
+      "Loss_time": 1.0201129913330078,
+      "Back_time ": 0.04401993751525879,
+      "Parameter_update": 0.00024509429931640625
+    },
+    {
+      "iteration": 78,
+      "Geometry_initialization_time": 0.006486177444458008,
+      "FDM_time": 0.0018298625946044922,
+      "Loss_time": 0.9657201766967773,
+      "Back_time ": 0.032671213150024414,
+      "Parameter_update": 0.0001461505889892578
+    },
+    {
+      "iteration": 79,
+      "Geometry_initialization_time": 0.005107879638671875,
+      "FDM_time": 0.0014231204986572266,
+      "Loss_time": 0.8695788383483887,
+      "Back_time ": 0.03071308135986328,
+      "Parameter_update": 0.00013589859008789062
+    },
+    {
+      "iteration": 80,
+      "Geometry_initialization_time": 0.005049943923950195,
+      "FDM_time": 0.0014748573303222656,
+      "Loss_time": 0.829124927520752,
+      "Back_time ": 0.030128955841064453,
+      "Parameter_update": 0.00013709068298339844
+    },
+    {
+      "iteration": 81,
+      "Geometry_initialization_time": 0.004492044448852539,
+      "FDM_time": 0.001397848129272461,
+      "Loss_time": 0.8062689304351807,
+      "Back_time ": 0.03359413146972656,
+      "Parameter_update": 0.00014591217041015625
+    },
+    {
+      "iteration": 82,
+      "Geometry_initialization_time": 0.004325151443481445,
+      "FDM_time": 0.0017170906066894531,
+      "Loss_time": 0.771859884262085,
+      "Back_time ": 0.030647754669189453,
+      "Parameter_update": 0.0001399517059326172
+    },
+    {
+      "iteration": 83,
+      "Geometry_initialization_time": 0.004345893859863281,
+      "FDM_time": 0.0013821125030517578,
+      "Loss_time": 1.0581190586090088,
+      "Back_time ": 0.029912948608398438,
+      "Parameter_update": 0.00013494491577148438
+    },
+    {
+      "iteration": 84,
+      "Geometry_initialization_time": 0.004271984100341797,
+      "FDM_time": 0.0013401508331298828,
+      "Loss_time": 0.9735219478607178,
+      "Back_time ": 0.03659486770629883,
+      "Parameter_update": 0.00015997886657714844
+    },
+    {
+      "iteration": 85,
+      "Geometry_initialization_time": 0.004256010055541992,
+      "FDM_time": 0.0015988349914550781,
+      "Loss_time": 0.9077036380767822,
+      "Back_time ": 0.03447604179382324,
+      "Parameter_update": 0.00015473365783691406
+    },
+    {
+      "iteration": 86,
+      "Geometry_initialization_time": 0.006244182586669922,
+      "FDM_time": 0.0023102760314941406,
+      "Loss_time": 0.9045169353485107,
+      "Back_time ": 0.03409123420715332,
+      "Parameter_update": 0.00013709068298339844
+    },
+    {
+      "iteration": 87,
+      "Geometry_initialization_time": 0.005533933639526367,
+      "FDM_time": 0.001996755599975586,
+      "Loss_time": 1.0853359699249268,
+      "Back_time ": 0.04396629333496094,
+      "Parameter_update": 0.00021910667419433594
+    },
+    {
+      "iteration": 88,
+      "Geometry_initialization_time": 0.006318092346191406,
+      "FDM_time": 0.0028810501098632812,
+      "Loss_time": 0.9592852592468262,
+      "Back_time ": 0.03595709800720215,
+      "Parameter_update": 0.00017786026000976562
+    },
+    {
+      "iteration": 89,
+      "Geometry_initialization_time": 0.004547834396362305,
+      "FDM_time": 0.0015039443969726562,
+      "Loss_time": 0.9039809703826904,
+      "Back_time ": 0.030112028121948242,
+      "Parameter_update": 0.0001399517059326172
+    },
+    {
+      "iteration": 90,
+      "Geometry_initialization_time": 0.00431513786315918,
+      "FDM_time": 0.0016789436340332031,
+      "Loss_time": 0.8571240901947021,
+      "Back_time ": 0.03246307373046875,
+      "Parameter_update": 0.00013899803161621094
+    },
+    {
+      "iteration": 91,
+      "Geometry_initialization_time": 0.004616975784301758,
+      "FDM_time": 0.0013852119445800781,
+      "Loss_time": 0.8436038494110107,
+      "Back_time ": 0.038449764251708984,
+      "Parameter_update": 0.00023674964904785156
+    },
+    {
+      "iteration": 92,
+      "Geometry_initialization_time": 0.004935026168823242,
+      "FDM_time": 0.0015208721160888672,
+      "Loss_time": 0.9767169952392578,
+      "Back_time ": 0.03571605682373047,
+      "Parameter_update": 0.0001418590545654297
+    },
+    {
+      "iteration": 93,
+      "Geometry_initialization_time": 0.005228996276855469,
+      "FDM_time": 0.0013511180877685547,
+      "Loss_time": 1.0125539302825928,
+      "Back_time ": 0.02883315086364746,
+      "Parameter_update": 0.0001361370086669922
+    },
+    {
+      "iteration": 94,
+      "Geometry_initialization_time": 0.004369020462036133,
+      "FDM_time": 0.0014121532440185547,
+      "Loss_time": 0.9257698059082031,
+      "Back_time ": 0.03982114791870117,
+      "Parameter_update": 0.00015473365783691406
+    },
+    {
+      "iteration": 95,
+      "Geometry_initialization_time": 0.006179094314575195,
+      "FDM_time": 0.002524852752685547,
+      "Loss_time": 1.0053541660308838,
+      "Back_time ": 0.03582501411437988,
+      "Parameter_update": 0.00020813941955566406
+    },
+    {
+      "iteration": 96,
+      "Geometry_initialization_time": 0.004476070404052734,
+      "FDM_time": 0.0013947486877441406,
+      "Loss_time": 0.8156533241271973,
+      "Back_time ": 0.030434131622314453,
+      "Parameter_update": 0.00013494491577148438
+    },
+    {
+      "iteration": 97,
+      "Geometry_initialization_time": 0.004096031188964844,
+      "FDM_time": 0.0013697147369384766,
+      "Loss_time": 1.0608861446380615,
+      "Back_time ": 0.030210018157958984,
+      "Parameter_update": 0.00013685226440429688
+    },
+    {
+      "iteration": 98,
+      "Geometry_initialization_time": 0.005146026611328125,
+      "FDM_time": 0.001325845718383789,
+      "Loss_time": 0.8626019954681396,
+      "Back_time ": 0.030269145965576172,
+      "Parameter_update": 0.0001342296600341797
+    },
+    {
+      "iteration": 99,
+      "Geometry_initialization_time": 0.004227161407470703,
+      "FDM_time": 0.0013799667358398438,
+      "Loss_time": 1.2639670372009277,
+      "Back_time ": 0.036501169204711914,
+      "Parameter_update": 0.000141143798828125
+    },
+    {
+      "iteration": 100,
+      "Geometry_initialization_time": 0.005089998245239258,
+      "FDM_time": 0.0019240379333496094,
+      "Loss_time": 0.9436359405517578,
+      "Back_time ": 0.0326080322265625,
+      "Parameter_update": 0.0002551078796386719
+    },
+    {
+      "iteration": 101,
+      "Geometry_initialization_time": 0.005391836166381836,
+      "FDM_time": 0.0021910667419433594,
+      "Loss_time": 0.8482460975646973,
+      "Back_time ": 0.035492897033691406,
+      "Parameter_update": 0.00014781951904296875
+    },
+    {
+      "iteration": 102,
+      "Geometry_initialization_time": 0.004776954650878906,
+      "FDM_time": 0.0013439655303955078,
+      "Loss_time": 0.8115839958190918,
+      "Back_time ": 0.0320281982421875,
+      "Parameter_update": 0.00014710426330566406
+    },
+    {
+      "iteration": 103,
+      "Geometry_initialization_time": 0.004249095916748047,
+      "FDM_time": 0.0013058185577392578,
+      "Loss_time": 0.9170737266540527,
+      "Back_time ": 0.032911062240600586,
+      "Parameter_update": 0.0001461505889892578
+    },
+    {
+      "iteration": 104,
+      "Geometry_initialization_time": 0.004322052001953125,
+      "FDM_time": 0.002094745635986328,
+      "Loss_time": 0.8691198825836182,
+      "Back_time ": 0.030786991119384766,
+      "Parameter_update": 0.0001380443572998047
+    },
+    {
+      "iteration": 105,
+      "Geometry_initialization_time": 0.004548072814941406,
+      "FDM_time": 0.0019388198852539062,
+      "Loss_time": 0.9450728893280029,
+      "Back_time ": 0.03850603103637695,
+      "Parameter_update": 0.00017595291137695312
+    },
+    {
+      "iteration": 106,
+      "Geometry_initialization_time": 0.0052950382232666016,
+      "FDM_time": 0.001968860626220703,
+      "Loss_time": 0.8658161163330078,
+      "Back_time ": 0.03000497817993164,
+      "Parameter_update": 0.00014495849609375
+    },
+    {
+      "iteration": 107,
+      "Geometry_initialization_time": 0.004688739776611328,
+      "FDM_time": 0.0014739036560058594,
+      "Loss_time": 0.9404737949371338,
+      "Back_time ": 0.03206992149353027,
+      "Parameter_update": 0.00013899803161621094
+    },
+    {
+      "iteration": 108,
+      "Geometry_initialization_time": 0.004122018814086914,
+      "FDM_time": 0.0013239383697509766,
+      "Loss_time": 0.8069362640380859,
+      "Back_time ": 0.03121781349182129,
+      "Parameter_update": 0.00013899803161621094
+    },
+    {
+      "iteration": 109,
+      "Geometry_initialization_time": 0.004136085510253906,
+      "FDM_time": 0.0013158321380615234,
+      "Loss_time": 1.1360270977020264,
+      "Back_time ": 0.043148040771484375,
+      "Parameter_update": 0.00020885467529296875
+    },
+    {
+      "iteration": 110,
+      "Geometry_initialization_time": 0.012307882308959961,
+      "FDM_time": 0.0021996498107910156,
+      "Loss_time": 0.9703900814056396,
+      "Back_time ": 0.033262014389038086,
+      "Parameter_update": 0.00013685226440429688
+    },
+    {
+      "iteration": 111,
+      "Geometry_initialization_time": 0.004612922668457031,
+      "FDM_time": 0.0015790462493896484,
+      "Loss_time": 0.9920978546142578,
+      "Back_time ": 0.03422117233276367,
+      "Parameter_update": 0.00018310546875
+    },
+    {
+      "iteration": 112,
+      "Geometry_initialization_time": 0.00426793098449707,
+      "FDM_time": 0.0016322135925292969,
+      "Loss_time": 0.9256041049957275,
+      "Back_time ": 0.03173708915710449,
+      "Parameter_update": 0.00013685226440429688
+    },
+    {
+      "iteration": 113,
+      "Geometry_initialization_time": 0.0041179656982421875,
+      "FDM_time": 0.001634836196899414,
+      "Loss_time": 1.0732231140136719,
+      "Back_time ": 0.031968116760253906,
+      "Parameter_update": 0.00016307830810546875
+    },
+    {
+      "iteration": 114,
+      "Geometry_initialization_time": 0.0041599273681640625,
+      "FDM_time": 0.0013051033020019531,
+      "Loss_time": 0.822969913482666,
+      "Back_time ": 0.030131101608276367,
+      "Parameter_update": 0.0001399517059326172
+    },
+    {
+      "iteration": 115,
+      "Geometry_initialization_time": 0.0050201416015625,
+      "FDM_time": 0.0014030933380126953,
+      "Loss_time": 0.997683048248291,
+      "Back_time ": 0.04509115219116211,
+      "Parameter_update": 0.00018405914306640625
+    },
+    {
+      "iteration": 116,
+      "Geometry_initialization_time": 0.009144783020019531,
+      "FDM_time": 0.0027627944946289062,
+      "Loss_time": 0.8691589832305908,
+      "Back_time ": 0.03187203407287598,
+      "Parameter_update": 0.0001590251922607422
+    },
+    {
+      "iteration": 117,
+      "Geometry_initialization_time": 0.006372690200805664,
+      "FDM_time": 0.0020999908447265625,
+      "Loss_time": 0.8953719139099121,
+      "Back_time ": 0.03191494941711426,
+      "Parameter_update": 0.00014209747314453125
+    },
+    {
+      "iteration": 118,
+      "Geometry_initialization_time": 0.004210948944091797,
+      "FDM_time": 0.0021369457244873047,
+      "Loss_time": 1.1986041069030762,
+      "Back_time ": 0.030227184295654297,
+      "Parameter_update": 0.00014019012451171875
+    },
+    {
+      "iteration": 119,
+      "Geometry_initialization_time": 0.004246950149536133,
+      "FDM_time": 0.001477956771850586,
+      "Loss_time": 1.0663070678710938,
+      "Back_time ": 0.03910398483276367,
+      "Parameter_update": 0.00018787384033203125
+    },
+    {
+      "iteration": 120,
+      "Geometry_initialization_time": 0.007749795913696289,
+      "FDM_time": 0.002148151397705078,
+      "Loss_time": 1.0214316844940186,
+      "Back_time ": 0.03495192527770996,
+      "Parameter_update": 0.0001380443572998047
+    },
+    {
+      "iteration": 121,
+      "Geometry_initialization_time": 0.005513906478881836,
+      "FDM_time": 0.0024900436401367188,
+      "Loss_time": 1.0333120822906494,
+      "Back_time ": 0.03108692169189453,
+      "Parameter_update": 0.00014901161193847656
+    },
+    {
+      "iteration": 122,
+      "Geometry_initialization_time": 0.004256010055541992,
+      "FDM_time": 0.0023450851440429688,
+      "Loss_time": 0.8999979496002197,
+      "Back_time ": 0.03966403007507324,
+      "Parameter_update": 0.0007691383361816406
+    },
+    {
+      "iteration": 123,
+      "Geometry_initialization_time": 0.006623983383178711,
+      "FDM_time": 0.0026209354400634766,
+      "Loss_time": 1.0408399105072021,
+      "Back_time ": 0.03584694862365723,
+      "Parameter_update": 0.00016307830810546875
+    },
+    {
+      "iteration": 124,
+      "Geometry_initialization_time": 0.005312919616699219,
+      "FDM_time": 0.0019071102142333984,
+      "Loss_time": 0.7927680015563965,
+      "Back_time ": 0.03147697448730469,
+      "Parameter_update": 0.0001399517059326172
+    },
+    {
+      "iteration": 125,
+      "Geometry_initialization_time": 0.004360198974609375,
+      "FDM_time": 0.001416921615600586,
+      "Loss_time": 1.298062801361084,
+      "Back_time ": 0.04007077217102051,
+      "Parameter_update": 0.0001800060272216797
+    },
+    {
+      "iteration": 126,
+      "Geometry_initialization_time": 0.006010770797729492,
+      "FDM_time": 0.001837015151977539,
+      "Loss_time": 1.146116018295288,
+      "Back_time ": 0.035978078842163086,
+      "Parameter_update": 0.0004210472106933594
+    },
+    {
+      "iteration": 127,
+      "Geometry_initialization_time": 0.0042989253997802734,
+      "FDM_time": 0.0015370845794677734,
+      "Loss_time": 1.055743932723999,
+      "Back_time ": 0.03399395942687988,
+      "Parameter_update": 0.00013899803161621094
+    },
+    {
+      "iteration": 128,
+      "Geometry_initialization_time": 0.005747079849243164,
+      "FDM_time": 0.0014622211456298828,
+      "Loss_time": 1.34934401512146,
+      "Back_time ": 0.033271074295043945,
+      "Parameter_update": 0.00016736984252929688
+    },
+    {
+      "iteration": 129,
+      "Geometry_initialization_time": 0.005079984664916992,
+      "FDM_time": 0.0016961097717285156,
+      "Loss_time": 0.9628539085388184,
+      "Back_time ": 0.029623985290527344,
+      "Parameter_update": 0.00013685226440429688
+    },
+    {
+      "iteration": 130,
+      "Geometry_initialization_time": 0.004179954528808594,
+      "FDM_time": 0.0012619495391845703,
+      "Loss_time": 0.7772941589355469,
+      "Back_time ": 0.030295610427856445,
+      "Parameter_update": 0.0001342296600341797
+    },
+    {
+      "iteration": 131,
+      "Geometry_initialization_time": 0.004502058029174805,
+      "FDM_time": 0.0014159679412841797,
+      "Loss_time": 0.8131411075592041,
+      "Back_time ": 0.03105306625366211,
+      "Parameter_update": 0.00013589859008789062
+    },
+    {
+      "iteration": 132,
+      "Geometry_initialization_time": 0.005300998687744141,
+      "FDM_time": 0.0013990402221679688,
+      "Loss_time": 0.8533580303192139,
+      "Back_time ": 0.032980918884277344,
+      "Parameter_update": 0.00016880035400390625
+    },
+    {
+      "iteration": 133,
+      "Geometry_initialization_time": 0.005766153335571289,
+      "FDM_time": 0.001386880874633789,
+      "Loss_time": 0.9311389923095703,
+      "Back_time ": 0.040422916412353516,
+      "Parameter_update": 0.0001437664031982422
+    },
+    {
+      "iteration": 134,
+      "Geometry_initialization_time": 0.005221843719482422,
+      "FDM_time": 0.0025599002838134766,
+      "Loss_time": 0.8891761302947998,
+      "Back_time ": 0.031805992126464844,
+      "Parameter_update": 0.00017404556274414062
+    },
+    {
+      "iteration": 135,
+      "Geometry_initialization_time": 0.004673004150390625,
+      "FDM_time": 0.0013267993927001953,
+      "Loss_time": 0.951077938079834,
+      "Back_time ": 0.03136730194091797,
+      "Parameter_update": 0.00015306472778320312
+    },
+    {
+      "iteration": 136,
+      "Geometry_initialization_time": 0.004289150238037109,
+      "FDM_time": 0.0013110637664794922,
+      "Loss_time": 0.8245198726654053,
+      "Back_time ": 0.03524303436279297,
+      "Parameter_update": 0.00014281272888183594
+    },
+    {
+      "iteration": 137,
+      "Geometry_initialization_time": 0.004504680633544922,
+      "FDM_time": 0.0015997886657714844,
+      "Loss_time": 0.8903789520263672,
+      "Back_time ": 0.028399229049682617,
+      "Parameter_update": 0.0001327991485595703
+    },
+    {
+      "iteration": 138,
+      "Geometry_initialization_time": 0.004169940948486328,
+      "FDM_time": 0.0015301704406738281,
+      "Loss_time": 0.9650349617004395,
+      "Back_time ": 0.035308837890625,
+      "Parameter_update": 0.00013709068298339844
+    },
+    {
+      "iteration": 139,
+      "Geometry_initialization_time": 0.004824161529541016,
+      "FDM_time": 0.00131988525390625,
+      "Loss_time": 0.8980610370635986,
+      "Back_time ": 0.030657052993774414,
+      "Parameter_update": 0.00021195411682128906
+    },
+    {
+      "iteration": 140,
+      "Geometry_initialization_time": 0.00504302978515625,
+      "FDM_time": 0.0013089179992675781,
+      "Loss_time": 0.8156449794769287,
+      "Back_time ": 0.031026840209960938,
+      "Parameter_update": 0.0001609325408935547
+    },
+    {
+      "iteration": 141,
+      "Geometry_initialization_time": 0.0051403045654296875,
+      "FDM_time": 0.0015680789947509766,
+      "Loss_time": 0.7861371040344238,
+      "Back_time ": 0.029725074768066406,
+      "Parameter_update": 0.00013303756713867188
+    },
+    {
+      "iteration": 142,
+      "Geometry_initialization_time": 0.004472255706787109,
+      "FDM_time": 0.0016646385192871094,
+      "Loss_time": 0.8188059329986572,
+      "Back_time ": 0.03287816047668457,
+      "Parameter_update": 0.00014090538024902344
+    },
+    {
+      "iteration": 143,
+      "Geometry_initialization_time": 0.00524592399597168,
+      "FDM_time": 0.0014481544494628906,
+      "Loss_time": 0.9162709712982178,
+      "Back_time ": 0.031880855560302734,
+      "Parameter_update": 0.0001800060272216797
+    },
+    {
+      "iteration": 144,
+      "Geometry_initialization_time": 0.005585193634033203,
+      "FDM_time": 0.0016481876373291016,
+      "Loss_time": 0.7924888134002686,
+      "Back_time ": 0.030908823013305664,
+      "Parameter_update": 0.00014591217041015625
+    },
+    {
+      "iteration": 145,
+      "Geometry_initialization_time": 0.0041277408599853516,
+      "FDM_time": 0.0014660358428955078,
+      "Loss_time": 0.8473091125488281,
+      "Back_time ": 0.029973983764648438,
+      "Parameter_update": 0.00015163421630859375
+    },
+    {
+      "iteration": 146,
+      "Geometry_initialization_time": 0.0042421817779541016,
+      "FDM_time": 0.0014989376068115234,
+      "Loss_time": 0.8063609600067139,
+      "Back_time ": 0.03007793426513672,
+      "Parameter_update": 0.00013494491577148438
+    },
+    {
+      "iteration": 147,
+      "Geometry_initialization_time": 0.004118919372558594,
+      "FDM_time": 0.0013301372528076172,
+      "Loss_time": 1.0555000305175781,
+      "Back_time ": 0.05617260932922363,
+      "Parameter_update": 0.0001900196075439453
+    },
+    {
+      "iteration": 148,
+      "Geometry_initialization_time": 0.005633115768432617,
+      "FDM_time": 0.001603841781616211,
+      "Loss_time": 1.059117078781128,
+      "Back_time ": 0.03383493423461914,
+      "Parameter_update": 0.00015115737915039062
+    },
+    {
+      "iteration": 149,
+      "Geometry_initialization_time": 0.005316019058227539,
+      "FDM_time": 0.002023935317993164,
+      "Loss_time": 0.8316411972045898,
+      "Back_time ": 0.02978801727294922,
+      "Parameter_update": 0.00013589859008789062
+    },
+    {
+      "iteration": 150,
+      "Geometry_initialization_time": 0.004085063934326172,
+      "FDM_time": 0.0013031959533691406,
+      "Loss_time": 0.7923336029052734,
+      "Back_time ": 0.029432296752929688,
+      "Parameter_update": 0.00016307830810546875
+    },
+    {
+      "iteration": 151,
+      "Geometry_initialization_time": 0.00464940071105957,
+      "FDM_time": 0.0016231536865234375,
+      "Loss_time": 0.8133480548858643,
+      "Back_time ": 0.03477287292480469,
+      "Parameter_update": 0.00014400482177734375
+    },
+    {
+      "iteration": 152,
+      "Geometry_initialization_time": 0.004670381546020508,
+      "FDM_time": 0.0017790794372558594,
+      "Loss_time": 0.8628017902374268,
+      "Back_time ": 0.033976078033447266,
+      "Parameter_update": 0.0001418590545654297
+    },
+    {
+      "iteration": 153,
+      "Geometry_initialization_time": 0.00507807731628418,
+      "FDM_time": 0.0013718605041503906,
+      "Loss_time": 0.8803770542144775,
+      "Back_time ": 0.0339350700378418,
+      "Parameter_update": 0.0001380443572998047
+    },
+    {
+      "iteration": 154,
+      "Geometry_initialization_time": 0.004765987396240234,
+      "FDM_time": 0.0016608238220214844,
+      "Loss_time": 0.8121109008789062,
+      "Back_time ": 0.030107975006103516,
+      "Parameter_update": 0.00013518333435058594
+    },
+    {
+      "iteration": 155,
+      "Geometry_initialization_time": 0.004753828048706055,
+      "FDM_time": 0.0012929439544677734,
+      "Loss_time": 0.837550163269043,
+      "Back_time ": 0.029013872146606445,
+      "Parameter_update": 0.0010209083557128906
+    },
+    {
+      "iteration": 156,
+      "Geometry_initialization_time": 0.0048389434814453125,
+      "FDM_time": 0.0013189315795898438,
+      "Loss_time": 0.827721118927002,
+      "Back_time ": 0.029894113540649414,
+      "Parameter_update": 0.00013589859008789062
+    },
+    {
+      "iteration": 157,
+      "Geometry_initialization_time": 0.004345893859863281,
+      "FDM_time": 0.0013301372528076172,
+      "Loss_time": 1.0406639575958252,
+      "Back_time ": 0.032386064529418945,
+      "Parameter_update": 0.00013899803161621094
+    },
+    {
+      "iteration": 158,
+      "Geometry_initialization_time": 0.004636287689208984,
+      "FDM_time": 0.0017840862274169922,
+      "Loss_time": 0.8649530410766602,
+      "Back_time ": 0.03272509574890137,
+      "Parameter_update": 0.0001380443572998047
+    },
+    {
+      "iteration": 159,
+      "Geometry_initialization_time": 0.004517793655395508,
+      "FDM_time": 0.0015270709991455078,
+      "Loss_time": 1.0964889526367188,
+      "Back_time ": 0.032460927963256836,
+      "Parameter_update": 0.00014281272888183594
+    },
+    {
+      "iteration": 160,
+      "Geometry_initialization_time": 0.0052759647369384766,
+      "FDM_time": 0.0016140937805175781,
+      "Loss_time": 0.9428081512451172,
+      "Back_time ": 0.04027128219604492,
+      "Parameter_update": 0.00019788742065429688
+    },
+    {
+      "iteration": 161,
+      "Geometry_initialization_time": 0.006988048553466797,
+      "FDM_time": 0.04956793785095215,
+      "Loss_time": 0.922734260559082,
+      "Back_time ": 0.03223085403442383,
+      "Parameter_update": 0.00013899803161621094
+    },
+    {
+      "iteration": 162,
+      "Geometry_initialization_time": 0.004621982574462891,
+      "FDM_time": 0.002007007598876953,
+      "Loss_time": 0.9084172248840332,
+      "Back_time ": 0.04500603675842285,
+      "Parameter_update": 0.00015401840209960938
+    },
+    {
+      "iteration": 163,
+      "Geometry_initialization_time": 0.006695985794067383,
+      "FDM_time": 0.0022339820861816406,
+      "Loss_time": 0.9376058578491211,
+      "Back_time ": 0.03135275840759277,
+      "Parameter_update": 0.00014090538024902344
+    },
+    {
+      "iteration": 164,
+      "Geometry_initialization_time": 0.0047321319580078125,
+      "FDM_time": 0.00189208984375,
+      "Loss_time": 0.8845529556274414,
+      "Back_time ": 0.03635716438293457,
+      "Parameter_update": 0.00014495849609375
+    },
+    {
+      "iteration": 165,
+      "Geometry_initialization_time": 0.0055501461029052734,
+      "FDM_time": 0.0018680095672607422,
+      "Loss_time": 1.1050729751586914,
+      "Back_time ": 0.03447604179382324,
+      "Parameter_update": 0.00013899803161621094
+    },
+    {
+      "iteration": 166,
+      "Geometry_initialization_time": 0.0057446956634521484,
+      "FDM_time": 0.0016398429870605469,
+      "Loss_time": 0.8929762840270996,
+      "Back_time ": 0.03558611869812012,
+      "Parameter_update": 0.000141143798828125
+    },
+    {
+      "iteration": 167,
+      "Geometry_initialization_time": 0.005259037017822266,
+      "FDM_time": 0.0018579959869384766,
+      "Loss_time": 0.926253080368042,
+      "Back_time ": 0.030872106552124023,
+      "Parameter_update": 0.0002231597900390625
+    },
+    {
+      "iteration": 168,
+      "Geometry_initialization_time": 0.0044901371002197266,
+      "FDM_time": 0.001474142074584961,
+      "Loss_time": 0.7972869873046875,
+      "Back_time ": 0.029046058654785156,
+      "Parameter_update": 0.00013685226440429688
+    },
+    {
+      "iteration": 169,
+      "Geometry_initialization_time": 0.004540920257568359,
+      "FDM_time": 0.0018610954284667969,
+      "Loss_time": 0.8627707958221436,
+      "Back_time ": 0.03506207466125488,
+      "Parameter_update": 0.00015687942504882812
+    },
+    {
+      "iteration": 170,
+      "Geometry_initialization_time": 0.007524251937866211,
+      "FDM_time": 0.003554821014404297,
+      "Loss_time": 0.859062910079956,
+      "Back_time ": 0.032982826232910156,
+      "Parameter_update": 0.00014901161193847656
+    },
+    {
+      "iteration": 171,
+      "Geometry_initialization_time": 0.005556821823120117,
+      "FDM_time": 0.0021560192108154297,
+      "Loss_time": 1.0836501121520996,
+      "Back_time ": 0.03077101707458496,
+      "Parameter_update": 0.00015592575073242188
+    },
+    {
+      "iteration": 172,
+      "Geometry_initialization_time": 0.004987955093383789,
+      "FDM_time": 0.0015459060668945312,
+      "Loss_time": 0.8472259044647217,
+      "Back_time ": 0.03248119354248047,
+      "Parameter_update": 0.00014281272888183594
+    },
+    {
+      "iteration": 173,
+      "Geometry_initialization_time": 0.0044329166412353516,
+      "FDM_time": 0.0013790130615234375,
+      "Loss_time": 0.8793010711669922,
+      "Back_time ": 0.0301361083984375,
+      "Parameter_update": 0.00014281272888183594
+    },
+    {
+      "iteration": 174,
+      "Geometry_initialization_time": 0.006474971771240234,
+      "FDM_time": 0.0016028881072998047,
+      "Loss_time": 0.791093111038208,
+      "Back_time ": 0.029976844787597656,
+      "Parameter_update": 0.00019407272338867188
+    },
+    {
+      "iteration": 175,
+      "Geometry_initialization_time": 0.006428956985473633,
+      "FDM_time": 0.001973867416381836,
+      "Loss_time": 0.8361260890960693,
+      "Back_time ": 0.030106782913208008,
+      "Parameter_update": 0.00013589859008789062
+    },
+    {
+      "iteration": 176,
+      "Geometry_initialization_time": 0.004296064376831055,
+      "FDM_time": 0.0012791156768798828,
+      "Loss_time": 0.8034729957580566,
+      "Back_time ": 0.03291821479797363,
+      "Parameter_update": 0.00017499923706054688
+    },
+    {
+      "iteration": 177,
+      "Geometry_initialization_time": 0.0043408870697021484,
+      "FDM_time": 0.001363992691040039,
+      "Loss_time": 0.9011719226837158,
+      "Back_time ": 0.032247066497802734,
+      "Parameter_update": 0.00014591217041015625
+    },
+    {
+      "iteration": 178,
+      "Geometry_initialization_time": 0.004908084869384766,
+      "FDM_time": 0.0015070438385009766,
+      "Loss_time": 0.8213481903076172,
+      "Back_time ": 0.030452966690063477,
+      "Parameter_update": 0.0001380443572998047
+    },
+    {
+      "iteration": 179,
+      "Geometry_initialization_time": 0.0043621063232421875,
+      "FDM_time": 0.0013911724090576172,
+      "Loss_time": 0.8761599063873291,
+      "Back_time ": 0.02960801124572754,
+      "Parameter_update": 0.00013899803161621094
+    },
+    {
+      "iteration": 180,
+      "Geometry_initialization_time": 0.004416942596435547,
+      "FDM_time": 0.001706838607788086,
+      "Loss_time": 0.9773221015930176,
+      "Back_time ": 0.03233194351196289,
+      "Parameter_update": 0.00013780593872070312
+    },
+    {
+      "iteration": 181,
+      "Geometry_initialization_time": 0.006840705871582031,
+      "FDM_time": 0.022854328155517578,
+      "Loss_time": 0.8515729904174805,
+      "Back_time ": 0.03671097755432129,
+      "Parameter_update": 0.00014400482177734375
+    },
+    {
+      "iteration": 182,
+      "Geometry_initialization_time": 0.004912137985229492,
+      "FDM_time": 0.0014219284057617188,
+      "Loss_time": 0.8260960578918457,
+      "Back_time ": 0.031074047088623047,
+      "Parameter_update": 0.00014209747314453125
+    },
+    {
+      "iteration": 183,
+      "Geometry_initialization_time": 0.004453182220458984,
+      "FDM_time": 0.0015549659729003906,
+      "Loss_time": 0.8897130489349365,
+      "Back_time ": 0.032649993896484375,
+      "Parameter_update": 0.00015306472778320312
+    },
+    {
+      "iteration": 184,
+      "Geometry_initialization_time": 0.005730152130126953,
+      "FDM_time": 0.001550912857055664,
+      "Loss_time": 0.8380060195922852,
+      "Back_time ": 0.03716087341308594,
+      "Parameter_update": 0.0001468658447265625
+    },
+    {
+      "iteration": 185,
+      "Geometry_initialization_time": 0.004586935043334961,
+      "FDM_time": 0.0021820068359375,
+      "Loss_time": 0.896172046661377,
+      "Back_time ": 0.032009124755859375,
+      "Parameter_update": 0.00015091896057128906
+    },
+    {
+      "iteration": 186,
+      "Geometry_initialization_time": 0.004724979400634766,
+      "FDM_time": 0.0016131401062011719,
+      "Loss_time": 0.8194370269775391,
+      "Back_time ": 0.031594038009643555,
+      "Parameter_update": 0.00014591217041015625
+    },
+    {
+      "iteration": 187,
+      "Geometry_initialization_time": 0.004607200622558594,
+      "FDM_time": 0.0020477771759033203,
+      "Loss_time": 0.9079277515411377,
+      "Back_time ": 0.03759598731994629,
+      "Parameter_update": 0.0001499652862548828
+    },
+    {
+      "iteration": 188,
+      "Geometry_initialization_time": 0.004609107971191406,
+      "FDM_time": 0.0022232532501220703,
+      "Loss_time": 0.8835601806640625,
+      "Back_time ": 0.034757137298583984,
+      "Parameter_update": 0.0001678466796875
+    },
+    {
+      "iteration": 189,
+      "Geometry_initialization_time": 0.006826162338256836,
+      "FDM_time": 0.0016121864318847656,
+      "Loss_time": 0.9060108661651611,
+      "Back_time ": 0.03213381767272949,
+      "Parameter_update": 0.00014710426330566406
+    },
+    {
+      "iteration": 190,
+      "Geometry_initialization_time": 0.004686117172241211,
+      "FDM_time": 0.0014431476593017578,
+      "Loss_time": 0.8757262229919434,
+      "Back_time ": 0.03546023368835449,
+      "Parameter_update": 0.00014638900756835938
+    },
+    {
+      "iteration": 191,
+      "Geometry_initialization_time": 0.004793643951416016,
+      "FDM_time": 0.0015561580657958984,
+      "Loss_time": 0.9441709518432617,
+      "Back_time ": 0.036448001861572266,
+      "Parameter_update": 0.00015163421630859375
+    },
+    {
+      "iteration": 192,
+      "Geometry_initialization_time": 0.004652738571166992,
+      "FDM_time": 0.001538991928100586,
+      "Loss_time": 0.8907787799835205,
+      "Back_time ": 0.03521370887756348,
+      "Parameter_update": 0.00016307830810546875
+    },
+    {
+      "iteration": 193,
+      "Geometry_initialization_time": 0.004701852798461914,
+      "FDM_time": 0.0017137527465820312,
+      "Loss_time": 0.9378049373626709,
+      "Back_time ": 0.034060001373291016,
+      "Parameter_update": 0.0001518726348876953
+    },
+    {
+      "iteration": 194,
+      "Geometry_initialization_time": 0.004650115966796875,
+      "FDM_time": 0.0015459060668945312,
+      "Loss_time": 0.8453121185302734,
+      "Back_time ": 0.03212690353393555,
+      "Parameter_update": 0.00015497207641601562
+    },
+    {
+      "iteration": 195,
+      "Geometry_initialization_time": 0.004616260528564453,
+      "FDM_time": 0.0014750957489013672,
+      "Loss_time": 1.0427939891815186,
+      "Back_time ": 0.037613868713378906,
+      "Parameter_update": 0.00015616416931152344
+    },
+    {
+      "iteration": 196,
+      "Geometry_initialization_time": 0.0058100223541259766,
+      "FDM_time": 0.00168609619140625,
+      "Loss_time": 1.180783987045288,
+      "Back_time ": 0.034935712814331055,
+      "Parameter_update": 0.0001659393310546875
+    },
+    {
+      "iteration": 197,
+      "Geometry_initialization_time": 0.005557060241699219,
+      "FDM_time": 0.0016520023345947266,
+      "Loss_time": 0.9862689971923828,
+      "Back_time ": 0.033968210220336914,
+      "Parameter_update": 0.00014591217041015625
+    },
+    {
+      "iteration": 198,
+      "Geometry_initialization_time": 0.0047872066497802734,
+      "FDM_time": 0.0014736652374267578,
+      "Loss_time": 1.0097711086273193,
+      "Back_time ": 0.035610198974609375,
+      "Parameter_update": 0.00015592575073242188
+    },
+    {
+      "iteration": 199,
+      "Geometry_initialization_time": 0.005630970001220703,
+      "FDM_time": 0.0024700164794921875,
+      "Loss_time": 1.0196521282196045,
+      "Back_time ": 0.03859305381774902,
+      "Parameter_update": 0.00016021728515625
+    },
+    {
+      "iteration": 200,
+      "Geometry_initialization_time": 0.005383729934692383,
+      "FDM_time": 0.001978158950805664,
+      "Loss_time": 0.931614875793457,
+      "Back_time ": 0.03291797637939453,
+      "Parameter_update": 0.0001468658447265625
+    },
+    {
+      "iteration": 201,
+      "Geometry_initialization_time": 0.0053310394287109375,
+      "FDM_time": 0.0019190311431884766,
+      "Loss_time": 1.098487138748169,
+      "Back_time ": 0.04564690589904785,
+      "Parameter_update": 0.0001857280731201172
+    },
+    {
+      "iteration": 202,
+      "Geometry_initialization_time": 0.006042957305908203,
+      "FDM_time": 0.0021660327911376953,
+      "Loss_time": 0.8930492401123047,
+      "Back_time ": 0.036535024642944336,
+      "Parameter_update": 0.000186920166015625
+    },
+    {
+      "iteration": 203,
+      "Geometry_initialization_time": 0.005532979965209961,
+      "FDM_time": 0.0020520687103271484,
+      "Loss_time": 0.9660029411315918,
+      "Back_time ": 0.03417229652404785,
+      "Parameter_update": 0.0001537799835205078
+    },
+    {
+      "iteration": 204,
+      "Geometry_initialization_time": 0.0060689449310302734,
+      "FDM_time": 0.0017008781433105469,
+      "Loss_time": 0.8684170246124268,
+      "Back_time ": 0.04002213478088379,
+      "Parameter_update": 0.00017881393432617188
+    },
+    {
+      "iteration": 205,
+      "Geometry_initialization_time": 0.005972146987915039,
+      "FDM_time": 0.002084016799926758,
+      "Loss_time": 1.098334789276123,
+      "Back_time ": 0.038156986236572266,
+      "Parameter_update": 0.00014400482177734375
+    },
+    {
+      "iteration": 206,
+      "Geometry_initialization_time": 0.004548788070678711,
+      "FDM_time": 0.0015370845794677734,
+      "Loss_time": 0.8315889835357666,
+      "Back_time ": 0.03523826599121094,
+      "Parameter_update": 0.0001850128173828125
+    },
+    {
+      "iteration": 207,
+      "Geometry_initialization_time": 0.0051479339599609375,
+      "FDM_time": 0.0018742084503173828,
+      "Loss_time": 0.9169731140136719,
+      "Back_time ": 0.03978419303894043,
+      "Parameter_update": 0.00023698806762695312
+    },
+    {
+      "iteration": 208,
+      "Geometry_initialization_time": 0.0045740604400634766,
+      "FDM_time": 0.0014352798461914062,
+      "Loss_time": 0.9699678421020508,
+      "Back_time ": 0.04036211967468262,
+      "Parameter_update": 0.00017404556274414062
+    },
+    {
+      "iteration": 209,
+      "Geometry_initialization_time": 0.0052602291107177734,
+      "FDM_time": 0.00162506103515625,
+      "Loss_time": 1.0806810855865479,
+      "Back_time ": 0.03551983833312988,
+      "Parameter_update": 0.0001437664031982422
+    },
+    {
+      "iteration": 210,
+      "Geometry_initialization_time": 0.004561185836791992,
+      "FDM_time": 0.0016698837280273438,
+      "Loss_time": 0.9248459339141846,
+      "Back_time ": 0.04132890701293945,
+      "Parameter_update": 0.00015115737915039062
+    },
+    {
+      "iteration": 211,
+      "Geometry_initialization_time": 0.007033109664916992,
+      "FDM_time": 0.0014750957489013672,
+      "Loss_time": 1.2559340000152588,
+      "Back_time ": 0.04697084426879883,
+      "Parameter_update": 0.00020503997802734375
+    },
+    {
+      "iteration": 212,
+      "Geometry_initialization_time": 0.006017923355102539,
+      "FDM_time": 0.0017342567443847656,
+      "Loss_time": 1.0734379291534424,
+      "Back_time ": 0.04350781440734863,
+      "Parameter_update": 0.00021982192993164062
+    },
+    {
+      "iteration": 213,
+      "Geometry_initialization_time": 0.0063130855560302734,
+      "FDM_time": 0.0020520687103271484,
+      "Loss_time": 1.175990104675293,
+      "Back_time ": 0.06448793411254883,
+      "Parameter_update": 0.0002288818359375
+    },
+    {
+      "iteration": 214,
+      "Geometry_initialization_time": 0.008070945739746094,
+      "FDM_time": 0.0019729137420654297,
+      "Loss_time": 1.153198003768921,
+      "Back_time ": 0.038687944412231445,
+      "Parameter_update": 0.00014901161193847656
+    },
+    {
+      "iteration": 215,
+      "Geometry_initialization_time": 0.006106138229370117,
+      "FDM_time": 0.002645254135131836,
+      "Loss_time": 1.1271910667419434,
+      "Back_time ": 0.0404508113861084,
+      "Parameter_update": 0.00015997886657714844
+    },
+    {
+      "iteration": 216,
+      "Geometry_initialization_time": 0.0050961971282958984,
+      "FDM_time": 0.0022346973419189453,
+      "Loss_time": 1.1442067623138428,
+      "Back_time ": 0.036396026611328125,
+      "Parameter_update": 0.0001800060272216797
+    },
+    {
+      "iteration": 217,
+      "Geometry_initialization_time": 0.004624128341674805,
+      "FDM_time": 0.001439809799194336,
+      "Loss_time": 1.0315589904785156,
+      "Back_time ": 0.037468910217285156,
+      "Parameter_update": 0.0001518726348876953
+    },
+    {
+      "iteration": 218,
+      "Geometry_initialization_time": 0.0050051212310791016,
+      "FDM_time": 0.0020570755004882812,
+      "Loss_time": 0.9625828266143799,
+      "Back_time ": 0.03813791275024414,
+      "Parameter_update": 0.0001480579376220703
+    },
+    {
+      "iteration": 219,
+      "Geometry_initialization_time": 0.004600048065185547,
+      "FDM_time": 0.0017440319061279297,
+      "Loss_time": 1.0634920597076416,
+      "Back_time ": 0.03696799278259277,
+      "Parameter_update": 0.00015783309936523438
+    },
+    {
+      "iteration": 220,
+      "Geometry_initialization_time": 0.005291938781738281,
+      "FDM_time": 0.0017538070678710938,
+      "Loss_time": 0.9374589920043945,
+      "Back_time ": 0.03493976593017578,
+      "Parameter_update": 0.00015091896057128906
+    },
+    {
+      "iteration": 221,
+      "Geometry_initialization_time": 0.004977226257324219,
+      "FDM_time": 0.0019299983978271484,
+      "Loss_time": 0.8679378032684326,
+      "Back_time ": 0.04260396957397461,
+      "Parameter_update": 0.00015807151794433594
+    },
+    {
+      "iteration": 222,
+      "Geometry_initialization_time": 0.005856037139892578,
+      "FDM_time": 0.0018780231475830078,
+      "Loss_time": 1.1235682964324951,
+      "Back_time ": 0.03905296325683594,
+      "Parameter_update": 0.00015592575073242188
+    },
+    {
+      "iteration": 223,
+      "Geometry_initialization_time": 0.005241870880126953,
+      "FDM_time": 0.001544952392578125,
+      "Loss_time": 1.0003211498260498,
+      "Back_time ": 0.03934288024902344,
+      "Parameter_update": 0.00017404556274414062
+    },
+    {
+      "iteration": 224,
+      "Geometry_initialization_time": 0.005135059356689453,
+      "FDM_time": 0.0026340484619140625,
+      "Loss_time": 1.0099201202392578,
+      "Back_time ": 0.0360260009765625,
+      "Parameter_update": 0.0001537799835205078
+    },
+    {
+      "iteration": 225,
+      "Geometry_initialization_time": 0.004580974578857422,
+      "FDM_time": 0.0016810894012451172,
+      "Loss_time": 0.9959759712219238,
+      "Back_time ": 0.03737592697143555,
+      "Parameter_update": 0.0002541542053222656
+    },
+    {
+      "iteration": 226,
+      "Geometry_initialization_time": 0.0053539276123046875,
+      "FDM_time": 0.0018780231475830078,
+      "Loss_time": 0.8906731605529785,
+      "Back_time ": 0.0366358757019043,
+      "Parameter_update": 0.00019502639770507812
+    },
+    {
+      "iteration": 227,
+      "Geometry_initialization_time": 0.005027055740356445,
+      "FDM_time": 0.0018260478973388672,
+      "Loss_time": 0.9131488800048828,
+      "Back_time ": 0.036917924880981445,
+      "Parameter_update": 0.00017905235290527344
+    },
+    {
+      "iteration": 228,
+      "Geometry_initialization_time": 0.0046389102935791016,
+      "FDM_time": 0.0014200210571289062,
+      "Loss_time": 1.1645777225494385,
+      "Back_time ": 0.03359484672546387,
+      "Parameter_update": 0.00014901161193847656
+    },
+    {
+      "iteration": 229,
+      "Geometry_initialization_time": 0.004747867584228516,
+      "FDM_time": 0.0016350746154785156,
+      "Loss_time": 0.9704318046569824,
+      "Back_time ": 0.03285384178161621,
+      "Parameter_update": 0.00015807151794433594
+    },
+    {
+      "iteration": 230,
+      "Geometry_initialization_time": 0.004960060119628906,
+      "FDM_time": 0.0014190673828125,
+      "Loss_time": 0.8997831344604492,
+      "Back_time ": 0.032469987869262695,
+      "Parameter_update": 0.000141143798828125
+    },
+    {
+      "iteration": 231,
+      "Geometry_initialization_time": 0.004492998123168945,
+      "FDM_time": 0.0014340877532958984,
+      "Loss_time": 0.8989980220794678,
+      "Back_time ": 0.035919189453125,
+      "Parameter_update": 0.00014591217041015625
+    },
+    {
+      "iteration": 232,
+      "Geometry_initialization_time": 0.0061070919036865234,
+      "FDM_time": 0.0019450187683105469,
+      "Loss_time": 0.9257681369781494,
+      "Back_time ": 0.03566694259643555,
+      "Parameter_update": 0.0001480579376220703
+    },
+    {
+      "iteration": 233,
+      "Geometry_initialization_time": 0.004918098449707031,
+      "FDM_time": 0.0016980171203613281,
+      "Loss_time": 0.9192171096801758,
+      "Back_time ": 0.03280496597290039,
+      "Parameter_update": 0.00015807151794433594
+    },
+    {
+      "iteration": 234,
+      "Geometry_initialization_time": 0.004730939865112305,
+      "FDM_time": 0.0016031265258789062,
+      "Loss_time": 0.8563098907470703,
+      "Back_time ": 0.03510093688964844,
+      "Parameter_update": 0.0001518726348876953
+    },
+    {
+      "iteration": 235,
+      "Geometry_initialization_time": 0.005546092987060547,
+      "FDM_time": 0.00199127197265625,
+      "Loss_time": 0.9610729217529297,
+      "Back_time ": 0.03783893585205078,
+      "Parameter_update": 0.0001480579376220703
+    },
+    {
+      "iteration": 236,
+      "Geometry_initialization_time": 0.0049779415130615234,
+      "FDM_time": 0.001416921615600586,
+      "Loss_time": 0.9457478523254395,
+      "Back_time ": 0.05421280860900879,
+      "Parameter_update": 0.0002701282501220703
+    },
+    {
+      "iteration": 237,
+      "Geometry_initialization_time": 0.007463216781616211,
+      "FDM_time": 0.002329111099243164,
+      "Loss_time": 1.278059959411621,
+      "Back_time ": 0.033387184143066406,
+      "Parameter_update": 0.00014901161193847656
+    },
+    {
+      "iteration": 238,
+      "Geometry_initialization_time": 0.005064964294433594,
+      "FDM_time": 0.0023708343505859375,
+      "Loss_time": 1.126021146774292,
+      "Back_time ": 0.033104896545410156,
+      "Parameter_update": 0.0001461505889892578
+    },
+    {
+      "iteration": 239,
+      "Geometry_initialization_time": 0.004628896713256836,
+      "FDM_time": 0.0017561912536621094,
+      "Loss_time": 0.9562411308288574,
+      "Back_time ": 0.03289508819580078,
+      "Parameter_update": 0.00014400482177734375
+    },
+    {
+      "iteration": 240,
+      "Geometry_initialization_time": 0.005079030990600586,
+      "FDM_time": 0.0020380020141601562,
+      "Loss_time": 0.8899688720703125,
+      "Back_time ": 0.03573298454284668,
+      "Parameter_update": 0.00015115737915039062
+    },
+    {
+      "iteration": 241,
+      "Geometry_initialization_time": 0.005177736282348633,
+      "FDM_time": 0.0023272037506103516,
+      "Loss_time": 0.9534578323364258,
+      "Back_time ": 0.036787986755371094,
+      "Parameter_update": 0.00020194053649902344
+    },
+    {
+      "iteration": 242,
+      "Geometry_initialization_time": 0.0064737796783447266,
+      "FDM_time": 0.0024759769439697266,
+      "Loss_time": 1.1224372386932373,
+      "Back_time ": 0.034340858459472656,
+      "Parameter_update": 0.00024390220642089844
+    },
+    {
+      "iteration": 243,
+      "Geometry_initialization_time": 0.004767894744873047,
+      "FDM_time": 0.0016422271728515625,
+      "Loss_time": 0.917701005935669,
+      "Back_time ": 0.03204798698425293,
+      "Parameter_update": 0.0001761913299560547
+    },
+    {
+      "iteration": 244,
+      "Geometry_initialization_time": 0.005120038986206055,
+      "FDM_time": 0.0016918182373046875,
+      "Loss_time": 1.1567721366882324,
+      "Back_time ": 0.041494131088256836,
+      "Parameter_update": 0.0002377033233642578
+    },
+    {
+      "iteration": 245,
+      "Geometry_initialization_time": 0.005857229232788086,
+      "FDM_time": 0.001447916030883789,
+      "Loss_time": 1.2975871562957764,
+      "Back_time ": 0.05474209785461426,
+      "Parameter_update": 0.00016999244689941406
+    },
+    {
+      "iteration": 246,
+      "Geometry_initialization_time": 0.009140968322753906,
+      "FDM_time": 0.037380218505859375,
+      "Loss_time": 0.8808541297912598,
+      "Back_time ": 0.037155866622924805,
+      "Parameter_update": 0.00014901161193847656
+    },
+    {
+      "iteration": 247,
+      "Geometry_initialization_time": 0.004478931427001953,
+      "FDM_time": 0.0016031265258789062,
+      "Loss_time": 0.9169731140136719,
+      "Back_time ": 0.03674912452697754,
+      "Parameter_update": 0.00016021728515625
+    },
+    {
+      "iteration": 248,
+      "Geometry_initialization_time": 0.0050029754638671875,
+      "FDM_time": 0.0014369487762451172,
+      "Loss_time": 0.889228105545044,
+      "Back_time ": 0.0348210334777832,
+      "Parameter_update": 0.00015425682067871094
+    },
+    {
+      "iteration": 249,
+      "Geometry_initialization_time": 0.004703998565673828,
+      "FDM_time": 0.0015397071838378906,
+      "Loss_time": 0.991628885269165,
+      "Back_time ": 0.04144287109375,
+      "Parameter_update": 0.0001499652862548828
+    },
+    {
+      "iteration": 250,
+      "Geometry_initialization_time": 0.004809141159057617,
+      "FDM_time": 0.0020279884338378906,
+      "Loss_time": 1.1019189357757568,
+      "Back_time ": 0.03940391540527344,
+      "Parameter_update": 0.0001499652862548828
+    },
+    {
+      "iteration": 251,
+      "Geometry_initialization_time": 0.006041049957275391,
+      "FDM_time": 0.0025610923767089844,
+      "Loss_time": 0.9494490623474121,
+      "Back_time ": 0.038352251052856445,
+      "Parameter_update": 0.0001480579376220703
+    },
+    {
+      "iteration": 252,
+      "Geometry_initialization_time": 0.0058269500732421875,
+      "FDM_time": 0.0017242431640625,
+      "Loss_time": 1.2098851203918457,
+      "Back_time ": 0.04706907272338867,
+      "Parameter_update": 0.0001850128173828125
+    },
+    {
+      "iteration": 253,
+      "Geometry_initialization_time": 0.006334781646728516,
+      "FDM_time": 0.002183198928833008,
+      "Loss_time": 1.1269853115081787,
+      "Back_time ": 0.04439687728881836,
+      "Parameter_update": 0.0001552104949951172
+    },
+    {
+      "iteration": 254,
+      "Geometry_initialization_time": 0.005242109298706055,
+      "FDM_time": 0.0023927688598632812,
+      "Loss_time": 1.0809412002563477,
+      "Back_time ": 0.03521609306335449,
+      "Parameter_update": 0.00015282630920410156
+    },
+    {
+      "iteration": 255,
+      "Geometry_initialization_time": 0.005053281784057617,
+      "FDM_time": 0.0016450881958007812,
+      "Loss_time": 1.0739572048187256,
+      "Back_time ": 0.04198718070983887,
+      "Parameter_update": 0.0001919269561767578
+    },
+    {
+      "iteration": 256,
+      "Geometry_initialization_time": 0.005751848220825195,
+      "FDM_time": 0.003087759017944336,
+      "Loss_time": 1.024704933166504,
+      "Back_time ": 0.04004192352294922,
+      "Parameter_update": 0.00016069412231445312
+    },
+    {
+      "iteration": 257,
+      "Geometry_initialization_time": 0.005102872848510742,
+      "FDM_time": 0.001558065414428711,
+      "Loss_time": 0.9941670894622803,
+      "Back_time ": 0.03363990783691406,
+      "Parameter_update": 0.00015211105346679688
+    },
+    {
+      "iteration": 258,
+      "Geometry_initialization_time": 0.005071878433227539,
+      "FDM_time": 0.0016450881958007812,
+      "Loss_time": 1.2478411197662354,
+      "Back_time ": 0.03709697723388672,
+      "Parameter_update": 0.0001571178436279297
+    },
+    {
+      "iteration": 259,
+      "Geometry_initialization_time": 0.0050449371337890625,
+      "FDM_time": 0.002537965774536133,
+      "Loss_time": 1.0984692573547363,
+      "Back_time ": 0.035635948181152344,
+      "Parameter_update": 0.00015687942504882812
+    },
+    {
+      "iteration": 260,
+      "Geometry_initialization_time": 0.005416154861450195,
+      "FDM_time": 0.0021021366119384766,
+      "Loss_time": 0.9661257266998291,
+      "Back_time ": 0.036279916763305664,
+      "Parameter_update": 0.00019311904907226562
+    },
+    {
+      "iteration": 261,
+      "Geometry_initialization_time": 0.006287097930908203,
+      "FDM_time": 0.0014929771423339844,
+      "Loss_time": 0.9351119995117188,
+      "Back_time ": 0.03635883331298828,
+      "Parameter_update": 0.0001590251922607422
+    },
+    {
+      "iteration": 262,
+      "Geometry_initialization_time": 0.005441904067993164,
+      "FDM_time": 0.0016791820526123047,
+      "Loss_time": 0.9157209396362305,
+      "Back_time ": 0.18252110481262207,
+      "Parameter_update": 0.0001628398895263672
+    },
+    {
+      "iteration": 263,
+      "Geometry_initialization_time": 0.018331050872802734,
+      "FDM_time": 0.018645048141479492,
+      "Loss_time": 1.07057785987854,
+      "Back_time ": 0.03493809700012207,
+      "Parameter_update": 0.0001480579376220703
+    },
+    {
+      "iteration": 264,
+      "Geometry_initialization_time": 0.005113124847412109,
+      "FDM_time": 0.0021262168884277344,
+      "Loss_time": 0.9648227691650391,
+      "Back_time ": 0.04063224792480469,
+      "Parameter_update": 0.0001499652862548828
+    },
+    {
+      "iteration": 265,
+      "Geometry_initialization_time": 0.006350278854370117,
+      "FDM_time": 0.0020117759704589844,
+      "Loss_time": 0.973736047744751,
+      "Back_time ": 0.03856015205383301,
+      "Parameter_update": 0.00015807151794433594
+    },
+    {
+      "iteration": 266,
+      "Geometry_initialization_time": 0.0052337646484375,
+      "FDM_time": 0.001756906509399414,
+      "Loss_time": 0.860429048538208,
+      "Back_time ": 0.04000210762023926,
+      "Parameter_update": 0.00014901161193847656
+    },
+    {
+      "iteration": 267,
+      "Geometry_initialization_time": 0.005455970764160156,
+      "FDM_time": 0.0016298294067382812,
+      "Loss_time": 0.9253342151641846,
+      "Back_time ": 0.032602787017822266,
+      "Parameter_update": 0.00016188621520996094
+    },
+    {
+      "iteration": 268,
+      "Geometry_initialization_time": 0.004563808441162109,
+      "FDM_time": 0.0015151500701904297,
+      "Loss_time": 0.855565071105957,
+      "Back_time ": 0.03270983695983887,
+      "Parameter_update": 0.0001468658447265625
+    },
+    {
+      "iteration": 269,
+      "Geometry_initialization_time": 0.004659891128540039,
+      "FDM_time": 0.0014700889587402344,
+      "Loss_time": 0.9889247417449951,
+      "Back_time ": 0.03231692314147949,
+      "Parameter_update": 0.0001480579376220703
+    },
+    {
+      "iteration": 270,
+      "Geometry_initialization_time": 0.004688262939453125,
+      "FDM_time": 0.0016281604766845703,
+      "Loss_time": 0.8461418151855469,
+      "Back_time ": 0.032549142837524414,
+      "Parameter_update": 0.00014901161193847656
+    },
+    {
+      "iteration": 271,
+      "Geometry_initialization_time": 0.0048220157623291016,
+      "FDM_time": 0.0017023086547851562,
+      "Loss_time": 0.8680016994476318,
+      "Back_time ": 0.036054134368896484,
+      "Parameter_update": 0.00015687942504882812
+    },
+    {
+      "iteration": 272,
+      "Geometry_initialization_time": 0.00477290153503418,
+      "FDM_time": 0.0015568733215332031,
+      "Loss_time": 0.8766889572143555,
+      "Back_time ": 0.0320889949798584,
+      "Parameter_update": 0.00014829635620117188
+    },
+    {
+      "iteration": 273,
+      "Geometry_initialization_time": 0.005233049392700195,
+      "FDM_time": 0.0022079944610595703,
+      "Loss_time": 0.9578521251678467,
+      "Back_time ": 0.033998966217041016,
+      "Parameter_update": 0.00015783309936523438
+    },
+    {
+      "iteration": 274,
+      "Geometry_initialization_time": 0.0047681331634521484,
+      "FDM_time": 0.0018711090087890625,
+      "Loss_time": 0.8842859268188477,
+      "Back_time ": 0.03472614288330078,
+      "Parameter_update": 0.0001499652862548828
+    },
+    {
+      "iteration": 275,
+      "Geometry_initialization_time": 0.004753828048706055,
+      "FDM_time": 0.0016582012176513672,
+      "Loss_time": 0.9178838729858398,
+      "Back_time ": 0.034037113189697266,
+      "Parameter_update": 0.00014901161193847656
+    },
+    {
+      "iteration": 276,
+      "Geometry_initialization_time": 0.004943132400512695,
+      "FDM_time": 0.001708984375,
+      "Loss_time": 0.859036922454834,
+      "Back_time ": 0.032330989837646484,
+      "Parameter_update": 0.00014781951904296875
+    },
+    {
+      "iteration": 277,
+      "Geometry_initialization_time": 0.0049359798431396484,
+      "FDM_time": 0.001965045928955078,
+      "Loss_time": 0.9250798225402832,
+      "Back_time ": 0.03493618965148926,
+      "Parameter_update": 0.00015091896057128906
+    },
+    {
+      "iteration": 278,
+      "Geometry_initialization_time": 0.004799842834472656,
+      "FDM_time": 0.001481771469116211,
+      "Loss_time": 0.9018874168395996,
+      "Back_time ": 0.03570103645324707,
+      "Parameter_update": 0.0001571178436279297
+    },
+    {
+      "iteration": 279,
+      "Geometry_initialization_time": 0.005631923675537109,
+      "FDM_time": 0.0015697479248046875,
+      "Loss_time": 0.9293410778045654,
+      "Back_time ": 0.032154083251953125,
+      "Parameter_update": 0.0002067089080810547
+    },
+    {
+      "iteration": 280,
+      "Geometry_initialization_time": 0.004678249359130859,
+      "FDM_time": 0.0014007091522216797,
+      "Loss_time": 0.8329620361328125,
+      "Back_time ": 0.031514883041381836,
+      "Parameter_update": 0.0001461505889892578
+    },
+    {
+      "iteration": 281,
+      "Geometry_initialization_time": 0.004647731781005859,
+      "FDM_time": 0.001806020736694336,
+      "Loss_time": 1.049757957458496,
+      "Back_time ": 0.03167009353637695,
+      "Parameter_update": 0.0001881122589111328
+    },
+    {
+      "iteration": 282,
+      "Geometry_initialization_time": 0.004637002944946289,
+      "FDM_time": 0.001444101333618164,
+      "Loss_time": 0.8407070636749268,
+      "Back_time ": 0.033471107482910156,
+      "Parameter_update": 0.0001499652862548828
+    },
+    {
+      "iteration": 283,
+      "Geometry_initialization_time": 0.004617214202880859,
+      "FDM_time": 0.0014269351959228516,
+      "Loss_time": 0.9310178756713867,
+      "Back_time ": 0.03768134117126465,
+      "Parameter_update": 0.00018477439880371094
+    },
+    {
+      "iteration": 284,
+      "Geometry_initialization_time": 0.004851818084716797,
+      "FDM_time": 0.0015730857849121094,
+      "Loss_time": 0.8721199035644531,
+      "Back_time ": 0.03166794776916504,
+      "Parameter_update": 0.00014209747314453125
+    },
+    {
+      "iteration": 285,
+      "Geometry_initialization_time": 0.004498958587646484,
+      "FDM_time": 0.0014240741729736328,
+      "Loss_time": 0.8766868114471436,
+      "Back_time ": 0.036839962005615234,
+      "Parameter_update": 0.0002040863037109375
+    },
+    {
+      "iteration": 286,
+      "Geometry_initialization_time": 0.00609278678894043,
+      "FDM_time": 0.0025200843811035156,
+      "Loss_time": 0.8208460807800293,
+      "Back_time ": 0.034605979919433594,
+      "Parameter_update": 0.00014638900756835938
+    },
+    {
+      "iteration": 287,
+      "Geometry_initialization_time": 0.004580974578857422,
+      "FDM_time": 0.0016088485717773438,
+      "Loss_time": 0.8716127872467041,
+      "Back_time ": 0.03138303756713867,
+      "Parameter_update": 0.0001418590545654297
+    },
+    {
+      "iteration": 288,
+      "Geometry_initialization_time": 0.004603862762451172,
+      "FDM_time": 0.0013797283172607422,
+      "Loss_time": 0.84364914894104,
+      "Back_time ": 0.034546852111816406,
+      "Parameter_update": 0.0001437664031982422
+    },
+    {
+      "iteration": 289,
+      "Geometry_initialization_time": 0.005113840103149414,
+      "FDM_time": 0.002246856689453125,
+      "Loss_time": 1.0772809982299805,
+      "Back_time ": 0.0345919132232666,
+      "Parameter_update": 0.00014901161193847656
+    },
+    {
+      "iteration": 290,
+      "Geometry_initialization_time": 0.005151987075805664,
+      "FDM_time": 0.0015270709991455078,
+      "Loss_time": 0.9201726913452148,
+      "Back_time ": 0.03209114074707031,
+      "Parameter_update": 0.00014519691467285156
+    },
+    {
+      "iteration": 291,
+      "Geometry_initialization_time": 0.0058901309967041016,
+      "FDM_time": 0.0021829605102539062,
+      "Loss_time": 0.883432149887085,
+      "Back_time ": 0.033998727798461914,
+      "Parameter_update": 0.0001499652862548828
+    },
+    {
+      "iteration": 292,
+      "Geometry_initialization_time": 0.004991054534912109,
+      "FDM_time": 0.0022001266479492188,
+      "Loss_time": 0.8699851036071777,
+      "Back_time ": 0.03306889533996582,
+      "Parameter_update": 0.0001418590545654297
+    },
+    {
+      "iteration": 293,
+      "Geometry_initialization_time": 0.0044689178466796875,
+      "FDM_time": 0.001417398452758789,
+      "Loss_time": 0.9495365619659424,
+      "Back_time ": 0.03574681282043457,
+      "Parameter_update": 0.0001659393310546875
+    },
+    {
+      "iteration": 294,
+      "Geometry_initialization_time": 0.0047779083251953125,
+      "FDM_time": 0.0018889904022216797,
+      "Loss_time": 0.8578519821166992,
+      "Back_time ": 0.03307175636291504,
+      "Parameter_update": 0.0001399517059326172
+    },
+    {
+      "iteration": 295,
+      "Geometry_initialization_time": 0.004961967468261719,
+      "FDM_time": 0.0014920234680175781,
+      "Loss_time": 0.871056079864502,
+      "Back_time ": 0.042327880859375,
+      "Parameter_update": 0.00017380714416503906
+    },
+    {
+      "iteration": 296,
+      "Geometry_initialization_time": 0.004992961883544922,
+      "FDM_time": 0.0018329620361328125,
+      "Loss_time": 0.8258299827575684,
+      "Back_time ": 0.03278183937072754,
+      "Parameter_update": 0.00014495849609375
+    },
+    {
+      "iteration": 297,
+      "Geometry_initialization_time": 0.005118846893310547,
+      "FDM_time": 0.0013768672943115234,
+      "Loss_time": 0.8732068538665771,
+      "Back_time ": 0.030188798904418945,
+      "Parameter_update": 0.00014328956604003906
+    },
+    {
+      "iteration": 298,
+      "Geometry_initialization_time": 0.004487752914428711,
+      "FDM_time": 0.0013742446899414062,
+      "Loss_time": 0.8248298168182373,
+      "Back_time ": 0.03051614761352539,
+      "Parameter_update": 0.00013780593872070312
+    },
+    {
+      "iteration": 299,
+      "Geometry_initialization_time": 0.004590749740600586,
+      "FDM_time": 0.0013720989227294922,
+      "Loss_time": 0.9362146854400635,
+      "Back_time ": 0.03172492980957031,
+      "Parameter_update": 0.00013780593872070312
+    },
+    {
+      "iteration": 300,
+      "Geometry_initialization_time": 0.004414796829223633,
+      "FDM_time": 0.0019528865814208984,
+      "Loss_time": 0.8109951019287109,
+      "Back_time ": 0.033334970474243164,
+      "Parameter_update": 0.0001442432403564453
+    },
+    {
+      "iteration": 301,
+      "Geometry_initialization_time": 0.004476070404052734,
+      "FDM_time": 0.0015900135040283203,
+      "Loss_time": 1.0150539875030518,
+      "Back_time ": 0.03816699981689453,
+      "Parameter_update": 0.00015473365783691406
+    },
+    {
+      "iteration": 302,
+      "Geometry_initialization_time": 0.0057032108306884766,
+      "FDM_time": 0.0015358924865722656,
+      "Loss_time": 1.0319311618804932,
+      "Back_time ": 0.03372597694396973,
+      "Parameter_update": 0.0002129077911376953
+    },
+    {
+      "iteration": 303,
+      "Geometry_initialization_time": 0.004457950592041016,
+      "FDM_time": 0.0016057491302490234,
+      "Loss_time": 0.9787509441375732,
+      "Back_time ": 0.03690385818481445,
+      "Parameter_update": 0.00016498565673828125
+    },
+    {
+      "iteration": 304,
+      "Geometry_initialization_time": 0.005300045013427734,
+      "FDM_time": 0.001798868179321289,
+      "Loss_time": 0.8752787113189697,
+      "Back_time ": 0.03435707092285156,
+      "Parameter_update": 0.0001418590545654297
+    },
+    {
+      "iteration": 305,
+      "Geometry_initialization_time": 0.004912137985229492,
+      "FDM_time": 0.0014278888702392578,
+      "Loss_time": 1.051603078842163,
+      "Back_time ": 0.038218021392822266,
+      "Parameter_update": 0.00014519691467285156
+    },
+    {
+      "iteration": 306,
+      "Geometry_initialization_time": 0.004660844802856445,
+      "FDM_time": 0.00145721435546875,
+      "Loss_time": 0.8944551944732666,
+      "Back_time ": 0.03773808479309082,
+      "Parameter_update": 0.00019621849060058594
+    },
+    {
+      "iteration": 307,
+      "Geometry_initialization_time": 0.004822969436645508,
+      "FDM_time": 0.0014841556549072266,
+      "Loss_time": 1.0265798568725586,
+      "Back_time ": 0.03570103645324707,
+      "Parameter_update": 0.00014591217041015625
+    },
+    {
+      "iteration": 308,
+      "Geometry_initialization_time": 0.005113840103149414,
+      "FDM_time": 0.0017697811126708984,
+      "Loss_time": 0.8486928939819336,
+      "Back_time ": 0.03235483169555664,
+      "Parameter_update": 0.00014495849609375
+    },
+    {
+      "iteration": 309,
+      "Geometry_initialization_time": 0.0055081844329833984,
+      "FDM_time": 0.0018019676208496094,
+      "Loss_time": 0.8539888858795166,
+      "Back_time ": 0.032975196838378906,
+      "Parameter_update": 0.00014901161193847656
+    },
+    {
+      "iteration": 310,
+      "Geometry_initialization_time": 0.004513978958129883,
+      "FDM_time": 0.001447916030883789,
+      "Loss_time": 0.8713490962982178,
+      "Back_time ": 0.039659976959228516,
+      "Parameter_update": 0.00015115737915039062
+    },
+    {
+      "iteration": 311,
+      "Geometry_initialization_time": 0.004872798919677734,
+      "FDM_time": 0.0017998218536376953,
+      "Loss_time": 0.9711241722106934,
+      "Back_time ": 0.03391575813293457,
+      "Parameter_update": 0.00014495849609375
+    },
+    {
+      "iteration": 312,
+      "Geometry_initialization_time": 0.0046269893646240234,
+      "FDM_time": 0.0016679763793945312,
+      "Loss_time": 0.9538040161132812,
+      "Back_time ": 0.05064892768859863,
+      "Parameter_update": 0.0002799034118652344
+    },
+    {
+      "iteration": 313,
+      "Geometry_initialization_time": 0.007391929626464844,
+      "FDM_time": 0.0034329891204833984,
+      "Loss_time": 1.0312960147857666,
+      "Back_time ": 0.03530120849609375,
+      "Parameter_update": 0.0001537799835205078
+    },
+    {
+      "iteration": 314,
+      "Geometry_initialization_time": 0.0063631534576416016,
+      "FDM_time": 0.0014410018920898438,
+      "Loss_time": 0.920994758605957,
+      "Back_time ": 0.0381617546081543,
+      "Parameter_update": 0.0001747608184814453
+    },
+    {
+      "iteration": 315,
+      "Geometry_initialization_time": 0.00616908073425293,
+      "FDM_time": 0.0021848678588867188,
+      "Loss_time": 1.1238329410552979,
+      "Back_time ": 0.038266897201538086,
+      "Parameter_update": 0.00017309188842773438
+    },
+    {
+      "iteration": 316,
+      "Geometry_initialization_time": 0.005839824676513672,
+      "FDM_time": 0.0018651485443115234,
+      "Loss_time": 1.0344748497009277,
+      "Back_time ": 0.038414955139160156,
+      "Parameter_update": 0.0002090930938720703
+    },
+    {
+      "iteration": 317,
+      "Geometry_initialization_time": 0.0053560733795166016,
+      "FDM_time": 0.002056121826171875,
+      "Loss_time": 1.009789228439331,
+      "Back_time ": 0.03251791000366211,
+      "Parameter_update": 0.00021696090698242188
+    },
+    {
+      "iteration": 318,
+      "Geometry_initialization_time": 0.004538774490356445,
+      "FDM_time": 0.001644134521484375,
+      "Loss_time": 1.0170891284942627,
+      "Back_time ": 0.038435935974121094,
+      "Parameter_update": 0.0002238750457763672
+    },
+    {
+      "iteration": 319,
+      "Geometry_initialization_time": 0.005769014358520508,
+      "FDM_time": 0.002025127410888672,
+      "Loss_time": 1.1286168098449707,
+      "Back_time ": 0.04501676559448242,
+      "Parameter_update": 0.00019097328186035156
+    },
+    {
+      "iteration": 320,
+      "Geometry_initialization_time": 0.006268978118896484,
+      "FDM_time": 0.0019199848175048828,
+      "Loss_time": 1.0863759517669678,
+      "Back_time ": 0.040060997009277344,
+      "Parameter_update": 0.0001590251922607422
+    },
+    {
+      "iteration": 321,
+      "Geometry_initialization_time": 0.0052928924560546875,
+      "FDM_time": 0.002213716506958008,
+      "Loss_time": 0.989030122756958,
+      "Back_time ": 0.04020404815673828,
+      "Parameter_update": 0.00027489662170410156
+    },
+    {
+      "iteration": 322,
+      "Geometry_initialization_time": 0.006442070007324219,
+      "FDM_time": 0.0024580955505371094,
+      "Loss_time": 1.0270307064056396,
+      "Back_time ": 0.04728507995605469,
+      "Parameter_update": 0.0002288818359375
+    },
+    {
+      "iteration": 323,
+      "Geometry_initialization_time": 0.007348060607910156,
+      "FDM_time": 0.002624988555908203,
+      "Loss_time": 1.0712881088256836,
+      "Back_time ": 0.04194998741149902,
+      "Parameter_update": 0.00017380714416503906
+    },
+    {
+      "iteration": 324,
+      "Geometry_initialization_time": 0.005913972854614258,
+      "FDM_time": 0.001950979232788086,
+      "Loss_time": 1.1166269779205322,
+      "Back_time ": 0.04114198684692383,
+      "Parameter_update": 0.00017881393432617188
+    },
+    {
+      "iteration": 325,
+      "Geometry_initialization_time": 0.007074117660522461,
+      "FDM_time": 0.006426811218261719,
+      "Loss_time": 1.1698551177978516,
+      "Back_time ": 0.04788804054260254,
+      "Parameter_update": 0.00020813941955566406
+    },
+    {
+      "iteration": 326,
+      "Geometry_initialization_time": 0.00672602653503418,
+      "FDM_time": 0.0029439926147460938,
+      "Loss_time": 0.9194250106811523,
+      "Back_time ": 0.03196287155151367,
+      "Parameter_update": 0.00017213821411132812
+    },
+    {
+      "iteration": 327,
+      "Geometry_initialization_time": 0.005033969879150391,
+      "FDM_time": 0.0017092227935791016,
+      "Loss_time": 1.0725419521331787,
+      "Back_time ": 0.03338980674743652,
+      "Parameter_update": 0.0001468658447265625
+    },
+    {
+      "iteration": 328,
+      "Geometry_initialization_time": 0.00457000732421875,
+      "FDM_time": 0.001438140869140625,
+      "Loss_time": 0.9029481410980225,
+      "Back_time ": 0.03354191780090332,
+      "Parameter_update": 0.00015211105346679688
+    },
+    {
+      "iteration": 329,
+      "Geometry_initialization_time": 0.0048749446868896484,
+      "FDM_time": 0.0020351409912109375,
+      "Loss_time": 1.0601398944854736,
+      "Back_time ": 0.049986839294433594,
+      "Parameter_update": 0.0001480579376220703
+    },
+    {
+      "iteration": 330,
+      "Geometry_initialization_time": 0.005655050277709961,
+      "FDM_time": 0.002131938934326172,
+      "Loss_time": 0.8987951278686523,
+      "Back_time ": 0.038237810134887695,
+      "Parameter_update": 0.0001437664031982422
+    },
+    {
+      "iteration": 331,
+      "Geometry_initialization_time": 0.004761219024658203,
+      "FDM_time": 0.0014870166778564453,
+      "Loss_time": 0.8747467994689941,
+      "Back_time ": 0.03213810920715332,
+      "Parameter_update": 0.0001430511474609375
+    },
+    {
+      "iteration": 332,
+      "Geometry_initialization_time": 0.005668163299560547,
+      "FDM_time": 0.0018458366394042969,
+      "Loss_time": 0.8260588645935059,
+      "Back_time ": 0.03226184844970703,
+      "Parameter_update": 0.00019097328186035156
+    },
+    {
+      "iteration": 333,
+      "Geometry_initialization_time": 0.0052988529205322266,
+      "FDM_time": 0.0019347667694091797,
+      "Loss_time": 0.97098708152771,
+      "Back_time ": 0.035695791244506836,
+      "Parameter_update": 0.00014209747314453125
+    },
+    {
+      "iteration": 334,
+      "Geometry_initialization_time": 0.005013227462768555,
+      "FDM_time": 0.0014109611511230469,
+      "Loss_time": 0.990037202835083,
+      "Back_time ": 0.0393369197845459,
+      "Parameter_update": 0.00015163421630859375
+    },
+    {
+      "iteration": 335,
+      "Geometry_initialization_time": 0.005283832550048828,
+      "FDM_time": 0.00189208984375,
+      "Loss_time": 1.0165009498596191,
+      "Back_time ": 0.03745293617248535,
+      "Parameter_update": 0.00014400482177734375
+    },
+    {
+      "iteration": 336,
+      "Geometry_initialization_time": 0.005587100982666016,
+      "FDM_time": 0.0018019676208496094,
+      "Loss_time": 0.9954197406768799,
+      "Back_time ": 0.035955190658569336,
+      "Parameter_update": 0.00015020370483398438
+    },
+    {
+      "iteration": 337,
+      "Geometry_initialization_time": 0.0052602291107177734,
+      "FDM_time": 0.0019059181213378906,
+      "Loss_time": 0.9709692001342773,
+      "Back_time ": 0.03743410110473633,
+      "Parameter_update": 0.00018095970153808594
+    },
+    {
+      "iteration": 338,
+      "Geometry_initialization_time": 0.005944252014160156,
+      "FDM_time": 0.0019249916076660156,
+      "Loss_time": 0.9168798923492432,
+      "Back_time ": 0.03360176086425781,
+      "Parameter_update": 0.00014495849609375
+    },
+    {
+      "iteration": 339,
+      "Geometry_initialization_time": 0.004519939422607422,
+      "FDM_time": 0.0014810562133789062,
+      "Loss_time": 0.9125990867614746,
+      "Back_time ": 0.03359675407409668,
+      "Parameter_update": 0.0001537799835205078
+    },
+    {
+      "iteration": 340,
+      "Geometry_initialization_time": 0.004627227783203125,
+      "FDM_time": 0.0018131732940673828,
+      "Loss_time": 0.8710639476776123,
+      "Back_time ": 0.03510594367980957,
+      "Parameter_update": 0.00014901161193847656
+    },
+    {
+      "iteration": 341,
+      "Geometry_initialization_time": 0.004656076431274414,
+      "FDM_time": 0.0014178752899169922,
+      "Loss_time": 0.8674538135528564,
+      "Back_time ": 0.03238105773925781,
+      "Parameter_update": 0.00015592575073242188
+    },
+    {
+      "iteration": 342,
+      "Geometry_initialization_time": 0.004961967468261719,
+      "FDM_time": 0.0019779205322265625,
+      "Loss_time": 0.8733630180358887,
+      "Back_time ": 0.03667306900024414,
+      "Parameter_update": 0.00014328956604003906
+    },
+    {
+      "iteration": 343,
+      "Geometry_initialization_time": 0.006192922592163086,
+      "FDM_time": 0.0014488697052001953,
+      "Loss_time": 0.9981281757354736,
+      "Back_time ": 0.035948753356933594,
+      "Parameter_update": 0.00019598007202148438
+    },
+    {
+      "iteration": 344,
+      "Geometry_initialization_time": 0.006127834320068359,
+      "FDM_time": 0.0023260116577148438,
+      "Loss_time": 0.9410319328308105,
+      "Back_time ": 0.0341649055480957,
+      "Parameter_update": 0.00014781951904296875
+    },
+    {
+      "iteration": 345,
+      "Geometry_initialization_time": 0.0061969757080078125,
+      "FDM_time": 0.002372264862060547,
+      "Loss_time": 1.0240309238433838,
+      "Back_time ": 0.0369420051574707,
+      "Parameter_update": 0.00015592575073242188
+    },
+    {
+      "iteration": 346,
+      "Geometry_initialization_time": 0.006882905960083008,
+      "FDM_time": 0.0025780200958251953,
+      "Loss_time": 0.9492092132568359,
+      "Back_time ": 0.041259050369262695,
+      "Parameter_update": 0.0002522468566894531
+    },
+    {
+      "iteration": 347,
+      "Geometry_initialization_time": 0.005468845367431641,
+      "FDM_time": 0.0019440650939941406,
+      "Loss_time": 1.123702049255371,
+      "Back_time ": 0.03950691223144531,
+      "Parameter_update": 0.00015401840209960938
+    },
+    {
+      "iteration": 348,
+      "Geometry_initialization_time": 0.006656169891357422,
+      "FDM_time": 0.002599000930786133,
+      "Loss_time": 1.0764238834381104,
+      "Back_time ": 0.042485952377319336,
+      "Parameter_update": 0.0001506805419921875
+    },
+    {
+      "iteration": 349,
+      "Geometry_initialization_time": 0.009317874908447266,
+      "FDM_time": 0.0024051666259765625,
+      "Loss_time": 0.9837839603424072,
+      "Back_time ": 0.03333306312561035,
+      "Parameter_update": 0.00014710426330566406
+    },
+    {
+      "iteration": 350,
+      "Geometry_initialization_time": 0.004761934280395508,
+      "FDM_time": 0.00162506103515625,
+      "Loss_time": 0.9902069568634033,
+      "Back_time ": 0.03914213180541992,
+      "Parameter_update": 0.00019311904907226562
+    },
+    {
+      "iteration": 351,
+      "Geometry_initialization_time": 0.0055999755859375,
+      "FDM_time": 0.0015420913696289062,
+      "Loss_time": 0.9635570049285889,
+      "Back_time ": 0.038298845291137695,
+      "Parameter_update": 0.00018215179443359375
+    },
+    {
+      "iteration": 352,
+      "Geometry_initialization_time": 0.005070686340332031,
+      "FDM_time": 0.0015971660614013672,
+      "Loss_time": 1.0116329193115234,
+      "Back_time ": 0.04606318473815918,
+      "Parameter_update": 0.0001747608184814453
+    },
+    {
+      "iteration": 353,
+      "Geometry_initialization_time": 0.005977153778076172,
+      "FDM_time": 0.0018508434295654297,
+      "Loss_time": 1.0414180755615234,
+      "Back_time ": 0.03904581069946289,
+      "Parameter_update": 0.0001461505889892578
+    },
+    {
+      "iteration": 354,
+      "Geometry_initialization_time": 0.005561113357543945,
+      "FDM_time": 0.0015430450439453125,
+      "Loss_time": 0.9662618637084961,
+      "Back_time ": 0.03453421592712402,
+      "Parameter_update": 0.0001499652862548828
+    },
+    {
+      "iteration": 355,
+      "Geometry_initialization_time": 0.004878044128417969,
+      "FDM_time": 0.002905130386352539,
+      "Loss_time": 1.0198290348052979,
+      "Back_time ": 0.042593955993652344,
+      "Parameter_update": 0.0001537799835205078
+    },
+    {
+      "iteration": 356,
+      "Geometry_initialization_time": 0.005663871765136719,
+      "FDM_time": 0.0027489662170410156,
+      "Loss_time": 0.9452409744262695,
+      "Back_time ": 0.0364229679107666,
+      "Parameter_update": 0.00018596649169921875
+    },
+    {
+      "iteration": 357,
+      "Geometry_initialization_time": 0.004598140716552734,
+      "FDM_time": 0.0019519329071044922,
+      "Loss_time": 0.9177107810974121,
+      "Back_time ": 0.0323491096496582,
+      "Parameter_update": 0.00014281272888183594
+    },
+    {
+      "iteration": 358,
+      "Geometry_initialization_time": 0.004586219787597656,
+      "FDM_time": 0.0015223026275634766,
+      "Loss_time": 0.8136329650878906,
+      "Back_time ": 0.032911062240600586,
+      "Parameter_update": 0.00014734268188476562
+    },
+    {
+      "iteration": 359,
+      "Geometry_initialization_time": 0.004606008529663086,
+      "FDM_time": 0.0019598007202148438,
+      "Loss_time": 1.014841079711914,
+      "Back_time ": 0.03577089309692383,
+      "Parameter_update": 0.0001499652862548828
+    },
+    {
+      "iteration": 360,
+      "Geometry_initialization_time": 0.0050351619720458984,
+      "FDM_time": 0.0014307498931884766,
+      "Loss_time": 1.055889368057251,
+      "Back_time ": 0.036257028579711914,
+      "Parameter_update": 0.00014901161193847656
+    },
+    {
+      "iteration": 361,
+      "Geometry_initialization_time": 0.005234956741333008,
+      "FDM_time": 0.0014629364013671875,
+      "Loss_time": 0.8368639945983887,
+      "Back_time ": 0.03837108612060547,
+      "Parameter_update": 0.00014972686767578125
+    },
+    {
+      "iteration": 362,
+      "Geometry_initialization_time": 0.004528045654296875,
+      "FDM_time": 0.0018429756164550781,
+      "Loss_time": 0.9039309024810791,
+      "Back_time ": 0.033483028411865234,
+      "Parameter_update": 0.00015592575073242188
+    },
+    {
+      "iteration": 363,
+      "Geometry_initialization_time": 0.00519108772277832,
+      "FDM_time": 0.0016100406646728516,
+      "Loss_time": 0.8959977626800537,
+      "Back_time ": 0.03312110900878906,
+      "Parameter_update": 0.00014400482177734375
+    },
+    {
+      "iteration": 364,
+      "Geometry_initialization_time": 0.005002021789550781,
+      "FDM_time": 0.0016770362854003906,
+      "Loss_time": 0.8576960563659668,
+      "Back_time ": 0.03417396545410156,
+      "Parameter_update": 0.00025916099548339844
+    },
+    {
+      "iteration": 365,
+      "Geometry_initialization_time": 0.004705190658569336,
+      "FDM_time": 0.0020558834075927734,
+      "Loss_time": 0.9623172283172607,
+      "Back_time ": 0.03632998466491699,
+      "Parameter_update": 0.00015091896057128906
+    },
+    {
+      "iteration": 366,
+      "Geometry_initialization_time": 0.004911184310913086,
+      "FDM_time": 0.0018198490142822266,
+      "Loss_time": 0.8615319728851318,
+      "Back_time ": 0.03615379333496094,
+      "Parameter_update": 0.00014901161193847656
+    },
+    {
+      "iteration": 367,
+      "Geometry_initialization_time": 0.004537105560302734,
+      "FDM_time": 0.0014297962188720703,
+      "Loss_time": 0.9342250823974609,
+      "Back_time ": 0.037058115005493164,
+      "Parameter_update": 0.0001659393310546875
+    },
+    {
+      "iteration": 368,
+      "Geometry_initialization_time": 0.0066030025482177734,
+      "FDM_time": 0.002746105194091797,
+      "Loss_time": 1.043895959854126,
+      "Back_time ": 0.03856706619262695,
+      "Parameter_update": 0.00015306472778320312
+    },
+    {
+      "iteration": 369,
+      "Geometry_initialization_time": 0.005418062210083008,
+      "FDM_time": 0.002384185791015625,
+      "Loss_time": 1.066314935684204,
+      "Back_time ": 0.04114508628845215,
+      "Parameter_update": 0.0001862049102783203
+    },
+    {
+      "iteration": 370,
+      "Geometry_initialization_time": 0.007040977478027344,
+      "FDM_time": 0.0019888877868652344,
+      "Loss_time": 0.908282995223999,
+      "Back_time ": 0.03657722473144531,
+      "Parameter_update": 0.00015115737915039062
+    },
+    {
+      "iteration": 371,
+      "Geometry_initialization_time": 0.0055620670318603516,
+      "FDM_time": 0.0014920234680175781,
+      "Loss_time": 0.9360709190368652,
+      "Back_time ": 0.035556793212890625,
+      "Parameter_update": 0.00016498565673828125
+    },
+    {
+      "iteration": 372,
+      "Geometry_initialization_time": 0.005121946334838867,
+      "FDM_time": 0.00220489501953125,
+      "Loss_time": 0.9413161277770996,
+      "Back_time ": 0.03910088539123535,
+      "Parameter_update": 0.00014901161193847656
+    },
+    {
+      "iteration": 373,
+      "Geometry_initialization_time": 0.004951000213623047,
+      "FDM_time": 0.0015010833740234375,
+      "Loss_time": 0.9989569187164307,
+      "Back_time ": 0.03741884231567383,
+      "Parameter_update": 0.0001621246337890625
+    },
+    {
+      "iteration": 374,
+      "Geometry_initialization_time": 0.0050830841064453125,
+      "FDM_time": 0.001477956771850586,
+      "Loss_time": 0.9257950782775879,
+      "Back_time ": 0.03719615936279297,
+      "Parameter_update": 0.0001690387725830078
+    },
+    {
+      "iteration": 375,
+      "Geometry_initialization_time": 0.006437063217163086,
+      "FDM_time": 0.002129793167114258,
+      "Loss_time": 0.9827671051025391,
+      "Back_time ": 0.040521860122680664,
+      "Parameter_update": 0.00025391578674316406
+    },
+    {
+      "iteration": 376,
+      "Geometry_initialization_time": 0.0054700374603271484,
+      "FDM_time": 0.0017011165618896484,
+      "Loss_time": 0.9045150279998779,
+      "Back_time ": 0.03534197807312012,
+      "Parameter_update": 0.00015306472778320312
+    },
+    {
+      "iteration": 377,
+      "Geometry_initialization_time": 0.005280971527099609,
+      "FDM_time": 0.0016438961029052734,
+      "Loss_time": 0.948458194732666,
+      "Back_time ": 0.035420894622802734,
+      "Parameter_update": 0.00015401840209960938
+    },
+    {
+      "iteration": 378,
+      "Geometry_initialization_time": 0.0050427913665771484,
+      "FDM_time": 0.0015211105346679688,
+      "Loss_time": 0.899029016494751,
+      "Back_time ": 0.03409218788146973,
+      "Parameter_update": 0.0002002716064453125
+    },
+    {
+      "iteration": 379,
+      "Geometry_initialization_time": 0.0059778690338134766,
+      "FDM_time": 0.0021181106567382812,
+      "Loss_time": 1.0595169067382812,
+      "Back_time ": 0.041239023208618164,
+      "Parameter_update": 0.0002300739288330078
+    },
+    {
+      "iteration": 380,
+      "Geometry_initialization_time": 0.006017923355102539,
+      "FDM_time": 0.0023660659790039062,
+      "Loss_time": 1.019418716430664,
+      "Back_time ": 0.03987598419189453,
+      "Parameter_update": 0.00019097328186035156
+    },
+    {
+      "iteration": 381,
+      "Geometry_initialization_time": 0.007050991058349609,
+      "FDM_time": 0.001598358154296875,
+      "Loss_time": 0.9844410419464111,
+      "Back_time ": 0.04006600379943848,
+      "Parameter_update": 0.00015401840209960938
+    },
+    {
+      "iteration": 382,
+      "Geometry_initialization_time": 0.005054950714111328,
+      "FDM_time": 0.0015230178833007812,
+      "Loss_time": 1.001112937927246,
+      "Back_time ": 0.036103248596191406,
+      "Parameter_update": 0.00015401840209960938
+    },
+    {
+      "iteration": 383,
+      "Geometry_initialization_time": 0.0050449371337890625,
+      "FDM_time": 0.0014510154724121094,
+      "Loss_time": 1.1432099342346191,
+      "Back_time ": 0.038185834884643555,
+      "Parameter_update": 0.00018095970153808594
+    },
+    {
+      "iteration": 384,
+      "Geometry_initialization_time": 0.004739284515380859,
+      "FDM_time": 0.0016469955444335938,
+      "Loss_time": 0.9130001068115234,
+      "Back_time ": 0.03764700889587402,
+      "Parameter_update": 0.00018787384033203125
+    },
+    {
+      "iteration": 385,
+      "Geometry_initialization_time": 0.005136013031005859,
+      "FDM_time": 0.0019648075103759766,
+      "Loss_time": 1.0160071849822998,
+      "Back_time ": 0.03322792053222656,
+      "Parameter_update": 0.00018095970153808594
+    },
+    {
+      "iteration": 386,
+      "Geometry_initialization_time": 0.005227088928222656,
+      "FDM_time": 0.0015370845794677734,
+      "Loss_time": 0.8811099529266357,
+      "Back_time ": 0.035833120346069336,
+      "Parameter_update": 0.00015473365783691406
+    },
+    {
+      "iteration": 387,
+      "Geometry_initialization_time": 0.005361080169677734,
+      "FDM_time": 0.0030128955841064453,
+      "Loss_time": 0.9154160022735596,
+      "Back_time ": 0.04075002670288086,
+      "Parameter_update": 0.00021886825561523438
+    },
+    {
+      "iteration": 388,
+      "Geometry_initialization_time": 0.006043910980224609,
+      "FDM_time": 0.002056121826171875,
+      "Loss_time": 0.8643369674682617,
+      "Back_time ": 0.03478503227233887,
+      "Parameter_update": 0.00015211105346679688
+    },
+    {
+      "iteration": 389,
+      "Geometry_initialization_time": 0.0045320987701416016,
+      "FDM_time": 0.001550912857055664,
+      "Loss_time": 0.9551229476928711,
+      "Back_time ": 0.03360700607299805,
+      "Parameter_update": 0.00014710426330566406
+    },
+    {
+      "iteration": 390,
+      "Geometry_initialization_time": 0.0046160221099853516,
+      "FDM_time": 0.0014650821685791016,
+      "Loss_time": 0.8817019462585449,
+      "Back_time ": 0.039830684661865234,
+      "Parameter_update": 0.00015497207641601562
+    },
+    {
+      "iteration": 391,
+      "Geometry_initialization_time": 0.005063295364379883,
+      "FDM_time": 0.0018351078033447266,
+      "Loss_time": 0.8829193115234375,
+      "Back_time ": 0.033995866775512695,
+      "Parameter_update": 0.0001430511474609375
+    },
+    {
+      "iteration": 392,
+      "Geometry_initialization_time": 0.004847049713134766,
+      "FDM_time": 0.0021009445190429688,
+      "Loss_time": 1.0110080242156982,
+      "Back_time ": 0.04641294479370117,
+      "Parameter_update": 0.0001621246337890625
+    },
+    {
+      "iteration": 393,
+      "Geometry_initialization_time": 0.007308006286621094,
+      "FDM_time": 0.0016620159149169922,
+      "Loss_time": 0.9626350402832031,
+      "Back_time ": 0.03158092498779297,
+      "Parameter_update": 0.00014472007751464844
+    },
+    {
+      "iteration": 394,
+      "Geometry_initialization_time": 0.004484891891479492,
+      "FDM_time": 0.00140380859375,
+      "Loss_time": 0.8831241130828857,
+      "Back_time ": 0.03505682945251465,
+      "Parameter_update": 0.00014281272888183594
+    },
+    {
+      "iteration": 395,
+      "Geometry_initialization_time": 0.004583835601806641,
+      "FDM_time": 0.0024170875549316406,
+      "Loss_time": 0.9405159950256348,
+      "Back_time ": 0.03774905204772949,
+      "Parameter_update": 0.00016689300537109375
+    },
+    {
+      "iteration": 396,
+      "Geometry_initialization_time": 0.005362749099731445,
+      "FDM_time": 0.0021560192108154297,
+      "Loss_time": 0.8981761932373047,
+      "Back_time ": 0.04521989822387695,
+      "Parameter_update": 0.00016498565673828125
+    },
+    {
+      "iteration": 397,
+      "Geometry_initialization_time": 0.006508827209472656,
+      "FDM_time": 0.0019180774688720703,
+      "Loss_time": 1.213705062866211,
+      "Back_time ": 0.03399467468261719,
+      "Parameter_update": 0.00019502639770507812
+    },
+    {
+      "iteration": 398,
+      "Geometry_initialization_time": 0.004707813262939453,
+      "FDM_time": 0.00189208984375,
+      "Loss_time": 0.8444459438323975,
+      "Back_time ": 0.03172135353088379,
+      "Parameter_update": 0.00014901161193847656
+    },
+    {
+      "iteration": 399,
+      "Geometry_initialization_time": 0.004698991775512695,
+      "FDM_time": 0.0014870166778564453,
+      "Loss_time": 0.9308409690856934,
+      "Back_time ": 0.03304696083068848,
+      "Parameter_update": 0.00014591217041015625
+    },
+    {
+      "iteration": 400,
+      "Geometry_initialization_time": 0.004556894302368164,
+      "FDM_time": 0.002079010009765625,
+      "Loss_time": 0.9053070545196533,
+      "Back_time ": 0.041632890701293945,
+      "Parameter_update": 0.00014591217041015625
+    },
+    {
+      "iteration": 401,
+      "Geometry_initialization_time": 0.005354881286621094,
+      "FDM_time": 0.002077341079711914,
+      "Loss_time": 0.8701660633087158,
+      "Back_time ": 0.032351016998291016,
+      "Parameter_update": 0.00014591217041015625
+    },
+    {
+      "iteration": 402,
+      "Geometry_initialization_time": 0.00474095344543457,
+      "FDM_time": 0.0014309883117675781,
+      "Loss_time": 0.895301103591919,
+      "Back_time ": 0.03208112716674805,
+      "Parameter_update": 0.0001399517059326172
+    },
+    {
+      "iteration": 403,
+      "Geometry_initialization_time": 0.0046007633209228516,
+      "FDM_time": 0.0014791488647460938,
+      "Loss_time": 0.9452078342437744,
+      "Back_time ": 0.03303074836730957,
+      "Parameter_update": 0.0001499652862548828
+    },
+    {
+      "iteration": 404,
+      "Geometry_initialization_time": 0.005409955978393555,
+      "FDM_time": 0.0017080307006835938,
+      "Loss_time": 0.8736350536346436,
+      "Back_time ": 0.03527688980102539,
+      "Parameter_update": 0.0001621246337890625
+    },
+    {
+      "iteration": 405,
+      "Geometry_initialization_time": 0.005010128021240234,
+      "FDM_time": 0.001817941665649414,
+      "Loss_time": 1.0076758861541748,
+      "Back_time ": 0.08081483840942383,
+      "Parameter_update": 0.019312143325805664
+    },
+    {
+      "iteration": 406,
+      "Geometry_initialization_time": 0.015603065490722656,
+      "FDM_time": 0.005238771438598633,
+      "Loss_time": 0.9572091102600098,
+      "Back_time ": 0.035242557525634766,
+      "Parameter_update": 0.000141143798828125
+    },
+    {
+      "iteration": 407,
+      "Geometry_initialization_time": 0.005420207977294922,
+      "FDM_time": 0.0016379356384277344,
+      "Loss_time": 0.9925968647003174,
+      "Back_time ": 0.03388023376464844,
+      "Parameter_update": 0.0001480579376220703
+    },
+    {
+      "iteration": 408,
+      "Geometry_initialization_time": 0.004509925842285156,
+      "FDM_time": 0.0014200210571289062,
+      "Loss_time": 0.8931519985198975,
+      "Back_time ": 0.03124403953552246,
+      "Parameter_update": 0.00014281272888183594
+    },
+    {
+      "iteration": 409,
+      "Geometry_initialization_time": 0.0045430660247802734,
+      "FDM_time": 0.0015139579772949219,
+      "Loss_time": 0.9732789993286133,
+      "Back_time ": 0.03365826606750488,
+      "Parameter_update": 0.00014710426330566406
+    },
+    {
+      "iteration": 410,
+      "Geometry_initialization_time": 0.005286216735839844,
+      "FDM_time": 0.001461029052734375,
+      "Loss_time": 1.0548269748687744,
+      "Back_time ": 0.046421051025390625,
+      "Parameter_update": 0.00016999244689941406
+    },
+    {
+      "iteration": 411,
+      "Geometry_initialization_time": 0.005660057067871094,
+      "FDM_time": 0.0019741058349609375,
+      "Loss_time": 1.0741441249847412,
+      "Back_time ": 0.03432321548461914,
+      "Parameter_update": 0.00015091896057128906
+    },
+    {
+      "iteration": 412,
+      "Geometry_initialization_time": 0.004971027374267578,
+      "FDM_time": 0.0017881393432617188,
+      "Loss_time": 0.9104671478271484,
+      "Back_time ": 0.03461098670959473,
+      "Parameter_update": 0.00016117095947265625
+    },
+    {
+      "iteration": 413,
+      "Geometry_initialization_time": 0.0059092044830322266,
+      "FDM_time": 0.0014770030975341797,
+      "Loss_time": 0.9379830360412598,
+      "Back_time ": 0.03422999382019043,
+      "Parameter_update": 0.00015211105346679688
+    },
+    {
+      "iteration": 414,
+      "Geometry_initialization_time": 0.00551605224609375,
+      "FDM_time": 0.0014781951904296875,
+      "Loss_time": 0.9605550765991211,
+      "Back_time ": 0.03781604766845703,
+      "Parameter_update": 0.00018310546875
+    },
+    {
+      "iteration": 415,
+      "Geometry_initialization_time": 0.005192995071411133,
+      "FDM_time": 0.0014739036560058594,
+      "Loss_time": 1.0492949485778809,
+      "Back_time ": 0.03953099250793457,
+      "Parameter_update": 0.000179290771484375
+    },
+    {
+      "iteration": 416,
+      "Geometry_initialization_time": 0.004906892776489258,
+      "FDM_time": 0.0015158653259277344,
+      "Loss_time": 0.8941159248352051,
+      "Back_time ": 0.033323049545288086,
+      "Parameter_update": 0.00015497207641601562
+    },
+    {
+      "iteration": 417,
+      "Geometry_initialization_time": 0.004721164703369141,
+      "FDM_time": 0.0014841556549072266,
+      "Loss_time": 0.9374110698699951,
+      "Back_time ": 0.03475189208984375,
+      "Parameter_update": 0.00015425682067871094
+    },
+    {
+      "iteration": 418,
+      "Geometry_initialization_time": 0.0049130916595458984,
+      "FDM_time": 0.0014770030975341797,
+      "Loss_time": 0.9008398056030273,
+      "Back_time ": 0.04101872444152832,
+      "Parameter_update": 0.00015497207641601562
+    },
+    {
+      "iteration": 419,
+      "Geometry_initialization_time": 0.004817962646484375,
+      "FDM_time": 0.002292156219482422,
+      "Loss_time": 0.9320921897888184,
+      "Back_time ": 0.033125877380371094,
+      "Parameter_update": 0.00015115737915039062
+    },
+    {
+      "iteration": 420,
+      "Geometry_initialization_time": 0.005244731903076172,
+      "FDM_time": 0.0015759468078613281,
+      "Loss_time": 0.8851470947265625,
+      "Back_time ": 0.032335758209228516,
+      "Parameter_update": 0.00015592575073242188
+    },
+    {
+      "iteration": 421,
+      "Geometry_initialization_time": 0.004637956619262695,
+      "FDM_time": 0.0017478466033935547,
+      "Loss_time": 0.9546730518341064,
+      "Back_time ": 0.03660702705383301,
+      "Parameter_update": 0.00017690658569335938
+    },
+    {
+      "iteration": 422,
+      "Geometry_initialization_time": 0.005242109298706055,
+      "FDM_time": 0.0019049644470214844,
+      "Loss_time": 1.0875160694122314,
+      "Back_time ": 0.04065680503845215,
+      "Parameter_update": 0.00016689300537109375
+    },
+    {
+      "iteration": 423,
+      "Geometry_initialization_time": 0.005280971527099609,
+      "FDM_time": 0.008862972259521484,
+      "Loss_time": 0.9776849746704102,
+      "Back_time ": 0.03467893600463867,
+      "Parameter_update": 0.00015115737915039062
+    },
+    {
+      "iteration": 424,
+      "Geometry_initialization_time": 0.004566192626953125,
+      "FDM_time": 0.0014319419860839844,
+      "Loss_time": 0.9043221473693848,
+      "Back_time ": 0.033421993255615234,
+      "Parameter_update": 0.0002040863037109375
+    },
+    {
+      "iteration": 425,
+      "Geometry_initialization_time": 0.005516767501831055,
+      "FDM_time": 0.00151824951171875,
+      "Loss_time": 0.9401509761810303,
+      "Back_time ": 0.03321385383605957,
+      "Parameter_update": 0.00014472007751464844
+    },
+    {
+      "iteration": 426,
+      "Geometry_initialization_time": 0.005450010299682617,
+      "FDM_time": 0.0019359588623046875,
+      "Loss_time": 0.8781380653381348,
+      "Back_time ": 0.03610491752624512,
+      "Parameter_update": 0.0001480579376220703
+    },
+    {
+      "iteration": 427,
+      "Geometry_initialization_time": 0.005784034729003906,
+      "FDM_time": 0.0015730857849121094,
+      "Loss_time": 0.9922342300415039,
+      "Back_time ": 0.03518795967102051,
+      "Parameter_update": 0.00021195411682128906
+    },
+    {
+      "iteration": 428,
+      "Geometry_initialization_time": 0.005555391311645508,
+      "FDM_time": 0.0016217231750488281,
+      "Loss_time": 0.8530161380767822,
+      "Back_time ": 0.0332789421081543,
+      "Parameter_update": 0.0001399517059326172
+    },
+    {
+      "iteration": 429,
+      "Geometry_initialization_time": 0.004537820816040039,
+      "FDM_time": 0.0016620159149169922,
+      "Loss_time": 0.9938290119171143,
+      "Back_time ": 0.03281521797180176,
+      "Parameter_update": 0.00014495849609375
+    },
+    {
+      "iteration": 430,
+      "Geometry_initialization_time": 0.004867076873779297,
+      "FDM_time": 0.002004861831665039,
+      "Loss_time": 0.8942883014678955,
+      "Back_time ": 0.03368401527404785,
+      "Parameter_update": 0.0001506805419921875
+    },
+    {
+      "iteration": 431,
+      "Geometry_initialization_time": 0.004580974578857422,
+      "FDM_time": 0.0013670921325683594,
+      "Loss_time": 0.8321199417114258,
+      "Back_time ": 0.03469395637512207,
+      "Parameter_update": 0.00015497207641601562
+    },
+    {
+      "iteration": 432,
+      "Geometry_initialization_time": 0.005113840103149414,
+      "FDM_time": 0.0015749931335449219,
+      "Loss_time": 0.8330292701721191,
+      "Back_time ": 0.03365802764892578,
+      "Parameter_update": 0.0001468658447265625
+    },
+    {
+      "iteration": 433,
+      "Geometry_initialization_time": 0.0045659542083740234,
+      "FDM_time": 0.0023429393768310547,
+      "Loss_time": 0.9158270359039307,
+      "Back_time ": 0.03836321830749512,
+      "Parameter_update": 0.00017905235290527344
+    },
+    {
+      "iteration": 434,
+      "Geometry_initialization_time": 0.005097866058349609,
+      "FDM_time": 0.0014033317565917969,
+      "Loss_time": 0.9137599468231201,
+      "Back_time ": 0.031369924545288086,
+      "Parameter_update": 0.00016999244689941406
+    },
+    {
+      "iteration": 435,
+      "Geometry_initialization_time": 0.004662990570068359,
+      "FDM_time": 0.0017731189727783203,
+      "Loss_time": 0.9707939624786377,
+      "Back_time ": 0.03288722038269043,
+      "Parameter_update": 0.0001499652862548828
+    },
+    {
+      "iteration": 436,
+      "Geometry_initialization_time": 0.00460505485534668,
+      "FDM_time": 0.001583099365234375,
+      "Loss_time": 0.8300578594207764,
+      "Back_time ": 0.031013011932373047,
+      "Parameter_update": 0.00014495849609375
+    },
+    {
+      "iteration": 437,
+      "Geometry_initialization_time": 0.004540920257568359,
+      "FDM_time": 0.0014240741729736328,
+      "Loss_time": 0.8674252033233643,
+      "Back_time ": 0.03122425079345703,
+      "Parameter_update": 0.00014400482177734375
+    },
+    {
+      "iteration": 438,
+      "Geometry_initialization_time": 0.004642963409423828,
+      "FDM_time": 0.0019059181213378906,
+      "Loss_time": 0.82666015625,
+      "Back_time ": 0.03595423698425293,
+      "Parameter_update": 0.00016427040100097656
+    },
+    {
+      "iteration": 439,
+      "Geometry_initialization_time": 0.004609823226928711,
+      "FDM_time": 0.0014109611511230469,
+      "Loss_time": 0.8744101524353027,
+      "Back_time ": 0.031269073486328125,
+      "Parameter_update": 0.0001621246337890625
+    },
+    {
+      "iteration": 440,
+      "Geometry_initialization_time": 0.004470109939575195,
+      "FDM_time": 0.0013890266418457031,
+      "Loss_time": 0.8899109363555908,
+      "Back_time ": 0.03846311569213867,
+      "Parameter_update": 0.00023221969604492188
+    },
+    {
+      "iteration": 441,
+      "Geometry_initialization_time": 0.004710197448730469,
+      "FDM_time": 0.0015671253204345703,
+      "Loss_time": 0.847059965133667,
+      "Back_time ": 0.030984878540039062,
+      "Parameter_update": 0.00014090538024902344
+    },
+    {
+      "iteration": 442,
+      "Geometry_initialization_time": 0.004637956619262695,
+      "FDM_time": 0.0014209747314453125,
+      "Loss_time": 0.8268091678619385,
+      "Back_time ": 0.03360176086425781,
+      "Parameter_update": 0.0001461505889892578
+    },
+    {
+      "iteration": 443,
+      "Geometry_initialization_time": 0.005118131637573242,
+      "FDM_time": 0.0014538764953613281,
+      "Loss_time": 0.9499461650848389,
+      "Back_time ": 0.0330350399017334,
+      "Parameter_update": 0.0001780986785888672
+    },
+    {
+      "iteration": 444,
+      "Geometry_initialization_time": 0.005269050598144531,
+      "FDM_time": 0.0017538070678710938,
+      "Loss_time": 0.9644680023193359,
+      "Back_time ": 0.04199099540710449,
+      "Parameter_update": 0.00015306472778320312
+    },
+    {
+      "iteration": 445,
+      "Geometry_initialization_time": 0.006177663803100586,
+      "FDM_time": 0.0018208026885986328,
+      "Loss_time": 1.0325729846954346,
+      "Back_time ": 0.041661977767944336,
+      "Parameter_update": 0.0001552104949951172
+    },
+    {
+      "iteration": 446,
+      "Geometry_initialization_time": 0.007091999053955078,
+      "FDM_time": 0.0029609203338623047,
+      "Loss_time": 0.8868720531463623,
+      "Back_time ": 0.03342390060424805,
+      "Parameter_update": 0.00014591217041015625
+    },
+    {
+      "iteration": 447,
+      "Geometry_initialization_time": 0.00553584098815918,
+      "FDM_time": 0.0015039443969726562,
+      "Loss_time": 0.9302060604095459,
+      "Back_time ": 0.03213214874267578,
+      "Parameter_update": 0.0001780986785888672
+    },
+    {
+      "iteration": 448,
+      "Geometry_initialization_time": 0.004870891571044922,
+      "FDM_time": 0.0014111995697021484,
+      "Loss_time": 0.9280388355255127,
+      "Back_time ": 0.037702083587646484,
+      "Parameter_update": 0.00017523765563964844
+    },
+    {
+      "iteration": 449,
+      "Geometry_initialization_time": 0.005877017974853516,
+      "FDM_time": 0.002232789993286133,
+      "Loss_time": 1.0548479557037354,
+      "Back_time ": 0.03618907928466797,
+      "Parameter_update": 0.00018095970153808594
+    },
+    {
+      "iteration": 450,
+      "Geometry_initialization_time": 0.004939079284667969,
+      "FDM_time": 0.0014960765838623047,
+      "Loss_time": 0.8695800304412842,
+      "Back_time ": 0.03266406059265137,
+      "Parameter_update": 0.0001468658447265625
+    },
+    {
+      "iteration": 451,
+      "Geometry_initialization_time": 0.004848003387451172,
+      "FDM_time": 0.0014278888702392578,
+      "Loss_time": 0.8615150451660156,
+      "Back_time ": 0.033210039138793945,
+      "Parameter_update": 0.0001418590545654297
+    },
+    {
+      "iteration": 452,
+      "Geometry_initialization_time": 0.005202770233154297,
+      "FDM_time": 0.0017049312591552734,
+      "Loss_time": 0.8328139781951904,
+      "Back_time ": 0.03387284278869629,
+      "Parameter_update": 0.00014209747314453125
+    },
+    {
+      "iteration": 453,
+      "Geometry_initialization_time": 0.004742145538330078,
+      "FDM_time": 0.0014810562133789062,
+      "Loss_time": 0.9677398204803467,
+      "Back_time ": 0.03716135025024414,
+      "Parameter_update": 0.00015115737915039062
+    },
+    {
+      "iteration": 454,
+      "Geometry_initialization_time": 0.005460977554321289,
+      "FDM_time": 0.0014300346374511719,
+      "Loss_time": 0.8914358615875244,
+      "Back_time ": 0.03382611274719238,
+      "Parameter_update": 0.00014495849609375
+    },
+    {
+      "iteration": 455,
+      "Geometry_initialization_time": 0.004419088363647461,
+      "FDM_time": 0.00167083740234375,
+      "Loss_time": 0.9078481197357178,
+      "Back_time ": 0.03188896179199219,
+      "Parameter_update": 0.00014281272888183594
+    },
+    {
+      "iteration": 456,
+      "Geometry_initialization_time": 0.004484891891479492,
+      "FDM_time": 0.0014052391052246094,
+      "Loss_time": 0.863656759262085,
+      "Back_time ": 0.0321199893951416,
+      "Parameter_update": 0.00019097328186035156
+    },
+    {
+      "iteration": 457,
+      "Geometry_initialization_time": 0.004920005798339844,
+      "FDM_time": 0.0019011497497558594,
+      "Loss_time": 0.9347960948944092,
+      "Back_time ": 0.03468799591064453,
+      "Parameter_update": 0.00014495849609375
+    },
+    {
+      "iteration": 458,
+      "Geometry_initialization_time": 0.004637002944946289,
+      "FDM_time": 0.0017910003662109375,
+      "Loss_time": 0.8747472763061523,
+      "Back_time ": 0.03272223472595215,
+      "Parameter_update": 0.00013709068298339844
+    },
+    {
+      "iteration": 459,
+      "Geometry_initialization_time": 0.004251003265380859,
+      "FDM_time": 0.0013349056243896484,
+      "Loss_time": 0.930980920791626,
+      "Back_time ": 0.03731107711791992,
+      "Parameter_update": 0.00025963783264160156
+    },
+    {
+      "iteration": 460,
+      "Geometry_initialization_time": 0.01343083381652832,
+      "FDM_time": 0.031844139099121094,
+      "Loss_time": 0.8959441184997559,
+      "Back_time ": 0.03458404541015625,
+      "Parameter_update": 0.00014090538024902344
+    },
+    {
+      "iteration": 461,
+      "Geometry_initialization_time": 0.004323005676269531,
+      "FDM_time": 0.0014269351959228516,
+      "Loss_time": 0.8393311500549316,
+      "Back_time ": 0.033663034439086914,
+      "Parameter_update": 0.000141143798828125
+    },
+    {
+      "iteration": 462,
+      "Geometry_initialization_time": 0.004255056381225586,
+      "FDM_time": 0.0013308525085449219,
+      "Loss_time": 0.904062032699585,
+      "Back_time ": 0.033976078033447266,
+      "Parameter_update": 0.0001361370086669922
+    },
+    {
+      "iteration": 463,
+      "Geometry_initialization_time": 0.005146980285644531,
+      "FDM_time": 0.0018470287322998047,
+      "Loss_time": 0.9636142253875732,
+      "Back_time ": 0.03262495994567871,
+      "Parameter_update": 0.000141143798828125
+    },
+    {
+      "iteration": 464,
+      "Geometry_initialization_time": 0.004287004470825195,
+      "FDM_time": 0.0015270709991455078,
+      "Loss_time": 0.8338711261749268,
+      "Back_time ": 0.03179502487182617,
+      "Parameter_update": 0.00017786026000976562
+    },
+    {
+      "iteration": 465,
+      "Geometry_initialization_time": 0.0051441192626953125,
+      "FDM_time": 0.0013799667358398438,
+      "Loss_time": 0.9122500419616699,
+      "Back_time ": 0.030468225479125977,
+      "Parameter_update": 0.00025200843811035156
+    },
+    {
+      "iteration": 466,
+      "Geometry_initialization_time": 0.004539012908935547,
+      "FDM_time": 0.0013470649719238281,
+      "Loss_time": 0.9633216857910156,
+      "Back_time ": 0.03643321990966797,
+      "Parameter_update": 0.00021076202392578125
+    },
+    {
+      "iteration": 467,
+      "Geometry_initialization_time": 0.006444692611694336,
+      "FDM_time": 0.0022430419921875,
+      "Loss_time": 0.9392688274383545,
+      "Back_time ": 0.03172898292541504,
+      "Parameter_update": 0.00014209747314453125
+    },
+    {
+      "iteration": 468,
+      "Geometry_initialization_time": 0.004992961883544922,
+      "FDM_time": 0.0013561248779296875,
+      "Loss_time": 0.8115830421447754,
+      "Back_time ": 0.031813859939575195,
+      "Parameter_update": 0.0001761913299560547
+    },
+    {
+      "iteration": 469,
+      "Geometry_initialization_time": 0.0066072940826416016,
+      "FDM_time": 0.0014061927795410156,
+      "Loss_time": 0.9940364360809326,
+      "Back_time ": 0.03037285804748535,
+      "Parameter_update": 0.0001380443572998047
+    },
+    {
+      "iteration": 470,
+      "Geometry_initialization_time": 0.004400968551635742,
+      "FDM_time": 0.001360177993774414,
+      "Loss_time": 0.8389599323272705,
+      "Back_time ": 0.030885934829711914,
+      "Parameter_update": 0.00025200843811035156
+    },
+    {
+      "iteration": 471,
+      "Geometry_initialization_time": 0.004950046539306641,
+      "FDM_time": 0.0020580291748046875,
+      "Loss_time": 0.8214170932769775,
+      "Back_time ": 0.03643202781677246,
+      "Parameter_update": 0.00040912628173828125
+    },
+    {
+      "iteration": 472,
+      "Geometry_initialization_time": 0.005452871322631836,
+      "FDM_time": 0.002105712890625,
+      "Loss_time": 0.8437981605529785,
+      "Back_time ": 0.037142038345336914,
+      "Parameter_update": 0.00016999244689941406
+    },
+    {
+      "iteration": 473,
+      "Geometry_initialization_time": 0.004717111587524414,
+      "FDM_time": 0.0015439987182617188,
+      "Loss_time": 0.8788778781890869,
+      "Back_time ": 0.033976078033447266,
+      "Parameter_update": 0.00014591217041015625
+    },
+    {
+      "iteration": 474,
+      "Geometry_initialization_time": 0.0043811798095703125,
+      "FDM_time": 0.001615762710571289,
+      "Loss_time": 0.8704850673675537,
+      "Back_time ": 0.03395485877990723,
+      "Parameter_update": 0.0001709461212158203
+    },
+    {
+      "iteration": 475,
+      "Geometry_initialization_time": 0.00590205192565918,
+      "FDM_time": 0.0014040470123291016,
+      "Loss_time": 0.9820048809051514,
+      "Back_time ": 0.03316307067871094,
+      "Parameter_update": 0.00014328956604003906
+    },
+    {
+      "iteration": 476,
+      "Geometry_initialization_time": 0.004228830337524414,
+      "FDM_time": 0.0013461112976074219,
+      "Loss_time": 0.8366308212280273,
+      "Back_time ": 0.03116297721862793,
+      "Parameter_update": 0.0001499652862548828
+    },
+    {
+      "iteration": 477,
+      "Geometry_initialization_time": 0.0044519901275634766,
+      "FDM_time": 0.00180816650390625,
+      "Loss_time": 1.0328550338745117,
+      "Back_time ": 0.039190053939819336,
+      "Parameter_update": 0.00016379356384277344
+    },
+    {
+      "iteration": 478,
+      "Geometry_initialization_time": 0.006474971771240234,
+      "FDM_time": 0.002933025360107422,
+      "Loss_time": 0.8747577667236328,
+      "Back_time ": 0.03502297401428223,
+      "Parameter_update": 0.00014591217041015625
+    },
+    {
+      "iteration": 479,
+      "Geometry_initialization_time": 0.004398822784423828,
+      "FDM_time": 0.0014050006866455078,
+      "Loss_time": 0.903130054473877,
+      "Back_time ": 0.031194210052490234,
+      "Parameter_update": 0.00014901161193847656
+    },
+    {
+      "iteration": 480,
+      "Geometry_initialization_time": 0.004343986511230469,
+      "FDM_time": 0.0013642311096191406,
+      "Loss_time": 0.7937088012695312,
+      "Back_time ": 0.031275033950805664,
+      "Parameter_update": 0.0001399517059326172
+    },
+    {
+      "iteration": 481,
+      "Geometry_initialization_time": 0.0054590702056884766,
+      "FDM_time": 0.001432657241821289,
+      "Loss_time": 0.8041410446166992,
+      "Back_time ": 0.032174110412597656,
+      "Parameter_update": 0.0001437664031982422
+    },
+    {
+      "iteration": 482,
+      "Geometry_initialization_time": 0.004534006118774414,
+      "FDM_time": 0.001390695571899414,
+      "Loss_time": 1.1787841320037842,
+      "Back_time ": 0.049318790435791016,
+      "Parameter_update": 0.00017309188842773438
+    },
+    {
+      "iteration": 483,
+      "Geometry_initialization_time": 0.0074160099029541016,
+      "FDM_time": 0.0034332275390625,
+      "Loss_time": 1.0982139110565186,
+      "Back_time ": 0.03991818428039551,
+      "Parameter_update": 0.00015115737915039062
+    },
+    {
+      "iteration": 484,
+      "Geometry_initialization_time": 0.006524801254272461,
+      "FDM_time": 0.001851797103881836,
+      "Loss_time": 0.9742372035980225,
+      "Back_time ": 0.05039787292480469,
+      "Parameter_update": 0.00016617774963378906
+    },
+    {
+      "iteration": 485,
+      "Geometry_initialization_time": 0.006638765335083008,
+      "FDM_time": 0.002172231674194336,
+      "Loss_time": 1.0584180355072021,
+      "Back_time ": 0.04183197021484375,
+      "Parameter_update": 0.00013709068298339844
+    },
+    {
+      "iteration": 486,
+      "Geometry_initialization_time": 0.0061798095703125,
+      "FDM_time": 0.0019392967224121094,
+      "Loss_time": 0.9243581295013428,
+      "Back_time ": 0.03606677055358887,
+      "Parameter_update": 0.00020194053649902344
+    },
+    {
+      "iteration": 487,
+      "Geometry_initialization_time": 0.005285739898681641,
+      "FDM_time": 0.0017359256744384766,
+      "Loss_time": 1.1873469352722168,
+      "Back_time ": 0.03841900825500488,
+      "Parameter_update": 0.0001552104949951172
+    },
+    {
+      "iteration": 488,
+      "Geometry_initialization_time": 0.0047359466552734375,
+      "FDM_time": 0.002051830291748047,
+      "Loss_time": 1.0797159671783447,
+      "Back_time ": 0.039782047271728516,
+      "Parameter_update": 0.00015211105346679688
+    },
+    {
+      "iteration": 489,
+      "Geometry_initialization_time": 0.005033969879150391,
+      "FDM_time": 0.0020999908447265625,
+      "Loss_time": 1.1374328136444092,
+      "Back_time ": 0.039350032806396484,
+      "Parameter_update": 0.00015306472778320312
+    },
+    {
+      "iteration": 490,
+      "Geometry_initialization_time": 0.006060123443603516,
+      "FDM_time": 0.002727985382080078,
+      "Loss_time": 0.9954290390014648,
+      "Back_time ": 0.04073190689086914,
+      "Parameter_update": 0.00018405914306640625
+    },
+    {
+      "iteration": 491,
+      "Geometry_initialization_time": 0.006747007369995117,
+      "FDM_time": 0.0018649101257324219,
+      "Loss_time": 1.1419830322265625,
+      "Back_time ": 0.040502071380615234,
+      "Parameter_update": 0.00017714500427246094
+    },
+    {
+      "iteration": 492,
+      "Geometry_initialization_time": 0.006071805953979492,
+      "FDM_time": 0.0025780200958251953,
+      "Loss_time": 1.0045480728149414,
+      "Back_time ": 0.038347721099853516,
+      "Parameter_update": 0.00017976760864257812
+    },
+    {
+      "iteration": 493,
+      "Geometry_initialization_time": 0.005470991134643555,
+      "FDM_time": 0.0021381378173828125,
+      "Loss_time": 1.061851978302002,
+      "Back_time ": 0.04213285446166992,
+      "Parameter_update": 0.0003170967102050781
+    },
+    {
+      "iteration": 494,
+      "Geometry_initialization_time": 0.007066965103149414,
+      "FDM_time": 0.0019578933715820312,
+      "Loss_time": 1.1052420139312744,
+      "Back_time ": 0.05448508262634277,
+      "Parameter_update": 0.00015473365783691406
+    },
+    {
+      "iteration": 495,
+      "Geometry_initialization_time": 0.005224943161010742,
+      "FDM_time": 0.0019011497497558594,
+      "Loss_time": 1.040220022201538,
+      "Back_time ": 0.03869795799255371,
+      "Parameter_update": 0.00016117095947265625
+    },
+    {
+      "iteration": 496,
+      "Geometry_initialization_time": 0.005156040191650391,
+      "FDM_time": 0.001661062240600586,
+      "Loss_time": 1.0102150440216064,
+      "Back_time ": 0.03951072692871094,
+      "Parameter_update": 0.00014901161193847656
+    },
+    {
+      "iteration": 497,
+      "Geometry_initialization_time": 0.005654096603393555,
+      "FDM_time": 0.002724885940551758,
+      "Loss_time": 1.1787817478179932,
+      "Back_time ": 0.036438941955566406,
+      "Parameter_update": 0.00018596649169921875
+    },
+    {
+      "iteration": 498,
+      "Geometry_initialization_time": 0.00470280647277832,
+      "FDM_time": 0.0017299652099609375,
+      "Loss_time": 0.9924240112304688,
+      "Back_time ": 0.03727388381958008,
+      "Parameter_update": 0.0001850128173828125
+    },
+    {
+      "iteration": 499,
+      "Geometry_initialization_time": 0.005420684814453125,
+      "FDM_time": 0.002256155014038086,
+      "Loss_time": 1.028601884841919,
+      "Back_time ": 0.0323178768157959,
+      "Parameter_update": 0.00014781951904296875
+    },
+    {
+      "iteration": 500,
+      "Geometry_initialization_time": 0.004711151123046875,
+      "FDM_time": 0.0017273426055908203,
+      "Loss_time": 0.8923449516296387,
+      "Back_time ": 0.03456401824951172,
+      "Parameter_update": 0.0001499652862548828
+    }
+  ]
+}

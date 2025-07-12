@@ -1,0 +1,4526 @@
+{
+  "metadata": {
+    "project": "Structural Optimization",
+    "Context": "FE",
+    "device": "cpu",
+    "parameters": {
+      "length": 48,
+      "width": 48,
+      "grid_size": "13x13",
+      "epochs": 500,
+      "step_size": 0.01
+    },
+    "Records": 0
+  },
+  "iterations": [
+    {
+      "iteration": 0,
+      "condition_g": 3783.642333984375,
+      "Solution_type_g": 0,
+      "condition_x": 3783.642333984375,
+      "Solution_type_x": 0,
+      "condition_y": 3783.642333984375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 1,
+      "condition_g": 3782.959716796875,
+      "Solution_type_g": 0,
+      "condition_x": 3782.959716796875,
+      "Solution_type_x": 0,
+      "condition_y": 3782.959716796875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 2,
+      "condition_g": 3782.3427734375,
+      "Solution_type_g": 0,
+      "condition_x": 3782.3427734375,
+      "Solution_type_x": 0,
+      "condition_y": 3782.3427734375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 3,
+      "condition_g": 3782.7900390625,
+      "Solution_type_g": 0,
+      "condition_x": 3782.7900390625,
+      "Solution_type_x": 0,
+      "condition_y": 3782.7900390625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 4,
+      "condition_g": 3782.427490234375,
+      "Solution_type_g": 0,
+      "condition_x": 3782.427490234375,
+      "Solution_type_x": 0,
+      "condition_y": 3782.427490234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 5,
+      "condition_g": 0.0,
+      "Solution_type_g": 0,
+      "condition_x": 0.0,
+      "Solution_type_x": 0,
+      "condition_y": 0.0,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 6,
+      "condition_g": 3782.37890625,
+      "Solution_type_g": 0,
+      "condition_x": 3782.37890625,
+      "Solution_type_x": 0,
+      "condition_y": 3782.37890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 7,
+      "condition_g": 3782.2021484375,
+      "Solution_type_g": 0,
+      "condition_x": 3782.2021484375,
+      "Solution_type_x": 0,
+      "condition_y": 3782.2021484375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 8,
+      "condition_g": 3781.7900390625,
+      "Solution_type_g": 0,
+      "condition_x": 3781.7900390625,
+      "Solution_type_x": 0,
+      "condition_y": 3781.7900390625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 9,
+      "condition_g": 3781.740966796875,
+      "Solution_type_g": 0,
+      "condition_x": 3781.740966796875,
+      "Solution_type_x": 0,
+      "condition_y": 3781.740966796875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 10,
+      "condition_g": 3781.78271484375,
+      "Solution_type_g": 0,
+      "condition_x": 3781.78271484375,
+      "Solution_type_x": 0,
+      "condition_y": 3781.78271484375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 11,
+      "condition_g": 3781.49462890625,
+      "Solution_type_g": 0,
+      "condition_x": 3781.49462890625,
+      "Solution_type_x": 0,
+      "condition_y": 3781.49462890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 12,
+      "condition_g": 3781.2724609375,
+      "Solution_type_g": 0,
+      "condition_x": 3781.2724609375,
+      "Solution_type_x": 0,
+      "condition_y": 3781.2724609375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 13,
+      "condition_g": 3781.70458984375,
+      "Solution_type_g": 0,
+      "condition_x": 3781.70458984375,
+      "Solution_type_x": 0,
+      "condition_y": 3781.70458984375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 14,
+      "condition_g": 3780.8876953125,
+      "Solution_type_g": 0,
+      "condition_x": 3780.8876953125,
+      "Solution_type_x": 0,
+      "condition_y": 3780.8876953125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 15,
+      "condition_g": 3781.184326171875,
+      "Solution_type_g": 0,
+      "condition_x": 3781.184326171875,
+      "Solution_type_x": 0,
+      "condition_y": 3781.184326171875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 16,
+      "condition_g": 3780.851318359375,
+      "Solution_type_g": 0,
+      "condition_x": 3780.851318359375,
+      "Solution_type_x": 0,
+      "condition_y": 3780.851318359375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 17,
+      "condition_g": 3781.1875,
+      "Solution_type_g": 0,
+      "condition_x": 3781.1875,
+      "Solution_type_x": 0,
+      "condition_y": 3781.1875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 18,
+      "condition_g": 3780.7021484375,
+      "Solution_type_g": 0,
+      "condition_x": 3780.7021484375,
+      "Solution_type_x": 0,
+      "condition_y": 3780.7021484375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 19,
+      "condition_g": 3780.94580078125,
+      "Solution_type_g": 0,
+      "condition_x": 3780.94580078125,
+      "Solution_type_x": 0,
+      "condition_y": 3780.94580078125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 20,
+      "condition_g": 3780.133544921875,
+      "Solution_type_g": 0,
+      "condition_x": 3780.133544921875,
+      "Solution_type_x": 0,
+      "condition_y": 3780.133544921875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 21,
+      "condition_g": 3780.414306640625,
+      "Solution_type_g": 0,
+      "condition_x": 3780.414306640625,
+      "Solution_type_x": 0,
+      "condition_y": 3780.414306640625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 22,
+      "condition_g": 3780.460693359375,
+      "Solution_type_g": 0,
+      "condition_x": 3780.460693359375,
+      "Solution_type_x": 0,
+      "condition_y": 3780.460693359375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 23,
+      "condition_g": 3780.509765625,
+      "Solution_type_g": 0,
+      "condition_x": 3780.509765625,
+      "Solution_type_x": 0,
+      "condition_y": 3780.509765625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 24,
+      "condition_g": 3780.12255859375,
+      "Solution_type_g": 0,
+      "condition_x": 3780.12255859375,
+      "Solution_type_x": 0,
+      "condition_y": 3780.12255859375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 25,
+      "condition_g": 3779.657958984375,
+      "Solution_type_g": 0,
+      "condition_x": 3779.657958984375,
+      "Solution_type_x": 0,
+      "condition_y": 3779.657958984375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 26,
+      "condition_g": 3779.76708984375,
+      "Solution_type_g": 0,
+      "condition_x": 3779.76708984375,
+      "Solution_type_x": 0,
+      "condition_y": 3779.76708984375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 27,
+      "condition_g": 3779.798828125,
+      "Solution_type_g": 0,
+      "condition_x": 3779.798828125,
+      "Solution_type_x": 0,
+      "condition_y": 3779.798828125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 28,
+      "condition_g": 3779.62109375,
+      "Solution_type_g": 0,
+      "condition_x": 3779.62109375,
+      "Solution_type_x": 0,
+      "condition_y": 3779.62109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 29,
+      "condition_g": 3779.812255859375,
+      "Solution_type_g": 0,
+      "condition_x": 3779.812255859375,
+      "Solution_type_x": 0,
+      "condition_y": 3779.812255859375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 30,
+      "condition_g": 3779.67431640625,
+      "Solution_type_g": 0,
+      "condition_x": 3779.67431640625,
+      "Solution_type_x": 0,
+      "condition_y": 3779.67431640625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 31,
+      "condition_g": 3779.318603515625,
+      "Solution_type_g": 0,
+      "condition_x": 3779.318603515625,
+      "Solution_type_x": 0,
+      "condition_y": 3779.318603515625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 32,
+      "condition_g": 3779.592529296875,
+      "Solution_type_g": 0,
+      "condition_x": 3779.592529296875,
+      "Solution_type_x": 0,
+      "condition_y": 3779.592529296875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 33,
+      "condition_g": 3779.10498046875,
+      "Solution_type_g": 0,
+      "condition_x": 3779.10498046875,
+      "Solution_type_x": 0,
+      "condition_y": 3779.10498046875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 34,
+      "condition_g": 3779.837890625,
+      "Solution_type_g": 0,
+      "condition_x": 3779.837890625,
+      "Solution_type_x": 0,
+      "condition_y": 3779.837890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 35,
+      "condition_g": 3778.826416015625,
+      "Solution_type_g": 0,
+      "condition_x": 3778.826416015625,
+      "Solution_type_x": 0,
+      "condition_y": 3778.826416015625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 36,
+      "condition_g": 3779.2578125,
+      "Solution_type_g": 0,
+      "condition_x": 3779.2578125,
+      "Solution_type_x": 0,
+      "condition_y": 3779.2578125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 37,
+      "condition_g": 3778.793212890625,
+      "Solution_type_g": 0,
+      "condition_x": 3778.793212890625,
+      "Solution_type_x": 0,
+      "condition_y": 3778.793212890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 38,
+      "condition_g": 3778.766357421875,
+      "Solution_type_g": 0,
+      "condition_x": 3778.766357421875,
+      "Solution_type_x": 0,
+      "condition_y": 3778.766357421875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 39,
+      "condition_g": 3778.9462890625,
+      "Solution_type_g": 0,
+      "condition_x": 3778.9462890625,
+      "Solution_type_x": 0,
+      "condition_y": 3778.9462890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 40,
+      "condition_g": 3778.740966796875,
+      "Solution_type_g": 0,
+      "condition_x": 3778.740966796875,
+      "Solution_type_x": 0,
+      "condition_y": 3778.740966796875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 41,
+      "condition_g": 3778.82568359375,
+      "Solution_type_g": 0,
+      "condition_x": 3778.82568359375,
+      "Solution_type_x": 0,
+      "condition_y": 3778.82568359375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 42,
+      "condition_g": 3778.286865234375,
+      "Solution_type_g": 0,
+      "condition_x": 3778.286865234375,
+      "Solution_type_x": 0,
+      "condition_y": 3778.286865234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 43,
+      "condition_g": 3778.9462890625,
+      "Solution_type_g": 0,
+      "condition_x": 3778.9462890625,
+      "Solution_type_x": 0,
+      "condition_y": 3778.9462890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 44,
+      "condition_g": 3778.699462890625,
+      "Solution_type_g": 0,
+      "condition_x": 3778.699462890625,
+      "Solution_type_x": 0,
+      "condition_y": 3778.699462890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 45,
+      "condition_g": 3778.675537109375,
+      "Solution_type_g": 0,
+      "condition_x": 3778.675537109375,
+      "Solution_type_x": 0,
+      "condition_y": 3778.675537109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 46,
+      "condition_g": 3778.099365234375,
+      "Solution_type_g": 0,
+      "condition_x": 3778.099365234375,
+      "Solution_type_x": 0,
+      "condition_y": 3778.099365234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 47,
+      "condition_g": 3778.07763671875,
+      "Solution_type_g": 0,
+      "condition_x": 3778.07763671875,
+      "Solution_type_x": 0,
+      "condition_y": 3778.07763671875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 48,
+      "condition_g": 3778.25244140625,
+      "Solution_type_g": 0,
+      "condition_x": 3778.25244140625,
+      "Solution_type_x": 0,
+      "condition_y": 3778.25244140625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 49,
+      "condition_g": 3778.533447265625,
+      "Solution_type_g": 0,
+      "condition_x": 3778.533447265625,
+      "Solution_type_x": 0,
+      "condition_y": 3778.533447265625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 50,
+      "condition_g": 3778.005859375,
+      "Solution_type_g": 0,
+      "condition_x": 3778.005859375,
+      "Solution_type_x": 0,
+      "condition_y": 3778.005859375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 51,
+      "condition_g": 3778.57763671875,
+      "Solution_type_g": 0,
+      "condition_x": 3778.57763671875,
+      "Solution_type_x": 0,
+      "condition_y": 3778.57763671875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 52,
+      "condition_g": 3777.96875,
+      "Solution_type_g": 0,
+      "condition_x": 3777.96875,
+      "Solution_type_x": 0,
+      "condition_y": 3777.96875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 53,
+      "condition_g": 3777.880126953125,
+      "Solution_type_g": 0,
+      "condition_x": 3777.880126953125,
+      "Solution_type_x": 0,
+      "condition_y": 3777.880126953125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 54,
+      "condition_g": 3777.973876953125,
+      "Solution_type_g": 0,
+      "condition_x": 3777.973876953125,
+      "Solution_type_x": 0,
+      "condition_y": 3777.973876953125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 55,
+      "condition_g": 3777.900146484375,
+      "Solution_type_g": 0,
+      "condition_x": 3777.900146484375,
+      "Solution_type_x": 0,
+      "condition_y": 3777.900146484375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 56,
+      "condition_g": 3777.981689453125,
+      "Solution_type_g": 0,
+      "condition_x": 3777.981689453125,
+      "Solution_type_x": 0,
+      "condition_y": 3777.981689453125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 57,
+      "condition_g": 3777.960205078125,
+      "Solution_type_g": 0,
+      "condition_x": 3777.960205078125,
+      "Solution_type_x": 0,
+      "condition_y": 3777.960205078125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 58,
+      "condition_g": 3777.799072265625,
+      "Solution_type_g": 0,
+      "condition_x": 3777.799072265625,
+      "Solution_type_x": 0,
+      "condition_y": 3777.799072265625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 59,
+      "condition_g": 3778.382568359375,
+      "Solution_type_g": 0,
+      "condition_x": 3778.382568359375,
+      "Solution_type_x": 0,
+      "condition_y": 3778.382568359375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 60,
+      "condition_g": 3777.604736328125,
+      "Solution_type_g": 0,
+      "condition_x": 3777.604736328125,
+      "Solution_type_x": 0,
+      "condition_y": 3777.604736328125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 61,
+      "condition_g": 3777.836669921875,
+      "Solution_type_g": 0,
+      "condition_x": 3777.836669921875,
+      "Solution_type_x": 0,
+      "condition_y": 3777.836669921875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 62,
+      "condition_g": 3777.81591796875,
+      "Solution_type_g": 0,
+      "condition_x": 3777.81591796875,
+      "Solution_type_x": 0,
+      "condition_y": 3777.81591796875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 63,
+      "condition_g": 3777.957763671875,
+      "Solution_type_g": 0,
+      "condition_x": 3777.957763671875,
+      "Solution_type_x": 0,
+      "condition_y": 3777.957763671875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 64,
+      "condition_g": 3777.806884765625,
+      "Solution_type_g": 0,
+      "condition_x": 3777.806884765625,
+      "Solution_type_x": 0,
+      "condition_y": 3777.806884765625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 65,
+      "condition_g": 3777.793212890625,
+      "Solution_type_g": 0,
+      "condition_x": 3777.793212890625,
+      "Solution_type_x": 0,
+      "condition_y": 3777.793212890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 66,
+      "condition_g": 3777.773681640625,
+      "Solution_type_g": 0,
+      "condition_x": 3777.773681640625,
+      "Solution_type_x": 0,
+      "condition_y": 3777.773681640625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 67,
+      "condition_g": 3777.64013671875,
+      "Solution_type_g": 0,
+      "condition_x": 3777.64013671875,
+      "Solution_type_x": 0,
+      "condition_y": 3777.64013671875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 68,
+      "condition_g": 3777.75146484375,
+      "Solution_type_g": 0,
+      "condition_x": 3777.75146484375,
+      "Solution_type_x": 0,
+      "condition_y": 3777.75146484375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 69,
+      "condition_g": 3777.76123046875,
+      "Solution_type_g": 0,
+      "condition_x": 3777.76123046875,
+      "Solution_type_x": 0,
+      "condition_y": 3777.76123046875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 70,
+      "condition_g": 3777.657470703125,
+      "Solution_type_g": 0,
+      "condition_x": 3777.657470703125,
+      "Solution_type_x": 0,
+      "condition_y": 3777.657470703125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 71,
+      "condition_g": 3777.787109375,
+      "Solution_type_g": 0,
+      "condition_x": 3777.787109375,
+      "Solution_type_x": 0,
+      "condition_y": 3777.787109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 72,
+      "condition_g": 3777.828857421875,
+      "Solution_type_g": 0,
+      "condition_x": 3777.828857421875,
+      "Solution_type_x": 0,
+      "condition_y": 3777.828857421875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 73,
+      "condition_g": 3777.722412109375,
+      "Solution_type_g": 0,
+      "condition_x": 3777.722412109375,
+      "Solution_type_x": 0,
+      "condition_y": 3777.722412109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 74,
+      "condition_g": 3778.055419921875,
+      "Solution_type_g": 0,
+      "condition_x": 3778.055419921875,
+      "Solution_type_x": 0,
+      "condition_y": 3778.055419921875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 75,
+      "condition_g": 3777.7255859375,
+      "Solution_type_g": 0,
+      "condition_x": 3777.7255859375,
+      "Solution_type_x": 0,
+      "condition_y": 3777.7255859375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 76,
+      "condition_g": 3778.0869140625,
+      "Solution_type_g": 0,
+      "condition_x": 3778.0869140625,
+      "Solution_type_x": 0,
+      "condition_y": 3778.0869140625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 77,
+      "condition_g": 3777.841796875,
+      "Solution_type_g": 0,
+      "condition_x": 3777.841796875,
+      "Solution_type_x": 0,
+      "condition_y": 3777.841796875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 78,
+      "condition_g": 3777.9072265625,
+      "Solution_type_g": 0,
+      "condition_x": 3777.9072265625,
+      "Solution_type_x": 0,
+      "condition_y": 3777.9072265625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 79,
+      "condition_g": 3777.76953125,
+      "Solution_type_g": 0,
+      "condition_x": 3777.76953125,
+      "Solution_type_x": 0,
+      "condition_y": 3777.76953125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 80,
+      "condition_g": 3778.1513671875,
+      "Solution_type_g": 0,
+      "condition_x": 3778.1513671875,
+      "Solution_type_x": 0,
+      "condition_y": 3778.1513671875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 81,
+      "condition_g": 3778.219482421875,
+      "Solution_type_g": 0,
+      "condition_x": 3778.219482421875,
+      "Solution_type_x": 0,
+      "condition_y": 3778.219482421875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 82,
+      "condition_g": 3777.44287109375,
+      "Solution_type_g": 0,
+      "condition_x": 3777.44287109375,
+      "Solution_type_x": 0,
+      "condition_y": 3777.44287109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 83,
+      "condition_g": 3777.95068359375,
+      "Solution_type_g": 0,
+      "condition_x": 3777.95068359375,
+      "Solution_type_x": 0,
+      "condition_y": 3777.95068359375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 84,
+      "condition_g": 3777.995849609375,
+      "Solution_type_g": 0,
+      "condition_x": 3777.995849609375,
+      "Solution_type_x": 0,
+      "condition_y": 3777.995849609375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 85,
+      "condition_g": 3778.490234375,
+      "Solution_type_g": 0,
+      "condition_x": 3778.490234375,
+      "Solution_type_x": 0,
+      "condition_y": 3778.490234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 86,
+      "condition_g": 3778.083251953125,
+      "Solution_type_g": 0,
+      "condition_x": 3778.083251953125,
+      "Solution_type_x": 0,
+      "condition_y": 3778.083251953125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 87,
+      "condition_g": 3778.024658203125,
+      "Solution_type_g": 0,
+      "condition_x": 3778.024658203125,
+      "Solution_type_x": 0,
+      "condition_y": 3778.024658203125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 88,
+      "condition_g": 3778.07568359375,
+      "Solution_type_g": 0,
+      "condition_x": 3778.07568359375,
+      "Solution_type_x": 0,
+      "condition_y": 3778.07568359375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 89,
+      "condition_g": 3778.27685546875,
+      "Solution_type_g": 0,
+      "condition_x": 3778.27685546875,
+      "Solution_type_x": 0,
+      "condition_y": 3778.27685546875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 90,
+      "condition_g": 3778.385986328125,
+      "Solution_type_g": 0,
+      "condition_x": 3778.385986328125,
+      "Solution_type_x": 0,
+      "condition_y": 3778.385986328125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 91,
+      "condition_g": 3778.35546875,
+      "Solution_type_g": 0,
+      "condition_x": 3778.35546875,
+      "Solution_type_x": 0,
+      "condition_y": 3778.35546875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 92,
+      "condition_g": 3778.7783203125,
+      "Solution_type_g": 0,
+      "condition_x": 3778.7783203125,
+      "Solution_type_x": 0,
+      "condition_y": 3778.7783203125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 93,
+      "condition_g": 3778.763671875,
+      "Solution_type_g": 0,
+      "condition_x": 3778.763671875,
+      "Solution_type_x": 0,
+      "condition_y": 3778.763671875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 94,
+      "condition_g": 3778.164306640625,
+      "Solution_type_g": 0,
+      "condition_x": 3778.164306640625,
+      "Solution_type_x": 0,
+      "condition_y": 3778.164306640625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 95,
+      "condition_g": 3778.4560546875,
+      "Solution_type_g": 0,
+      "condition_x": 3778.4560546875,
+      "Solution_type_x": 0,
+      "condition_y": 3778.4560546875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 96,
+      "condition_g": 3778.65869140625,
+      "Solution_type_g": 0,
+      "condition_x": 3778.65869140625,
+      "Solution_type_x": 0,
+      "condition_y": 3778.65869140625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 97,
+      "condition_g": 3778.642822265625,
+      "Solution_type_g": 0,
+      "condition_x": 3778.642822265625,
+      "Solution_type_x": 0,
+      "condition_y": 3778.642822265625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 98,
+      "condition_g": 3778.912109375,
+      "Solution_type_g": 0,
+      "condition_x": 3778.912109375,
+      "Solution_type_x": 0,
+      "condition_y": 3778.912109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 99,
+      "condition_g": 3778.636474609375,
+      "Solution_type_g": 0,
+      "condition_x": 3778.636474609375,
+      "Solution_type_x": 0,
+      "condition_y": 3778.636474609375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 100,
+      "condition_g": 3778.9150390625,
+      "Solution_type_g": 0,
+      "condition_x": 3778.9150390625,
+      "Solution_type_x": 0,
+      "condition_y": 3778.9150390625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 101,
+      "condition_g": 3778.84814453125,
+      "Solution_type_g": 0,
+      "condition_x": 3778.84814453125,
+      "Solution_type_x": 0,
+      "condition_y": 3778.84814453125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 102,
+      "condition_g": 3778.638671875,
+      "Solution_type_g": 0,
+      "condition_x": 3778.638671875,
+      "Solution_type_x": 0,
+      "condition_y": 3778.638671875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 103,
+      "condition_g": 3778.9521484375,
+      "Solution_type_g": 0,
+      "condition_x": 3778.9521484375,
+      "Solution_type_x": 0,
+      "condition_y": 3778.9521484375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 104,
+      "condition_g": 3778.936279296875,
+      "Solution_type_g": 0,
+      "condition_x": 3778.936279296875,
+      "Solution_type_x": 0,
+      "condition_y": 3778.936279296875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 105,
+      "condition_g": 3779.169921875,
+      "Solution_type_g": 0,
+      "condition_x": 3779.169921875,
+      "Solution_type_x": 0,
+      "condition_y": 3779.169921875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 106,
+      "condition_g": 3779.24072265625,
+      "Solution_type_g": 0,
+      "condition_x": 3779.24072265625,
+      "Solution_type_x": 0,
+      "condition_y": 3779.24072265625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 107,
+      "condition_g": 3778.9443359375,
+      "Solution_type_g": 0,
+      "condition_x": 3778.9443359375,
+      "Solution_type_x": 0,
+      "condition_y": 3778.9443359375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 108,
+      "condition_g": 3779.441162109375,
+      "Solution_type_g": 0,
+      "condition_x": 3779.441162109375,
+      "Solution_type_x": 0,
+      "condition_y": 3779.441162109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 109,
+      "condition_g": 3780.041015625,
+      "Solution_type_g": 0,
+      "condition_x": 3780.041015625,
+      "Solution_type_x": 0,
+      "condition_y": 3780.041015625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 110,
+      "condition_g": 3779.9970703125,
+      "Solution_type_g": 0,
+      "condition_x": 3779.9970703125,
+      "Solution_type_x": 0,
+      "condition_y": 3779.9970703125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 111,
+      "condition_g": 3779.7109375,
+      "Solution_type_g": 0,
+      "condition_x": 3779.7109375,
+      "Solution_type_x": 0,
+      "condition_y": 3779.7109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 112,
+      "condition_g": 3780.088134765625,
+      "Solution_type_g": 0,
+      "condition_x": 3780.088134765625,
+      "Solution_type_x": 0,
+      "condition_y": 3780.088134765625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 113,
+      "condition_g": 3779.953369140625,
+      "Solution_type_g": 0,
+      "condition_x": 3779.953369140625,
+      "Solution_type_x": 0,
+      "condition_y": 3779.953369140625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 114,
+      "condition_g": 3779.781494140625,
+      "Solution_type_g": 0,
+      "condition_x": 3779.781494140625,
+      "Solution_type_x": 0,
+      "condition_y": 3779.781494140625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 115,
+      "condition_g": 3780.464599609375,
+      "Solution_type_g": 0,
+      "condition_x": 3780.464599609375,
+      "Solution_type_x": 0,
+      "condition_y": 3780.464599609375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 116,
+      "condition_g": 3780.21142578125,
+      "Solution_type_g": 0,
+      "condition_x": 3780.21142578125,
+      "Solution_type_x": 0,
+      "condition_y": 3780.21142578125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 117,
+      "condition_g": 3780.30029296875,
+      "Solution_type_g": 0,
+      "condition_x": 3780.30029296875,
+      "Solution_type_x": 0,
+      "condition_y": 3780.30029296875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 118,
+      "condition_g": 3780.450927734375,
+      "Solution_type_g": 0,
+      "condition_x": 3780.450927734375,
+      "Solution_type_x": 0,
+      "condition_y": 3780.450927734375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 119,
+      "condition_g": 3780.480224609375,
+      "Solution_type_g": 0,
+      "condition_x": 3780.480224609375,
+      "Solution_type_x": 0,
+      "condition_y": 3780.480224609375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 120,
+      "condition_g": 3780.957275390625,
+      "Solution_type_g": 0,
+      "condition_x": 3780.957275390625,
+      "Solution_type_x": 0,
+      "condition_y": 3780.957275390625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 121,
+      "condition_g": 3780.559814453125,
+      "Solution_type_g": 0,
+      "condition_x": 3780.559814453125,
+      "Solution_type_x": 0,
+      "condition_y": 3780.559814453125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 122,
+      "condition_g": 3780.664306640625,
+      "Solution_type_g": 0,
+      "condition_x": 3780.664306640625,
+      "Solution_type_x": 0,
+      "condition_y": 3780.664306640625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 123,
+      "condition_g": 3780.67822265625,
+      "Solution_type_g": 0,
+      "condition_x": 3780.67822265625,
+      "Solution_type_x": 0,
+      "condition_y": 3780.67822265625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 124,
+      "condition_g": 3781.1162109375,
+      "Solution_type_g": 0,
+      "condition_x": 3781.1162109375,
+      "Solution_type_x": 0,
+      "condition_y": 3781.1162109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 125,
+      "condition_g": 3780.93359375,
+      "Solution_type_g": 0,
+      "condition_x": 3780.93359375,
+      "Solution_type_x": 0,
+      "condition_y": 3780.93359375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 126,
+      "condition_g": 3781.396484375,
+      "Solution_type_g": 0,
+      "condition_x": 3781.396484375,
+      "Solution_type_x": 0,
+      "condition_y": 3781.396484375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 127,
+      "condition_g": 3781.601318359375,
+      "Solution_type_g": 0,
+      "condition_x": 3781.601318359375,
+      "Solution_type_x": 0,
+      "condition_y": 3781.601318359375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 128,
+      "condition_g": 3781.45068359375,
+      "Solution_type_g": 0,
+      "condition_x": 3781.45068359375,
+      "Solution_type_x": 0,
+      "condition_y": 3781.45068359375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 129,
+      "condition_g": 3781.794189453125,
+      "Solution_type_g": 0,
+      "condition_x": 3781.794189453125,
+      "Solution_type_x": 0,
+      "condition_y": 3781.794189453125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 130,
+      "condition_g": 3781.84228515625,
+      "Solution_type_g": 0,
+      "condition_x": 3781.84228515625,
+      "Solution_type_x": 0,
+      "condition_y": 3781.84228515625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 131,
+      "condition_g": 3781.843994140625,
+      "Solution_type_g": 0,
+      "condition_x": 3781.843994140625,
+      "Solution_type_x": 0,
+      "condition_y": 3781.843994140625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 132,
+      "condition_g": 3782.1416015625,
+      "Solution_type_g": 0,
+      "condition_x": 3782.1416015625,
+      "Solution_type_x": 0,
+      "condition_y": 3782.1416015625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 133,
+      "condition_g": 3782.1962890625,
+      "Solution_type_g": 0,
+      "condition_x": 3782.1962890625,
+      "Solution_type_x": 0,
+      "condition_y": 3782.1962890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 134,
+      "condition_g": 3782.3115234375,
+      "Solution_type_g": 0,
+      "condition_x": 3782.3115234375,
+      "Solution_type_x": 0,
+      "condition_y": 3782.3115234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 135,
+      "condition_g": 3782.508056640625,
+      "Solution_type_g": 0,
+      "condition_x": 3782.508056640625,
+      "Solution_type_x": 0,
+      "condition_y": 3782.508056640625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 136,
+      "condition_g": 3782.3447265625,
+      "Solution_type_g": 0,
+      "condition_x": 3782.3447265625,
+      "Solution_type_x": 0,
+      "condition_y": 3782.3447265625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 137,
+      "condition_g": 3782.706787109375,
+      "Solution_type_g": 0,
+      "condition_x": 3782.706787109375,
+      "Solution_type_x": 0,
+      "condition_y": 3782.706787109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 138,
+      "condition_g": 3782.897216796875,
+      "Solution_type_g": 0,
+      "condition_x": 3782.897216796875,
+      "Solution_type_x": 0,
+      "condition_y": 3782.897216796875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 139,
+      "condition_g": 3783.091064453125,
+      "Solution_type_g": 0,
+      "condition_x": 3783.091064453125,
+      "Solution_type_x": 0,
+      "condition_y": 3783.091064453125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 140,
+      "condition_g": 3783.57177734375,
+      "Solution_type_g": 0,
+      "condition_x": 3783.57177734375,
+      "Solution_type_x": 0,
+      "condition_y": 3783.57177734375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 141,
+      "condition_g": 3783.003173828125,
+      "Solution_type_g": 0,
+      "condition_x": 3783.003173828125,
+      "Solution_type_x": 0,
+      "condition_y": 3783.003173828125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 142,
+      "condition_g": 3783.979248046875,
+      "Solution_type_g": 0,
+      "condition_x": 3783.979248046875,
+      "Solution_type_x": 0,
+      "condition_y": 3783.979248046875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 143,
+      "condition_g": 3783.706787109375,
+      "Solution_type_g": 0,
+      "condition_x": 3783.706787109375,
+      "Solution_type_x": 0,
+      "condition_y": 3783.706787109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 144,
+      "condition_g": 3783.48046875,
+      "Solution_type_g": 0,
+      "condition_x": 3783.48046875,
+      "Solution_type_x": 0,
+      "condition_y": 3783.48046875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 145,
+      "condition_g": 3783.755859375,
+      "Solution_type_g": 0,
+      "condition_x": 3783.755859375,
+      "Solution_type_x": 0,
+      "condition_y": 3783.755859375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 146,
+      "condition_g": 3784.291015625,
+      "Solution_type_g": 0,
+      "condition_x": 3784.291015625,
+      "Solution_type_x": 0,
+      "condition_y": 3784.291015625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 147,
+      "condition_g": 3784.285888671875,
+      "Solution_type_g": 0,
+      "condition_x": 3784.285888671875,
+      "Solution_type_x": 0,
+      "condition_y": 3784.285888671875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 148,
+      "condition_g": 3784.55810546875,
+      "Solution_type_g": 0,
+      "condition_x": 3784.55810546875,
+      "Solution_type_x": 0,
+      "condition_y": 3784.55810546875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 149,
+      "condition_g": 3784.80078125,
+      "Solution_type_g": 0,
+      "condition_x": 3784.80078125,
+      "Solution_type_x": 0,
+      "condition_y": 3784.80078125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 150,
+      "condition_g": 3784.68408203125,
+      "Solution_type_g": 0,
+      "condition_x": 3784.68408203125,
+      "Solution_type_x": 0,
+      "condition_y": 3784.68408203125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 151,
+      "condition_g": 3785.11669921875,
+      "Solution_type_g": 0,
+      "condition_x": 3785.11669921875,
+      "Solution_type_x": 0,
+      "condition_y": 3785.11669921875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 152,
+      "condition_g": 3785.099853515625,
+      "Solution_type_g": 0,
+      "condition_x": 3785.099853515625,
+      "Solution_type_x": 0,
+      "condition_y": 3785.099853515625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 153,
+      "condition_g": 3785.4931640625,
+      "Solution_type_g": 0,
+      "condition_x": 3785.4931640625,
+      "Solution_type_x": 0,
+      "condition_y": 3785.4931640625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 154,
+      "condition_g": 3785.541259765625,
+      "Solution_type_g": 0,
+      "condition_x": 3785.541259765625,
+      "Solution_type_x": 0,
+      "condition_y": 3785.541259765625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 155,
+      "condition_g": 3785.76904296875,
+      "Solution_type_g": 0,
+      "condition_x": 3785.76904296875,
+      "Solution_type_x": 0,
+      "condition_y": 3785.76904296875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 156,
+      "condition_g": 3785.17529296875,
+      "Solution_type_g": 0,
+      "condition_x": 3785.17529296875,
+      "Solution_type_x": 0,
+      "condition_y": 3785.17529296875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 157,
+      "condition_g": 3786.078369140625,
+      "Solution_type_g": 0,
+      "condition_x": 3786.078369140625,
+      "Solution_type_x": 0,
+      "condition_y": 3786.078369140625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 158,
+      "condition_g": 3786.370361328125,
+      "Solution_type_g": 0,
+      "condition_x": 3786.370361328125,
+      "Solution_type_x": 0,
+      "condition_y": 3786.370361328125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 159,
+      "condition_g": 3786.072021484375,
+      "Solution_type_g": 0,
+      "condition_x": 3786.072021484375,
+      "Solution_type_x": 0,
+      "condition_y": 3786.072021484375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 160,
+      "condition_g": 3786.351318359375,
+      "Solution_type_g": 0,
+      "condition_x": 3786.351318359375,
+      "Solution_type_x": 0,
+      "condition_y": 3786.351318359375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 161,
+      "condition_g": 3786.509765625,
+      "Solution_type_g": 0,
+      "condition_x": 3786.509765625,
+      "Solution_type_x": 0,
+      "condition_y": 3786.509765625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 162,
+      "condition_g": 3786.5380859375,
+      "Solution_type_g": 0,
+      "condition_x": 3786.5380859375,
+      "Solution_type_x": 0,
+      "condition_y": 3786.5380859375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 163,
+      "condition_g": 3787.14990234375,
+      "Solution_type_g": 0,
+      "condition_x": 3787.14990234375,
+      "Solution_type_x": 0,
+      "condition_y": 3787.14990234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 164,
+      "condition_g": 3786.8623046875,
+      "Solution_type_g": 0,
+      "condition_x": 3786.8623046875,
+      "Solution_type_x": 0,
+      "condition_y": 3786.8623046875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 165,
+      "condition_g": 3787.390625,
+      "Solution_type_g": 0,
+      "condition_x": 3787.390625,
+      "Solution_type_x": 0,
+      "condition_y": 3787.390625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 166,
+      "condition_g": 3787.133544921875,
+      "Solution_type_g": 0,
+      "condition_x": 3787.133544921875,
+      "Solution_type_x": 0,
+      "condition_y": 3787.133544921875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 167,
+      "condition_g": 3787.809814453125,
+      "Solution_type_g": 0,
+      "condition_x": 3787.809814453125,
+      "Solution_type_x": 0,
+      "condition_y": 3787.809814453125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 168,
+      "condition_g": 3788.022216796875,
+      "Solution_type_g": 0,
+      "condition_x": 3788.022216796875,
+      "Solution_type_x": 0,
+      "condition_y": 3788.022216796875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 169,
+      "condition_g": 3788.108154296875,
+      "Solution_type_g": 0,
+      "condition_x": 3788.108154296875,
+      "Solution_type_x": 0,
+      "condition_y": 3788.108154296875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 170,
+      "condition_g": 3788.056640625,
+      "Solution_type_g": 0,
+      "condition_x": 3788.056640625,
+      "Solution_type_x": 0,
+      "condition_y": 3788.056640625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 171,
+      "condition_g": 3788.489501953125,
+      "Solution_type_g": 0,
+      "condition_x": 3788.489501953125,
+      "Solution_type_x": 0,
+      "condition_y": 3788.489501953125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 172,
+      "condition_g": 3788.34375,
+      "Solution_type_g": 0,
+      "condition_x": 3788.34375,
+      "Solution_type_x": 0,
+      "condition_y": 3788.34375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 173,
+      "condition_g": 3788.345703125,
+      "Solution_type_g": 0,
+      "condition_x": 3788.345703125,
+      "Solution_type_x": 0,
+      "condition_y": 3788.345703125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 174,
+      "condition_g": 3789.02783203125,
+      "Solution_type_g": 0,
+      "condition_x": 3789.02783203125,
+      "Solution_type_x": 0,
+      "condition_y": 3789.02783203125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 175,
+      "condition_g": 3788.738037109375,
+      "Solution_type_g": 0,
+      "condition_x": 3788.738037109375,
+      "Solution_type_x": 0,
+      "condition_y": 3788.738037109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 176,
+      "condition_g": 3789.847900390625,
+      "Solution_type_g": 0,
+      "condition_x": 3789.847900390625,
+      "Solution_type_x": 0,
+      "condition_y": 3789.847900390625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 177,
+      "condition_g": 3789.3046875,
+      "Solution_type_g": 0,
+      "condition_x": 3789.3046875,
+      "Solution_type_x": 0,
+      "condition_y": 3789.3046875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 178,
+      "condition_g": 3789.643310546875,
+      "Solution_type_g": 0,
+      "condition_x": 3789.643310546875,
+      "Solution_type_x": 0,
+      "condition_y": 3789.643310546875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 179,
+      "condition_g": 3789.461669921875,
+      "Solution_type_g": 0,
+      "condition_x": 3789.461669921875,
+      "Solution_type_x": 0,
+      "condition_y": 3789.461669921875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 180,
+      "condition_g": 3789.9189453125,
+      "Solution_type_g": 0,
+      "condition_x": 3789.9189453125,
+      "Solution_type_x": 0,
+      "condition_y": 3789.9189453125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 181,
+      "condition_g": 3790.43701171875,
+      "Solution_type_g": 0,
+      "condition_x": 3790.43701171875,
+      "Solution_type_x": 0,
+      "condition_y": 3790.43701171875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 182,
+      "condition_g": 3789.960205078125,
+      "Solution_type_g": 0,
+      "condition_x": 3789.960205078125,
+      "Solution_type_x": 0,
+      "condition_y": 3789.960205078125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 183,
+      "condition_g": 3790.3037109375,
+      "Solution_type_g": 0,
+      "condition_x": 3790.3037109375,
+      "Solution_type_x": 0,
+      "condition_y": 3790.3037109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 184,
+      "condition_g": 3790.47509765625,
+      "Solution_type_g": 0,
+      "condition_x": 3790.47509765625,
+      "Solution_type_x": 0,
+      "condition_y": 3790.47509765625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 185,
+      "condition_g": 3790.73095703125,
+      "Solution_type_g": 0,
+      "condition_x": 3790.73095703125,
+      "Solution_type_x": 0,
+      "condition_y": 3790.73095703125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 186,
+      "condition_g": 3790.613037109375,
+      "Solution_type_g": 0,
+      "condition_x": 3790.613037109375,
+      "Solution_type_x": 0,
+      "condition_y": 3790.613037109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 187,
+      "condition_g": 3791.466552734375,
+      "Solution_type_g": 0,
+      "condition_x": 3791.466552734375,
+      "Solution_type_x": 0,
+      "condition_y": 3791.466552734375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 188,
+      "condition_g": 3791.207763671875,
+      "Solution_type_g": 0,
+      "condition_x": 3791.207763671875,
+      "Solution_type_x": 0,
+      "condition_y": 3791.207763671875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 189,
+      "condition_g": 3791.46533203125,
+      "Solution_type_g": 0,
+      "condition_x": 3791.46533203125,
+      "Solution_type_x": 0,
+      "condition_y": 3791.46533203125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 190,
+      "condition_g": 3791.756591796875,
+      "Solution_type_g": 0,
+      "condition_x": 3791.756591796875,
+      "Solution_type_x": 0,
+      "condition_y": 3791.756591796875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 191,
+      "condition_g": 3791.83056640625,
+      "Solution_type_g": 0,
+      "condition_x": 3791.83056640625,
+      "Solution_type_x": 0,
+      "condition_y": 3791.83056640625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 192,
+      "condition_g": 3791.84375,
+      "Solution_type_g": 0,
+      "condition_x": 3791.84375,
+      "Solution_type_x": 0,
+      "condition_y": 3791.84375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 193,
+      "condition_g": 3791.7109375,
+      "Solution_type_g": 0,
+      "condition_x": 3791.7109375,
+      "Solution_type_x": 0,
+      "condition_y": 3791.7109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 194,
+      "condition_g": 3791.980224609375,
+      "Solution_type_g": 0,
+      "condition_x": 3791.980224609375,
+      "Solution_type_x": 0,
+      "condition_y": 3791.980224609375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 195,
+      "condition_g": 3792.5078125,
+      "Solution_type_g": 0,
+      "condition_x": 3792.5078125,
+      "Solution_type_x": 0,
+      "condition_y": 3792.5078125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 196,
+      "condition_g": 3792.42529296875,
+      "Solution_type_g": 0,
+      "condition_x": 3792.42529296875,
+      "Solution_type_x": 0,
+      "condition_y": 3792.42529296875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 197,
+      "condition_g": 3792.15771484375,
+      "Solution_type_g": 0,
+      "condition_x": 3792.15771484375,
+      "Solution_type_x": 0,
+      "condition_y": 3792.15771484375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 198,
+      "condition_g": 3793.056396484375,
+      "Solution_type_g": 0,
+      "condition_x": 3793.056396484375,
+      "Solution_type_x": 0,
+      "condition_y": 3793.056396484375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 199,
+      "condition_g": 3793.245849609375,
+      "Solution_type_g": 0,
+      "condition_x": 3793.245849609375,
+      "Solution_type_x": 0,
+      "condition_y": 3793.245849609375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 200,
+      "condition_g": 3793.0849609375,
+      "Solution_type_g": 0,
+      "condition_x": 3793.0849609375,
+      "Solution_type_x": 0,
+      "condition_y": 3793.0849609375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 201,
+      "condition_g": 3793.361083984375,
+      "Solution_type_g": 0,
+      "condition_x": 3793.361083984375,
+      "Solution_type_x": 0,
+      "condition_y": 3793.361083984375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 202,
+      "condition_g": 3793.40673828125,
+      "Solution_type_g": 0,
+      "condition_x": 3793.40673828125,
+      "Solution_type_x": 0,
+      "condition_y": 3793.40673828125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 203,
+      "condition_g": 3793.558837890625,
+      "Solution_type_g": 0,
+      "condition_x": 3793.558837890625,
+      "Solution_type_x": 0,
+      "condition_y": 3793.558837890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 204,
+      "condition_g": 3793.579345703125,
+      "Solution_type_g": 0,
+      "condition_x": 3793.579345703125,
+      "Solution_type_x": 0,
+      "condition_y": 3793.579345703125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 205,
+      "condition_g": 3793.7392578125,
+      "Solution_type_g": 0,
+      "condition_x": 3793.7392578125,
+      "Solution_type_x": 0,
+      "condition_y": 3793.7392578125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 206,
+      "condition_g": 3794.250732421875,
+      "Solution_type_g": 0,
+      "condition_x": 3794.250732421875,
+      "Solution_type_x": 0,
+      "condition_y": 3794.250732421875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 207,
+      "condition_g": 3794.020751953125,
+      "Solution_type_g": 0,
+      "condition_x": 3794.020751953125,
+      "Solution_type_x": 0,
+      "condition_y": 3794.020751953125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 208,
+      "condition_g": 3794.0478515625,
+      "Solution_type_g": 0,
+      "condition_x": 3794.0478515625,
+      "Solution_type_x": 0,
+      "condition_y": 3794.0478515625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 209,
+      "condition_g": 3794.107177734375,
+      "Solution_type_g": 0,
+      "condition_x": 3794.107177734375,
+      "Solution_type_x": 0,
+      "condition_y": 3794.107177734375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 210,
+      "condition_g": 3794.1474609375,
+      "Solution_type_g": 0,
+      "condition_x": 3794.1474609375,
+      "Solution_type_x": 0,
+      "condition_y": 3794.1474609375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 211,
+      "condition_g": 3793.733642578125,
+      "Solution_type_g": 0,
+      "condition_x": 3793.733642578125,
+      "Solution_type_x": 0,
+      "condition_y": 3793.733642578125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 212,
+      "condition_g": 3794.758544921875,
+      "Solution_type_g": 0,
+      "condition_x": 3794.758544921875,
+      "Solution_type_x": 0,
+      "condition_y": 3794.758544921875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 213,
+      "condition_g": 3794.319580078125,
+      "Solution_type_g": 0,
+      "condition_x": 3794.319580078125,
+      "Solution_type_x": 0,
+      "condition_y": 3794.319580078125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 214,
+      "condition_g": 3794.395751953125,
+      "Solution_type_g": 0,
+      "condition_x": 3794.395751953125,
+      "Solution_type_x": 0,
+      "condition_y": 3794.395751953125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 215,
+      "condition_g": 3794.77587890625,
+      "Solution_type_g": 0,
+      "condition_x": 3794.77587890625,
+      "Solution_type_x": 0,
+      "condition_y": 3794.77587890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 216,
+      "condition_g": 3794.7421875,
+      "Solution_type_g": 0,
+      "condition_x": 3794.7421875,
+      "Solution_type_x": 0,
+      "condition_y": 3794.7421875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 217,
+      "condition_g": 3794.634033203125,
+      "Solution_type_g": 0,
+      "condition_x": 3794.634033203125,
+      "Solution_type_x": 0,
+      "condition_y": 3794.634033203125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 218,
+      "condition_g": 3794.349609375,
+      "Solution_type_g": 0,
+      "condition_x": 3794.349609375,
+      "Solution_type_x": 0,
+      "condition_y": 3794.349609375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 219,
+      "condition_g": 3794.5322265625,
+      "Solution_type_g": 0,
+      "condition_x": 3794.5322265625,
+      "Solution_type_x": 0,
+      "condition_y": 3794.5322265625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 220,
+      "condition_g": 3795.434814453125,
+      "Solution_type_g": 0,
+      "condition_x": 3795.434814453125,
+      "Solution_type_x": 0,
+      "condition_y": 3795.434814453125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 221,
+      "condition_g": 3795.566650390625,
+      "Solution_type_g": 0,
+      "condition_x": 3795.566650390625,
+      "Solution_type_x": 0,
+      "condition_y": 3795.566650390625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 222,
+      "condition_g": 3795.130615234375,
+      "Solution_type_g": 0,
+      "condition_x": 3795.130615234375,
+      "Solution_type_x": 0,
+      "condition_y": 3795.130615234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 223,
+      "condition_g": 3795.168212890625,
+      "Solution_type_g": 0,
+      "condition_x": 3795.168212890625,
+      "Solution_type_x": 0,
+      "condition_y": 3795.168212890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 224,
+      "condition_g": 3794.814208984375,
+      "Solution_type_g": 0,
+      "condition_x": 3794.814208984375,
+      "Solution_type_x": 0,
+      "condition_y": 3794.814208984375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 225,
+      "condition_g": 3795.080078125,
+      "Solution_type_g": 0,
+      "condition_x": 3795.080078125,
+      "Solution_type_x": 0,
+      "condition_y": 3795.080078125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 226,
+      "condition_g": 3795.00634765625,
+      "Solution_type_g": 0,
+      "condition_x": 3795.00634765625,
+      "Solution_type_x": 0,
+      "condition_y": 3795.00634765625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 227,
+      "condition_g": 3795.114990234375,
+      "Solution_type_g": 0,
+      "condition_x": 3795.114990234375,
+      "Solution_type_x": 0,
+      "condition_y": 3795.114990234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 228,
+      "condition_g": 3795.056884765625,
+      "Solution_type_g": 0,
+      "condition_x": 3795.056884765625,
+      "Solution_type_x": 0,
+      "condition_y": 3795.056884765625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 229,
+      "condition_g": 3794.9033203125,
+      "Solution_type_g": 0,
+      "condition_x": 3794.9033203125,
+      "Solution_type_x": 0,
+      "condition_y": 3794.9033203125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 230,
+      "condition_g": 3795.421630859375,
+      "Solution_type_g": 0,
+      "condition_x": 3795.421630859375,
+      "Solution_type_x": 0,
+      "condition_y": 3795.421630859375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 231,
+      "condition_g": 3794.754150390625,
+      "Solution_type_g": 0,
+      "condition_x": 3794.754150390625,
+      "Solution_type_x": 0,
+      "condition_y": 3794.754150390625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 232,
+      "condition_g": 3795.21484375,
+      "Solution_type_g": 0,
+      "condition_x": 3795.21484375,
+      "Solution_type_x": 0,
+      "condition_y": 3795.21484375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 233,
+      "condition_g": 3795.32080078125,
+      "Solution_type_g": 0,
+      "condition_x": 3795.32080078125,
+      "Solution_type_x": 0,
+      "condition_y": 3795.32080078125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 234,
+      "condition_g": 3795.238037109375,
+      "Solution_type_g": 0,
+      "condition_x": 3795.238037109375,
+      "Solution_type_x": 0,
+      "condition_y": 3795.238037109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 235,
+      "condition_g": 3794.489990234375,
+      "Solution_type_g": 0,
+      "condition_x": 3794.489990234375,
+      "Solution_type_x": 0,
+      "condition_y": 3794.489990234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 236,
+      "condition_g": 3794.840087890625,
+      "Solution_type_g": 0,
+      "condition_x": 3794.840087890625,
+      "Solution_type_x": 0,
+      "condition_y": 3794.840087890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 237,
+      "condition_g": 3794.697998046875,
+      "Solution_type_g": 0,
+      "condition_x": 3794.697998046875,
+      "Solution_type_x": 0,
+      "condition_y": 3794.697998046875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 238,
+      "condition_g": 0.0,
+      "Solution_type_g": 0,
+      "condition_x": 0.0,
+      "Solution_type_x": 0,
+      "condition_y": 0.0,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 239,
+      "condition_g": 3794.27685546875,
+      "Solution_type_g": 0,
+      "condition_x": 3794.27685546875,
+      "Solution_type_x": 0,
+      "condition_y": 3794.27685546875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 240,
+      "condition_g": 3794.2783203125,
+      "Solution_type_g": 0,
+      "condition_x": 3794.2783203125,
+      "Solution_type_x": 0,
+      "condition_y": 3794.2783203125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 241,
+      "condition_g": 3794.318603515625,
+      "Solution_type_g": 0,
+      "condition_x": 3794.318603515625,
+      "Solution_type_x": 0,
+      "condition_y": 3794.318603515625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 242,
+      "condition_g": 3794.557861328125,
+      "Solution_type_g": 0,
+      "condition_x": 3794.557861328125,
+      "Solution_type_x": 0,
+      "condition_y": 3794.557861328125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 243,
+      "condition_g": 3793.792724609375,
+      "Solution_type_g": 0,
+      "condition_x": 3793.792724609375,
+      "Solution_type_x": 0,
+      "condition_y": 3793.792724609375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 244,
+      "condition_g": 3794.1376953125,
+      "Solution_type_g": 0,
+      "condition_x": 3794.1376953125,
+      "Solution_type_x": 0,
+      "condition_y": 3794.1376953125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 245,
+      "condition_g": 3793.211669921875,
+      "Solution_type_g": 0,
+      "condition_x": 3793.211669921875,
+      "Solution_type_x": 0,
+      "condition_y": 3793.211669921875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 246,
+      "condition_g": 3793.1845703125,
+      "Solution_type_g": 0,
+      "condition_x": 3793.1845703125,
+      "Solution_type_x": 0,
+      "condition_y": 3793.1845703125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 247,
+      "condition_g": 3793.37548828125,
+      "Solution_type_g": 0,
+      "condition_x": 3793.37548828125,
+      "Solution_type_x": 0,
+      "condition_y": 3793.37548828125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 248,
+      "condition_g": 3793.396728515625,
+      "Solution_type_g": 0,
+      "condition_x": 3793.396728515625,
+      "Solution_type_x": 0,
+      "condition_y": 3793.396728515625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 249,
+      "condition_g": 3793.569091796875,
+      "Solution_type_g": 0,
+      "condition_x": 3793.569091796875,
+      "Solution_type_x": 0,
+      "condition_y": 3793.569091796875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 250,
+      "condition_g": 3792.919677734375,
+      "Solution_type_g": 0,
+      "condition_x": 3792.919677734375,
+      "Solution_type_x": 0,
+      "condition_y": 3792.919677734375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 251,
+      "condition_g": 3792.3046875,
+      "Solution_type_g": 0,
+      "condition_x": 3792.3046875,
+      "Solution_type_x": 0,
+      "condition_y": 3792.3046875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 252,
+      "condition_g": 3792.12646484375,
+      "Solution_type_g": 0,
+      "condition_x": 3792.12646484375,
+      "Solution_type_x": 0,
+      "condition_y": 3792.12646484375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 253,
+      "condition_g": 3792.06884765625,
+      "Solution_type_g": 0,
+      "condition_x": 3792.06884765625,
+      "Solution_type_x": 0,
+      "condition_y": 3792.06884765625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 254,
+      "condition_g": 3791.865966796875,
+      "Solution_type_g": 0,
+      "condition_x": 3791.865966796875,
+      "Solution_type_x": 0,
+      "condition_y": 3791.865966796875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 255,
+      "condition_g": 3791.081787109375,
+      "Solution_type_g": 0,
+      "condition_x": 3791.081787109375,
+      "Solution_type_x": 0,
+      "condition_y": 3791.081787109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 256,
+      "condition_g": 3790.872314453125,
+      "Solution_type_g": 0,
+      "condition_x": 3790.872314453125,
+      "Solution_type_x": 0,
+      "condition_y": 3790.872314453125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 257,
+      "condition_g": 3790.66552734375,
+      "Solution_type_g": 0,
+      "condition_x": 3790.66552734375,
+      "Solution_type_x": 0,
+      "condition_y": 3790.66552734375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 258,
+      "condition_g": 3790.395263671875,
+      "Solution_type_g": 0,
+      "condition_x": 3790.395263671875,
+      "Solution_type_x": 0,
+      "condition_y": 3790.395263671875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 259,
+      "condition_g": 3790.240478515625,
+      "Solution_type_g": 0,
+      "condition_x": 3790.240478515625,
+      "Solution_type_x": 0,
+      "condition_y": 3790.240478515625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 260,
+      "condition_g": 3789.93017578125,
+      "Solution_type_g": 0,
+      "condition_x": 3789.93017578125,
+      "Solution_type_x": 0,
+      "condition_y": 3789.93017578125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 261,
+      "condition_g": 3789.0966796875,
+      "Solution_type_g": 0,
+      "condition_x": 3789.0966796875,
+      "Solution_type_x": 0,
+      "condition_y": 3789.0966796875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 262,
+      "condition_g": 3789.029541015625,
+      "Solution_type_g": 0,
+      "condition_x": 3789.029541015625,
+      "Solution_type_x": 0,
+      "condition_y": 3789.029541015625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 263,
+      "condition_g": 3787.927734375,
+      "Solution_type_g": 0,
+      "condition_x": 3787.927734375,
+      "Solution_type_x": 0,
+      "condition_y": 3787.927734375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 264,
+      "condition_g": 3788.1328125,
+      "Solution_type_g": 0,
+      "condition_x": 3788.1328125,
+      "Solution_type_x": 0,
+      "condition_y": 3788.1328125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 265,
+      "condition_g": 3786.967529296875,
+      "Solution_type_g": 0,
+      "condition_x": 3786.967529296875,
+      "Solution_type_x": 0,
+      "condition_y": 3786.967529296875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 266,
+      "condition_g": 3786.9697265625,
+      "Solution_type_g": 0,
+      "condition_x": 3786.9697265625,
+      "Solution_type_x": 0,
+      "condition_y": 3786.9697265625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 267,
+      "condition_g": 3786.653076171875,
+      "Solution_type_g": 0,
+      "condition_x": 3786.653076171875,
+      "Solution_type_x": 0,
+      "condition_y": 3786.653076171875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 268,
+      "condition_g": 3785.3974609375,
+      "Solution_type_g": 0,
+      "condition_x": 3785.3974609375,
+      "Solution_type_x": 0,
+      "condition_y": 3785.3974609375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 269,
+      "condition_g": 3785.1435546875,
+      "Solution_type_g": 0,
+      "condition_x": 3785.1435546875,
+      "Solution_type_x": 0,
+      "condition_y": 3785.1435546875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 270,
+      "condition_g": 3784.93212890625,
+      "Solution_type_g": 0,
+      "condition_x": 3784.93212890625,
+      "Solution_type_x": 0,
+      "condition_y": 3784.93212890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 271,
+      "condition_g": 3784.2490234375,
+      "Solution_type_g": 0,
+      "condition_x": 3784.2490234375,
+      "Solution_type_x": 0,
+      "condition_y": 3784.2490234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 272,
+      "condition_g": 3783.92822265625,
+      "Solution_type_g": 0,
+      "condition_x": 3783.92822265625,
+      "Solution_type_x": 0,
+      "condition_y": 3783.92822265625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 273,
+      "condition_g": 3783.146728515625,
+      "Solution_type_g": 0,
+      "condition_x": 3783.146728515625,
+      "Solution_type_x": 0,
+      "condition_y": 3783.146728515625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 274,
+      "condition_g": 3782.17578125,
+      "Solution_type_g": 0,
+      "condition_x": 3782.17578125,
+      "Solution_type_x": 0,
+      "condition_y": 3782.17578125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 275,
+      "condition_g": 3781.566162109375,
+      "Solution_type_g": 0,
+      "condition_x": 3781.566162109375,
+      "Solution_type_x": 0,
+      "condition_y": 3781.566162109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 276,
+      "condition_g": 3780.45263671875,
+      "Solution_type_g": 0,
+      "condition_x": 3780.45263671875,
+      "Solution_type_x": 0,
+      "condition_y": 3780.45263671875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 277,
+      "condition_g": 3780.228759765625,
+      "Solution_type_g": 0,
+      "condition_x": 3780.228759765625,
+      "Solution_type_x": 0,
+      "condition_y": 3780.228759765625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 278,
+      "condition_g": 3779.59765625,
+      "Solution_type_g": 0,
+      "condition_x": 3779.59765625,
+      "Solution_type_x": 0,
+      "condition_y": 3779.59765625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 279,
+      "condition_g": 3778.2177734375,
+      "Solution_type_g": 0,
+      "condition_x": 3778.2177734375,
+      "Solution_type_x": 0,
+      "condition_y": 3778.2177734375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 280,
+      "condition_g": 3777.810546875,
+      "Solution_type_g": 0,
+      "condition_x": 3777.810546875,
+      "Solution_type_x": 0,
+      "condition_y": 3777.810546875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 281,
+      "condition_g": 3776.874267578125,
+      "Solution_type_g": 0,
+      "condition_x": 3776.874267578125,
+      "Solution_type_x": 0,
+      "condition_y": 3776.874267578125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 282,
+      "condition_g": 3775.93212890625,
+      "Solution_type_g": 0,
+      "condition_x": 3775.93212890625,
+      "Solution_type_x": 0,
+      "condition_y": 3775.93212890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 283,
+      "condition_g": 3774.81787109375,
+      "Solution_type_g": 0,
+      "condition_x": 3774.81787109375,
+      "Solution_type_x": 0,
+      "condition_y": 3774.81787109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 284,
+      "condition_g": 3773.668212890625,
+      "Solution_type_g": 0,
+      "condition_x": 3773.668212890625,
+      "Solution_type_x": 0,
+      "condition_y": 3773.668212890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 285,
+      "condition_g": 3773.174072265625,
+      "Solution_type_g": 0,
+      "condition_x": 3773.174072265625,
+      "Solution_type_x": 0,
+      "condition_y": 3773.174072265625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 286,
+      "condition_g": 3772.064208984375,
+      "Solution_type_g": 0,
+      "condition_x": 3772.064208984375,
+      "Solution_type_x": 0,
+      "condition_y": 3772.064208984375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 287,
+      "condition_g": 3771.47802734375,
+      "Solution_type_g": 0,
+      "condition_x": 3771.47802734375,
+      "Solution_type_x": 0,
+      "condition_y": 3771.47802734375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 288,
+      "condition_g": 3770.0234375,
+      "Solution_type_g": 0,
+      "condition_x": 3770.0234375,
+      "Solution_type_x": 0,
+      "condition_y": 3770.0234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 289,
+      "condition_g": 3768.54296875,
+      "Solution_type_g": 0,
+      "condition_x": 3768.54296875,
+      "Solution_type_x": 0,
+      "condition_y": 3768.54296875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 290,
+      "condition_g": 3767.9541015625,
+      "Solution_type_g": 0,
+      "condition_x": 3767.9541015625,
+      "Solution_type_x": 0,
+      "condition_y": 3767.9541015625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 291,
+      "condition_g": 3766.612060546875,
+      "Solution_type_g": 0,
+      "condition_x": 3766.612060546875,
+      "Solution_type_x": 0,
+      "condition_y": 3766.612060546875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 292,
+      "condition_g": 3765.74169921875,
+      "Solution_type_g": 0,
+      "condition_x": 3765.74169921875,
+      "Solution_type_x": 0,
+      "condition_y": 3765.74169921875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 293,
+      "condition_g": 3764.39697265625,
+      "Solution_type_g": 0,
+      "condition_x": 3764.39697265625,
+      "Solution_type_x": 0,
+      "condition_y": 3764.39697265625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 294,
+      "condition_g": 3763.40966796875,
+      "Solution_type_g": 0,
+      "condition_x": 3763.40966796875,
+      "Solution_type_x": 0,
+      "condition_y": 3763.40966796875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 295,
+      "condition_g": 3762.06640625,
+      "Solution_type_g": 0,
+      "condition_x": 3762.06640625,
+      "Solution_type_x": 0,
+      "condition_y": 3762.06640625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 296,
+      "condition_g": 3761.1494140625,
+      "Solution_type_g": 0,
+      "condition_x": 3761.1494140625,
+      "Solution_type_x": 0,
+      "condition_y": 3761.1494140625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 297,
+      "condition_g": 3758.917236328125,
+      "Solution_type_g": 0,
+      "condition_x": 3758.917236328125,
+      "Solution_type_x": 0,
+      "condition_y": 3758.917236328125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 298,
+      "condition_g": 3758.386962890625,
+      "Solution_type_g": 0,
+      "condition_x": 3758.386962890625,
+      "Solution_type_x": 0,
+      "condition_y": 3758.386962890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 299,
+      "condition_g": 3756.65185546875,
+      "Solution_type_g": 0,
+      "condition_x": 3756.65185546875,
+      "Solution_type_x": 0,
+      "condition_y": 3756.65185546875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 300,
+      "condition_g": 3755.16162109375,
+      "Solution_type_g": 0,
+      "condition_x": 3755.16162109375,
+      "Solution_type_x": 0,
+      "condition_y": 3755.16162109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 301,
+      "condition_g": 3753.7451171875,
+      "Solution_type_g": 0,
+      "condition_x": 3753.7451171875,
+      "Solution_type_x": 0,
+      "condition_y": 3753.7451171875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 302,
+      "condition_g": 3752.1279296875,
+      "Solution_type_g": 0,
+      "condition_x": 3752.1279296875,
+      "Solution_type_x": 0,
+      "condition_y": 3752.1279296875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 303,
+      "condition_g": 3750.77294921875,
+      "Solution_type_g": 0,
+      "condition_x": 3750.77294921875,
+      "Solution_type_x": 0,
+      "condition_y": 3750.77294921875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 304,
+      "condition_g": 3749.427734375,
+      "Solution_type_g": 0,
+      "condition_x": 3749.427734375,
+      "Solution_type_x": 0,
+      "condition_y": 3749.427734375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 305,
+      "condition_g": 3747.321044921875,
+      "Solution_type_g": 0,
+      "condition_x": 3747.321044921875,
+      "Solution_type_x": 0,
+      "condition_y": 3747.321044921875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 306,
+      "condition_g": 3746.0576171875,
+      "Solution_type_g": 0,
+      "condition_x": 3746.0576171875,
+      "Solution_type_x": 0,
+      "condition_y": 3746.0576171875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 307,
+      "condition_g": 3744.1875,
+      "Solution_type_g": 0,
+      "condition_x": 3744.1875,
+      "Solution_type_x": 0,
+      "condition_y": 3744.1875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 308,
+      "condition_g": 3742.912353515625,
+      "Solution_type_g": 0,
+      "condition_x": 3742.912353515625,
+      "Solution_type_x": 0,
+      "condition_y": 3742.912353515625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 309,
+      "condition_g": 3741.080322265625,
+      "Solution_type_g": 0,
+      "condition_x": 3741.080322265625,
+      "Solution_type_x": 0,
+      "condition_y": 3741.080322265625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 310,
+      "condition_g": 3738.741455078125,
+      "Solution_type_g": 0,
+      "condition_x": 3738.741455078125,
+      "Solution_type_x": 0,
+      "condition_y": 3738.741455078125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 311,
+      "condition_g": 3736.447509765625,
+      "Solution_type_g": 0,
+      "condition_x": 3736.447509765625,
+      "Solution_type_x": 0,
+      "condition_y": 3736.447509765625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 312,
+      "condition_g": 3735.270263671875,
+      "Solution_type_g": 0,
+      "condition_x": 3735.270263671875,
+      "Solution_type_x": 0,
+      "condition_y": 3735.270263671875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 313,
+      "condition_g": 3733.1611328125,
+      "Solution_type_g": 0,
+      "condition_x": 3733.1611328125,
+      "Solution_type_x": 0,
+      "condition_y": 3733.1611328125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 314,
+      "condition_g": 3731.04248046875,
+      "Solution_type_g": 0,
+      "condition_x": 3731.04248046875,
+      "Solution_type_x": 0,
+      "condition_y": 3731.04248046875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 315,
+      "condition_g": 3728.92919921875,
+      "Solution_type_g": 0,
+      "condition_x": 3728.92919921875,
+      "Solution_type_x": 0,
+      "condition_y": 3728.92919921875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 316,
+      "condition_g": 3727.187744140625,
+      "Solution_type_g": 0,
+      "condition_x": 3727.187744140625,
+      "Solution_type_x": 0,
+      "condition_y": 3727.187744140625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 317,
+      "condition_g": 3724.97216796875,
+      "Solution_type_g": 0,
+      "condition_x": 3724.97216796875,
+      "Solution_type_x": 0,
+      "condition_y": 3724.97216796875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 318,
+      "condition_g": 3723.0615234375,
+      "Solution_type_g": 0,
+      "condition_x": 3723.0615234375,
+      "Solution_type_x": 0,
+      "condition_y": 3723.0615234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 319,
+      "condition_g": 3720.1884765625,
+      "Solution_type_g": 0,
+      "condition_x": 3720.1884765625,
+      "Solution_type_x": 0,
+      "condition_y": 3720.1884765625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 320,
+      "condition_g": 3718.734375,
+      "Solution_type_g": 0,
+      "condition_x": 3718.734375,
+      "Solution_type_x": 0,
+      "condition_y": 3718.734375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 321,
+      "condition_g": 3716.23046875,
+      "Solution_type_g": 0,
+      "condition_x": 3716.23046875,
+      "Solution_type_x": 0,
+      "condition_y": 3716.23046875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 322,
+      "condition_g": 3714.404541015625,
+      "Solution_type_g": 0,
+      "condition_x": 3714.404541015625,
+      "Solution_type_x": 0,
+      "condition_y": 3714.404541015625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 323,
+      "condition_g": 3711.61572265625,
+      "Solution_type_g": 0,
+      "condition_x": 3711.61572265625,
+      "Solution_type_x": 0,
+      "condition_y": 3711.61572265625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 324,
+      "condition_g": 3709.281005859375,
+      "Solution_type_g": 0,
+      "condition_x": 3709.281005859375,
+      "Solution_type_x": 0,
+      "condition_y": 3709.281005859375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 325,
+      "condition_g": 3707.003662109375,
+      "Solution_type_g": 0,
+      "condition_x": 3707.003662109375,
+      "Solution_type_x": 0,
+      "condition_y": 3707.003662109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 326,
+      "condition_g": 3704.060791015625,
+      "Solution_type_g": 0,
+      "condition_x": 3704.060791015625,
+      "Solution_type_x": 0,
+      "condition_y": 3704.060791015625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 327,
+      "condition_g": 3701.480224609375,
+      "Solution_type_g": 0,
+      "condition_x": 3701.480224609375,
+      "Solution_type_x": 0,
+      "condition_y": 3701.480224609375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 328,
+      "condition_g": 3699.233154296875,
+      "Solution_type_g": 0,
+      "condition_x": 3699.233154296875,
+      "Solution_type_x": 0,
+      "condition_y": 3699.233154296875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 329,
+      "condition_g": 3696.458740234375,
+      "Solution_type_g": 0,
+      "condition_x": 3696.458740234375,
+      "Solution_type_x": 0,
+      "condition_y": 3696.458740234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 330,
+      "condition_g": 3693.805908203125,
+      "Solution_type_g": 0,
+      "condition_x": 3693.805908203125,
+      "Solution_type_x": 0,
+      "condition_y": 3693.805908203125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 331,
+      "condition_g": 3691.18505859375,
+      "Solution_type_g": 0,
+      "condition_x": 3691.18505859375,
+      "Solution_type_x": 0,
+      "condition_y": 3691.18505859375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 332,
+      "condition_g": 3688.78564453125,
+      "Solution_type_g": 0,
+      "condition_x": 3688.78564453125,
+      "Solution_type_x": 0,
+      "condition_y": 3688.78564453125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 333,
+      "condition_g": 3685.676025390625,
+      "Solution_type_g": 0,
+      "condition_x": 3685.676025390625,
+      "Solution_type_x": 0,
+      "condition_y": 3685.676025390625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 334,
+      "condition_g": 3682.8984375,
+      "Solution_type_g": 0,
+      "condition_x": 3682.8984375,
+      "Solution_type_x": 0,
+      "condition_y": 3682.8984375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 335,
+      "condition_g": 3681.08935546875,
+      "Solution_type_g": 0,
+      "condition_x": 3681.08935546875,
+      "Solution_type_x": 0,
+      "condition_y": 3681.08935546875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 336,
+      "condition_g": 3678.837890625,
+      "Solution_type_g": 0,
+      "condition_x": 3678.837890625,
+      "Solution_type_x": 0,
+      "condition_y": 3678.837890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 337,
+      "condition_g": 3677.352783203125,
+      "Solution_type_g": 0,
+      "condition_x": 3677.352783203125,
+      "Solution_type_x": 0,
+      "condition_y": 3677.352783203125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 338,
+      "condition_g": 3675.333984375,
+      "Solution_type_g": 0,
+      "condition_x": 3675.333984375,
+      "Solution_type_x": 0,
+      "condition_y": 3675.333984375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 339,
+      "condition_g": 3673.93994140625,
+      "Solution_type_g": 0,
+      "condition_x": 3673.93994140625,
+      "Solution_type_x": 0,
+      "condition_y": 3673.93994140625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 340,
+      "condition_g": 3671.450927734375,
+      "Solution_type_g": 0,
+      "condition_x": 3671.450927734375,
+      "Solution_type_x": 0,
+      "condition_y": 3671.450927734375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 341,
+      "condition_g": 3669.769775390625,
+      "Solution_type_g": 0,
+      "condition_x": 3669.769775390625,
+      "Solution_type_x": 0,
+      "condition_y": 3669.769775390625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 342,
+      "condition_g": 3667.81591796875,
+      "Solution_type_g": 0,
+      "condition_x": 3667.81591796875,
+      "Solution_type_x": 0,
+      "condition_y": 3667.81591796875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 343,
+      "condition_g": 3665.8974609375,
+      "Solution_type_g": 0,
+      "condition_x": 3665.8974609375,
+      "Solution_type_x": 0,
+      "condition_y": 3665.8974609375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 344,
+      "condition_g": 3663.911865234375,
+      "Solution_type_g": 0,
+      "condition_x": 3663.911865234375,
+      "Solution_type_x": 0,
+      "condition_y": 3663.911865234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 345,
+      "condition_g": 3661.89794921875,
+      "Solution_type_g": 0,
+      "condition_x": 3661.89794921875,
+      "Solution_type_x": 0,
+      "condition_y": 3661.89794921875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 346,
+      "condition_g": 3659.46142578125,
+      "Solution_type_g": 0,
+      "condition_x": 3659.46142578125,
+      "Solution_type_x": 0,
+      "condition_y": 3659.46142578125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 347,
+      "condition_g": 3657.6962890625,
+      "Solution_type_g": 0,
+      "condition_x": 3657.6962890625,
+      "Solution_type_x": 0,
+      "condition_y": 3657.6962890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 348,
+      "condition_g": 3655.24072265625,
+      "Solution_type_g": 0,
+      "condition_x": 3655.24072265625,
+      "Solution_type_x": 0,
+      "condition_y": 3655.24072265625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 349,
+      "condition_g": 3653.147216796875,
+      "Solution_type_g": 0,
+      "condition_x": 3653.147216796875,
+      "Solution_type_x": 0,
+      "condition_y": 3653.147216796875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 350,
+      "condition_g": 3651.1533203125,
+      "Solution_type_g": 0,
+      "condition_x": 3651.1533203125,
+      "Solution_type_x": 0,
+      "condition_y": 3651.1533203125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 351,
+      "condition_g": 3648.421630859375,
+      "Solution_type_g": 0,
+      "condition_x": 3648.421630859375,
+      "Solution_type_x": 0,
+      "condition_y": 3648.421630859375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 352,
+      "condition_g": 3646.603271484375,
+      "Solution_type_g": 0,
+      "condition_x": 3646.603271484375,
+      "Solution_type_x": 0,
+      "condition_y": 3646.603271484375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 353,
+      "condition_g": 3643.794189453125,
+      "Solution_type_g": 0,
+      "condition_x": 3643.794189453125,
+      "Solution_type_x": 0,
+      "condition_y": 3643.794189453125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 354,
+      "condition_g": 3641.2998046875,
+      "Solution_type_g": 0,
+      "condition_x": 3641.2998046875,
+      "Solution_type_x": 0,
+      "condition_y": 3641.2998046875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 355,
+      "condition_g": 3639.352294921875,
+      "Solution_type_g": 0,
+      "condition_x": 3639.352294921875,
+      "Solution_type_x": 0,
+      "condition_y": 3639.352294921875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 356,
+      "condition_g": 3636.957763671875,
+      "Solution_type_g": 0,
+      "condition_x": 3636.957763671875,
+      "Solution_type_x": 0,
+      "condition_y": 3636.957763671875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 357,
+      "condition_g": 3634.392578125,
+      "Solution_type_g": 0,
+      "condition_x": 3634.392578125,
+      "Solution_type_x": 0,
+      "condition_y": 3634.392578125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 358,
+      "condition_g": 3631.68701171875,
+      "Solution_type_g": 0,
+      "condition_x": 3631.68701171875,
+      "Solution_type_x": 0,
+      "condition_y": 3631.68701171875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 359,
+      "condition_g": 3629.01318359375,
+      "Solution_type_g": 0,
+      "condition_x": 3629.01318359375,
+      "Solution_type_x": 0,
+      "condition_y": 3629.01318359375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 360,
+      "condition_g": 3626.763916015625,
+      "Solution_type_g": 0,
+      "condition_x": 3626.763916015625,
+      "Solution_type_x": 0,
+      "condition_y": 3626.763916015625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 361,
+      "condition_g": 3624.408935546875,
+      "Solution_type_g": 0,
+      "condition_x": 3624.408935546875,
+      "Solution_type_x": 0,
+      "condition_y": 3624.408935546875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 362,
+      "condition_g": 3621.27734375,
+      "Solution_type_g": 0,
+      "condition_x": 3621.27734375,
+      "Solution_type_x": 0,
+      "condition_y": 3621.27734375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 363,
+      "condition_g": 3619.0439453125,
+      "Solution_type_g": 0,
+      "condition_x": 3619.0439453125,
+      "Solution_type_x": 0,
+      "condition_y": 3619.0439453125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 364,
+      "condition_g": 3616.183837890625,
+      "Solution_type_g": 0,
+      "condition_x": 3616.183837890625,
+      "Solution_type_x": 0,
+      "condition_y": 3616.183837890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 365,
+      "condition_g": 3613.341064453125,
+      "Solution_type_g": 0,
+      "condition_x": 3613.341064453125,
+      "Solution_type_x": 0,
+      "condition_y": 3613.341064453125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 366,
+      "condition_g": 3610.90234375,
+      "Solution_type_g": 0,
+      "condition_x": 3610.90234375,
+      "Solution_type_x": 0,
+      "condition_y": 3610.90234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 367,
+      "condition_g": 3607.87353515625,
+      "Solution_type_g": 0,
+      "condition_x": 3607.87353515625,
+      "Solution_type_x": 0,
+      "condition_y": 3607.87353515625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 368,
+      "condition_g": 3604.883056640625,
+      "Solution_type_g": 0,
+      "condition_x": 3604.883056640625,
+      "Solution_type_x": 0,
+      "condition_y": 3604.883056640625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 369,
+      "condition_g": 3601.97998046875,
+      "Solution_type_g": 0,
+      "condition_x": 3601.97998046875,
+      "Solution_type_x": 0,
+      "condition_y": 3601.97998046875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 370,
+      "condition_g": 3599.188720703125,
+      "Solution_type_g": 0,
+      "condition_x": 3599.188720703125,
+      "Solution_type_x": 0,
+      "condition_y": 3599.188720703125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 371,
+      "condition_g": 3596.28955078125,
+      "Solution_type_g": 0,
+      "condition_x": 3596.28955078125,
+      "Solution_type_x": 0,
+      "condition_y": 3596.28955078125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 372,
+      "condition_g": 3592.94677734375,
+      "Solution_type_g": 0,
+      "condition_x": 3592.94677734375,
+      "Solution_type_x": 0,
+      "condition_y": 3592.94677734375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 373,
+      "condition_g": 3590.244873046875,
+      "Solution_type_g": 0,
+      "condition_x": 3590.244873046875,
+      "Solution_type_x": 0,
+      "condition_y": 3590.244873046875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 374,
+      "condition_g": 3587.548828125,
+      "Solution_type_g": 0,
+      "condition_x": 3587.548828125,
+      "Solution_type_x": 0,
+      "condition_y": 3587.548828125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 375,
+      "condition_g": 3584.1474609375,
+      "Solution_type_g": 0,
+      "condition_x": 3584.1474609375,
+      "Solution_type_x": 0,
+      "condition_y": 3584.1474609375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 376,
+      "condition_g": 3580.81591796875,
+      "Solution_type_g": 0,
+      "condition_x": 3580.81591796875,
+      "Solution_type_x": 0,
+      "condition_y": 3580.81591796875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 377,
+      "condition_g": 3578.003173828125,
+      "Solution_type_g": 0,
+      "condition_x": 3578.003173828125,
+      "Solution_type_x": 0,
+      "condition_y": 3578.003173828125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 378,
+      "condition_g": 3574.766845703125,
+      "Solution_type_g": 0,
+      "condition_x": 3574.766845703125,
+      "Solution_type_x": 0,
+      "condition_y": 3574.766845703125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 379,
+      "condition_g": 3571.631103515625,
+      "Solution_type_g": 0,
+      "condition_x": 3571.631103515625,
+      "Solution_type_x": 0,
+      "condition_y": 3571.631103515625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 380,
+      "condition_g": 3568.1552734375,
+      "Solution_type_g": 0,
+      "condition_x": 3568.1552734375,
+      "Solution_type_x": 0,
+      "condition_y": 3568.1552734375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 381,
+      "condition_g": 3564.969970703125,
+      "Solution_type_g": 0,
+      "condition_x": 3564.969970703125,
+      "Solution_type_x": 0,
+      "condition_y": 3564.969970703125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 382,
+      "condition_g": 3561.69873046875,
+      "Solution_type_g": 0,
+      "condition_x": 3561.69873046875,
+      "Solution_type_x": 0,
+      "condition_y": 3561.69873046875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 383,
+      "condition_g": 3558.3212890625,
+      "Solution_type_g": 0,
+      "condition_x": 3558.3212890625,
+      "Solution_type_x": 0,
+      "condition_y": 3558.3212890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 384,
+      "condition_g": 3555.1494140625,
+      "Solution_type_g": 0,
+      "condition_x": 3555.1494140625,
+      "Solution_type_x": 0,
+      "condition_y": 3555.1494140625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 385,
+      "condition_g": 3551.66748046875,
+      "Solution_type_g": 0,
+      "condition_x": 3551.66748046875,
+      "Solution_type_x": 0,
+      "condition_y": 3551.66748046875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 386,
+      "condition_g": 3548.503173828125,
+      "Solution_type_g": 0,
+      "condition_x": 3548.503173828125,
+      "Solution_type_x": 0,
+      "condition_y": 3548.503173828125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 387,
+      "condition_g": 3544.7236328125,
+      "Solution_type_g": 0,
+      "condition_x": 3544.7236328125,
+      "Solution_type_x": 0,
+      "condition_y": 3544.7236328125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 388,
+      "condition_g": 3540.573974609375,
+      "Solution_type_g": 0,
+      "condition_x": 3540.573974609375,
+      "Solution_type_x": 0,
+      "condition_y": 3540.573974609375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 389,
+      "condition_g": 3537.872314453125,
+      "Solution_type_g": 0,
+      "condition_x": 3537.872314453125,
+      "Solution_type_x": 0,
+      "condition_y": 3537.872314453125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 390,
+      "condition_g": 3534.2626953125,
+      "Solution_type_g": 0,
+      "condition_x": 3534.2626953125,
+      "Solution_type_x": 0,
+      "condition_y": 3534.2626953125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 391,
+      "condition_g": 3530.5,
+      "Solution_type_g": 0,
+      "condition_x": 3530.5,
+      "Solution_type_x": 0,
+      "condition_y": 3530.5,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 392,
+      "condition_g": 3527.198974609375,
+      "Solution_type_g": 0,
+      "condition_x": 3527.198974609375,
+      "Solution_type_x": 0,
+      "condition_y": 3527.198974609375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 393,
+      "condition_g": 3523.09912109375,
+      "Solution_type_g": 0,
+      "condition_x": 3523.09912109375,
+      "Solution_type_x": 0,
+      "condition_y": 3523.09912109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 394,
+      "condition_g": 3519.578125,
+      "Solution_type_g": 0,
+      "condition_x": 3519.578125,
+      "Solution_type_x": 0,
+      "condition_y": 3519.578125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 395,
+      "condition_g": 3516.07666015625,
+      "Solution_type_g": 0,
+      "condition_x": 3516.07666015625,
+      "Solution_type_x": 0,
+      "condition_y": 3516.07666015625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 396,
+      "condition_g": 3512.240966796875,
+      "Solution_type_g": 0,
+      "condition_x": 3512.240966796875,
+      "Solution_type_x": 0,
+      "condition_y": 3512.240966796875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 397,
+      "condition_g": 3509.080078125,
+      "Solution_type_g": 0,
+      "condition_x": 3509.080078125,
+      "Solution_type_x": 0,
+      "condition_y": 3509.080078125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 398,
+      "condition_g": 3504.715576171875,
+      "Solution_type_g": 0,
+      "condition_x": 3504.715576171875,
+      "Solution_type_x": 0,
+      "condition_y": 3504.715576171875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 399,
+      "condition_g": 3501.016845703125,
+      "Solution_type_g": 0,
+      "condition_x": 3501.016845703125,
+      "Solution_type_x": 0,
+      "condition_y": 3501.016845703125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 400,
+      "condition_g": 3496.979248046875,
+      "Solution_type_g": 0,
+      "condition_x": 3496.979248046875,
+      "Solution_type_x": 0,
+      "condition_y": 3496.979248046875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 401,
+      "condition_g": 3493.42236328125,
+      "Solution_type_g": 0,
+      "condition_x": 3493.42236328125,
+      "Solution_type_x": 0,
+      "condition_y": 3493.42236328125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 402,
+      "condition_g": 3489.251953125,
+      "Solution_type_g": 0,
+      "condition_x": 3489.251953125,
+      "Solution_type_x": 0,
+      "condition_y": 3489.251953125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 403,
+      "condition_g": 3485.646728515625,
+      "Solution_type_g": 0,
+      "condition_x": 3485.646728515625,
+      "Solution_type_x": 0,
+      "condition_y": 3485.646728515625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 404,
+      "condition_g": 3481.4814453125,
+      "Solution_type_g": 0,
+      "condition_x": 3481.4814453125,
+      "Solution_type_x": 0,
+      "condition_y": 3481.4814453125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 405,
+      "condition_g": 3478.14404296875,
+      "Solution_type_g": 0,
+      "condition_x": 3478.14404296875,
+      "Solution_type_x": 0,
+      "condition_y": 3478.14404296875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 406,
+      "condition_g": 3474.0048828125,
+      "Solution_type_g": 0,
+      "condition_x": 3474.0048828125,
+      "Solution_type_x": 0,
+      "condition_y": 3474.0048828125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 407,
+      "condition_g": 3470.465087890625,
+      "Solution_type_g": 0,
+      "condition_x": 3470.465087890625,
+      "Solution_type_x": 0,
+      "condition_y": 3470.465087890625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 408,
+      "condition_g": 3466.896240234375,
+      "Solution_type_g": 0,
+      "condition_x": 3466.896240234375,
+      "Solution_type_x": 0,
+      "condition_y": 3466.896240234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 409,
+      "condition_g": 3463.5078125,
+      "Solution_type_g": 0,
+      "condition_x": 3463.5078125,
+      "Solution_type_x": 0,
+      "condition_y": 3463.5078125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 410,
+      "condition_g": 3460.094482421875,
+      "Solution_type_g": 0,
+      "condition_x": 3460.094482421875,
+      "Solution_type_x": 0,
+      "condition_y": 3460.094482421875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 411,
+      "condition_g": 3456.28564453125,
+      "Solution_type_g": 0,
+      "condition_x": 3456.28564453125,
+      "Solution_type_x": 0,
+      "condition_y": 3456.28564453125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 412,
+      "condition_g": 3452.972412109375,
+      "Solution_type_g": 0,
+      "condition_x": 3452.972412109375,
+      "Solution_type_x": 0,
+      "condition_y": 3452.972412109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 413,
+      "condition_g": 3449.293701171875,
+      "Solution_type_g": 0,
+      "condition_x": 3449.293701171875,
+      "Solution_type_x": 0,
+      "condition_y": 3449.293701171875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 414,
+      "condition_g": 3445.803955078125,
+      "Solution_type_g": 0,
+      "condition_x": 3445.803955078125,
+      "Solution_type_x": 0,
+      "condition_y": 3445.803955078125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 415,
+      "condition_g": 3442.248046875,
+      "Solution_type_g": 0,
+      "condition_x": 3442.248046875,
+      "Solution_type_x": 0,
+      "condition_y": 3442.248046875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 416,
+      "condition_g": 3438.41650390625,
+      "Solution_type_g": 0,
+      "condition_x": 3438.41650390625,
+      "Solution_type_x": 0,
+      "condition_y": 3438.41650390625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 417,
+      "condition_g": 3434.69873046875,
+      "Solution_type_g": 0,
+      "condition_x": 3434.69873046875,
+      "Solution_type_x": 0,
+      "condition_y": 3434.69873046875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 418,
+      "condition_g": 3431.268310546875,
+      "Solution_type_g": 0,
+      "condition_x": 3431.268310546875,
+      "Solution_type_x": 0,
+      "condition_y": 3431.268310546875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 419,
+      "condition_g": 3427.662109375,
+      "Solution_type_g": 0,
+      "condition_x": 3427.662109375,
+      "Solution_type_x": 0,
+      "condition_y": 3427.662109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 420,
+      "condition_g": 3424.065673828125,
+      "Solution_type_g": 0,
+      "condition_x": 3424.065673828125,
+      "Solution_type_x": 0,
+      "condition_y": 3424.065673828125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 421,
+      "condition_g": 3420.755615234375,
+      "Solution_type_g": 0,
+      "condition_x": 3420.755615234375,
+      "Solution_type_x": 0,
+      "condition_y": 3420.755615234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 422,
+      "condition_g": 3416.515625,
+      "Solution_type_g": 0,
+      "condition_x": 3416.515625,
+      "Solution_type_x": 0,
+      "condition_y": 3416.515625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 423,
+      "condition_g": 3412.96044921875,
+      "Solution_type_g": 0,
+      "condition_x": 3412.96044921875,
+      "Solution_type_x": 0,
+      "condition_y": 3412.96044921875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 424,
+      "condition_g": 3409.13232421875,
+      "Solution_type_g": 0,
+      "condition_x": 3409.13232421875,
+      "Solution_type_x": 0,
+      "condition_y": 3409.13232421875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 425,
+      "condition_g": 3405.81494140625,
+      "Solution_type_g": 0,
+      "condition_x": 3405.81494140625,
+      "Solution_type_x": 0,
+      "condition_y": 3405.81494140625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 426,
+      "condition_g": 3401.813720703125,
+      "Solution_type_g": 0,
+      "condition_x": 3401.813720703125,
+      "Solution_type_x": 0,
+      "condition_y": 3401.813720703125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 427,
+      "condition_g": 3398.2607421875,
+      "Solution_type_g": 0,
+      "condition_x": 3398.2607421875,
+      "Solution_type_x": 0,
+      "condition_y": 3398.2607421875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 428,
+      "condition_g": 3394.35595703125,
+      "Solution_type_g": 0,
+      "condition_x": 3394.35595703125,
+      "Solution_type_x": 0,
+      "condition_y": 3394.35595703125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 429,
+      "condition_g": 3390.95703125,
+      "Solution_type_g": 0,
+      "condition_x": 3390.95703125,
+      "Solution_type_x": 0,
+      "condition_y": 3390.95703125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 430,
+      "condition_g": 3387.64501953125,
+      "Solution_type_g": 0,
+      "condition_x": 3387.64501953125,
+      "Solution_type_x": 0,
+      "condition_y": 3387.64501953125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 431,
+      "condition_g": 3383.18701171875,
+      "Solution_type_g": 0,
+      "condition_x": 3383.18701171875,
+      "Solution_type_x": 0,
+      "condition_y": 3383.18701171875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 432,
+      "condition_g": 3379.080322265625,
+      "Solution_type_g": 0,
+      "condition_x": 3379.080322265625,
+      "Solution_type_x": 0,
+      "condition_y": 3379.080322265625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 433,
+      "condition_g": 3376.275146484375,
+      "Solution_type_g": 0,
+      "condition_x": 3376.275146484375,
+      "Solution_type_x": 0,
+      "condition_y": 3376.275146484375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 434,
+      "condition_g": 3372.420654296875,
+      "Solution_type_g": 0,
+      "condition_x": 3372.420654296875,
+      "Solution_type_x": 0,
+      "condition_y": 3372.420654296875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 435,
+      "condition_g": 3368.353271484375,
+      "Solution_type_g": 0,
+      "condition_x": 3368.353271484375,
+      "Solution_type_x": 0,
+      "condition_y": 3368.353271484375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 436,
+      "condition_g": 3364.62548828125,
+      "Solution_type_g": 0,
+      "condition_x": 3364.62548828125,
+      "Solution_type_x": 0,
+      "condition_y": 3364.62548828125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 437,
+      "condition_g": 3360.729248046875,
+      "Solution_type_g": 0,
+      "condition_x": 3360.729248046875,
+      "Solution_type_x": 0,
+      "condition_y": 3360.729248046875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 438,
+      "condition_g": 3356.861572265625,
+      "Solution_type_g": 0,
+      "condition_x": 3356.861572265625,
+      "Solution_type_x": 0,
+      "condition_y": 3356.861572265625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 439,
+      "condition_g": 3353.326171875,
+      "Solution_type_g": 0,
+      "condition_x": 3353.326171875,
+      "Solution_type_x": 0,
+      "condition_y": 3353.326171875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 440,
+      "condition_g": 3349.5908203125,
+      "Solution_type_g": 0,
+      "condition_x": 3349.5908203125,
+      "Solution_type_x": 0,
+      "condition_y": 3349.5908203125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 441,
+      "condition_g": 3345.41259765625,
+      "Solution_type_g": 0,
+      "condition_x": 3345.41259765625,
+      "Solution_type_x": 0,
+      "condition_y": 3345.41259765625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 442,
+      "condition_g": 3341.73388671875,
+      "Solution_type_g": 0,
+      "condition_x": 3341.73388671875,
+      "Solution_type_x": 0,
+      "condition_y": 3341.73388671875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 443,
+      "condition_g": 3338.276123046875,
+      "Solution_type_g": 0,
+      "condition_x": 3338.276123046875,
+      "Solution_type_x": 0,
+      "condition_y": 3338.276123046875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 444,
+      "condition_g": 3334.04345703125,
+      "Solution_type_g": 0,
+      "condition_x": 3334.04345703125,
+      "Solution_type_x": 0,
+      "condition_y": 3334.04345703125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 445,
+      "condition_g": 3330.1875,
+      "Solution_type_g": 0,
+      "condition_x": 3330.1875,
+      "Solution_type_x": 0,
+      "condition_y": 3330.1875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 446,
+      "condition_g": 3326.5361328125,
+      "Solution_type_g": 0,
+      "condition_x": 3326.5361328125,
+      "Solution_type_x": 0,
+      "condition_y": 3326.5361328125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 447,
+      "condition_g": 3322.376220703125,
+      "Solution_type_g": 0,
+      "condition_x": 3322.376220703125,
+      "Solution_type_x": 0,
+      "condition_y": 3322.376220703125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 448,
+      "condition_g": 3318.8798828125,
+      "Solution_type_g": 0,
+      "condition_x": 3318.8798828125,
+      "Solution_type_x": 0,
+      "condition_y": 3318.8798828125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 449,
+      "condition_g": 3315.063720703125,
+      "Solution_type_g": 0,
+      "condition_x": 3315.063720703125,
+      "Solution_type_x": 0,
+      "condition_y": 3315.063720703125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 450,
+      "condition_g": 3310.704833984375,
+      "Solution_type_g": 0,
+      "condition_x": 3310.704833984375,
+      "Solution_type_x": 0,
+      "condition_y": 3310.704833984375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 451,
+      "condition_g": 3306.890869140625,
+      "Solution_type_g": 0,
+      "condition_x": 3306.890869140625,
+      "Solution_type_x": 0,
+      "condition_y": 3306.890869140625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 452,
+      "condition_g": 3302.99365234375,
+      "Solution_type_g": 0,
+      "condition_x": 3302.99365234375,
+      "Solution_type_x": 0,
+      "condition_y": 3302.99365234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 453,
+      "condition_g": 3299.309326171875,
+      "Solution_type_g": 0,
+      "condition_x": 3299.309326171875,
+      "Solution_type_x": 0,
+      "condition_y": 3299.309326171875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 454,
+      "condition_g": 3295.671875,
+      "Solution_type_g": 0,
+      "condition_x": 3295.671875,
+      "Solution_type_x": 0,
+      "condition_y": 3295.671875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 455,
+      "condition_g": 3291.749267578125,
+      "Solution_type_g": 0,
+      "condition_x": 3291.749267578125,
+      "Solution_type_x": 0,
+      "condition_y": 3291.749267578125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 456,
+      "condition_g": 3287.67578125,
+      "Solution_type_g": 0,
+      "condition_x": 3287.67578125,
+      "Solution_type_x": 0,
+      "condition_y": 3287.67578125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 457,
+      "condition_g": 3283.720947265625,
+      "Solution_type_g": 0,
+      "condition_x": 3283.720947265625,
+      "Solution_type_x": 0,
+      "condition_y": 3283.720947265625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 458,
+      "condition_g": 3279.891845703125,
+      "Solution_type_g": 0,
+      "condition_x": 3279.891845703125,
+      "Solution_type_x": 0,
+      "condition_y": 3279.891845703125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 459,
+      "condition_g": 3276.47607421875,
+      "Solution_type_g": 0,
+      "condition_x": 3276.47607421875,
+      "Solution_type_x": 0,
+      "condition_y": 3276.47607421875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 460,
+      "condition_g": 3272.322998046875,
+      "Solution_type_g": 0,
+      "condition_x": 3272.322998046875,
+      "Solution_type_x": 0,
+      "condition_y": 3272.322998046875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 461,
+      "condition_g": 3268.560302734375,
+      "Solution_type_g": 0,
+      "condition_x": 3268.560302734375,
+      "Solution_type_x": 0,
+      "condition_y": 3268.560302734375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 462,
+      "condition_g": 3264.420654296875,
+      "Solution_type_g": 0,
+      "condition_x": 3264.420654296875,
+      "Solution_type_x": 0,
+      "condition_y": 3264.420654296875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 463,
+      "condition_g": 3260.765869140625,
+      "Solution_type_g": 0,
+      "condition_x": 3260.765869140625,
+      "Solution_type_x": 0,
+      "condition_y": 3260.765869140625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 464,
+      "condition_g": 3256.919189453125,
+      "Solution_type_g": 0,
+      "condition_x": 3256.919189453125,
+      "Solution_type_x": 0,
+      "condition_y": 3256.919189453125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 465,
+      "condition_g": 3252.85693359375,
+      "Solution_type_g": 0,
+      "condition_x": 3252.85693359375,
+      "Solution_type_x": 0,
+      "condition_y": 3252.85693359375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 466,
+      "condition_g": 3249.111572265625,
+      "Solution_type_g": 0,
+      "condition_x": 3249.111572265625,
+      "Solution_type_x": 0,
+      "condition_y": 3249.111572265625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 467,
+      "condition_g": 3245.17333984375,
+      "Solution_type_g": 0,
+      "condition_x": 3245.17333984375,
+      "Solution_type_x": 0,
+      "condition_y": 3245.17333984375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 468,
+      "condition_g": 3241.48095703125,
+      "Solution_type_g": 0,
+      "condition_x": 3241.48095703125,
+      "Solution_type_x": 0,
+      "condition_y": 3241.48095703125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 469,
+      "condition_g": 3237.724853515625,
+      "Solution_type_g": 0,
+      "condition_x": 3237.724853515625,
+      "Solution_type_x": 0,
+      "condition_y": 3237.724853515625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 470,
+      "condition_g": 3234.002685546875,
+      "Solution_type_g": 0,
+      "condition_x": 3234.002685546875,
+      "Solution_type_x": 0,
+      "condition_y": 3234.002685546875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 471,
+      "condition_g": 3229.838134765625,
+      "Solution_type_g": 0,
+      "condition_x": 3229.838134765625,
+      "Solution_type_x": 0,
+      "condition_y": 3229.838134765625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 472,
+      "condition_g": 3226.158203125,
+      "Solution_type_g": 0,
+      "condition_x": 3226.158203125,
+      "Solution_type_x": 0,
+      "condition_y": 3226.158203125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 473,
+      "condition_g": 3222.283935546875,
+      "Solution_type_g": 0,
+      "condition_x": 3222.283935546875,
+      "Solution_type_x": 0,
+      "condition_y": 3222.283935546875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 474,
+      "condition_g": 3218.536865234375,
+      "Solution_type_g": 0,
+      "condition_x": 3218.536865234375,
+      "Solution_type_x": 0,
+      "condition_y": 3218.536865234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 475,
+      "condition_g": 3215.021240234375,
+      "Solution_type_g": 0,
+      "condition_x": 3215.021240234375,
+      "Solution_type_x": 0,
+      "condition_y": 3215.021240234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 476,
+      "condition_g": 3211.02294921875,
+      "Solution_type_g": 0,
+      "condition_x": 3211.02294921875,
+      "Solution_type_x": 0,
+      "condition_y": 3211.02294921875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 477,
+      "condition_g": 3206.965576171875,
+      "Solution_type_g": 0,
+      "condition_x": 3206.965576171875,
+      "Solution_type_x": 0,
+      "condition_y": 3206.965576171875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 478,
+      "condition_g": 3203.2734375,
+      "Solution_type_g": 0,
+      "condition_x": 3203.2734375,
+      "Solution_type_x": 0,
+      "condition_y": 3203.2734375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 479,
+      "condition_g": 3199.677490234375,
+      "Solution_type_g": 0,
+      "condition_x": 3199.677490234375,
+      "Solution_type_x": 0,
+      "condition_y": 3199.677490234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 480,
+      "condition_g": 3195.6455078125,
+      "Solution_type_g": 0,
+      "condition_x": 3195.6455078125,
+      "Solution_type_x": 0,
+      "condition_y": 3195.6455078125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 481,
+      "condition_g": 3191.907470703125,
+      "Solution_type_g": 0,
+      "condition_x": 3191.907470703125,
+      "Solution_type_x": 0,
+      "condition_y": 3191.907470703125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 482,
+      "condition_g": 3187.9052734375,
+      "Solution_type_g": 0,
+      "condition_x": 3187.9052734375,
+      "Solution_type_x": 0,
+      "condition_y": 3187.9052734375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 483,
+      "condition_g": 3184.15576171875,
+      "Solution_type_g": 0,
+      "condition_x": 3184.15576171875,
+      "Solution_type_x": 0,
+      "condition_y": 3184.15576171875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 484,
+      "condition_g": 3180.206787109375,
+      "Solution_type_g": 0,
+      "condition_x": 3180.206787109375,
+      "Solution_type_x": 0,
+      "condition_y": 3180.206787109375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 485,
+      "condition_g": 3176.48291015625,
+      "Solution_type_g": 0,
+      "condition_x": 3176.48291015625,
+      "Solution_type_x": 0,
+      "condition_y": 3176.48291015625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 486,
+      "condition_g": 3172.959228515625,
+      "Solution_type_g": 0,
+      "condition_x": 3172.959228515625,
+      "Solution_type_x": 0,
+      "condition_y": 3172.959228515625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 487,
+      "condition_g": 3168.76318359375,
+      "Solution_type_g": 0,
+      "condition_x": 3168.76318359375,
+      "Solution_type_x": 0,
+      "condition_y": 3168.76318359375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 488,
+      "condition_g": 3164.88818359375,
+      "Solution_type_g": 0,
+      "condition_x": 3164.88818359375,
+      "Solution_type_x": 0,
+      "condition_y": 3164.88818359375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 489,
+      "condition_g": 3161.336181640625,
+      "Solution_type_g": 0,
+      "condition_x": 3161.336181640625,
+      "Solution_type_x": 0,
+      "condition_y": 3161.336181640625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 490,
+      "condition_g": 3157.2392578125,
+      "Solution_type_g": 0,
+      "condition_x": 3157.2392578125,
+      "Solution_type_x": 0,
+      "condition_y": 3157.2392578125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 491,
+      "condition_g": 3153.521728515625,
+      "Solution_type_g": 0,
+      "condition_x": 3153.521728515625,
+      "Solution_type_x": 0,
+      "condition_y": 3153.521728515625,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 492,
+      "condition_g": 3149.725341796875,
+      "Solution_type_g": 0,
+      "condition_x": 3149.725341796875,
+      "Solution_type_x": 0,
+      "condition_y": 3149.725341796875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 493,
+      "condition_g": 3145.996826171875,
+      "Solution_type_g": 0,
+      "condition_x": 3145.996826171875,
+      "Solution_type_x": 0,
+      "condition_y": 3145.996826171875,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 494,
+      "condition_g": 3141.89453125,
+      "Solution_type_g": 0,
+      "condition_x": 3141.89453125,
+      "Solution_type_x": 0,
+      "condition_y": 3141.89453125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 495,
+      "condition_g": 3138.1318359375,
+      "Solution_type_g": 0,
+      "condition_x": 3138.1318359375,
+      "Solution_type_x": 0,
+      "condition_y": 3138.1318359375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 496,
+      "condition_g": 3134.49755859375,
+      "Solution_type_g": 0,
+      "condition_x": 3134.49755859375,
+      "Solution_type_x": 0,
+      "condition_y": 3134.49755859375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 497,
+      "condition_g": 3130.75927734375,
+      "Solution_type_g": 0,
+      "condition_x": 3130.75927734375,
+      "Solution_type_x": 0,
+      "condition_y": 3130.75927734375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 498,
+      "condition_g": 3126.989990234375,
+      "Solution_type_g": 0,
+      "condition_x": 3126.989990234375,
+      "Solution_type_x": 0,
+      "condition_y": 3126.989990234375,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 499,
+      "condition_g": 3123.186767578125,
+      "Solution_type_g": 0,
+      "condition_x": 3123.186767578125,
+      "Solution_type_x": 0,
+      "condition_y": 3123.186767578125,
+      "Solution_type_y": 0
+    },
+    {
+      "iteration": 500,
+      "condition_g": 3119.014892578125,
+      "Solution_type_g": 0,
+      "condition_x": 3119.014892578125,
+      "Solution_type_x": 0,
+      "condition_y": 3119.014892578125,
+      "Solution_type_y": 0
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+Direction 0: Strain energy = 2.5856, Volume = 1243.6279, Max_height = 10.3163, Load_path = 417263.0000
+Direction 1: Strain energy = 2.9907, Volume = 1243.6279, Max_height = 10.3163, Load_path = 207374.8125
+Direction 2: Strain energy = 0.1897, Volume = 1243.6279, Max_height = 10.3163, Load_path = 1713233.7500
