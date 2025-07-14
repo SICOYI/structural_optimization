@@ -1,0 +1,2593 @@
+{
+  "metadata": {
+    "project": "Structural Optimization",
+    "Context": "FDM + FE",
+    "device": "cpu",
+    "parameters": {
+      "length": 48,
+      "width": 48,
+      "grid_size": "13x13",
+      "epochs": 500,
+      "step_size": 0.05
+    },
+    "Iteration_time": 1261.4302401542664
+  },
+  "iterations": [
+    {
+      "iteration": 0,
+      "SE_g": 7.32700252532959,
+      "Geometry Initialization_time": 0.005618234475453694,
+      "FE_time": 0.9467940330505371,
+      "Loss cal_time": 8.392333984375e-05,
+      "Backpropagation_time": 11.137750148773193,
+      "Parametric Update": 0.0034949779510498047,
+      "FE_timing": {
+        "Element_create": 0.12698698043823242,
+        "Stiffness_assembly": 0.32599306106567383,
+        "Matrix_solution": 0.04515504837036133,
+        "Metrics_calculation": 0.43572092056274414,
+        "Total_FE_time": 0.9338560104370117
+      }
+    },
+    {
+      "iteration": 1,
+      "SE_g": 7.31038236618042,
+      "Geometry Initialization_time": 0.003021681308746338,
+      "FE_time": 1.6585659980773926,
+      "Loss cal_time": 0.1653609275817871,
+      "Backpropagation_time": 11.308297157287598,
+      "Parametric Update": 0.0017461776733398438,
+      "FE_timing": {
+        "Element_create": 0.18091917037963867,
+        "Stiffness_assembly": 0.5399570465087891,
+        "Matrix_solution": 0.14033102989196777,
+        "Metrics_calculation": 0.769230842590332,
+        "Total_FE_time": 1.6304380893707275
+      }
+    },
+    {
+      "iteration": 2,
+      "SE_g": 7.293761730194092,
+      "Geometry Initialization_time": 0.00011641979217529297,
+      "FE_time": 0.8435242176055908,
+      "Loss cal_time": 4.887580871582031e-05,
+      "Backpropagation_time": 7.963069915771484,
+      "Parametric Update": 0.0018138885498046875,
+      "FE_timing": {
+        "Element_create": 0.0762791633605957,
+        "Stiffness_assembly": 0.24222421646118164,
+        "Matrix_solution": 0.02855682373046875,
+        "Metrics_calculation": 0.4808011054992676,
+        "Total_FE_time": 0.8278613090515137
+      }
+    },
+    {
+      "iteration": 3,
+      "SE_g": 7.277138710021973,
+      "Geometry Initialization_time": 0.00011743307113647461,
+      "FE_time": 0.8267860412597656,
+      "Loss cal_time": 4.482269287109375e-05,
+      "Backpropagation_time": 7.28329610824585,
+      "Parametric Update": 0.0017600059509277344,
+      "FE_timing": {
+        "Element_create": 0.06936383247375488,
+        "Stiffness_assembly": 0.29774999618530273,
+        "Matrix_solution": 0.03020167350769043,
+        "Metrics_calculation": 0.4144151210784912,
+        "Total_FE_time": 0.8117306232452393
+      }
+    },
+    {
+      "iteration": 4,
+      "SE_g": 7.260575294494629,
+      "Geometry Initialization_time": 0.00011746883392333984,
+      "FE_time": 0.714514970779419,
+      "Loss cal_time": 4.00543212890625e-05,
+      "Backpropagation_time": 7.135983943939209,
+      "Parametric Update": 0.0018229484558105469,
+      "FE_timing": {
+        "Element_create": 0.06848788261413574,
+        "Stiffness_assembly": 0.2232341766357422,
+        "Matrix_solution": 0.01900506019592285,
+        "Metrics_calculation": 0.38955187797546387,
+        "Total_FE_time": 0.7002789974212646
+      }
+    },
+    {
+      "iteration": 5,
+      "SE_g": 7.243959426879883,
+      "Geometry Initialization_time": 0.00012398560841878254,
+      "FE_time": 0.7067451477050781,
+      "Loss cal_time": 3.504753112792969e-05,
+      "Backpropagation_time": 6.510066032409668,
+      "Parametric Update": 0.0019032955169677734,
+      "FE_timing": {
+        "Element_create": 0.06966614723205566,
+        "Stiffness_assembly": 0.24749469757080078,
+        "Matrix_solution": 0.017211198806762695,
+        "Metrics_calculation": 0.360919713973999,
+        "Total_FE_time": 0.6952917575836182
+      }
+    },
+    {
+      "iteration": 6,
+      "SE_g": 7.2273736000061035,
+      "Geometry Initialization_time": 0.0001268625259399414,
+      "FE_time": 0.6751589775085449,
+      "Loss cal_time": 3.3855438232421875e-05,
+      "Backpropagation_time": 6.709682941436768,
+      "Parametric Update": 0.0018928050994873047,
+      "FE_timing": {
+        "Element_create": 0.07098793983459473,
+        "Stiffness_assembly": 0.2144489288330078,
+        "Matrix_solution": 0.01729106903076172,
+        "Metrics_calculation": 0.36038994789123535,
+        "Total_FE_time": 0.6631178855895996
+      }
+    },
+    {
+      "iteration": 7,
+      "SE_g": 7.210864543914795,
+      "Geometry Initialization_time": 0.00011800130208333333,
+      "FE_time": 0.7953789234161377,
+      "Loss cal_time": 3.600120544433594e-05,
+      "Backpropagation_time": 6.314924240112305,
+      "Parametric Update": 0.0017859935760498047,
+      "FE_timing": {
+        "Element_create": 0.07393312454223633,
+        "Stiffness_assembly": 0.2628791332244873,
+        "Matrix_solution": 0.02027106285095215,
+        "Metrics_calculation": 0.4258921146392822,
+        "Total_FE_time": 0.782975435256958
+      }
+    },
+    {
+      "iteration": 8,
+      "SE_g": 7.194284915924072,
+      "Geometry Initialization_time": 0.00011695226033528646,
+      "FE_time": 0.6905007362365723,
+      "Loss cal_time": 2.9802322387695312e-05,
+      "Backpropagation_time": 6.461941957473755,
+      "Parametric Update": 0.002010822296142578,
+      "FE_timing": {
+        "Element_create": 0.07303094863891602,
+        "Stiffness_assembly": 0.22002887725830078,
+        "Matrix_solution": 0.02009296417236328,
+        "Metrics_calculation": 0.36488795280456543,
+        "Total_FE_time": 0.6780407428741455
+      }
+    },
+    {
+      "iteration": 9,
+      "SE_g": 7.177757740020752,
+      "Geometry Initialization_time": 0.00014638503392537435,
+      "FE_time": 0.7823381423950195,
+      "Loss cal_time": 4.1961669921875e-05,
+      "Backpropagation_time": 6.678189992904663,
+      "Parametric Update": 0.0017719268798828125,
+      "FE_timing": {
+        "Element_create": 0.07457995414733887,
+        "Stiffness_assembly": 0.23822832107543945,
+        "Matrix_solution": 0.021521806716918945,
+        "Metrics_calculation": 0.43365001678466797,
+        "Total_FE_time": 0.7679800987243652
+      }
+    },
+    {
+      "iteration": 10,
+      "SE_g": 7.161221981048584,
+      "Geometry Initialization_time": 0.0001224994659423828,
+      "FE_time": 0.6778481006622314,
+      "Loss cal_time": 3.0994415283203125e-05,
+      "Backpropagation_time": 6.26498007774353,
+      "Parametric Update": 0.001756906509399414,
+      "FE_timing": {
+        "Element_create": 0.07018589973449707,
+        "Stiffness_assembly": 0.21396493911743164,
+        "Matrix_solution": 0.01687002182006836,
+        "Metrics_calculation": 0.3644421100616455,
+        "Total_FE_time": 0.6654629707336426
+      }
+    },
+    {
+      "iteration": 11,
+      "SE_g": 7.144733905792236,
+      "Geometry Initialization_time": 0.00011889934539794922,
+      "FE_time": 0.6778879165649414,
+      "Loss cal_time": 3.600120544433594e-05,
+      "Backpropagation_time": 6.397619009017944,
+      "Parametric Update": 0.0018477439880371094,
+      "FE_timing": {
+        "Element_create": 0.06553006172180176,
+        "Stiffness_assembly": 0.21520280838012695,
+        "Matrix_solution": 0.01788783073425293,
+        "Metrics_calculation": 0.36682915687561035,
+        "Total_FE_time": 0.665449857711792
+      }
+    },
+    {
+      "iteration": 12,
+      "SE_g": 7.128244876861572,
+      "Geometry Initialization_time": 0.00013579924901326498,
+      "FE_time": 0.6750969886779785,
+      "Loss cal_time": 2.7179718017578125e-05,
+      "Backpropagation_time": 6.280476093292236,
+      "Parametric Update": 0.0018000602722167969,
+      "FE_timing": {
+        "Element_create": 0.06856703758239746,
+        "Stiffness_assembly": 0.21436619758605957,
+        "Matrix_solution": 0.01703476905822754,
+        "Metrics_calculation": 0.36341309547424316,
+        "Total_FE_time": 0.6633810997009277
+      }
+    },
+    {
+      "iteration": 13,
+      "SE_g": 7.111725807189941,
+      "Geometry Initialization_time": 0.00012046893437703451,
+      "FE_time": 0.6978321075439453,
+      "Loss cal_time": 3.5762786865234375e-05,
+      "Backpropagation_time": 6.348257064819336,
+      "Parametric Update": 0.0018758773803710938,
+      "FE_timing": {
+        "Element_create": 0.06828808784484863,
+        "Stiffness_assembly": 0.2446901798248291,
+        "Matrix_solution": 0.01683187484741211,
+        "Metrics_calculation": 0.3559587001800537,
+        "Total_FE_time": 0.6857688426971436
+      }
+    },
+    {
+      "iteration": 14,
+      "SE_g": 7.0952959060668945,
+      "Geometry Initialization_time": 0.00011570056279500326,
+      "FE_time": 0.6969490051269531,
+      "Loss cal_time": 3.0994415283203125e-05,
+      "Backpropagation_time": 6.543829917907715,
+      "Parametric Update": 0.0017747879028320312,
+      "FE_timing": {
+        "Element_create": 0.08187007904052734,
+        "Stiffness_assembly": 0.224395751953125,
+        "Matrix_solution": 0.017586231231689453,
+        "Metrics_calculation": 0.36040282249450684,
+        "Total_FE_time": 0.6842548847198486
+      }
+    },
+    {
+      "iteration": 15,
+      "SE_g": 7.0788116455078125,
+      "Geometry Initialization_time": 0.0001148819923400879,
+      "FE_time": 0.72062087059021,
+      "Loss cal_time": 2.8133392333984375e-05,
+      "Backpropagation_time": 6.931029796600342,
+      "Parametric Update": 0.001817941665649414,
+      "FE_timing": {
+        "Element_create": 0.07088780403137207,
+        "Stiffness_assembly": 0.2502269744873047,
+        "Matrix_solution": 0.01624894142150879,
+        "Metrics_calculation": 0.3714940547943115,
+        "Total_FE_time": 0.7088577747344971
+      }
+    },
+    {
+      "iteration": 16,
+      "SE_g": 7.062412738800049,
+      "Geometry Initialization_time": 0.00011574824651082357,
+      "FE_time": 0.7165851593017578,
+      "Loss cal_time": 4.506111145019531e-05,
+      "Backpropagation_time": 7.019944906234741,
+      "Parametric Update": 0.002081155776977539,
+      "FE_timing": {
+        "Element_create": 0.06907200813293457,
+        "Stiffness_assembly": 0.22831010818481445,
+        "Matrix_solution": 0.019644975662231445,
+        "Metrics_calculation": 0.38420772552490234,
+        "Total_FE_time": 0.7012348175048828
+      }
+    },
+    {
+      "iteration": 17,
+      "SE_g": 7.04590368270874,
+      "Geometry Initialization_time": 0.00013208389282226562,
+      "FE_time": 0.761843204498291,
+      "Loss cal_time": 4.100799560546875e-05,
+      "Backpropagation_time": 6.898664951324463,
+      "Parametric Update": 0.001775979995727539,
+      "FE_timing": {
+        "Element_create": 0.07079911231994629,
+        "Stiffness_assembly": 0.28309106826782227,
+        "Matrix_solution": 0.023235082626342773,
+        "Metrics_calculation": 0.37195706367492676,
+        "Total_FE_time": 0.7490823268890381
+      }
+    },
+    {
+      "iteration": 18,
+      "SE_g": 7.029531955718994,
+      "Geometry Initialization_time": 0.00012396971384684246,
+      "FE_time": 0.7266650199890137,
+      "Loss cal_time": 3.504753112792969e-05,
+      "Backpropagation_time": 6.974696159362793,
+      "Parametric Update": 0.0028579235076904297,
+      "FE_timing": {
+        "Element_create": 0.0729379653930664,
+        "Stiffness_assembly": 0.22750377655029297,
+        "Matrix_solution": 0.0169222354888916,
+        "Metrics_calculation": 0.3961460590362549,
+        "Total_FE_time": 0.7135100364685059
+      }
+    },
+    {
+      "iteration": 19,
+      "SE_g": 7.013098239898682,
+      "Geometry Initialization_time": 0.00016161600748697917,
+      "FE_time": 0.7288739681243896,
+      "Loss cal_time": 2.8133392333984375e-05,
+      "Backpropagation_time": 7.405936002731323,
+      "Parametric Update": 0.0017740726470947266,
+      "FE_timing": {
+        "Element_create": 0.07294702529907227,
+        "Stiffness_assembly": 0.21768617630004883,
+        "Matrix_solution": 0.017030954360961914,
+        "Metrics_calculation": 0.4094231128692627,
+        "Total_FE_time": 0.7170872688293457
+      }
+    },
+    {
+      "iteration": 20,
+      "SE_g": 6.996732711791992,
+      "Geometry Initialization_time": 0.0001235485076904297,
+      "FE_time": 0.7451939582824707,
+      "Loss cal_time": 3.981590270996094e-05,
+      "Backpropagation_time": 7.043892860412598,
+      "Parametric Update": 0.0017919540405273438,
+      "FE_timing": {
+        "Element_create": 0.07148885726928711,
+        "Stiffness_assembly": 0.2405080795288086,
+        "Matrix_solution": 0.018391132354736328,
+        "Metrics_calculation": 0.4004099369049072,
+        "Total_FE_time": 0.7307980060577393
+      }
+    },
+    {
+      "iteration": 21,
+      "SE_g": 6.98032808303833,
+      "Geometry Initialization_time": 0.00011965036392211915,
+      "FE_time": 0.7540860176086426,
+      "Loss cal_time": 4.506111145019531e-05,
+      "Backpropagation_time": 6.583554029464722,
+      "Parametric Update": 0.0018410682678222656,
+      "FE_timing": {
+        "Element_create": 0.08919811248779297,
+        "Stiffness_assembly": 0.24317312240600586,
+        "Matrix_solution": 0.01872992515563965,
+        "Metrics_calculation": 0.3899369239807129,
+        "Total_FE_time": 0.7410380840301514
+      }
+    },
+    {
+      "iteration": 22,
+      "SE_g": 6.963967323303223,
+      "Geometry Initialization_time": 0.00011625289916992188,
+      "FE_time": 0.7069599628448486,
+      "Loss cal_time": 2.8848648071289062e-05,
+      "Backpropagation_time": 6.818675994873047,
+      "Parametric Update": 0.002177000045776367,
+      "FE_timing": {
+        "Element_create": 0.06939816474914551,
+        "Stiffness_assembly": 0.2314469814300537,
+        "Matrix_solution": 0.017710208892822266,
+        "Metrics_calculation": 0.37613487243652344,
+        "Total_FE_time": 0.6946902275085449
+      }
+    },
+    {
+      "iteration": 23,
+      "SE_g": 6.947648525238037,
+      "Geometry Initialization_time": 0.00012200276056925455,
+      "FE_time": 0.7474880218505859,
+      "Loss cal_time": 4.8160552978515625e-05,
+      "Backpropagation_time": 7.099611043930054,
+      "Parametric Update": 0.0019791126251220703,
+      "FE_timing": {
+        "Element_create": 0.06793904304504395,
+        "Stiffness_assembly": 0.24738192558288574,
+        "Matrix_solution": 0.01691412925720215,
+        "Metrics_calculation": 0.39735889434814453,
+        "Total_FE_time": 0.7295939922332764
+      }
+    },
+    {
+      "iteration": 24,
+      "SE_g": 6.931299209594727,
+      "Geometry Initialization_time": 0.00011540253957112631,
+      "FE_time": 0.69252610206604,
+      "Loss cal_time": 3.695487976074219e-05,
+      "Backpropagation_time": 6.777655839920044,
+      "Parametric Update": 0.002579927444458008,
+      "FE_timing": {
+        "Element_create": 0.07094001770019531,
+        "Stiffness_assembly": 0.21605920791625977,
+        "Matrix_solution": 0.01686882972717285,
+        "Metrics_calculation": 0.3762788772583008,
+        "Total_FE_time": 0.6801469326019287
+      }
+    },
+    {
+      "iteration": 25,
+      "SE_g": 6.914994716644287,
+      "Geometry Initialization_time": 0.00012975533803304037,
+      "FE_time": 0.7157280445098877,
+      "Loss cal_time": 3.504753112792969e-05,
+      "Backpropagation_time": 7.146275758743286,
+      "Parametric Update": 0.0017490386962890625,
+      "FE_timing": {
+        "Element_create": 0.07626605033874512,
+        "Stiffness_assembly": 0.25127291679382324,
+        "Matrix_solution": 0.018103837966918945,
+        "Metrics_calculation": 0.3580899238586426,
+        "Total_FE_time": 0.7037327289581299
+      }
+    },
+    {
+      "iteration": 26,
+      "SE_g": 6.89865779876709,
+      "Geometry Initialization_time": 0.00011951923370361328,
+      "FE_time": 0.709064245223999,
+      "Loss cal_time": 3.2901763916015625e-05,
+      "Backpropagation_time": 6.952584981918335,
+      "Parametric Update": 0.0022170543670654297,
+      "FE_timing": {
+        "Element_create": 0.07858395576477051,
+        "Stiffness_assembly": 0.23966002464294434,
+        "Matrix_solution": 0.016643285751342773,
+        "Metrics_calculation": 0.36139416694641113,
+        "Total_FE_time": 0.6962814331054688
+      }
+    },
+    {
+      "iteration": 27,
+      "SE_g": 6.882390975952148,
+      "Geometry Initialization_time": 0.0015609979629516602,
+      "FE_time": 1.0942070484161377,
+      "Loss cal_time": 4.1961669921875e-05,
+      "Backpropagation_time": 6.876554012298584,
+      "Parametric Update": 0.0018610954284667969,
+      "FE_timing": {
+        "Element_create": 0.09804797172546387,
+        "Stiffness_assembly": 0.38845205307006836,
+        "Matrix_solution": 0.0842139720916748,
+        "Metrics_calculation": 0.5102081298828125,
+        "Total_FE_time": 1.0809221267700195
+      }
+    },
+    {
+      "iteration": 28,
+      "SE_g": 6.866086483001709,
+      "Geometry Initialization_time": 0.00011986891428629557,
+      "FE_time": 0.6706788539886475,
+      "Loss cal_time": 3.6716461181640625e-05,
+      "Backpropagation_time": 6.312944173812866,
+      "Parametric Update": 0.001789093017578125,
+      "FE_timing": {
+        "Element_create": 0.06894993782043457,
+        "Stiffness_assembly": 0.2135918140411377,
+        "Matrix_solution": 0.016674041748046875,
+        "Metrics_calculation": 0.3590059280395508,
+        "Total_FE_time": 0.6582217216491699
+      }
+    },
+    {
+      "iteration": 29,
+      "SE_g": 6.849797248840332,
+      "Geometry Initialization_time": 0.00011913379033406576,
+      "FE_time": 0.7060489654541016,
+      "Loss cal_time": 3.790855407714844e-05,
+      "Backpropagation_time": 6.322719097137451,
+      "Parametric Update": 0.001837015151977539,
+      "FE_timing": {
+        "Element_create": 0.06884598731994629,
+        "Stiffness_assembly": 0.21596598625183105,
+        "Matrix_solution": 0.016371965408325195,
+        "Metrics_calculation": 0.39284300804138184,
+        "Total_FE_time": 0.6940269470214844
+      }
+    },
+    {
+      "iteration": 30,
+      "SE_g": 6.833542346954346,
+      "Geometry Initialization_time": 0.00012291669845581054,
+      "FE_time": 0.6852006912231445,
+      "Loss cal_time": 3.3855438232421875e-05,
+      "Backpropagation_time": 7.180790901184082,
+      "Parametric Update": 0.0035309791564941406,
+      "FE_timing": {
+        "Element_create": 0.07020306587219238,
+        "Stiffness_assembly": 0.21121788024902344,
+        "Matrix_solution": 0.017482995986938477,
+        "Metrics_calculation": 0.37319397926330566,
+        "Total_FE_time": 0.67209792137146
+      }
+    },
+    {
+      "iteration": 31,
+      "SE_g": 6.817309379577637,
+      "Geometry Initialization_time": 0.00013012091318766276,
+      "FE_time": 0.7407500743865967,
+      "Loss cal_time": 4.792213439941406e-05,
+      "Backpropagation_time": 7.160466194152832,
+      "Parametric Update": 0.0017290115356445312,
+      "FE_timing": {
+        "Element_create": 0.08028602600097656,
+        "Stiffness_assembly": 0.23459887504577637,
+        "Matrix_solution": 0.01687908172607422,
+        "Metrics_calculation": 0.39504384994506836,
+        "Total_FE_time": 0.7268078327178955
+      }
+    },
+    {
+      "iteration": 32,
+      "SE_g": 6.8010969161987305,
+      "Geometry Initialization_time": 0.00011443297068277994,
+      "FE_time": 0.7404839992523193,
+      "Loss cal_time": 3.0040740966796875e-05,
+      "Backpropagation_time": 7.269736051559448,
+      "Parametric Update": 0.001992940902709961,
+      "FE_timing": {
+        "Element_create": 0.07131695747375488,
+        "Stiffness_assembly": 0.22197818756103516,
+        "Matrix_solution": 0.0222930908203125,
+        "Metrics_calculation": 0.41289401054382324,
+        "Total_FE_time": 0.7284822463989258
+      }
+    },
+    {
+      "iteration": 33,
+      "SE_g": 6.7848663330078125,
+      "Geometry Initialization_time": 0.00011621316274007162,
+      "FE_time": 0.7033419609069824,
+      "Loss cal_time": 4.1961669921875e-05,
+      "Backpropagation_time": 6.300536155700684,
+      "Parametric Update": 0.0017871856689453125,
+      "FE_timing": {
+        "Element_create": 0.06777715682983398,
+        "Stiffness_assembly": 0.2428150177001953,
+        "Matrix_solution": 0.016115903854370117,
+        "Metrics_calculation": 0.3641932010650635,
+        "Total_FE_time": 0.6909012794494629
+      }
+    },
+    {
+      "iteration": 34,
+      "SE_g": 6.768647193908691,
+      "Geometry Initialization_time": 0.00012236436208089193,
+      "FE_time": 0.6641581058502197,
+      "Loss cal_time": 3.0279159545898438e-05,
+      "Backpropagation_time": 6.252084970474243,
+      "Parametric Update": 0.0018219947814941406,
+      "FE_timing": {
+        "Element_create": 0.06673312187194824,
+        "Stiffness_assembly": 0.2120201587677002,
+        "Matrix_solution": 0.0163877010345459,
+        "Metrics_calculation": 0.3569660186767578,
+        "Total_FE_time": 0.6521070003509521
+      }
+    },
+    {
+      "iteration": 35,
+      "SE_g": 6.752431392669678,
+      "Geometry Initialization_time": 0.0001169125239054362,
+      "FE_time": 0.692816972732544,
+      "Loss cal_time": 2.8133392333984375e-05,
+      "Backpropagation_time": 6.246345043182373,
+      "Parametric Update": 0.001806020736694336,
+      "FE_timing": {
+        "Element_create": 0.07003378868103027,
+        "Stiffness_assembly": 0.24280810356140137,
+        "Matrix_solution": 0.0162811279296875,
+        "Metrics_calculation": 0.35177016258239746,
+        "Total_FE_time": 0.6808931827545166
+      }
+    },
+    {
+      "iteration": 36,
+      "SE_g": 6.736281871795654,
+      "Geometry Initialization_time": 0.00011725425720214844,
+      "FE_time": 0.6581649780273438,
+      "Loss cal_time": 2.5987625122070312e-05,
+      "Backpropagation_time": 6.232931852340698,
+      "Parametric Update": 0.0017771720886230469,
+      "FE_timing": {
+        "Element_create": 0.06933307647705078,
+        "Stiffness_assembly": 0.2088158130645752,
+        "Matrix_solution": 0.01779317855834961,
+        "Metrics_calculation": 0.3505821228027344,
+        "Total_FE_time": 0.64652419090271
+      }
+    },
+    {
+      "iteration": 37,
+      "SE_g": 6.7201337814331055,
+      "Geometry Initialization_time": 0.00011543432871500651,
+      "FE_time": 0.7084372043609619,
+      "Loss cal_time": 3.409385681152344e-05,
+      "Backpropagation_time": 6.331364870071411,
+      "Parametric Update": 0.0017237663269042969,
+      "FE_timing": {
+        "Element_create": 0.06903290748596191,
+        "Stiffness_assembly": 0.253511905670166,
+        "Matrix_solution": 0.018871068954467773,
+        "Metrics_calculation": 0.35411596298217773,
+        "Total_FE_time": 0.6955318450927734
+      }
+    },
+    {
+      "iteration": 38,
+      "SE_g": 6.703978538513184,
+      "Geometry Initialization_time": 0.00011488596598307292,
+      "FE_time": 0.6832339763641357,
+      "Loss cal_time": 3.123283386230469e-05,
+      "Backpropagation_time": 6.300354242324829,
+      "Parametric Update": 0.0020329952239990234,
+      "FE_timing": {
+        "Element_create": 0.0715188980102539,
+        "Stiffness_assembly": 0.21382880210876465,
+        "Matrix_solution": 0.017501115798950195,
+        "Metrics_calculation": 0.3682868480682373,
+        "Total_FE_time": 0.671135663986206
+      }
+    },
+    {
+      "iteration": 39,
+      "SE_g": 6.687855243682861,
+      "Geometry Initialization_time": 0.00011556545893351236,
+      "FE_time": 0.686622142791748,
+      "Loss cal_time": 2.9802322387695312e-05,
+      "Backpropagation_time": 6.253937721252441,
+      "Parametric Update": 0.0017430782318115234,
+      "FE_timing": {
+        "Element_create": 0.06813287734985352,
+        "Stiffness_assembly": 0.20524907112121582,
+        "Matrix_solution": 0.01614689826965332,
+        "Metrics_calculation": 0.38532304763793945,
+        "Total_FE_time": 0.6748518943786621
+      }
+    },
+    {
+      "iteration": 40,
+      "SE_g": 6.671731948852539,
+      "Geometry Initialization_time": 0.00011553366978963216,
+      "FE_time": 0.6553027629852295,
+      "Loss cal_time": 3.62396240234375e-05,
+      "Backpropagation_time": 6.244484901428223,
+      "Parametric Update": 0.0017652511596679688,
+      "FE_timing": {
+        "Element_create": 0.06849980354309082,
+        "Stiffness_assembly": 0.20556402206420898,
+        "Matrix_solution": 0.01607799530029297,
+        "Metrics_calculation": 0.3522529602050781,
+        "Total_FE_time": 0.6423947811126709
+      }
+    },
+    {
+      "iteration": 41,
+      "SE_g": 6.655596733093262,
+      "Geometry Initialization_time": 0.00011631250381469727,
+      "FE_time": 0.6508102416992188,
+      "Loss cal_time": 2.8848648071289062e-05,
+      "Backpropagation_time": 6.632540941238403,
+      "Parametric Update": 0.0017547607421875,
+      "FE_timing": {
+        "Element_create": 0.06384086608886719,
+        "Stiffness_assembly": 0.21287131309509277,
+        "Matrix_solution": 0.01653122901916504,
+        "Metrics_calculation": 0.3459010124206543,
+        "Total_FE_time": 0.6391444206237793
+      }
+    },
+    {
+      "iteration": 42,
+      "SE_g": 6.6395134925842285,
+      "Geometry Initialization_time": 0.00011694828669230143,
+      "FE_time": 0.8163349628448486,
+      "Loss cal_time": 3.790855407714844e-05,
+      "Backpropagation_time": 7.1327760219573975,
+      "Parametric Update": 0.0017538070678710938,
+      "FE_timing": {
+        "Element_create": 0.06733322143554688,
+        "Stiffness_assembly": 0.23304271697998047,
+        "Matrix_solution": 0.028796911239624023,
+        "Metrics_calculation": 0.4744279384613037,
+        "Total_FE_time": 0.8036007881164551
+      }
+    },
+    {
+      "iteration": 43,
+      "SE_g": 6.623454570770264,
+      "Geometry Initialization_time": 0.00011743307113647461,
+      "FE_time": 0.7113909721374512,
+      "Loss cal_time": 5.793571472167969e-05,
+      "Backpropagation_time": 6.889130115509033,
+      "Parametric Update": 0.0017478466033935547,
+      "FE_timing": {
+        "Element_create": 0.06890320777893066,
+        "Stiffness_assembly": 0.24941086769104004,
+        "Matrix_solution": 0.01863408088684082,
+        "Metrics_calculation": 0.3610711097717285,
+        "Total_FE_time": 0.69801926612854
+      }
+    },
+    {
+      "iteration": 44,
+      "SE_g": 6.607388019561768,
+      "Geometry Initialization_time": 0.00011619726816813151,
+      "FE_time": 0.7446022033691406,
+      "Loss cal_time": 3.790855407714844e-05,
+      "Backpropagation_time": 7.363624811172485,
+      "Parametric Update": 0.001950979232788086,
+      "FE_timing": {
+        "Element_create": 0.0662989616394043,
+        "Stiffness_assembly": 0.20680880546569824,
+        "Matrix_solution": 0.016927003860473633,
+        "Metrics_calculation": 0.4421701431274414,
+        "Total_FE_time": 0.7322049140930176
+      }
+    },
+    {
+      "iteration": 45,
+      "SE_g": 6.59132719039917,
+      "Geometry Initialization_time": 0.00012255112330118815,
+      "FE_time": 0.7546582221984863,
+      "Loss cal_time": 4.291534423828125e-05,
+      "Backpropagation_time": 6.968517065048218,
+      "Parametric Update": 0.0018339157104492188,
+      "FE_timing": {
+        "Element_create": 0.08248591423034668,
+        "Stiffness_assembly": 0.2511169910430908,
+        "Matrix_solution": 0.018372058868408203,
+        "Metrics_calculation": 0.3870859146118164,
+        "Total_FE_time": 0.7390608787536621
+      }
+    },
+    {
+      "iteration": 46,
+      "SE_g": 6.575310230255127,
+      "Geometry Initialization_time": 0.0001299460728963216,
+      "FE_time": 0.7718729972839355,
+      "Loss cal_time": 4.601478576660156e-05,
+      "Backpropagation_time": 7.007866144180298,
+      "Parametric Update": 0.001811981201171875,
+      "FE_timing": {
+        "Element_create": 0.07180595397949219,
+        "Stiffness_assembly": 0.21834993362426758,
+        "Matrix_solution": 0.017661094665527344,
+        "Metrics_calculation": 0.44884610176086426,
+        "Total_FE_time": 0.7566630840301514
+      }
+    },
+    {
+      "iteration": 47,
+      "SE_g": 6.55925178527832,
+      "Geometry Initialization_time": 0.00012674729029337565,
+      "FE_time": 0.7118101119995117,
+      "Loss cal_time": 3.0994415283203125e-05,
+      "Backpropagation_time": 6.458023309707642,
+      "Parametric Update": 0.0017769336700439453,
+      "FE_timing": {
+        "Element_create": 0.07056903839111328,
+        "Stiffness_assembly": 0.2583920955657959,
+        "Matrix_solution": 0.018790006637573242,
+        "Metrics_calculation": 0.35219717025756836,
+        "Total_FE_time": 0.6999483108520508
+      }
+    },
+    {
+      "iteration": 48,
+      "SE_g": 6.543262004852295,
+      "Geometry Initialization_time": 0.0001237789789835612,
+      "FE_time": 0.7163231372833252,
+      "Loss cal_time": 3.886222839355469e-05,
+      "Backpropagation_time": 6.558785676956177,
+      "Parametric Update": 0.0017871856689453125,
+      "FE_timing": {
+        "Element_create": 0.0677499771118164,
+        "Stiffness_assembly": 0.2090311050415039,
+        "Matrix_solution": 0.028557777404785156,
+        "Metrics_calculation": 0.39856815338134766,
+        "Total_FE_time": 0.7039070129394531
+      }
+    },
+    {
+      "iteration": 49,
+      "SE_g": 6.527263164520264,
+      "Geometry Initialization_time": 0.00012140671412150064,
+      "FE_time": 0.7202212810516357,
+      "Loss cal_time": 3.2901763916015625e-05,
+      "Backpropagation_time": 6.900604963302612,
+      "Parametric Update": 0.0017819404602050781,
+      "FE_timing": {
+        "Element_create": 0.0695180892944336,
+        "Stiffness_assembly": 0.21600675582885742,
+        "Matrix_solution": 0.0187070369720459,
+        "Metrics_calculation": 0.4034562110900879,
+        "Total_FE_time": 0.7076880931854248
+      }
+    },
+    {
+      "iteration": 50,
+      "SE_g": 6.51128625869751,
+      "Geometry Initialization_time": 0.00011716683705647787,
+      "FE_time": 0.6851677894592285,
+      "Loss cal_time": 3.409385681152344e-05,
+      "Backpropagation_time": 6.4300220012664795,
+      "Parametric Update": 0.0017490386962890625,
+      "FE_timing": {
+        "Element_create": 0.07031393051147461,
+        "Stiffness_assembly": 0.22647809982299805,
+        "Matrix_solution": 0.01714301109313965,
+        "Metrics_calculation": 0.358734130859375,
+        "Total_FE_time": 0.6726691722869873
+      }
+    },
+    {
+      "iteration": 51,
+      "SE_g": 6.49530029296875,
+      "Geometry Initialization_time": 0.00011926889419555664,
+      "FE_time": 0.6605751514434814,
+      "Loss cal_time": 2.9802322387695312e-05,
+      "Backpropagation_time": 6.255427837371826,
+      "Parametric Update": 0.001705169677734375,
+      "FE_timing": {
+        "Element_create": 0.06660699844360352,
+        "Stiffness_assembly": 0.20802688598632812,
+        "Matrix_solution": 0.017158985137939453,
+        "Metrics_calculation": 0.35677576065063477,
+        "Total_FE_time": 0.6485686302185059
+      }
+    },
+    {
+      "iteration": 52,
+      "SE_g": 6.479339122772217,
+      "Geometry Initialization_time": 0.00011639992396036783,
+      "FE_time": 0.6622068881988525,
+      "Loss cal_time": 3.123283386230469e-05,
+      "Backpropagation_time": 6.3299078941345215,
+      "Parametric Update": 0.001833200454711914,
+      "FE_timing": {
+        "Element_create": 0.06876802444458008,
+        "Stiffness_assembly": 0.2088618278503418,
+        "Matrix_solution": 0.016155242919921875,
+        "Metrics_calculation": 0.35665321350097656,
+        "Total_FE_time": 0.6504383087158203
+      }
+    },
+    {
+      "iteration": 53,
+      "SE_g": 6.463405609130859,
+      "Geometry Initialization_time": 0.00014761686325073242,
+      "FE_time": 0.8429069519042969,
+      "Loss cal_time": 4.00543212890625e-05,
+      "Backpropagation_time": 7.910349130630493,
+      "Parametric Update": 0.0019440650939941406,
+      "FE_timing": {
+        "Element_create": 0.08477997779846191,
+        "Stiffness_assembly": 0.3618428707122803,
+        "Matrix_solution": 0.02202606201171875,
+        "Metrics_calculation": 0.36187100410461426,
+        "Total_FE_time": 0.8305199146270752
+      }
+    },
+    {
+      "iteration": 54,
+      "SE_g": 6.447469711303711,
+      "Geometry Initialization_time": 0.00013376871744791668,
+      "FE_time": 1.7136359214782715,
+      "Loss cal_time": 7.081031799316406e-05,
+      "Backpropagation_time": 10.866494178771973,
+      "Parametric Update": 0.0025069713592529297,
+      "FE_timing": {
+        "Element_create": 0.08446097373962402,
+        "Stiffness_assembly": 0.3035099506378174,
+        "Matrix_solution": 0.03985404968261719,
+        "Metrics_calculation": 1.2496130466461182,
+        "Total_FE_time": 1.6774380207061768
+      }
+    },
+    {
+      "iteration": 55,
+      "SE_g": 6.431588172912598,
+      "Geometry Initialization_time": 0.0001349488894144694,
+      "FE_time": 0.8490469455718994,
+      "Loss cal_time": 4.1961669921875e-05,
+      "Backpropagation_time": 7.558978080749512,
+      "Parametric Update": 0.001752614974975586,
+      "FE_timing": {
+        "Element_create": 0.0923311710357666,
+        "Stiffness_assembly": 0.3356289863586426,
+        "Matrix_solution": 0.019199132919311523,
+        "Metrics_calculation": 0.3880460262298584,
+        "Total_FE_time": 0.8352053165435791
+      }
+    },
+    {
+      "iteration": 56,
+      "SE_g": 6.415657997131348,
+      "Geometry Initialization_time": 0.0001175522804260254,
+      "FE_time": 0.6845040321350098,
+      "Loss cal_time": 4.00543212890625e-05,
+      "Backpropagation_time": 7.210617780685425,
+      "Parametric Update": 0.002379179000854492,
+      "FE_timing": {
+        "Element_create": 0.06948614120483398,
+        "Stiffness_assembly": 0.21218299865722656,
+        "Matrix_solution": 0.01766204833984375,
+        "Metrics_calculation": 0.3728950023651123,
+        "Total_FE_time": 0.6722261905670166
+      }
+    },
+    {
+      "iteration": 57,
+      "SE_g": 6.399775505065918,
+      "Geometry Initialization_time": 0.00012960036595662436,
+      "FE_time": 0.7807760238647461,
+      "Loss cal_time": 4.124641418457031e-05,
+      "Backpropagation_time": 7.839589834213257,
+      "Parametric Update": 0.0017631053924560547,
+      "FE_timing": {
+        "Element_create": 0.08137273788452148,
+        "Stiffness_assembly": 0.2917940616607666,
+        "Matrix_solution": 0.020929813385009766,
+        "Metrics_calculation": 0.37410736083984375,
+        "Total_FE_time": 0.7682039737701416
+      }
+    },
+    {
+      "iteration": 58,
+      "SE_g": 6.383900165557861,
+      "Geometry Initialization_time": 0.00011984507242838542,
+      "FE_time": 0.7125158309936523,
+      "Loss cal_time": 3.695487976074219e-05,
+      "Backpropagation_time": 7.295966863632202,
+      "Parametric Update": 0.0017881393432617188,
+      "FE_timing": {
+        "Element_create": 0.07021427154541016,
+        "Stiffness_assembly": 0.2256789207458496,
+        "Matrix_solution": 0.022582054138183594,
+        "Metrics_calculation": 0.3818318843841553,
+        "Total_FE_time": 0.7003071308135986
+      }
+    },
+    {
+      "iteration": 59,
+      "SE_g": 6.3680572509765625,
+      "Geometry Initialization_time": 0.00011562108993530273,
+      "FE_time": 0.7622029781341553,
+      "Loss cal_time": 3.314018249511719e-05,
+      "Backpropagation_time": 7.09883975982666,
+      "Parametric Update": 0.0017499923706054688,
+      "FE_timing": {
+        "Element_create": 0.07419490814208984,
+        "Stiffness_assembly": 0.2494068145751953,
+        "Matrix_solution": 0.02535414695739746,
+        "Metrics_calculation": 0.40105295181274414,
+        "Total_FE_time": 0.7500088214874268
+      }
+    },
+    {
+      "iteration": 60,
+      "SE_g": 6.352234840393066,
+      "Geometry Initialization_time": 0.00011839866638183594,
+      "FE_time": 0.7015049457550049,
+      "Loss cal_time": 3.0994415283203125e-05,
+      "Backpropagation_time": 7.305768966674805,
+      "Parametric Update": 0.0019850730895996094,
+      "FE_timing": {
+        "Element_create": 0.07296586036682129,
+        "Stiffness_assembly": 0.2228400707244873,
+        "Matrix_solution": 0.020760774612426758,
+        "Metrics_calculation": 0.3726470470428467,
+        "Total_FE_time": 0.689213752746582
+      }
+    },
+    {
+      "iteration": 61,
+      "SE_g": 6.336374282836914,
+      "Geometry Initialization_time": 0.00013483365376790364,
+      "FE_time": 0.7455999851226807,
+      "Loss cal_time": 4.410743713378906e-05,
+      "Backpropagation_time": 6.545522212982178,
+      "Parametric Update": 0.0017650127410888672,
+      "FE_timing": {
+        "Element_create": 0.07221293449401855,
+        "Stiffness_assembly": 0.2390880584716797,
+        "Matrix_solution": 0.027063846588134766,
+        "Metrics_calculation": 0.3919680118560791,
+        "Total_FE_time": 0.7303328514099121
+      }
+    },
+    {
+      "iteration": 62,
+      "SE_g": 6.320579528808594,
+      "Geometry Initialization_time": 0.00011453628540039062,
+      "FE_time": 0.6639189720153809,
+      "Loss cal_time": 3.886222839355469e-05,
+      "Backpropagation_time": 6.365639925003052,
+      "Parametric Update": 0.0017390251159667969,
+      "FE_timing": {
+        "Element_create": 0.06722712516784668,
+        "Stiffness_assembly": 0.20653605461120605,
+        "Matrix_solution": 0.01585674285888672,
+        "Metrics_calculation": 0.3616931438446045,
+        "Total_FE_time": 0.651313066482544
+      }
+    },
+    {
+      "iteration": 63,
+      "SE_g": 6.3048095703125,
+      "Geometry Initialization_time": 0.00012158552805582682,
+      "FE_time": 0.7042989730834961,
+      "Loss cal_time": 3.719329833984375e-05,
+      "Backpropagation_time": 7.111639976501465,
+      "Parametric Update": 0.0023250579833984375,
+      "FE_timing": {
+        "Element_create": 0.06791210174560547,
+        "Stiffness_assembly": 0.24193096160888672,
+        "Matrix_solution": 0.019142866134643555,
+        "Metrics_calculation": 0.36314916610717773,
+        "Total_FE_time": 0.6921350955963135
+      }
+    },
+    {
+      "iteration": 64,
+      "SE_g": 6.288995742797852,
+      "Geometry Initialization_time": 0.00014545122782389324,
+      "FE_time": 0.7422101497650146,
+      "Loss cal_time": 2.9325485229492188e-05,
+      "Backpropagation_time": 7.579318046569824,
+      "Parametric Update": 0.002360820770263672,
+      "FE_timing": {
+        "Element_create": 0.07775115966796875,
+        "Stiffness_assembly": 0.2210688591003418,
+        "Matrix_solution": 0.025526046752929688,
+        "Metrics_calculation": 0.40580081939697266,
+        "Total_FE_time": 0.7301468849182129
+      }
+    },
+    {
+      "iteration": 65,
+      "SE_g": 6.2732086181640625,
+      "Geometry Initialization_time": 0.0001631021499633789,
+      "FE_time": 0.7135941982269287,
+      "Loss cal_time": 3.981590270996094e-05,
+      "Backpropagation_time": 6.8741912841796875,
+      "Parametric Update": 0.0017497539520263672,
+      "FE_timing": {
+        "Element_create": 0.07509088516235352,
+        "Stiffness_assembly": 0.2427520751953125,
+        "Matrix_solution": 0.01752305030822754,
+        "Metrics_calculation": 0.363389253616333,
+        "Total_FE_time": 0.6987552642822266
+      }
+    },
+    {
+      "iteration": 66,
+      "SE_g": 6.25750732421875,
+      "Geometry Initialization_time": 0.00011715094248453776,
+      "FE_time": 0.7033908367156982,
+      "Loss cal_time": 4.100799560546875e-05,
+      "Backpropagation_time": 6.786718845367432,
+      "Parametric Update": 0.0017898082733154297,
+      "FE_timing": {
+        "Element_create": 0.07521605491638184,
+        "Stiffness_assembly": 0.22430682182312012,
+        "Matrix_solution": 0.021291017532348633,
+        "Metrics_calculation": 0.3690528869628906,
+        "Total_FE_time": 0.6898667812347412
+      }
+    },
+    {
+      "iteration": 67,
+      "SE_g": 6.241726875305176,
+      "Geometry Initialization_time": 0.0001237193743387858,
+      "FE_time": 0.7229580879211426,
+      "Loss cal_time": 3.4809112548828125e-05,
+      "Backpropagation_time": 6.9220850467681885,
+      "Parametric Update": 0.0021407604217529297,
+      "FE_timing": {
+        "Element_create": 0.0719759464263916,
+        "Stiffness_assembly": 0.25838208198547363,
+        "Matrix_solution": 0.02655482292175293,
+        "Metrics_calculation": 0.3537940979003906,
+        "Total_FE_time": 0.7107069492340088
+      }
+    },
+    {
+      "iteration": 68,
+      "SE_g": 6.22601318359375,
+      "Geometry Initialization_time": 0.00017668008804321288,
+      "FE_time": 0.7766969203948975,
+      "Loss cal_time": 3.6716461181640625e-05,
+      "Backpropagation_time": 7.4823222160339355,
+      "Parametric Update": 0.0019459724426269531,
+      "FE_timing": {
+        "Element_create": 0.08586812019348145,
+        "Stiffness_assembly": 0.22842001914978027,
+        "Matrix_solution": 0.02004075050354004,
+        "Metrics_calculation": 0.4279210567474365,
+        "Total_FE_time": 0.7622499465942383
+      }
+    },
+    {
+      "iteration": 69,
+      "SE_g": 6.21030330657959,
+      "Geometry Initialization_time": 0.0001367012659708659,
+      "FE_time": 0.8372800350189209,
+      "Loss cal_time": 4.482269287109375e-05,
+      "Backpropagation_time": 7.76816725730896,
+      "Parametric Update": 0.0017499923706054688,
+      "FE_timing": {
+        "Element_create": 0.06983590126037598,
+        "Stiffness_assembly": 0.26046109199523926,
+        "Matrix_solution": 0.021996021270751953,
+        "Metrics_calculation": 0.47170114517211914,
+        "Total_FE_time": 0.8239941596984863
+      }
+    },
+    {
+      "iteration": 70,
+      "SE_g": 6.194602012634277,
+      "Geometry Initialization_time": 0.00011923313140869141,
+      "FE_time": 0.7984182834625244,
+      "Loss cal_time": 4.38690185546875e-05,
+      "Backpropagation_time": 7.409662961959839,
+      "Parametric Update": 0.0020728111267089844,
+      "FE_timing": {
+        "Element_create": 0.07000112533569336,
+        "Stiffness_assembly": 0.2254929542541504,
+        "Matrix_solution": 0.017740726470947266,
+        "Metrics_calculation": 0.46843385696411133,
+        "Total_FE_time": 0.7816686630249023
+      }
+    },
+    {
+      "iteration": 71,
+      "SE_g": 6.178922176361084,
+      "Geometry Initialization_time": 0.00011746883392333984,
+      "FE_time": 0.698822021484375,
+      "Loss cal_time": 3.2901763916015625e-05,
+      "Backpropagation_time": 7.105723142623901,
+      "Parametric Update": 0.0017750263214111328,
+      "FE_timing": {
+        "Element_create": 0.07135581970214844,
+        "Stiffness_assembly": 0.20781397819519043,
+        "Matrix_solution": 0.01753711700439453,
+        "Metrics_calculation": 0.3887138366699219,
+        "Total_FE_time": 0.6854207515716553
+      }
+    },
+    {
+      "iteration": 72,
+      "SE_g": 6.163299560546875,
+      "Geometry Initialization_time": 0.0001223166783650716,
+      "FE_time": 0.7096161842346191,
+      "Loss cal_time": 3.5762786865234375e-05,
+      "Backpropagation_time": 7.026355981826782,
+      "Parametric Update": 0.0021009445190429688,
+      "FE_timing": {
+        "Element_create": 0.06702685356140137,
+        "Stiffness_assembly": 0.20367002487182617,
+        "Matrix_solution": 0.017041921615600586,
+        "Metrics_calculation": 0.40945982933044434,
+        "Total_FE_time": 0.6971986293792725
+      }
+    },
+    {
+      "iteration": 73,
+      "SE_g": 6.147636413574219,
+      "Geometry Initialization_time": 0.00013126532236735027,
+      "FE_time": 0.7506191730499268,
+      "Loss cal_time": 4.696846008300781e-05,
+      "Backpropagation_time": 7.399078845977783,
+      "Parametric Update": 0.0022318363189697266,
+      "FE_timing": {
+        "Element_create": 0.07635807991027832,
+        "Stiffness_assembly": 0.2476949691772461,
+        "Matrix_solution": 0.01802372932434082,
+        "Metrics_calculation": 0.3926670551300049,
+        "Total_FE_time": 0.7347438335418701
+      }
+    },
+    {
+      "iteration": 74,
+      "SE_g": 6.131987571716309,
+      "Geometry Initialization_time": 0.00013550122578938803,
+      "FE_time": 1.062506914138794,
+      "Loss cal_time": 4.38690185546875e-05,
+      "Backpropagation_time": 7.0788960456848145,
+      "Parametric Update": 0.0017437934875488281,
+      "FE_timing": {
+        "Element_create": 0.10295295715332031,
+        "Stiffness_assembly": 0.3497731685638428,
+        "Matrix_solution": 0.029361963272094727,
+        "Metrics_calculation": 0.5636129379272461,
+        "Total_FE_time": 1.045701026916504
+      }
+    },
+    {
+      "iteration": 75,
+      "SE_g": 6.116353988647461,
+      "Geometry Initialization_time": 0.00011481841405232747,
+      "FE_time": 1.0178868770599365,
+      "Loss cal_time": 3.886222839355469e-05,
+      "Backpropagation_time": 6.9733827114105225,
+      "Parametric Update": 0.0017549991607666016,
+      "FE_timing": {
+        "Element_create": 0.07065391540527344,
+        "Stiffness_assembly": 0.23565220832824707,
+        "Matrix_solution": 0.020713090896606445,
+        "Metrics_calculation": 0.6756808757781982,
+        "Total_FE_time": 1.0027000904083252
+      }
+    },
+    {
+      "iteration": 76,
+      "SE_g": 6.100717544555664,
+      "Geometry Initialization_time": 0.00011970202128092448,
+      "FE_time": 0.6609160900115967,
+      "Loss cal_time": 3.695487976074219e-05,
+      "Backpropagation_time": 6.351647138595581,
+      "Parametric Update": 0.0017521381378173828,
+      "FE_timing": {
+        "Element_create": 0.07249283790588379,
+        "Stiffness_assembly": 0.20334315299987793,
+        "Matrix_solution": 0.01812887191772461,
+        "Metrics_calculation": 0.35437917709350586,
+        "Total_FE_time": 0.6483440399169922
+      }
+    },
+    {
+      "iteration": 77,
+      "SE_g": 6.085134506225586,
+      "Geometry Initialization_time": 0.00011466344197591146,
+      "FE_time": 0.7122840881347656,
+      "Loss cal_time": 3.504753112792969e-05,
+      "Backpropagation_time": 6.976439952850342,
+      "Parametric Update": 0.002047300338745117,
+      "FE_timing": {
+        "Element_create": 0.06797599792480469,
+        "Stiffness_assembly": 0.25986194610595703,
+        "Matrix_solution": 0.019653797149658203,
+        "Metrics_calculation": 0.35300397872924805,
+        "Total_FE_time": 0.700495719909668
+      }
+    },
+    {
+      "iteration": 78,
+      "SE_g": 6.069555282592773,
+      "Geometry Initialization_time": 0.00012073516845703124,
+      "FE_time": 0.7621338367462158,
+      "Loss cal_time": 4.100799560546875e-05,
+      "Backpropagation_time": 9.06781005859375,
+      "Parametric Update": 0.0019190311431884766,
+      "FE_timing": {
+        "Element_create": 0.07058310508728027,
+        "Stiffness_assembly": 0.20132184028625488,
+        "Matrix_solution": 0.016141891479492188,
+        "Metrics_calculation": 0.4595768451690674,
+        "Total_FE_time": 0.7476236820220947
+      }
+    },
+    {
+      "iteration": 79,
+      "SE_g": 6.0540008544921875,
+      "Geometry Initialization_time": 0.00012333393096923827,
+      "FE_time": 0.8410251140594482,
+      "Loss cal_time": 4.315376281738281e-05,
+      "Backpropagation_time": 8.36884093284607,
+      "Parametric Update": 0.003332853317260742,
+      "FE_timing": {
+        "Element_create": 0.08420777320861816,
+        "Stiffness_assembly": 0.25412416458129883,
+        "Matrix_solution": 0.02396702766418457,
+        "Metrics_calculation": 0.46349406242370605,
+        "Total_FE_time": 0.8257930278778076
+      }
+    },
+    {
+      "iteration": 80,
+      "SE_g": 6.038453578948975,
+      "Geometry Initialization_time": 0.00015705029169718425,
+      "FE_time": 0.942936897277832,
+      "Loss cal_time": 4.6253204345703125e-05,
+      "Backpropagation_time": 9.495723962783813,
+      "Parametric Update": 0.002331972122192383,
+      "FE_timing": {
+        "Element_create": 0.10483717918395996,
+        "Stiffness_assembly": 0.32012486457824707,
+        "Matrix_solution": 0.03013920783996582,
+        "Metrics_calculation": 0.4688141345977783,
+        "Total_FE_time": 0.9239153861999512
+      }
+    },
+    {
+      "iteration": 81,
+      "SE_g": 6.022922515869141,
+      "Geometry Initialization_time": 0.00012406508127848307,
+      "FE_time": 0.7773067951202393,
+      "Loss cal_time": 3.2901763916015625e-05,
+      "Backpropagation_time": 7.461045026779175,
+      "Parametric Update": 0.0017631053924560547,
+      "FE_timing": {
+        "Element_create": 0.06850194931030273,
+        "Stiffness_assembly": 0.2327289581298828,
+        "Matrix_solution": 0.021966218948364258,
+        "Metrics_calculation": 0.441943883895874,
+        "Total_FE_time": 0.7651410102844238
+      }
+    },
+    {
+      "iteration": 82,
+      "SE_g": 6.0074052810668945,
+      "Geometry Initialization_time": 0.00011658271153767904,
+      "FE_time": 0.7677779197692871,
+      "Loss cal_time": 4.267692565917969e-05,
+      "Backpropagation_time": 7.03924560546875,
+      "Parametric Update": 0.0020339488983154297,
+      "FE_timing": {
+        "Element_create": 0.0672907829284668,
+        "Stiffness_assembly": 0.23882126808166504,
+        "Matrix_solution": 0.01748490333557129,
+        "Metrics_calculation": 0.4293968677520752,
+        "Total_FE_time": 0.7529938220977783
+      }
+    },
+    {
+      "iteration": 83,
+      "SE_g": 5.991907596588135,
+      "Geometry Initialization_time": 0.00011861721674601237,
+      "FE_time": 0.7774908542633057,
+      "Loss cal_time": 4.100799560546875e-05,
+      "Backpropagation_time": 6.72332501411438,
+      "Parametric Update": 0.0018780231475830078,
+      "FE_timing": {
+        "Element_create": 0.08296918869018555,
+        "Stiffness_assembly": 0.26321887969970703,
+        "Matrix_solution": 0.021875858306884766,
+        "Metrics_calculation": 0.39577198028564453,
+        "Total_FE_time": 0.7638359069824219
+      }
+    },
+    {
+      "iteration": 84,
+      "SE_g": 5.976417541503906,
+      "Geometry Initialization_time": 0.00011608600616455078,
+      "FE_time": 0.6716518402099609,
+      "Loss cal_time": 3.409385681152344e-05,
+      "Backpropagation_time": 6.9076879024505615,
+      "Parametric Update": 0.0018460750579833984,
+      "FE_timing": {
+        "Element_create": 0.06856679916381836,
+        "Stiffness_assembly": 0.2063601016998291,
+        "Matrix_solution": 0.017508268356323242,
+        "Metrics_calculation": 0.36598777770996094,
+        "Total_FE_time": 0.6584229469299316
+      }
+    },
+    {
+      "iteration": 85,
+      "SE_g": 5.960925579071045,
+      "Geometry Initialization_time": 0.00013870000839233398,
+      "FE_time": 0.6866111755371094,
+      "Loss cal_time": 3.5762786865234375e-05,
+      "Backpropagation_time": 7.494289875030518,
+      "Parametric Update": 0.0019109249114990234,
+      "FE_timing": {
+        "Element_create": 0.06889700889587402,
+        "Stiffness_assembly": 0.24088287353515625,
+        "Matrix_solution": 0.01681208610534668,
+        "Metrics_calculation": 0.3479480743408203,
+        "Total_FE_time": 0.6745400428771973
+      }
+    },
+    {
+      "iteration": 86,
+      "SE_g": 5.945484638214111,
+      "Geometry Initialization_time": 0.00011641979217529297,
+      "FE_time": 0.6578450202941895,
+      "Loss cal_time": 3.123283386230469e-05,
+      "Backpropagation_time": 6.976613283157349,
+      "Parametric Update": 0.0018460750579833984,
+      "FE_timing": {
+        "Element_create": 0.06955099105834961,
+        "Stiffness_assembly": 0.2071690559387207,
+        "Matrix_solution": 0.016121864318847656,
+        "Metrics_calculation": 0.352916955947876,
+        "Total_FE_time": 0.645758867263794
+      }
+    },
+    {
+      "iteration": 87,
+      "SE_g": 5.930035591125488,
+      "Geometry Initialization_time": 0.00011851787567138672,
+      "FE_time": 0.7859101295471191,
+      "Loss cal_time": 4.482269287109375e-05,
+      "Backpropagation_time": 7.043303966522217,
+      "Parametric Update": 0.0018248558044433594,
+      "FE_timing": {
+        "Element_create": 0.07167196273803711,
+        "Stiffness_assembly": 0.2538621425628662,
+        "Matrix_solution": 0.020759105682373047,
+        "Metrics_calculation": 0.42416906356811523,
+        "Total_FE_time": 0.7704622745513916
+      }
+    },
+    {
+      "iteration": 88,
+      "SE_g": 5.914594650268555,
+      "Geometry Initialization_time": 0.00011596282323201497,
+      "FE_time": 0.6695029735565186,
+      "Loss cal_time": 3.409385681152344e-05,
+      "Backpropagation_time": 6.8799498081207275,
+      "Parametric Update": 0.0029070377349853516,
+      "FE_timing": {
+        "Element_create": 0.07459115982055664,
+        "Stiffness_assembly": 0.20137906074523926,
+        "Matrix_solution": 0.016258955001831055,
+        "Metrics_calculation": 0.36514806747436523,
+        "Total_FE_time": 0.6573772430419922
+      }
+    },
+    {
+      "iteration": 89,
+      "SE_g": 5.8992133140563965,
+      "Geometry Initialization_time": 0.00021483103434244793,
+      "FE_time": 0.7036969661712646,
+      "Loss cal_time": 3.695487976074219e-05,
+      "Backpropagation_time": 7.133809804916382,
+      "Parametric Update": 0.0017621517181396484,
+      "FE_timing": {
+        "Element_create": 0.07652711868286133,
+        "Stiffness_assembly": 0.1998758316040039,
+        "Matrix_solution": 0.018342256546020508,
+        "Metrics_calculation": 0.3955960273742676,
+        "Total_FE_time": 0.6903412342071533
+      }
+    },
+    {
+      "iteration": 90,
+      "SE_g": 5.883770942687988,
+      "Geometry Initialization_time": 0.0001161336898803711,
+      "FE_time": 0.7606327533721924,
+      "Loss cal_time": 5.0067901611328125e-05,
+      "Backpropagation_time": 7.3397088050842285,
+      "Parametric Update": 0.0026378631591796875,
+      "FE_timing": {
+        "Element_create": 0.07442927360534668,
+        "Stiffness_assembly": 0.2059168815612793,
+        "Matrix_solution": 0.022083044052124023,
+        "Metrics_calculation": 0.44299888610839844,
+        "Total_FE_time": 0.7454280853271484
+      }
+    },
+    {
+      "iteration": 91,
+      "SE_g": 5.868402004241943,
+      "Geometry Initialization_time": 0.00011573235193888347,
+      "FE_time": 0.8022031784057617,
+      "Loss cal_time": 3.910064697265625e-05,
+      "Backpropagation_time": 6.848765134811401,
+      "Parametric Update": 0.0017762184143066406,
+      "FE_timing": {
+        "Element_create": 0.07185888290405273,
+        "Stiffness_assembly": 0.22307872772216797,
+        "Matrix_solution": 0.022739887237548828,
+        "Metrics_calculation": 0.4698069095611572,
+        "Total_FE_time": 0.7874844074249268
+      }
+    },
+    {
+      "iteration": 92,
+      "SE_g": 5.853041648864746,
+      "Geometry Initialization_time": 0.00011450052261352539,
+      "FE_time": 0.674018144607544,
+      "Loss cal_time": 5.412101745605469e-05,
+      "Backpropagation_time": 6.520242929458618,
+      "Parametric Update": 0.0017359256744384766,
+      "FE_timing": {
+        "Element_create": 0.06871676445007324,
+        "Stiffness_assembly": 0.2211911678314209,
+        "Matrix_solution": 0.016965866088867188,
+        "Metrics_calculation": 0.3544278144836426,
+        "Total_FE_time": 0.6613016128540039
+      }
+    },
+    {
+      "iteration": 93,
+      "SE_g": 5.837682247161865,
+      "Geometry Initialization_time": 0.00011468331019083658,
+      "FE_time": 0.6830801963806152,
+      "Loss cal_time": 2.6941299438476562e-05,
+      "Backpropagation_time": 6.311079025268555,
+      "Parametric Update": 0.0021381378173828125,
+      "FE_timing": {
+        "Element_create": 0.06786823272705078,
+        "Stiffness_assembly": 0.23511290550231934,
+        "Matrix_solution": 0.01889204978942871,
+        "Metrics_calculation": 0.34945201873779297,
+        "Total_FE_time": 0.6713252067565918
+      }
+    },
+    {
+      "iteration": 94,
+      "SE_g": 5.822343349456787,
+      "Geometry Initialization_time": 0.00012150208155314128,
+      "FE_time": 0.777777910232544,
+      "Loss cal_time": 4.601478576660156e-05,
+      "Backpropagation_time": 6.739673137664795,
+      "Parametric Update": 0.0017077922821044922,
+      "FE_timing": {
+        "Element_create": 0.08813071250915527,
+        "Stiffness_assembly": 0.23569083213806152,
+        "Matrix_solution": 0.02504134178161621,
+        "Metrics_calculation": 0.41292691230773926,
+        "Total_FE_time": 0.7617897987365723
+      }
+    },
+    {
+      "iteration": 95,
+      "SE_g": 5.807038307189941,
+      "Geometry Initialization_time": 0.0001313487688700358,
+      "FE_time": 0.7514324188232422,
+      "Loss cal_time": 4.291534423828125e-05,
+      "Backpropagation_time": 6.903260231018066,
+      "Parametric Update": 0.0017497539520263672,
+      "FE_timing": {
+        "Element_create": 0.07190704345703125,
+        "Stiffness_assembly": 0.24633193016052246,
+        "Matrix_solution": 0.016638994216918945,
+        "Metrics_calculation": 0.40268898010253906,
+        "Total_FE_time": 0.7375669479370117
+      }
+    },
+    {
+      "iteration": 96,
+      "SE_g": 5.791707992553711,
+      "Geometry Initialization_time": 0.00011673370997111003,
+      "FE_time": 0.6720349788665771,
+      "Loss cal_time": 6.914138793945312e-05,
+      "Backpropagation_time": 6.899464845657349,
+      "Parametric Update": 0.0017719268798828125,
+      "FE_timing": {
+        "Element_create": 0.06872296333312988,
+        "Stiffness_assembly": 0.20178818702697754,
+        "Matrix_solution": 0.018741130828857422,
+        "Metrics_calculation": 0.370380163192749,
+        "Total_FE_time": 0.6596324443817139
+      }
+    },
+    {
+      "iteration": 97,
+      "SE_g": 5.776418685913086,
+      "Geometry Initialization_time": 0.000115966796875,
+      "FE_time": 0.763495922088623,
+      "Loss cal_time": 3.719329833984375e-05,
+      "Backpropagation_time": 6.8168909549713135,
+      "Parametric Update": 0.0019521713256835938,
+      "FE_timing": {
+        "Element_create": 0.0702369213104248,
+        "Stiffness_assembly": 0.29349398612976074,
+        "Matrix_solution": 0.021869897842407227,
+        "Metrics_calculation": 0.3650479316711426,
+        "Total_FE_time": 0.7506487369537354
+      }
+    },
+    {
+      "iteration": 98,
+      "SE_g": 5.761116981506348,
+      "Geometry Initialization_time": 0.00016146500905354818,
+      "FE_time": 0.9010698795318604,
+      "Loss cal_time": 3.814697265625e-05,
+      "Backpropagation_time": 7.586895227432251,
+      "Parametric Update": 0.002766847610473633,
+      "FE_timing": {
+        "Element_create": 0.27683019638061523,
+        "Stiffness_assembly": 0.21440577507019043,
+        "Matrix_solution": 0.016910076141357422,
+        "Metrics_calculation": 0.3800387382507324,
+        "Total_FE_time": 0.8881847858428955
+      }
+    },
+    {
+      "iteration": 99,
+      "SE_g": 5.7458600997924805,
+      "Geometry Initialization_time": 0.00017330249150594075,
+      "FE_time": 0.8332600593566895,
+      "Loss cal_time": 4.673004150390625e-05,
+      "Backpropagation_time": 7.754778146743774,
+      "Parametric Update": 0.002402067184448242,
+      "FE_timing": {
+        "Element_create": 0.08623075485229492,
+        "Stiffness_assembly": 0.2645890712738037,
+        "Matrix_solution": 0.0272219181060791,
+        "Metrics_calculation": 0.4420502185821533,
+        "Total_FE_time": 0.820091962814331
+      }
+    },
+    {
+      "iteration": 100,
+      "SE_g": 5.730641841888428,
+      "Geometry Initialization_time": 0.00013165076573689777,
+      "FE_time": 0.7375907897949219,
+      "Loss cal_time": 6.008148193359375e-05,
+      "Backpropagation_time": 7.313590049743652,
+      "Parametric Update": 0.0020301342010498047,
+      "FE_timing": {
+        "Element_create": 0.0786581039428711,
+        "Stiffness_assembly": 0.22884488105773926,
+        "Matrix_solution": 0.031613826751708984,
+        "Metrics_calculation": 0.3851950168609619,
+        "Total_FE_time": 0.7243118286132812
+      }
+    },
+    {
+      "iteration": 101,
+      "SE_g": 5.715405464172363,
+      "Geometry Initialization_time": 0.00015306870142618815,
+      "FE_time": 0.7967319488525391,
+      "Loss cal_time": 4.1961669921875e-05,
+      "Backpropagation_time": 7.671249866485596,
+      "Parametric Update": 0.0017552375793457031,
+      "FE_timing": {
+        "Element_create": 0.06993484497070312,
+        "Stiffness_assembly": 0.268963098526001,
+        "Matrix_solution": 0.023977041244506836,
+        "Metrics_calculation": 0.4199080467224121,
+        "Total_FE_time": 0.782783031463623
+      }
+    },
+    {
+      "iteration": 102,
+      "SE_g": 5.700188636779785,
+      "Geometry Initialization_time": 0.00011442104975382487,
+      "FE_time": 0.6534311771392822,
+      "Loss cal_time": 3.0994415283203125e-05,
+      "Backpropagation_time": 7.355736970901489,
+      "Parametric Update": 0.0018379688262939453,
+      "FE_timing": {
+        "Element_create": 0.06827688217163086,
+        "Stiffness_assembly": 0.20256590843200684,
+        "Matrix_solution": 0.016901254653930664,
+        "Metrics_calculation": 0.3538949489593506,
+        "Total_FE_time": 0.641638994216919
+      }
+    },
+    {
+      "iteration": 103,
+      "SE_g": 5.684976577758789,
+      "Geometry Initialization_time": 0.00011764764785766601,
+      "FE_time": 0.7037723064422607,
+      "Loss cal_time": 4.00543212890625e-05,
+      "Backpropagation_time": 6.619453191757202,
+      "Parametric Update": 0.0018360614776611328,
+      "FE_timing": {
+        "Element_create": 0.07101202011108398,
+        "Stiffness_assembly": 0.24211907386779785,
+        "Matrix_solution": 0.01725602149963379,
+        "Metrics_calculation": 0.35988402366638184,
+        "Total_FE_time": 0.6902711391448975
+      }
+    },
+    {
+      "iteration": 104,
+      "SE_g": 5.669795989990234,
+      "Geometry Initialization_time": 0.0001520991325378418,
+      "FE_time": 0.7218499183654785,
+      "Loss cal_time": 3.814697265625e-05,
+      "Backpropagation_time": 6.806122064590454,
+      "Parametric Update": 0.0017230510711669922,
+      "FE_timing": {
+        "Element_create": 0.0752251148223877,
+        "Stiffness_assembly": 0.2253868579864502,
+        "Matrix_solution": 0.023005962371826172,
+        "Metrics_calculation": 0.38542795181274414,
+        "Total_FE_time": 0.7090458869934082
+      }
+    },
+    {
+      "iteration": 105,
+      "SE_g": 5.654627323150635,
+      "Geometry Initialization_time": 0.00011768341064453126,
+      "FE_time": 0.6880531311035156,
+      "Loss cal_time": 3.695487976074219e-05,
+      "Backpropagation_time": 6.518162250518799,
+      "Parametric Update": 0.0017421245574951172,
+      "FE_timing": {
+        "Element_create": 0.06901383399963379,
+        "Stiffness_assembly": 0.23793387413024902,
+        "Matrix_solution": 0.01737499237060547,
+        "Metrics_calculation": 0.35082387924194336,
+        "Total_FE_time": 0.6751465797424316
+      }
+    },
+    {
+      "iteration": 106,
+      "SE_g": 5.639477729797363,
+      "Geometry Initialization_time": 0.00011711517969767252,
+      "FE_time": 0.658499002456665,
+      "Loss cal_time": 3.600120544433594e-05,
+      "Backpropagation_time": 6.601694822311401,
+      "Parametric Update": 0.001748800277709961,
+      "FE_timing": {
+        "Element_create": 0.06914591789245605,
+        "Stiffness_assembly": 0.21068525314331055,
+        "Matrix_solution": 0.01733875274658203,
+        "Metrics_calculation": 0.34931516647338867,
+        "Total_FE_time": 0.6464850902557373
+      }
+    },
+    {
+      "iteration": 107,
+      "SE_g": 5.624350547790527,
+      "Geometry Initialization_time": 0.00012178421020507813,
+      "FE_time": 0.721951961517334,
+      "Loss cal_time": 3.886222839355469e-05,
+      "Backpropagation_time": 6.463338136672974,
+      "Parametric Update": 0.0018429756164550781,
+      "FE_timing": {
+        "Element_create": 0.0723578929901123,
+        "Stiffness_assembly": 0.2656090259552002,
+        "Matrix_solution": 0.018981218338012695,
+        "Metrics_calculation": 0.3520169258117676,
+        "Total_FE_time": 0.7089650630950928
+      }
+    },
+    {
+      "iteration": 108,
+      "SE_g": 5.609225273132324,
+      "Geometry Initialization_time": 0.00012528498967488607,
+      "FE_time": 0.646104097366333,
+      "Loss cal_time": 3.123283386230469e-05,
+      "Backpropagation_time": 7.176915884017944,
+      "Parametric Update": 0.0030829906463623047,
+      "FE_timing": {
+        "Element_create": 0.06879067420959473,
+        "Stiffness_assembly": 0.20428109169006348,
+        "Matrix_solution": 0.017586946487426758,
+        "Metrics_calculation": 0.34351515769958496,
+        "Total_FE_time": 0.6341738700866699
+      }
+    },
+    {
+      "iteration": 109,
+      "SE_g": 5.594100475311279,
+      "Geometry Initialization_time": 0.00017668406168619793,
+      "FE_time": 0.8219032287597656,
+      "Loss cal_time": 3.790855407714844e-05,
+      "Backpropagation_time": 7.095180034637451,
+      "Parametric Update": 0.002129793167114258,
+      "FE_timing": {
+        "Element_create": 0.07864594459533691,
+        "Stiffness_assembly": 0.23674607276916504,
+        "Matrix_solution": 0.04234600067138672,
+        "Metrics_calculation": 0.4511408805847168,
+        "Total_FE_time": 0.8088788986206055
+      }
+    },
+    {
+      "iteration": 110,
+      "SE_g": 5.579013347625732,
+      "Geometry Initialization_time": 0.00015575091044108073,
+      "FE_time": 0.741013765335083,
+      "Loss cal_time": 4.1961669921875e-05,
+      "Backpropagation_time": 7.1845598220825195,
+      "Parametric Update": 0.0018041133880615234,
+      "FE_timing": {
+        "Element_create": 0.06830310821533203,
+        "Stiffness_assembly": 0.20779919624328613,
+        "Matrix_solution": 0.0165860652923584,
+        "Metrics_calculation": 0.4350416660308838,
+        "Total_FE_time": 0.7277300357818604
+      }
+    },
+    {
+      "iteration": 111,
+      "SE_g": 5.56393575668335,
+      "Geometry Initialization_time": 0.0001228173573811849,
+      "FE_time": 0.6631932258605957,
+      "Loss cal_time": 2.6226043701171875e-05,
+      "Backpropagation_time": 6.916807174682617,
+      "Parametric Update": 0.0019500255584716797,
+      "FE_timing": {
+        "Element_create": 0.06682491302490234,
+        "Stiffness_assembly": 0.20965099334716797,
+        "Matrix_solution": 0.01710796356201172,
+        "Metrics_calculation": 0.35675907135009766,
+        "Total_FE_time": 0.6503429412841797
+      }
+    },
+    {
+      "iteration": 112,
+      "SE_g": 5.548880100250244,
+      "Geometry Initialization_time": 0.00013054609298706054,
+      "FE_time": 0.7270710468292236,
+      "Loss cal_time": 4.291534423828125e-05,
+      "Backpropagation_time": 6.991620063781738,
+      "Parametric Update": 0.0017499923706054688,
+      "FE_timing": {
+        "Element_create": 0.07003903388977051,
+        "Stiffness_assembly": 0.20399689674377441,
+        "Matrix_solution": 0.01574993133544922,
+        "Metrics_calculation": 0.4250450134277344,
+        "Total_FE_time": 0.7148308753967285
+      }
+    },
+    {
+      "iteration": 113,
+      "SE_g": 5.533839225769043,
+      "Geometry Initialization_time": 0.00011918544769287109,
+      "FE_time": 0.7161941528320312,
+      "Loss cal_time": 3.790855407714844e-05,
+      "Backpropagation_time": 7.0409181118011475,
+      "Parametric Update": 0.001783132553100586,
+      "FE_timing": {
+        "Element_create": 0.07131600379943848,
+        "Stiffness_assembly": 0.2509758472442627,
+        "Matrix_solution": 0.016861915588378906,
+        "Metrics_calculation": 0.36441898345947266,
+        "Total_FE_time": 0.7035727500915527
+      }
+    },
+    {
+      "iteration": 114,
+      "SE_g": 5.518804550170898,
+      "Geometry Initialization_time": 0.00012181599934895833,
+      "FE_time": 0.6680002212524414,
+      "Loss cal_time": 3.218650817871094e-05,
+      "Backpropagation_time": 6.731335878372192,
+      "Parametric Update": 0.0017440319061279297,
+      "FE_timing": {
+        "Element_create": 0.07033586502075195,
+        "Stiffness_assembly": 0.21380615234375,
+        "Matrix_solution": 0.01726508140563965,
+        "Metrics_calculation": 0.3543851375579834,
+        "Total_FE_time": 0.655792236328125
+      }
+    },
+    {
+      "iteration": 115,
+      "SE_g": 5.503792762756348,
+      "Geometry Initialization_time": 0.00011703173319498698,
+      "FE_time": 0.7580962181091309,
+      "Loss cal_time": 4.291534423828125e-05,
+      "Backpropagation_time": 7.124864101409912,
+      "Parametric Update": 0.0020842552185058594,
+      "FE_timing": {
+        "Element_create": 0.08324313163757324,
+        "Stiffness_assembly": 0.27146196365356445,
+        "Matrix_solution": 0.020632028579711914,
+        "Metrics_calculation": 0.36732912063598633,
+        "Total_FE_time": 0.7426662445068359
+      }
+    },
+    {
+      "iteration": 116,
+      "SE_g": 5.488798141479492,
+      "Geometry Initialization_time": 0.00011946757634480794,
+      "FE_time": 0.6817488670349121,
+      "Loss cal_time": 3.4809112548828125e-05,
+      "Backpropagation_time": 7.364064931869507,
+      "Parametric Update": 0.002660036087036133,
+      "FE_timing": {
+        "Element_create": 0.07217621803283691,
+        "Stiffness_assembly": 0.20678400993347168,
+        "Matrix_solution": 0.01608896255493164,
+        "Metrics_calculation": 0.3727531433105469,
+        "Total_FE_time": 0.6678023338317871
+      }
+    },
+    {
+      "iteration": 117,
+      "SE_g": 5.473819255828857,
+      "Geometry Initialization_time": 0.00012944936752319337,
+      "FE_time": 0.8354589939117432,
+      "Loss cal_time": 4.1961669921875e-05,
+      "Backpropagation_time": 6.998847007751465,
+      "Parametric Update": 0.0018131732940673828,
+      "FE_timing": {
+        "Element_create": 0.09281206130981445,
+        "Stiffness_assembly": 0.28485894203186035,
+        "Matrix_solution": 0.026620149612426758,
+        "Metrics_calculation": 0.4173901081085205,
+        "Total_FE_time": 0.8216812610626221
+      }
+    },
+    {
+      "iteration": 118,
+      "SE_g": 5.458848476409912,
+      "Geometry Initialization_time": 0.0001267671585083008,
+      "FE_time": 0.7460458278656006,
+      "Loss cal_time": 4.1961669921875e-05,
+      "Backpropagation_time": 7.175662040710449,
+      "Parametric Update": 0.001734018325805664,
+      "FE_timing": {
+        "Element_create": 0.07993698120117188,
+        "Stiffness_assembly": 0.22307205200195312,
+        "Matrix_solution": 0.01830315589904785,
+        "Metrics_calculation": 0.4081850051879883,
+        "Total_FE_time": 0.7294971942901611
+      }
+    },
+    {
+      "iteration": 119,
+      "SE_g": 5.443904876708984,
+      "Geometry Initialization_time": 0.00011948347091674804,
+      "FE_time": 0.7681317329406738,
+      "Loss cal_time": 4.1961669921875e-05,
+      "Backpropagation_time": 6.777184009552002,
+      "Parametric Update": 0.001779317855834961,
+      "FE_timing": {
+        "Element_create": 0.0784139633178711,
+        "Stiffness_assembly": 0.20858025550842285,
+        "Matrix_solution": 0.019174814224243164,
+        "Metrics_calculation": 0.44664978981018066,
+        "Total_FE_time": 0.7528188228607178
+      }
+    },
+    {
+      "iteration": 120,
+      "SE_g": 5.428972244262695,
+      "Geometry Initialization_time": 0.00011786619822184245,
+      "FE_time": 0.6594021320343018,
+      "Loss cal_time": 3.981590270996094e-05,
+      "Backpropagation_time": 6.365139961242676,
+      "Parametric Update": 0.0020952224731445312,
+      "FE_timing": {
+        "Element_create": 0.07042503356933594,
+        "Stiffness_assembly": 0.20319890975952148,
+        "Matrix_solution": 0.016029834747314453,
+        "Metrics_calculation": 0.3570830821990967,
+        "Total_FE_time": 0.6467368602752686
+      }
+    },
+    {
+      "iteration": 121,
+      "SE_g": 5.414046764373779,
+      "Geometry Initialization_time": 0.00011428197224934895,
+      "FE_time": 0.6848151683807373,
+      "Loss cal_time": 3.409385681152344e-05,
+      "Backpropagation_time": 6.4749860763549805,
+      "Parametric Update": 0.0017528533935546875,
+      "FE_timing": {
+        "Element_create": 0.06586790084838867,
+        "Stiffness_assembly": 0.20967507362365723,
+        "Matrix_solution": 0.016855955123901367,
+        "Metrics_calculation": 0.37874889373779297,
+        "Total_FE_time": 0.6711478233337402
+      }
+    },
+    {
+      "iteration": 122,
+      "SE_g": 5.399168491363525,
+      "Geometry Initialization_time": 0.00012031793594360351,
+      "FE_time": 0.7462670803070068,
+      "Loss cal_time": 3.790855407714844e-05,
+      "Backpropagation_time": 6.80190110206604,
+      "Parametric Update": 0.0018460750579833984,
+      "FE_timing": {
+        "Element_create": 0.07001113891601562,
+        "Stiffness_assembly": 0.27435874938964844,
+        "Matrix_solution": 0.02227306365966797,
+        "Metrics_calculation": 0.3669919967651367,
+        "Total_FE_time": 0.7336349487304688
+      }
+    },
+    {
+      "iteration": 123,
+      "SE_g": 5.384255886077881,
+      "Geometry Initialization_time": 0.00012999773025512695,
+      "FE_time": 0.7395009994506836,
+      "Loss cal_time": 3.981590270996094e-05,
+      "Backpropagation_time": 7.250000238418579,
+      "Parametric Update": 0.0021038055419921875,
+      "FE_timing": {
+        "Element_create": 0.08126997947692871,
+        "Stiffness_assembly": 0.24974799156188965,
+        "Matrix_solution": 0.017884016036987305,
+        "Metrics_calculation": 0.3771810531616211,
+        "Total_FE_time": 0.7260830402374268
+      }
+    },
+    {
+      "iteration": 124,
+      "SE_g": 5.369389057159424,
+      "Geometry Initialization_time": 0.00011841456095377605,
+      "FE_time": 0.6607871055603027,
+      "Loss cal_time": 3.719329833984375e-05,
+      "Backpropagation_time": 6.289488792419434,
+      "Parametric Update": 0.0017521381378173828,
+      "FE_timing": {
+        "Element_create": 0.06779289245605469,
+        "Stiffness_assembly": 0.2056870460510254,
+        "Matrix_solution": 0.016649961471557617,
+        "Metrics_calculation": 0.3579719066619873,
+        "Total_FE_time": 0.648101806640625
+      }
+    },
+    {
+      "iteration": 125,
+      "SE_g": 5.354554176330566,
+      "Geometry Initialization_time": 0.00011467933654785156,
+      "FE_time": 0.6884970664978027,
+      "Loss cal_time": 3.981590270996094e-05,
+      "Backpropagation_time": 6.274547100067139,
+      "Parametric Update": 0.0017940998077392578,
+      "FE_timing": {
+        "Element_create": 0.06965017318725586,
+        "Stiffness_assembly": 0.23717403411865234,
+        "Matrix_solution": 0.018042802810668945,
+        "Metrics_calculation": 0.35105013847351074,
+        "Total_FE_time": 0.6759171485900879
+      }
+    },
+    {
+      "iteration": 126,
+      "SE_g": 5.339712142944336,
+      "Geometry Initialization_time": 0.0001174012819925944,
+      "FE_time": 0.64988112449646,
+      "Loss cal_time": 3.3855438232421875e-05,
+      "Backpropagation_time": 6.223814010620117,
+      "Parametric Update": 0.0017158985137939453,
+      "FE_timing": {
+        "Element_create": 0.07250785827636719,
+        "Stiffness_assembly": 0.20048213005065918,
+        "Matrix_solution": 0.018658161163330078,
+        "Metrics_calculation": 0.34613895416259766,
+        "Total_FE_time": 0.6377871036529541
+      }
+    },
+    {
+      "iteration": 127,
+      "SE_g": 5.324875831604004,
+      "Geometry Initialization_time": 0.00011568864186604818,
+      "FE_time": 0.6959209442138672,
+      "Loss cal_time": 3.0040740966796875e-05,
+      "Backpropagation_time": 6.473300933837891,
+      "Parametric Update": 0.0017337799072265625,
+      "FE_timing": {
+        "Element_create": 0.07021403312683105,
+        "Stiffness_assembly": 0.24645495414733887,
+        "Matrix_solution": 0.020279645919799805,
+        "Metrics_calculation": 0.3463900089263916,
+        "Total_FE_time": 0.6833386421203613
+      }
+    },
+    {
+      "iteration": 128,
+      "SE_g": 5.310075759887695,
+      "Geometry Initialization_time": 0.00011466344197591146,
+      "FE_time": 0.6485576629638672,
+      "Loss cal_time": 3.0994415283203125e-05,
+      "Backpropagation_time": 7.192145109176636,
+      "Parametric Update": 0.0019252300262451172,
+      "FE_timing": {
+        "Element_create": 0.07226872444152832,
+        "Stiffness_assembly": 0.19917678833007812,
+        "Matrix_solution": 0.017380237579345703,
+        "Metrics_calculation": 0.34764814376831055,
+        "Total_FE_time": 0.6364738941192627
+      }
+    },
+    {
+      "iteration": 129,
+      "SE_g": 5.2952799797058105,
+      "Geometry Initialization_time": 0.00011628468831380209,
+      "FE_time": 0.7776451110839844,
+      "Loss cal_time": 4.100799560546875e-05,
+      "Backpropagation_time": 7.427576065063477,
+      "Parametric Update": 0.0017018318176269531,
+      "FE_timing": {
+        "Element_create": 0.07508993148803711,
+        "Stiffness_assembly": 0.22586393356323242,
+        "Matrix_solution": 0.021107196807861328,
+        "Metrics_calculation": 0.4404330253601074,
+        "Total_FE_time": 0.7624940872192383
+      }
+    },
+    {
+      "iteration": 130,
+      "SE_g": 5.28053092956543,
+      "Geometry Initialization_time": 0.00011608600616455078,
+      "FE_time": 0.6507437229156494,
+      "Loss cal_time": 3.981590270996094e-05,
+      "Backpropagation_time": 6.963129043579102,
+      "Parametric Update": 0.001960277557373047,
+      "FE_timing": {
+        "Element_create": 0.06773877143859863,
+        "Stiffness_assembly": 0.20014595985412598,
+        "Matrix_solution": 0.018249988555908203,
+        "Metrics_calculation": 0.35099124908447266,
+        "Total_FE_time": 0.6371259689331055
+      }
+    },
+    {
+      "iteration": 131,
+      "SE_g": 5.265771865844727,
+      "Geometry Initialization_time": 0.00012581745783487956,
+      "FE_time": 0.7278039455413818,
+      "Loss cal_time": 4.601478576660156e-05,
+      "Backpropagation_time": 6.707599878311157,
+      "Parametric Update": 0.0017428398132324219,
+      "FE_timing": {
+        "Element_create": 0.09121203422546387,
+        "Stiffness_assembly": 0.20665311813354492,
+        "Matrix_solution": 0.016824007034301758,
+        "Metrics_calculation": 0.3975200653076172,
+        "Total_FE_time": 0.7122092247009277
+      }
+    },
+    {
+      "iteration": 132,
+      "SE_g": 5.251022815704346,
+      "Geometry Initialization_time": 0.0001201470692952474,
+      "FE_time": 0.7105019092559814,
+      "Loss cal_time": 3.0994415283203125e-05,
+      "Backpropagation_time": 7.598582029342651,
+      "Parametric Update": 0.0017290115356445312,
+      "FE_timing": {
+        "Element_create": 0.08766388893127441,
+        "Stiffness_assembly": 0.21399188041687012,
+        "Matrix_solution": 0.01791214942932129,
+        "Metrics_calculation": 0.37809014320373535,
+        "Total_FE_time": 0.6976580619812012
+      }
+    },
+    {
+      "iteration": 133,
+      "SE_g": 5.236303329467773,
+      "Geometry Initialization_time": 0.00011718273162841797,
+      "FE_time": 0.8710579872131348,
+      "Loss cal_time": 4.291534423828125e-05,
+      "Backpropagation_time": 7.073448181152344,
+      "Parametric Update": 0.0018000602722167969,
+      "FE_timing": {
+        "Element_create": 0.11660075187683105,
+        "Stiffness_assembly": 0.26290416717529297,
+        "Matrix_solution": 0.02191305160522461,
+        "Metrics_calculation": 0.4554009437561035,
+        "Total_FE_time": 0.8568189144134521
+      }
+    },
+    {
+      "iteration": 134,
+      "SE_g": 5.221585273742676,
+      "Geometry Initialization_time": 0.00013569990793863931,
+      "FE_time": 0.7050418853759766,
+      "Loss cal_time": 4.220008850097656e-05,
+      "Backpropagation_time": 7.1836769580841064,
+      "Parametric Update": 0.0018048286437988281,
+      "FE_timing": {
+        "Element_create": 0.07414507865905762,
+        "Stiffness_assembly": 0.22921991348266602,
+        "Matrix_solution": 0.016732215881347656,
+        "Metrics_calculation": 0.3701059818267822,
+        "Total_FE_time": 0.6902031898498535
+      }
+    },
+    {
+      "iteration": 135,
+      "SE_g": 5.206907749176025,
+      "Geometry Initialization_time": 0.00012011528015136719,
+      "FE_time": 0.7067210674285889,
+      "Loss cal_time": 4.00543212890625e-05,
+      "Backpropagation_time": 6.7323668003082275,
+      "Parametric Update": 0.0017311573028564453,
+      "FE_timing": {
+        "Element_create": 0.07165908813476562,
+        "Stiffness_assembly": 0.24204111099243164,
+        "Matrix_solution": 0.01681208610534668,
+        "Metrics_calculation": 0.3626422882080078,
+        "Total_FE_time": 0.6931545734405518
+      }
+    },
+    {
+      "iteration": 136,
+      "SE_g": 5.192230701446533,
+      "Geometry Initialization_time": 0.00011565287907918294,
+      "FE_time": 0.6561310291290283,
+      "Loss cal_time": 3.504753112792969e-05,
+      "Backpropagation_time": 7.1260459423065186,
+      "Parametric Update": 0.0017747879028320312,
+      "FE_timing": {
+        "Element_create": 0.07045769691467285,
+        "Stiffness_assembly": 0.19997525215148926,
+        "Matrix_solution": 0.0198519229888916,
+        "Metrics_calculation": 0.3529319763183594,
+        "Total_FE_time": 0.6432168483734131
+      }
+    },
+    {
+      "iteration": 137,
+      "SE_g": 5.1775736808776855,
+      "Geometry Initialization_time": 0.00011595090230305989,
+      "FE_time": 0.7366421222686768,
+      "Loss cal_time": 4.291534423828125e-05,
+      "Backpropagation_time": 7.422938823699951,
+      "Parametric Update": 0.0017690658569335938,
+      "FE_timing": {
+        "Element_create": 0.07083892822265625,
+        "Stiffness_assembly": 0.24429607391357422,
+        "Matrix_solution": 0.018459796905517578,
+        "Metrics_calculation": 0.386260986328125,
+        "Total_FE_time": 0.719855785369873
+      }
+    },
+    {
+      "iteration": 138,
+      "SE_g": 5.162933349609375,
+      "Geometry Initialization_time": 0.00012803475062052408,
+      "FE_time": 0.6440739631652832,
+      "Loss cal_time": 3.790855407714844e-05,
+      "Backpropagation_time": 6.9169840812683105,
+      "Parametric Update": 0.001753091812133789,
+      "FE_timing": {
+        "Element_create": 0.06949996948242188,
+        "Stiffness_assembly": 0.20237493515014648,
+        "Matrix_solution": 0.016116857528686523,
+        "Metrics_calculation": 0.3437778949737549,
+        "Total_FE_time": 0.6317696571350098
+      }
+    },
+    {
+      "iteration": 139,
+      "SE_g": 5.148317337036133,
+      "Geometry Initialization_time": 0.0001188198725382487,
+      "FE_time": 0.6793570518493652,
+      "Loss cal_time": 4.124641418457031e-05,
+      "Backpropagation_time": 6.67707896232605,
+      "Parametric Update": 0.0016939640045166016,
+      "FE_timing": {
+        "Element_create": 0.07301497459411621,
+        "Stiffness_assembly": 0.19895005226135254,
+        "Matrix_solution": 0.016514062881469727,
+        "Metrics_calculation": 0.37879395484924316,
+        "Total_FE_time": 0.6672730445861816
+      }
+    },
+    {
+      "iteration": 140,
+      "SE_g": 5.133711338043213,
+      "Geometry Initialization_time": 0.00010881423950195312,
+      "FE_time": 0.6363589763641357,
+      "Loss cal_time": 3.409385681152344e-05,
+      "Backpropagation_time": 6.292572021484375,
+      "Parametric Update": 0.00177001953125,
+      "FE_timing": {
+        "Element_create": 0.06473278999328613,
+        "Stiffness_assembly": 0.20229291915893555,
+        "Matrix_solution": 0.016222000122070312,
+        "Metrics_calculation": 0.3410000801086426,
+        "Total_FE_time": 0.6242477893829346
+      }
+    },
+    {
+      "iteration": 141,
+      "SE_g": 5.1286187171936035,
+      "Geometry Initialization_time": 0.00011545022328694662,
+      "FE_time": 0.6431350708007812,
+      "Loss cal_time": 2.8848648071289062e-05,
+      "Backpropagation_time": 6.898942947387695,
+      "Parametric Update": 0.0018181800842285156,
+      "FE_timing": {
+        "Element_create": 0.06536197662353516,
+        "Stiffness_assembly": 0.19928503036499023,
+        "Matrix_solution": 0.017611026763916016,
+        "Metrics_calculation": 0.34893107414245605,
+        "Total_FE_time": 0.6311891078948975
+      }
+    },
+    {
+      "iteration": 142,
+      "SE_g": 5.128222465515137,
+      "Geometry Initialization_time": 0.00011838674545288086,
+      "FE_time": 0.7038538455963135,
+      "Loss cal_time": 3.886222839355469e-05,
+      "Backpropagation_time": 6.939255952835083,
+      "Parametric Update": 0.002023935317993164,
+      "FE_timing": {
+        "Element_create": 0.07613897323608398,
+        "Stiffness_assembly": 0.22626924514770508,
+        "Matrix_solution": 0.019078969955444336,
+        "Metrics_calculation": 0.37007999420166016,
+        "Total_FE_time": 0.6915671825408936
+      }
+    },
+    {
+      "iteration": 143,
+      "SE_g": 5.127833366394043,
+      "Geometry Initialization_time": 0.0001403530438741048,
+      "FE_time": 0.7132327556610107,
+      "Loss cal_time": 3.2901763916015625e-05,
+      "Backpropagation_time": 6.964660882949829,
+      "Parametric Update": 0.0017669200897216797,
+      "FE_timing": {
+        "Element_create": 0.0719139575958252,
+        "Stiffness_assembly": 0.24912500381469727,
+        "Matrix_solution": 0.017180919647216797,
+        "Metrics_calculation": 0.36243391036987305,
+        "Total_FE_time": 0.7006537914276123
+      }
+    },
+    {
+      "iteration": 144,
+      "SE_g": 5.127431392669678,
+      "Geometry Initialization_time": 0.00011711517969767252,
+      "FE_time": 0.6833181381225586,
+      "Loss cal_time": 3.0040740966796875e-05,
+      "Backpropagation_time": 7.003269910812378,
+      "Parametric Update": 0.0017039775848388672,
+      "FE_timing": {
+        "Element_create": 0.06862878799438477,
+        "Stiffness_assembly": 0.22072196006774902,
+        "Matrix_solution": 0.016841888427734375,
+        "Metrics_calculation": 0.3639218807220459,
+        "Total_FE_time": 0.6701145172119141
+      }
+    },
+    {
+      "iteration": 145,
+      "SE_g": 5.1270365715026855,
+      "Geometry Initialization_time": 0.00011828343073527018,
+      "FE_time": 0.6848320960998535,
+      "Loss cal_time": 3.790855407714844e-05,
+      "Backpropagation_time": 6.3501739501953125,
+      "Parametric Update": 0.002132892608642578,
+      "FE_timing": {
+        "Element_create": 0.06864523887634277,
+        "Stiffness_assembly": 0.2337651252746582,
+        "Matrix_solution": 0.016993045806884766,
+        "Metrics_calculation": 0.35286593437194824,
+        "Total_FE_time": 0.672269344329834
+      }
+    },
+    {
+      "iteration": 146,
+      "SE_g": 5.126606464385986,
+      "Geometry Initialization_time": 0.00012154976526896159,
+      "FE_time": 0.6393752098083496,
+      "Loss cal_time": 3.0994415283203125e-05,
+      "Backpropagation_time": 6.296544075012207,
+      "Parametric Update": 0.00199127197265625,
+      "FE_timing": {
+        "Element_create": 0.06920599937438965,
+        "Stiffness_assembly": 0.20122694969177246,
+        "Matrix_solution": 0.016455888748168945,
+        "Metrics_calculation": 0.3406820297241211,
+        "Total_FE_time": 0.6275708675384521
+      }
+    },
+    {
+      "iteration": 147,
+      "SE_g": 5.1262359619140625,
+      "Geometry Initialization_time": 0.00011823177337646484,
+      "FE_time": 0.6890859603881836,
+      "Loss cal_time": 4.124641418457031e-05,
+      "Backpropagation_time": 6.361739158630371,
+      "Parametric Update": 0.0018219947814941406,
+      "FE_timing": {
+        "Element_create": 0.07021427154541016,
+        "Stiffness_assembly": 0.23878073692321777,
+        "Matrix_solution": 0.021954059600830078,
+        "Metrics_calculation": 0.34563112258911133,
+        "Total_FE_time": 0.6765801906585693
+      }
+    },
+    {
+      "iteration": 148,
+      "SE_g": 5.125832557678223,
+      "Geometry Initialization_time": 0.00011818806330362955,
+      "FE_time": 0.6459319591522217,
+      "Loss cal_time": 4.410743713378906e-05,
+      "Backpropagation_time": 7.024158000946045,
+      "Parametric Update": 0.001772165298461914,
+      "FE_timing": {
+        "Element_create": 0.06883692741394043,
+        "Stiffness_assembly": 0.20429778099060059,
+        "Matrix_solution": 0.017978191375732422,
+        "Metrics_calculation": 0.3416869640350342,
+        "Total_FE_time": 0.6327998638153076
+      }
+    },
+    {
+      "iteration": 149,
+      "SE_g": 5.125433444976807,
+      "Geometry Initialization_time": 0.00011638800303141276,
+      "FE_time": 0.7057678699493408,
+      "Loss cal_time": 3.2901763916015625e-05,
+      "Backpropagation_time": 6.400408029556274,
+      "Parametric Update": 0.0018279552459716797,
+      "FE_timing": {
+        "Element_create": 0.06944012641906738,
+        "Stiffness_assembly": 0.19383788108825684,
+        "Matrix_solution": 0.016421079635620117,
+        "Metrics_calculation": 0.4135620594024658,
+        "Total_FE_time": 0.6932611465454102
+      }
+    },
+    {
+      "iteration": 150,
+      "SE_g": 5.12501859664917,
+      "Geometry Initialization_time": 0.00012571414311726887,
+      "FE_time": 0.6400430202484131,
+      "Loss cal_time": 3.2901763916015625e-05,
+      "Backpropagation_time": 6.307269096374512,
+      "Parametric Update": 0.0017642974853515625,
+      "FE_timing": {
+        "Element_create": 0.07009220123291016,
+        "Stiffness_assembly": 0.19429588317871094,
+        "Matrix_solution": 0.018414974212646484,
+        "Metrics_calculation": 0.3450942039489746,
+        "Total_FE_time": 0.6278972625732422
+      }
+    },
+    {
+      "iteration": 151,
+      "SE_g": 5.124614715576172,
+      "Geometry Initialization_time": 0.00011921723683675131,
+      "FE_time": 0.6360092163085938,
+      "Loss cal_time": 5.1021575927734375e-05,
+      "Backpropagation_time": 6.263386011123657,
+      "Parametric Update": 0.0021049976348876953,
+      "FE_timing": {
+        "Element_create": 0.06596779823303223,
+        "Stiffness_assembly": 0.1959381103515625,
+        "Matrix_solution": 0.016559123992919922,
+        "Metrics_calculation": 0.3446347713470459,
+        "Total_FE_time": 0.6230998039245605
+      }
+    },
+    {
+      "iteration": 152,
+      "SE_g": 5.1241960525512695,
+      "Geometry Initialization_time": 0.00012348492940266926,
+      "FE_time": 0.6365690231323242,
+      "Loss cal_time": 2.574920654296875e-05,
+      "Backpropagation_time": 6.491111993789673,
+      "Parametric Update": 0.0017459392547607422,
+      "FE_timing": {
+        "Element_create": 0.068511962890625,
+        "Stiffness_assembly": 0.19679522514343262,
+        "Matrix_solution": 0.015993833541870117,
+        "Metrics_calculation": 0.34371209144592285,
+        "Total_FE_time": 0.6250131130218506
+      }
+    },
+    {
+      "iteration": 153,
+      "SE_g": 5.123800754547119,
+      "Geometry Initialization_time": 0.0001199483871459961,
+      "FE_time": 0.7142050266265869,
+      "Loss cal_time": 2.9325485229492188e-05,
+      "Backpropagation_time": 7.0720789432525635,
+      "Parametric Update": 0.001851797103881836,
+      "FE_timing": {
+        "Element_create": 0.06787991523742676,
+        "Stiffness_assembly": 0.2419111728668213,
+        "Matrix_solution": 0.0256350040435791,
+        "Metrics_calculation": 0.36633968353271484,
+        "Total_FE_time": 0.701765775680542
+      }
+    },
+    {
+      "iteration": 154,
+      "SE_g": 5.123394966125488,
+      "Geometry Initialization_time": 0.0001286149024963379,
+      "FE_time": 0.6647248268127441,
+      "Loss cal_time": 3.314018249511719e-05,
+      "Backpropagation_time": 6.476644039154053,
+      "Parametric Update": 0.0017879009246826172,
+      "FE_timing": {
+        "Element_create": 0.06783485412597656,
+        "Stiffness_assembly": 0.20293307304382324,
+        "Matrix_solution": 0.016294002532958984,
+        "Metrics_calculation": 0.36530470848083496,
+        "Total_FE_time": 0.6523666381835938
+      }
+    },
+    {
+      "iteration": 155,
+      "SE_g": 5.122982978820801,
+      "Geometry Initialization_time": 0.00012151400248209636,
+      "FE_time": 0.6746909618377686,
+      "Loss cal_time": 3.0040740966796875e-05,
+      "Backpropagation_time": 6.855682134628296,
+      "Parametric Update": 0.0023298263549804688,
+      "FE_timing": {
+        "Element_create": 0.06852006912231445,
+        "Stiffness_assembly": 0.2349720001220703,
+        "Matrix_solution": 0.017030000686645508,
+        "Metrics_calculation": 0.34219908714294434,
+        "Total_FE_time": 0.6627211570739746
+      }
+    },
+    {
+      "iteration": 156,
+      "SE_g": 5.122564792633057,
+      "Geometry Initialization_time": 0.0001295169194539388,
+      "FE_time": 0.7801659107208252,
+      "Loss cal_time": 4.8160552978515625e-05,
+      "Backpropagation_time": 6.832735776901245,
+      "Parametric Update": 0.0017452239990234375,
+      "FE_timing": {
+        "Element_create": 0.08257102966308594,
+        "Stiffness_assembly": 0.2534921169281006,
+        "Matrix_solution": 0.017503023147583008,
+        "Metrics_calculation": 0.41013193130493164,
+        "Total_FE_time": 0.7636981010437012
+      }
+    },
+    {
+      "iteration": 157,
+      "SE_g": 5.122145652770996,
+      "Geometry Initialization_time": 0.0001145482063293457,
+      "FE_time": 0.6859922409057617,
+      "Loss cal_time": 3.910064697265625e-05,
+      "Backpropagation_time": 6.303268909454346,
+      "Parametric Update": 0.0017900466918945312,
+      "FE_timing": {
+        "Element_create": 0.06893110275268555,
+        "Stiffness_assembly": 0.24324488639831543,
+        "Matrix_solution": 0.018778324127197266,
+        "Metrics_calculation": 0.34212613105773926,
+        "Total_FE_time": 0.6730804443359375
+      }
+    },
+    {
+      "iteration": 158,
+      "SE_g": 5.121733665466309,
+      "Geometry Initialization_time": 0.00011665026346842448,
+      "FE_time": 0.6399810314178467,
+      "Loss cal_time": 5.6743621826171875e-05,
+      "Backpropagation_time": 6.943221092224121,
+      "Parametric Update": 0.0019807815551757812,
+      "FE_timing": {
+        "Element_create": 0.06923294067382812,
+        "Stiffness_assembly": 0.1968832015991211,
+        "Matrix_solution": 0.01691913604736328,
+        "Metrics_calculation": 0.34493422508239746,
+        "Total_FE_time": 0.62796950340271
+      }
+    },
+    {
+      "iteration": 159,
+      "SE_g": 5.1213274002075195,
+      "Geometry Initialization_time": 0.00011680126190185546,
+      "FE_time": 0.6844379901885986,
+      "Loss cal_time": 4.1961669921875e-05,
+      "Backpropagation_time": 7.130783796310425,
+      "Parametric Update": 0.001889944076538086,
+      "FE_timing": {
+        "Element_create": 0.07068085670471191,
+        "Stiffness_assembly": 0.20264029502868652,
+        "Matrix_solution": 0.017676115036010742,
+        "Metrics_calculation": 0.3809027671813965,
+        "Total_FE_time": 0.6719000339508057
+      }
+    },
+    {
+      "iteration": 160,
+      "SE_g": 5.120911121368408,
+      "Geometry Initialization_time": 0.00011904637018839518,
+      "FE_time": 0.7071399688720703,
+      "Loss cal_time": 3.6716461181640625e-05,
+      "Backpropagation_time": 7.095491886138916,
+      "Parametric Update": 0.0017251968383789062,
+      "FE_timing": {
+        "Element_create": 0.07008528709411621,
+        "Stiffness_assembly": 0.24690985679626465,
+        "Matrix_solution": 0.017709732055664062,
+        "Metrics_calculation": 0.3599822521209717,
+        "Total_FE_time": 0.6946871280670166
+      }
+    }
+  ]
+}
