@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>线弹性力学 vs. 连续介质力学对比</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>线弹性力学 vs. 连续介质力学对比</h1>
+    <table>
+<thead>
+<tr><th>分类      </th><th>线弹性力学（小变形理论）                                                                                                   </th><th>连续介质力学（有限变形理论）                                                                                                                                                               </th></tr>
+</thead>
+<tbody>
+<tr><td>基本假设  </td><td>1. 小变形（位移梯度≪1）&lt;br&gt;2. 材料均匀且各向同性&lt;br&gt;3. 静态平衡或低速动态                                                  </td><td>1. 大变形（任意位移梯度）&lt;br&gt;2. 可处理非均匀、各向异性材料&lt;br&gt;3. 动态非线性效应显著                                                                                                        </td></tr>
+<tr><td>几何关系  </td><td>线性应变张量：&lt;br&gt;\[ \boldsymbol{\varepsilon} = \frac{1}{2}(\nabla \mathbf{u} + \nabla \mathbf{u}^T) \]&lt;br&gt;（忽略高阶项）  </td><td>有限应变张量（Green-Lagrange）：&lt;br&gt;\[ \mathbf{E} = \frac{1}{2}(\mathbf{F}^T\mathbf{F} - \mathbf{I}) \]&lt;br&gt;变形梯度：&lt;br&gt;\[ \mathbf{F} = \frac{\partial \mathbf{x}}{\partial \mathbf{X}} \]</td></tr>
+<tr><td>材料关系  </td><td>胡克定律（线性）：&lt;br&gt;\[ \boldsymbol{\sigma} = \mathbb{C}:\boldsymbol{\varepsilon} \]&lt;br&gt;（弹性张量 \(\mathbb{C}\) 为常数）</td><td>超弹性本构关系（非线性）：&lt;br&gt;\[ \boldsymbol{\sigma} = \frac{1}{J} \frac{\partial W}{\partial \mathbf{F}} \mathbf{F}^T \]&lt;br&gt;（\(W\): 应变能函数，\(J = \det \mathbf{F}\)）                </td></tr>
+<tr><td>平衡关系  </td><td>线性平衡方程：&lt;br&gt;\[ \nabla \cdot \boldsymbol{\sigma} + \mathbf{b} = \mathbf{0} \]&lt;br&gt;（未变形构型下求解）                 </td><td>非线性平衡方程：&lt;br&gt;\[ \nabla \cdot \mathbf{P} + \mathbf{b} = \rho \ddot{\mathbf{u}} \]&lt;br&gt;（\(\mathbf{P}\): 第一Piola-Kirchhoff应力）                                                     </td></tr>
+<tr><td>变形描述  </td><td>未变形构型与变形构型近似重合（无需区分）                                                                                   </td><td>严格区分&lt;b&gt;参考构型&lt;/b&gt;（\(\mathbf{X}\)）和&lt;b&gt;当前构型&lt;/b&gt;（\(\mathbf{x}\)）                                                                                                               </td></tr>
+<tr><td>典型应用  </td><td>桥梁、机械零件等小变形问题                                                                                                 </td><td>橡胶、生物组织、布料等大变形问题；MeshGraphNets中的自适应仿真                                                                                                                              </td></tr>
+<tr><td>计算复杂度</td><td>低（线性方程组）                                                                                                           </td><td>高（非线性迭代，需跟踪变形历史）                                                                                                                                                           </td></tr>
+</tbody>
+</table>
+</body>
+</html>
