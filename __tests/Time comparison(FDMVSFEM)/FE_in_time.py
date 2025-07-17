@@ -35,7 +35,6 @@ class BoundedAdam(Adam):
 # 设置设备为GPU（如果可用）
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(f"Using device: {device}")
-torch.autograd.set_detect_anomaly(True)
 
 # 自定义参数
 length = 48
@@ -99,7 +98,7 @@ def generate_connectivity_matrix(new_coords):
 # 生成网格和连接性矩阵
 grid_points = generate_rectangular_grid_sg(length, width, n1, n2, judge)
 connectivity = generate_connectivity_matrix(grid_points)
-
+print(len(connectivity))
 # 问题上下文
 n_dof_per_node = 6
 total_dof = n_dof_per_node * (n1 + 1) * (n2 + 1)
@@ -424,32 +423,26 @@ class Beam:
 def assemble_stiffness_matrix(beams, n_nodes, n_dof_per_node, connectivity):
     total_dof = n_nodes * n_dof_per_node
     K_global = torch.zeros((total_dof, total_dof), dtype=torch.float32, device=device)
-    
+    Ke_time = []
+    Abl_time = []
     for idx, (i, j) in enumerate(connectivity):
         Matrix_T = beams[idx].System_Transform()
         K_element = torch.matmul(torch.transpose(Matrix_T, 0, 1),
                                torch.matmul(beams[idx].get_element_stiffness_matrix(), Matrix_T))
-        
+
+
+
         start_idx = (i - 1) * n_dof_per_node
         end_idx = (j - 1) * n_dof_per_node
-        
         K_global[start_idx:start_idx+6, start_idx:start_idx+6] += K_element[0:6, 0:6]
         K_global[end_idx:end_idx+6, end_idx:end_idx+6] += K_element[6:12, 6:12]
         K_global[start_idx:start_idx+6, end_idx:end_idx+6] += K_element[0:6, 6:12]
         K_global[end_idx:end_idx+6, start_idx:start_idx+6] += K_element[6:12, 0:6]
-    
+
     return K_global
 
 def robust_solve(K_global, F, fixed_dof,max_attempts=3):
-    """
-    鲁棒的线性系统求解器，完整处理固定自由度和奇异问题。
-    
-    参数:
-        K_global: 全局刚度矩阵（需已处理固定自由度）
-        F: 载荷向量
-        fixed_dof: 固定自由度索引列表
-        max_attempts: 最大尝试次数
-    """
+
     attempts = 0
     while attempts < max_attempts:
         # 1. 基础正则化（保持固定自由度的大对角元不变）
@@ -564,7 +557,7 @@ def Strain_E(node_coords, connectivity, fixed_dof, F):
             "Total_FE_time": Element_create + Stiffness_assembly + Matrix_sol + Metrics_cal
         }
 
-    return Strain_energy, displacements, sol_type, lens, V, FE_timing
+    return  Strain_energy,  lens, V, FE_timing
 
 
 def optimizer(OPT_variables, gradients, step):
@@ -597,7 +590,7 @@ for j in range(len(idx_Y)):
 
 # 梯度下降参数
 step = 0.01
-epochs = 500
+epochs = 250
 patience = 20
 count = 0
 
@@ -619,7 +612,7 @@ Ini_G = FDM(Q, F_value)
 
 import time
 LS_his = []
-os.makedirs("data_records", exist_ok=True)
+os.makedirs("../Time comparison(FDMVSFEM)/data_records", exist_ok=True)
 optimization_data = {
     "metadata": {
         "project": "Structural Optimization",
@@ -662,7 +655,7 @@ for iteration in range(epochs + 1):
     ini_time = time.time() - ini_str
 
     FE_str = time.time()
-    Strain_energy, _, _, _, _, FE_timing= Strain_E(N_coords, connectivity, fixed_dof, F_fe_g)
+    Strain_energy, lens, V, FE_timing= Strain_E(N_coords, connectivity, fixed_dof, F_fe_g)
     FE_time = time.time() - FE_str
 
     Loss_str = time.time()
@@ -724,7 +717,7 @@ optimization_data["metadata"].update({
     "Iteration_time": Ite_time,
 })
 
-with open(os.path.join("data_records", "FEg_time.json"), 'w') as f:
+with open(os.path.join("../Time comparison(FDMVSFEM)/data_records", "FEg2_time.json"), 'w') as f:
     json.dump(optimization_data, f, indent=2)
 
 print("Optimization completed.")

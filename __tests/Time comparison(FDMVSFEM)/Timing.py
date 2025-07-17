@@ -1,14 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[17]:
-####################
-
-
-
-
-
-
+# In[1]:
 
 
 import torch
@@ -23,26 +16,26 @@ import json
 import os
 import psutil
 import gc
+import math
 
 
-gc.collect()
-# Set device to GPU if available
+gc.collect()  
 device = torch.device('cpu')
 print(f"Using device: {device}")
 
 
-# In[18]:
+# In[2]:
 
 
 ############ customization
-length = 24
-width = 24
-n1 = 9
-n2 = 7
+length = 48
+width = 48
+n1 = 13
+n2 = 13
 judge = 0
 
 
-# In[19]:
+# In[3]:
 
 
 ############### Problem context formulation
@@ -91,7 +84,7 @@ def generate_connectivity_matrix(new_coords):
     x_values = sorted(set(point[0] for point in new_coords))
     for x in x_values:
         points_on_line = [point for point in new_coords if point[0] == x]
-        points_on_line.sort(key=lambda p: p[1], reverse=True)
+        points_on_line.sort(key=lambda p: p[1], reverse=True) 
 
         for i in range(len(points_on_line) - 1):
             node1 = indexed_points[tuple(points_on_line[i])]
@@ -101,7 +94,7 @@ def generate_connectivity_matrix(new_coords):
     y_values = sorted(set(point[1] for point in new_coords))
     for y in y_values:
         points_on_line = [point for point in new_coords if point[1] == y]
-        points_on_line.sort(key=lambda p: p[0])
+        points_on_line.sort(key=lambda p: p[0])  
 
         for i in range(len(points_on_line) - 1):
             node1 = indexed_points[tuple(points_on_line[i])]
@@ -113,7 +106,7 @@ def generate_connectivity_matrix(new_coords):
 grid_points = generate_rectangular_grid_sg(length, width, n1, n2, judge)
 connectivity = generate_connectivity_matrix(grid_points)
 plot_grid(grid_points, length, width)
-
+print(len(connectivity))
 
 ###########################################################################################################################################################
 n_dof_per_node = 6  # Degrees of freedom per node
@@ -151,144 +144,112 @@ for node in Fixed_nodes:
 ##########################################################################################################################################################
 
 
-# In[20]:
+# In[4]:
+
+
+rows = n2 + 1
+cols = n1 + 1
+
+idx_matrix = [[0 for _ in range(cols)] for _ in range(rows)]
+
+for k in range(rows * cols):
+    row = k % rows
+    col = k // rows
+    idx_matrix[row][col] = k
+V_matrix = torch.arange(0, n2 * (n1 + 1)).reshape(n1 + 1, n2).T
+
+start = n2 * (n1 + 1)
+H_matrix = torch.arange(start, start + (n2 + 1) * n1)
+H_matrix = H_matrix.reshape(n1 + 1 , n2)
+H_matrix = H_matrix.flip(0)
+
+# In[5]:
+
+
+def Symmetry_shaper(q, matrix):
+
+    rows, cols = matrix.shape
+
+    row_odd = rows % 2 == 1
+    col_odd = cols % 2 == 1
+    
+    if row_odd:
+
+        q = torch.cat([q, q.flip(0)[1:,:]], dim=0)
+    else:
+
+        q = torch.cat([q, q.flip(0)], dim=0)
+    
+
+    if col_odd:
+
+        q = torch.cat([q, q.flip(1)[:,1:]], dim=1)
+    else:
+
+        q = torch.cat([q, q.flip(1)], dim=1)
+    
+    return q
+    
+
+
+# In[6]:
 
 
 ############################################################# Force condition
 def Force_mat(F_value, F_type, total_dof=total_dof, Free_nodes=Free_nodes, judge=0):
-
+    
     F = torch.zeros(total_dof, dtype=torch.float32, device=device)
-
+    
     if judge == 0:
         F_value = torch.tensor([F_value] * len(Free_nodes), device=device) * 1000 # The force value/direction
         F_type = [F_type] * len(Free_nodes)  # The force type
     else:
         F_value = torch.tensor(F_value) * 1000
         F_value = torch.tensor(F_type)
-
+    
     for idx, i in enumerate(Free_nodes):
         F[6 * (i - 1) + F_type[idx]] = F_value[idx]  # unit: KN / KN*m
-
+        
     return F, F_value
 
 
-# In[21]:
+# In[7]:
 
 
-def Symmetry_shaper(grid_points, connectivity, free_nodes):
-
-    connectivity = torch.tensor(connectivity, dtype=torch.long, device=device)
-    free_nodes = torch.tensor(free_nodes, dtype=torch.long, device=device)
-
-    result_indices_x = []
-    result_indices_y = []
-    prev_x_list = []
-    prev_y_list = []
-
-    for node in free_nodes:
-        node_coord = grid_points[node - 1]
-        x = node_coord[0]
-
-        if x in prev_x_list:
-            x_index = prev_x_list.index(x)
-        else:
-            result_indices_x.append([])
-            prev_x_list.append(x)
-            x_index = len(prev_x_list) - 1
-
-        mask = (connectivity == node).any(dim=1)
-        candidate_indices = torch.where(mask)[0] # indexing connectivity
-
-        for idx in candidate_indices:
-            conn = connectivity[idx]
-            coord1 = grid_points[conn[0] - 1]
-            coord2 = grid_points[conn[1] - 1]
-
-            if coord1[0] == coord2[0] and coord1[0] == x:
-                result_indices_x[x_index].append(idx.item())
-
-    for node in free_nodes:
-        node_coord = grid_points[node - 1]
-        y = node_coord[1]
-
-        if y in prev_y_list:
-            y_index = prev_y_list.index(y)
-        else:
-            result_indices_y.append([])
-            prev_y_list.append(y)
-            y_index = len(prev_y_list) - 1
-
-        mask = (connectivity == node).any(dim=1)
-        candidate_indices = torch.where(mask)[0]
-
-        for idx in candidate_indices:
-            conn = connectivity[idx]
-            coord1 = grid_points[conn[0] - 1]
-            coord2 = grid_points[conn[1] - 1]
-            if coord1[1] == coord2[1] and coord1[1] == y:
-                result_indices_y[y_index].append(idx.item())
-
-    max_len_x = max(len(indices) for indices in result_indices_x) if result_indices_x else 0
-    max_len_y = max(len(indices) for indices in result_indices_y) if result_indices_y else 0
-
-    for indices in result_indices_x:
-        indices += [-1] * (max_len_x - len(indices))
-    for indices in result_indices_y:
-        indices += [-1] * (max_len_y - len(indices))
-
-    result_x = torch.tensor(result_indices_x, dtype=torch.long, device=device)
-    result_y = torch.tensor(result_indices_y, dtype=torch.long, device=device)
-    result_x = torch.unique(result_x, dim=1)
-    result_y = torch.unique(result_y, dim=1)
-
-    len_y = result_y.size(0)
-    half_y = len_y // 2
-    len_x = result_x.size(0)
-    half_x = len_x // 2
-
-    y_upper = result_y[:half_y]
-    y_lower = result_y[half_y:]
-    y_lower = torch.flip(y_lower, dims=[0])
-    x_upper = result_x[:half_x]
-    x_lower = result_x[half_x:]
-    x_lower = torch.flip(x_lower, dims=[0])
-
-    idx_Y = torch.cat((y_upper, y_lower), dim=1)
-    idx_X = torch.cat((x_upper, x_lower), dim=1)
-
-    return idx_X, idx_Y
-
-
-# In[22]:
-
-
-def save_fdm(state_idx, grid_points, new_node_coords,
+def save_fdm(state_idx, grid_points, new_node_coords, 
             connectivity, Free_nodes, Fixed_nodes, force, SED,
             save_dir="results", max_states=6):
-
+    """
+    多状态组合图保存函数
+    
+    参数:
+        state_idx: 状态序号 (0=初始, 1=第cut次, 2=第2*cut次...)
+        max_states: 组合图中最多显示的状态数
+    """
     os.makedirs(save_dir, exist_ok=True)
-
+    
+    # 数据准备
     x_orig = grid_points[:, 0].cpu().detach().numpy()
     y_orig = grid_points[:, 1].cpu().detach().numpy()
     z_orig = grid_points[:, 2].cpu().detach().numpy()
-
+    
     x_fdm = new_node_coords[:, 0].cpu().detach().numpy()
     y_fdm = new_node_coords[:, 1].cpu().detach().numpy()
     z_fdm = new_node_coords[:, 2].cpu().detach().numpy()
-
-
+    
+    # 计算当前高度
     current_height = max(z_fdm)
-
-
+    
+    # 初始化图形容器
     if not hasattr(save_fdm, 'fig'):
         save_fdm.fig = plt.figure(figsize=(24, 16))
-        save_fdm.axes = [save_fdm.fig.add_subplot(2, 3, i+1, projection='3d')
+        save_fdm.axes = [save_fdm.fig.add_subplot(2, 3, i+1, projection='3d') 
                        for i in range(max_states)]
         plt.subplots_adjust(wspace=0.3, hspace=0.3)
         save_fdm.saved_states = 0
-        save_fdm.max_z = 0
-
-
+        save_fdm.max_z = 0  # 用于统一z轴尺度
+    
+    # 检查是否已存满
     if save_fdm.saved_states >= max_states:
         filename = os.path.join(save_dir, f"FDM_States_{max_states}.png")
         save_fdm.fig.savefig(filename, dpi=200, bbox_inches='tight')
@@ -299,53 +260,57 @@ def save_fdm(state_idx, grid_points, new_node_coords,
         delattr(save_fdm, 'max_z')
         print(f"Saved full states to {filename}")
         return
-
-
+    
+    # 更新最大z值（用于统一坐标尺度）
     if current_height > save_fdm.max_z:
         save_fdm.max_z = current_height
-
-
+    
+    # 获取当前子图并清除旧内容
     ax = save_fdm.axes[save_fdm.saved_states]
     ax.clear()
-
+    
+    # ========== 可视化绘制 ==========
+    # 1. 绘制原始网格（浅灰色虚线）
     for i, j in connectivity:
         ax.plot([x_orig[i-1], x_orig[j-1]],
                 [y_orig[i-1], y_orig[j-1]],
-                [z_orig[i-1], z_orig[j-1]],
+                [z_orig[i-1], z_orig[j-1]], 
                 ':', color='#CCCCCC', linewidth=0.8, alpha=0.7)
-
+    
+    # 2. 绘制当前状态网格
     color = '#1f77b4' if state_idx == 0 else '#ff7f0e'  # 初始蓝色，迭代橙色
     for i, j in connectivity:
         ax.plot([x_fdm[i-1], x_fdm[j-1]],
                 [y_fdm[i-1], y_fdm[j-1]],
-                [z_fdm[i-1], z_fdm[j-1]],
+                [z_fdm[i-1], z_fdm[j-1]], 
                 '-', color=color, linewidth=1.8, alpha=0.9)
-
-
+    
+    # 3. 标记固定节点（黑色实心圆）
     for node in Fixed_nodes:
         ax.scatter(x_fdm[node-1], y_fdm[node-1], z_fdm[node-1],
                   c='black', s=50, marker='o', alpha=0.8)
-
-
+    
+    # 4. 添加高度标注（替换原来的力值标注）
     ax.text(x=0.05, y=0.90, z=save_fdm.max_z*1.05,
-           s=f"Height: {current_height:.2f}m\nSE: {SED:.8f} ",
-           transform=ax.transAxes,
+           s=f"Height: {current_height:.2f}m\nSE: {SED:.8f} ", 
+           transform=ax.transAxes, 
            fontsize=10,
            bbox=dict(facecolor='white', alpha=0.7))
-
-
+    
+    # ========== 子图装饰 ==========
     ax.set_xlabel('X (m)', fontsize=9)
     ax.set_ylabel('Y (m)', fontsize=9)
     ax.set_zlabel('Z (m)', fontsize=9)
-    ax.set_title(f"State {state_idx}" if state_idx > 0 else "Initial State",
+    ax.set_title(f"State {state_idx}" if state_idx > 0 else "Initial State", 
                 fontsize=11, pad=12)
-    ax.set_zlim(0, save_fdm.max_z * 1.1)
+    ax.set_zlim(0, save_fdm.max_z * 1.1)  # 统一z轴尺度
     ax.view_init(elev=35, azim=45)
     ax.grid(True, linestyle=':', alpha=0.5)
-
+    
+    # 更新状态计数器
     save_fdm.saved_states += 1
-
-
+    
+    # 如果是最后一个状态，立即保存
     if save_fdm.saved_states == max_states:
         filename = os.path.join(save_dir, f"FDM_States_{max_states}.png")
         save_fdm.fig.savefig(filename, dpi=200, bbox_inches='tight')
@@ -358,51 +323,52 @@ def save_fdm(state_idx, grid_points, new_node_coords,
 
 
 def finalize_fdm(save_dir="results", completed=False):
-
+    """
+    最终化处理函数
+    
+    参数:
+        save_dir: 保存目录
+        completed: 是否完成所有迭代 (True=已完成全部迭代，False=提前终止)
+    """
     if not hasattr(save_fdm, 'fig') or save_fdm.saved_states == 0:
         return
-
-
+    
+    # 如果已完成所有迭代，保存当前进度（不强制填满）
     if completed:
-        filename = os.path.join(save_dir,
+        filename = os.path.join(save_dir, 
                               f"FDM_States_completed_{save_fdm.saved_states}.png")
-
+    # 如果是提前终止，保存上一次有效迭代
     else:
-
+        # 回退一个状态，因为最后一次迭代可能不完整
         save_fdm.saved_states = max(0, save_fdm.saved_states - 1)
         filename = os.path.join(save_dir,
                               f"FDM_States_partial_{save_fdm.saved_states+1}.png")
-
-
+    
+    # 保存图像
     save_fdm.fig.savefig(filename, dpi=200, bbox_inches='tight')
     plt.close(save_fdm.fig)
-
-
+    
+    # 打印保存信息
     if completed:
         print(f"Saved completed states ({save_fdm.saved_states}/{len(save_fdm.axes)}) to {filename}")
     else:
         print(f"Saved last valid state ({save_fdm.saved_states+1}) to {filename}")
-
-
+    
+    # 清理属性
     for attr in ['fig', 'axes', 'saved_states', 'max_z']:
         if hasattr(save_fdm, attr):
             delattr(save_fdm, attr)
 
 
+# In[8]:
 
 
-
-
-
-# In[23]:
-
-
-####### FDM part
+####### FDM part 
 C = torch.zeros(n_elements, n_nodes, dtype=torch.float32, device=device)
 for n, (i, j) in enumerate(connectivity):
     C[n, i - 1] = 1
     C[n, j - 1] = -1
-
+    
 px= torch.zeros(len(Free_nodes), 1, dtype=torch.float32, device=device)
 py = torch.zeros(len(Free_nodes), 1, dtype=torch.float32, device=device)
 pz = torch.zeros(len(Free_nodes), 1, dtype=torch.float32, device=device)
@@ -414,43 +380,43 @@ free_node_indices = torch.tensor([node - 1 for node in Free_nodes], device=devic
 CF = C[:, fixed_idces]
 CN = C[:, free_node_indices]
 
-def FDM(Q, F_value, CN=CN, CF=CF, px=px, py=py, pz=pz,
+def FDM(Q, F_value, CN=CN, CF=CF, px=px, py=py, pz=pz, 
         fixed_idces=fixed_idces, free_node_indices=free_node_indices,
         node_coords=grid_points):
-
+    
     pz[:, 0] = F_value
-
+        
     Dn = torch.matmul(torch.transpose(CN, 0, 1), torch.matmul(Q, CN))
     DF = torch.matmul(torch.transpose(CN, 0, 1), torch.matmul(Q, CF))
-
-
+    
+    
     xF = node_coords[fixed_idces, 0].unsqueeze(1)
     yF = node_coords[fixed_idces, 1].unsqueeze(1)
     zF = node_coords[fixed_idces, 2].unsqueeze(1)
-
+    
     xN = torch.matmul(torch.inverse(Dn), (px - torch.matmul(DF, xF)))
     yN = torch.matmul(torch.inverse(Dn), (py - torch.matmul(DF, yF)))
     zN = torch.matmul(torch.inverse(Dn), (pz - torch.matmul(DF, zF)))
-
-
+        
+    
     new_node_coords = node_coords.clone()
     new_node_coords[free_node_indices, 0] = xN.squeeze()
     new_node_coords[free_node_indices, 1] = yN.squeeze()
     new_node_coords[free_node_indices, 2] = zN.squeeze()
-
+    
     return new_node_coords
 
 
-# In[24]:
+# In[16]:
 
 
 ###### FE part
 D_radius = 0.75
-D_young_modulus = 10e9
-D_shear_modulus = 0.7e9
+D_young_modulus = 10e9 
+D_shear_modulus = 0.7e9 
 D_poisson_ratio = 0.3
-cross_section_angle_a = 0
-cross_section_angle_b = 0
+cross_section_angle_a = 0  
+cross_section_angle_b = 0  
 a_small_number = 1e-10
 
 def rotation(v, k, theta):
@@ -479,7 +445,7 @@ class Beam:
 
         # Cross-sectional properties
         self.length = torch.norm(self.node_coordinates[1] - self.node_coordinates[0])  # Length of the beam
-        self.Iy = (torch.pi * self.radius ** 4) / 4
+        self.Iy = (torch.pi * self.radius ** 4) / 4 
         self.Iz = self.Iy
         self.A = torch.pi * self.radius ** 2
         self.J = (torch.pi * self.radius ** 4) / 2
@@ -527,7 +493,7 @@ class Beam:
         vector_y = self.node_coordinates[1, 1] - self.node_coordinates[0, 1]
         vector_z = self.node_coordinates[1, 2] - self.node_coordinates[0, 2]
         length = torch.norm(self.node_coordinates[1] - self.node_coordinates[0])
-
+        
         z_value = torch.clamp(vector_z / length, min=-1 + 1e-6, max=1 - 1e-6)
         ceta = torch.acos(z_value)
         value = vector_x / torch.sqrt(vector_y ** 2 + vector_x ** 2 + a_small_number)
@@ -557,7 +523,7 @@ class Beam:
         vector_y = self.node_coordinates[1, 1] - self.node_coordinates[0, 1]
         vector_z = self.node_coordinates[1, 2] - self.node_coordinates[0, 2]
         length = torch.norm(self.node_coordinates[1] - self.node_coordinates[0])
-
+        
         z_value = torch.clamp(vector_z / length, min=-1 + 1e-6, max=1 - 1e-6)
         ceta = torch.acos(z_value)
         value = vector_x / torch.sqrt(vector_y ** 2 + vector_x ** 2 + a_small_number)
@@ -583,47 +549,60 @@ def assemble_stiffness_matrix(beams, n_nodes, n_dof_per_node, connectivity):
     """Global stiffness matrix assembly."""
     total_dof = n_nodes * n_dof_per_node  # Total degrees of freedom
     K_global = torch.zeros((total_dof, total_dof), dtype=torch.float32, device=device)
-
+    Ke_time = []
+    Abl_time = []
+    
     for idx, (i, j) in enumerate(connectivity):
         Matrix_T = beams[idx].System_Transform()  # Get transformation matrix
+        str1 = time.time()
         K_element = torch.matmul(torch.transpose(Matrix_T, 0, 1),
                                  torch.matmul(beams[idx].get_element_stiffness_matrix(), Matrix_T))
+        Ke_t = time.time() - str1
+        Ke_time.append(Ke_t)
 
+        str2 = time.time()
         start_idx = (i - 1) * n_dof_per_node
         end_idx = (j - 1) * n_dof_per_node
         K_global[start_idx:start_idx + 6, start_idx:start_idx + 6] += K_element[0:6, 0:6]
         K_global[end_idx:end_idx + 6, end_idx:end_idx + 6] += K_element[6:12, 6:12]
         K_global[start_idx:start_idx + 6, end_idx:end_idx + 6] += K_element[0:6, 6:12]
         K_global[end_idx:end_idx + 6, start_idx:start_idx + 6] += K_element[6:12, 0:6]
+        AbL_t = time.time() - str2
+        Abl_time.append(AbL_t)
 
-    return K_global
+    return K_global, torch.tensor(Abl_time), torch.tensor(Ke_time)
 
 def robust_solve(K_global, F, fixed_dof, max_attempts=3):
-
+    
     attempts = 0
     while attempts < max_attempts:
         reg = 1e-6 * torch.eye(K_global.shape[0], device=K_global.device)
-        reg[fixed_dof, fixed_dof] = 0
+        reg[fixed_dof, fixed_dof] = 0  
         K_reg = K_global + reg
-
+        try:
+            cond_number = torch.linalg.cond(K_reg)
+        except torch._C._LinAlgError:
+            print("警告：条件数计算失败（矩阵可能奇异），自动设为0")
+            cond_number = torch.tensor(0.0, device=K_reg.device)
         try:
             displacements = torch.linalg.solve(
-                K_reg.to(torch.float64),
+                K_reg.to(torch.float64), 
                 F.to(torch.float64)
             )
-            return displacements.to(K_global.dtype)
-
+            sol_type = 0
+            return displacements.to(K_global.dtype), sol_type
+            
         except RuntimeError:
             diag = torch.diag(K_global)
-            extreme_mask = (diag > 1e12) & (~torch.isin(torch.arange(len(diag)), torch.tensor(fixed_dof)))
+            extreme_mask = (diag > 1e12) & (~torch.isin(torch.arange(len(diag)), torch.tensor(fixed_dof)))  
             K_reg[extreme_mask] = 0
             K_reg[:, extreme_mask] = 0
-            K_reg[extreme_mask, extreme_mask] = 1e12
-
+            K_reg[extreme_mask, extreme_mask] = 1e12  
+            
             K_reg[fixed_dof, :] = 0
             K_reg[:, fixed_dof] = 0
-            K_reg[fixed_dof, fixed_dof] = 1e10
-
+            K_reg[fixed_dof, fixed_dof] = 1e10  
+            
             try:
                 displacements, info = torch.linalg.cg(
                     K_reg.to(torch.float64),
@@ -633,22 +612,26 @@ def robust_solve(K_global, F, fixed_dof, max_attempts=3):
                 )
                 if info > 0:
                     raise RuntimeError("CG nah nah")
-                return displacements.to(K_global.dtype)
-
+                sol_type = 1
+                return displacements.to(K_global.dtype), sol_type
+                
             except:
                 K_pinv = torch.linalg.pinv(K_reg)
-                K_pinv[fixed_dof, :] = 0
+                K_pinv[fixed_dof, :] = 0  
                 displacements = K_pinv @ F
                 print("警告：使用伪逆求解，精度可能降低")
-                return displacements
-
+                sol_type = 2
+                return displacements, sol_type
+                
         attempts += 1
-
+    
     raise RuntimeError("无法求解线性系统")
+
 
 
 def Strain_E(node_coords, connectivity, fixed_dof, F):
     # Element Assembly
+    Str = time.time()
     Beam_lens = []
     beams = []
     for connection in connectivity:
@@ -660,19 +643,27 @@ def Strain_E(node_coords, connectivity, fixed_dof, F):
                     Beta_b=cross_section_angle_b)
         beams.append(beam)
         Beam_lens.append(beam.length)
-
+    Element_create = time.time() - Str
+    
     # Stiffness renewal
-    K_global = assemble_stiffness_matrix(beams, n_nodes=len(node_coords), n_dof_per_node=6, connectivity=connectivity)
+    Stiffness_str = time.time()
+    K_global,K_time, ASB_time = assemble_stiffness_matrix(beams, n_nodes=len(node_coords), n_dof_per_node=6, connectivity=connectivity)
+    Stiffness_assembly = time.time() - Stiffness_str
     K_global[fixed_dof, :] = 0
     K_global[:, fixed_dof] = 0
     K_global[fixed_dof, fixed_dof] = 1e10
 
-    displacements = robust_solve(K_global, F, fixed_dof)
+    print("K_global dtype:", K_global.dtype)
+
+    Sol_str = time.time()
+    displacements, sol_type = robust_solve(K_global, F, fixed_dof)
+    Matrix_sol = time.time() - Sol_str
 
     # Compute strain energy
+    Metrics_str = time.time()
     strain_energy_list = []
     force_list = []
-    ASE_list = []
+    V_list = []
     Local_d = torch.zeros(len(connectivity), 12, dtype=torch.float32, device=device)
     for n, (i, j) in enumerate(connectivity):
         matrix_T = beams[n].System_Transform()
@@ -683,71 +674,94 @@ def Strain_E(node_coords, connectivity, fixed_dof, F):
         K_l = beams[n].get_element_stiffness_matrix()
         strain_energy_list.append(0.5 * torch.matmul(Local_d_n, torch.matmul(K_l, Local_d_n.reshape(-1, 1))))
         force_list.append(torch.matmul(K_l, Local_d_n.reshape(-1, 1)))
-        ASE_list.append(0.5 * (Local_d_n[0]-Local_d_n[6]) * beams[n].S_u * (Local_d_n[0]-Local_d_n[6]))
-
-
-
+        V_list.append(beams[n].A * beams[n].length)
+    
     Strain_energy = torch.stack(strain_energy_list)
     forces = torch.stack(force_list)
-    ASE = torch.stack(ASE_list)
     lens = torch.stack(Beam_lens)
-    # epsilon = Local_d[:, 0] / lens
-    # Axial_d = Local_d[:, 0]
-    SED = Strain_energy / lens
-    R = torch.var(SED)
+    V = torch.stack(V_list)
+    Metrics_cal = time.time() - Metrics_str
 
-    return Strain_energy, forces, displacements, ASE, lens, R
+    # FE timing data
+    FE_timing = {
+        "Element_create": Element_create,
+        "Stiffness_assembly": Stiffness_assembly,
+        "Matrix_solution": Matrix_sol,
+        "Metrics_calculation": Metrics_cal,
+        "Total_FE_time": Element_create + Stiffness_assembly + Matrix_sol + Metrics_cal
+    }
+    
+    return Strain_energy, K_time, ASB_time, lens, V, FE_timing
 
 
-# In[25]:
+# In[17]:
 
 
 def optimizer(q, gradients, step):
-
-    q.data -= gradients / torch.norm(gradients ) * step
+    
+    grads = gradients / (torch.norm(gradients, p=2, dim=1, keepdim=True) + 1e-10)
+    
+    q.data -= grads * step
+    with torch.no_grad():
+        q[0] = torch.clamp(q[0], min=4.375, max=6.5)
+        q[1] = torch.clamp(q[1], min=0.0)
 
     return q
-
+    
 def check_available_memory():
     """返回当前可用CPU内存（MB）"""
     return psutil.virtual_memory().available / (1024 ** 2)
 
 
-# In[26]:
+# In[18]:
 
 
 ############### Formulating :::::
 ####### Gradient descent
-w1 = 0.5
-step = 0.001
+step = 0.01
 epochs = 1
 # Initilizing
 patience = 20
-count = 0
-idx_X, idx_Y = Symmetry_shaper(grid_points, connectivity, Free_nodes)
 ####### Force Condition
 
 _, F_value = Force_mat(- 1, 2)
-F_fe_g, _ = Force_mat(1, 1)
-
-F_fe = F_fe_g
+F_fe_g, _ = Force_mat(-1, 2)
+F_fe_t1, _ = Force_mat(1, 0)
+F_fe_t2, _ = Force_mat(1, 1)
 
 r = 1 / torch.max(F_value)
 
-print('r', r)
+
+# In[19]:
 
 
-# In[ ]:
+##### INItializaing the Q:
+rows, cols = V_matrix.shape
+
+q_rows = math.ceil(rows / 2)
+q_cols = math.ceil(cols / 2)
+q_v = torch.ones((q_rows, q_cols)) * 5.44 
+
+rows_, cols_ = H_matrix.shape
+q_rows_ = math.ceil(rows_ / 2)
+q_cols_ = math.ceil(cols_ / 2)
+q_h = torch.zeros((q_rows_, q_cols_))
+
+q_cat = torch.cat([q_v.unsqueeze(0), q_h.unsqueeze(0)], dim=0)  # 形状 (2, q_rows, q_cols)
+q = q_cat.clone().requires_grad_(True) 
+
+
+# In[21]:
 
 
 ############## Optimization loop
 
 #### Initializing Data storage
-os.makedirs("data_records", exist_ok=True)
+os.makedirs("../Time comparison(FDMVSFEM)/data_records", exist_ok=True)
 optimization_data = {
     "metadata": {
         "project": "Structural Optimization",
-        "Context": "FDM + FE{Gravity + X +Y}",
+        "Context": "FDM + FE",
         "device": str(device),
         "parameters": {
             "length": length,
@@ -761,303 +775,148 @@ optimization_data = {
 }
 
 ####### Loop start
+count = 0
 n_elem = len(connectivity)
-q = torch.tensor([1.0, 1.0, 1.0, 1.0, 1.0, 0.1, 0.1, 0.1], requires_grad=True, device=device)
 start_time = time.time()
 cut = epochs / 5
-ES_his = []
-LP_his = []
 LS_his = []
-R_his = []
-Ratio = []
+records = 0
 
 # Loop start
 for iteration in range(epochs + 1):
+    
     print('ite', iteration)
-
-    iter_start = time.time()
-
+  
     avail_mem = check_available_memory()
     print(f"Iter {iteration} - Available Memory: {avail_mem:.2f} MB")
-    if avail_mem < 1000:
+    if avail_mem < 1000: 
         print(f"⚠️  Low memory warning: {avail_mem:.2f} MB left!")
-
+    
     # Forwards
-    q_vec = torch.zeros(n_elements, requires_grad=True, device=device).clone()
-    for i in range(len(idx_X)):
-        q_vec[idx_X[i,:]] = q[i]
-    for j in range(len(idx_Y)):
-        q_vec[idx_Y[j,:]] = q[j+len(idx_X)]
-    Q = torch.diag(q_vec) * 1 / r  # scaling
+    q_v, q_h = q[0], q[1] 
+    q_V = Symmetry_shaper(q_v, V_matrix)
+    q_H = Symmetry_shaper(q_h, H_matrix)
+    q_vec = torch.zeros(n_elements, device=device)
+    for i in range(V_matrix.shape[0]): 
+        for j in range(V_matrix.shape[1]): 
+            index = V_matrix[i, j].item()  
+            q_vec[index] = q_V[i, j] 
+    for i in range(H_matrix.shape[0]):  
+        for j in range(H_matrix.shape[1]):  
+            index = H_matrix[i, j].item() 
+            q_vec[index] = q_H[i, j]           
+    q_vec = q_vec * 1 / r
+    Q = torch.diag(q_vec) 
     new_node_coords = FDM(Q, F_value)
-    height = max(new_node_coords[:,2])
 
 
+   
+    
     ####### FDM time
-    FDM_time = (time.time() - iter_start) / 60
 
     N_coords = new_node_coords.clone()
-    FE_str = time.time()
-    Strain_energy, forces, displacements, ASE, Beam_lens, R = Strain_E(N_coords, connectivity, fixed_dof, F_fe)
-
-    ######## FE time
-    FE_time = (time.time() - FE_str) / 60
-    force = abs(forces[:, 0, 0])
-    load_path = torch.dot(force , Beam_lens)
-
-    Total_ES = torch.sum(Strain_energy)
-    Axial_rate = torch.sum(ASE) / Total_ES
-    V = torch.sum(Beam_lens)
-    Loss = w1 * Total_ES / 0.1222 + (1 - w1) * V / 457.5373
-
-
+    Strain_energy, K_time, ASB_time, lens, V, FE_timing= Strain_E(N_coords, connectivity, fixed_dof, F_fe_g)
+    print("K_time",torch.mean(K_time))
+    print("ASB_time", torch.mean(ASB_time))
+    
+    ES_g = torch.sum(Strain_energy)  
+    Loss = ES_g 
+    
     # Loss_his.append(loss.item())
-    R_his.append(R.clone().detach().item())
-    LP_his.append(load_path.item())
-    ES_his.append(Total_ES.item())
-    Ratio.append(torch.sum(ASE) / Total_ES)
     LS_his.append(Loss.clone().detach().item())
 
-    print('Ratio', torch.sum(ASE) / Total_ES)
-    print("Estrain:", Total_ES)
-    print('load_path', load_path)
-    print("R:", R)
-    print('ite height:', height)
-    print('V',V)
 
-    ############################ Deformation
-    N_coords = N_coords.reshape(-1)
-    New_Coordinates = torch.zeros(n_nodes * 3, dtype=torch.float32, device=device)
-    for n in range(n_nodes):
-        New_Coordinates[3*n : 3*n+3] = N_coords[3*n : 3*n+3] + displacements[6*n : 6*n+3] * 100000
-    New_Coordinates = New_Coordinates.view(n_nodes, 3).clone()
 
+    ####### Early stopping
+    if iteration > 0:  
+        Pre_Total_LS = LS_his[iteration - 1]  
+        change = abs(Loss - Pre_Total_LS) / Pre_Total_LS 
+        if change < 1/100000:
+            count += 1
+        else:
+            count = 0 
+        if count >= patience:
+            print(f"Early stopping at iteration {iteration}: Loss change < 1%% for {patience} consecutive iterations.")
+            break 
+ 
+    
     # Backwards
-
-    Back_str = time.time()
+    
+    back_str = time.time()
     if q.grad is not None:
         q.grad.detach_()
         q.grad.zero_()
-
+       
     Loss.backward(retain_graph=True)
-    Back_time = (time.time() - Back_str) / 60
-
+    back_time = time.time() - back_str
+    
     # Grad
     gradients = q.grad
-    frob_norm = torch.norm(gradients)
     q = optimizer(q, gradients, step)
 
-    Wins_q = q.cpu().clone().detach()
-    print('Wins_q', Wins_q)
-    print('Wins_grad', gradients)
-
-    with torch.no_grad():
-        q[:5].clamp_(min=0.5, max=1.5)
-        q[5:].clamp_(min=0.0, max=2.0)
-
+    
+    
     ####### Data storage:
     iteration_record = {
-    "iteration": iteration,
-    "variables": q.detach().cpu().numpy().tolist(),
-    "strain_energy": Total_ES.item(),
-    "Load_path": load_path.item(),
-    "Axial SE ratio": Axial_rate.item(),
-    "Volume": V.item(),
-    "R": R.item(),
-    "gradient_norm": torch.norm(gradients).item() if q.grad is not None else 0.0,
-               "timing": {
-            "FDM_time": FDM_time,
-            "FE_time": FE_time,
-            "Back_propagation time": Back_time,
-        },
+        "iteration": iteration,
+        "SE_g": ES_g.item(),
+        "variables": q.detach().cpu().numpy().tolist(),
+        'back_time':back_time,
+        "FE_timing": FE_timing  # Add FE timing data
     }
     optimization_data["iterations"].append(iteration_record)
 
-    if iteration % cut == 0 or iteration == 0:
-        state_idx = iteration // cut
-        save_fdm(state_idx, grid_points, new_node_coords,
-                connectivity, Free_nodes, Fixed_nodes,
-                force, Total_ES.detach().cpu().item())
 
-    # print iteration
-    if iteration % 5 == 0:
-        print(f"Iteration {iteration}: Normalized Gradient = {frob_norm}, Adaptive learning rate = {step}")
 
     if iteration % 10 == 0:
         torch.cuda.empty_cache() if torch.cuda.is_available() else None
         gc.collect()
-
-    ######## Early stopping
-    if iteration > 0:
-        Pre_Total_ES = ES_his[iteration - 1]
-        change = abs(Total_ES - Pre_Total_ES) / Pre_Total_ES
-        if change < 1/10000:
-            count += 1
-        else:
-            count = 0
-        if count >= patience:
-            print(f"Early stopping at iteration {iteration}: Total_ES change < 1%% for {patience} consecutive iterations.")
-            break
+            
 
 
-finalize_fdm()
-total_time = (time.time() - iter_start) / 60
 optimization_data["metadata"].update({
-    "Ite_time": total_time,
 })
 
-with open(os.path.join("data_records", "FULL_data.json"), 'w') as f:
+with open(os.path.join("../Time comparison(FDMVSFEM)/data_records", "Moo_timing.json"), 'w') as f:
     json.dump(optimization_data, f, indent=2)
-
+    
 print("Optimization completed.")
-print(q)
-print("Estrain:", Total_ES)
 
 
+# In[14]:
 
 
-# 提取坐标数据
-x_orig = grid_points[:, 0].cpu().detach().numpy()
-y_orig = grid_points[:, 1].cpu().detach().numpy()
-z_orig = grid_points[:, 2].cpu().detach().numpy()
+fig, ax1 = plt.subplots(figsize=(10, 6))
 
-x_fdm = new_node_coords[:, 0].cpu().detach().numpy()  # FDM优化后的坐标（未受力变形）
-y_fdm = new_node_coords[:, 1].cpu().detach().numpy()
-z_fdm = new_node_coords[:, 2].cpu().detach().numpy()
+color = 'black'
+ax1.set_ylabel('LOss', color=color)
+ax1.plot(range(len(LS_his)), LS_his, label='LOss', color=color, linewidth=2, linestyle='--')
+ax1.tick_params(axis='y', labelcolor=color)
 
-x_deformed = New_Coordinates[:, 0].cpu().detach().numpy()  # 受力变形后的坐标
-y_deformed = New_Coordinates[:, 1].cpu().detach().numpy()
-z_deformed = New_Coordinates[:, 2].cpu().detach().numpy()
+# Mark specific points
+marker_points = [
+    0,  # First point
+    *range(100, len(LS_his), 100),  # Every 200th point
+    len(LS_his)-1  # Last point
+]
 
-# 创建图表
-fig = go.Figure()
+for point in marker_points:
+    ax1.scatter(point, LS_his[point], color='blue', zorder=5)
+    ax1.text(point, LS_his[point], 
+             f'({LS_his[point]:.4f})',
+             ha='right' if point == len(LS_his)-1 else 'left',
+             va='bottom',
+             bbox=dict(facecolor='white', alpha=0.8, edgecolor='none'))
 
-# 1. 绘制原始网格（灰色虚线）
-for connection in connectivity:
-    i, j = connection
-    fig.add_trace(go.Scatter3d(
-        x=[x_orig[i-1], x_orig[j-1]],
-        y=[y_orig[i-1], y_orig[j-1]],
-        z=[z_orig[i-1], z_orig[j-1]],
-        mode='lines',
-        line=dict(color='gray', width=1, dash='dot'),
-        name='Original Grid',
-        showlegend=True
-    ))
+ax1.legend(loc='upper right')
+plt.title('Loss vs. Iterations')
+plt.tight_layout()
+plt.savefig('LS_history.png', dpi=150, bbox_inches='tight')
+plt.show()
 
-# 2. 绘制FDM优化后的结构（蓝色实线）
-for connection in connectivity:
-    i, j = connection
-    fig.add_trace(go.Scatter3d(
-        x=[x_fdm[i-1], x_fdm[j-1]],
-        y=[y_fdm[i-1], y_fdm[j-1]],
-        z=[z_fdm[i-1], z_fdm[j-1]],
-        mode='lines',
-        line=dict(color='blue', width=3),
-        name='Optimized Shape (FDM)',
-        showlegend=True
-    ))
 
-# 3. 绘制受力变形后的结构（红色实线）
-for connection in connectivity:
-    i, j = connection
-    fig.add_trace(go.Scatter3d(
-        x=[x_deformed[i-1], x_deformed[j-1]],
-        y=[y_deformed[i-1], y_deformed[j-1]],
-        z=[z_deformed[i-1], z_deformed[j-1]],
-        mode='lines',
-        line=dict(color='red', width=3),
-        name='Deformed Shape (FE)',
-        showlegend=True
-    ))
+# In[ ]:
 
-# 4. 标记固定节点（黑色圆点）
-for node in Fixed_nodes:
-    fig.add_trace(go.Scatter3d(
-        x=[x_fdm[node-1]],
-        y=[y_fdm[node-1]],
-        z=[z_fdm[node-1]],
-        mode='markers',
-        marker=dict(size=5, color='black'),
-        name='Fixed Nodes',
-        showlegend=True
-    ))
-
-# 添加力显示（可选）
-force_np = force.cpu().detach().numpy()
-for idx, connection in enumerate(connectivity):
-    i, j = connection
-    mid_x = (x_deformed[i-1] + x_deformed[j-1]) / 2
-    mid_y = (y_deformed[i-1] + y_deformed[j-1]) / 2
-    mid_z = (z_deformed[i-1] + z_deformed[j-1]) / 2
-    fig.add_trace(go.Scatter3d(
-        x=[mid_x],
-        y=[mid_y],
-        z=[mid_z],
-        mode='markers+text',
-        marker=dict(size=1, color='green', opacity=0),
-        text=[f"{force_np[idx]:.0f} N"],
-        textposition='top center',
-        textfont=dict(size=8),
-        name='Element Forces',
-        visible=False  # 默认隐藏
-    ))
-
-# 更新布局
-fig.update_layout(
-    title='Structural Optimization Results',
-    scene=dict(
-        xaxis_title='X (m)',
-        yaxis_title='Y (m)',
-        zaxis_title='Z (m)',
-        aspectmode='data',
-        camera=dict(eye=dict(x=1.5, y=1.5, z=0.8))  # 调整视角
-    ),
-    legend=dict(
-        x=0.8,
-        y=0.9,
-        bgcolor='rgba(255,255,255,0.5)'
-    ),
-    updatemenus=[  # 添加力显示切换按钮
-        dict(
-            type="buttons",
-            direction="right",
-            x=0.1,
-            y=1.1,
-            buttons=[
-                dict(
-                    label="✅ Show Forces",
-                    method="update",
-                    args=[{"visible": [True]*len(fig.data)}],
-                ),
-                dict(
-                    label="❌ Hide Forces",
-                    method="update",
-                    args=[{"visible": [True]*(len(fig.data)-len(connectivity)) + [False]*len(connectivity)}],
-                )
-            ]
-        )
-    ],
-    annotations=[
-        dict(
-            x=0.05,
-            y=0.95,
-            xref="paper",
-            yref="paper",
-            text=f"<b>Optimization Results</b><br>"
-                 f"Strain Energy: {Total_ES:.2f} J<br>"
-                 f"Max Height: {max(z_fdm):.2f} m",
-            showarrow=False,
-            font=dict(size=12),
-            bgcolor="white",
-            bordercolor="black",
-            borderwidth=1
-        )
-    ]
-)
-
-fig.show()
-fig.write_html("Optimization_Comparison.html")  # 保存为HTML
 
 
 
