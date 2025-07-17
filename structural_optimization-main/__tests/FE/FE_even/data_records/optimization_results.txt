@@ -1,0 +1,26 @@
+Context:XZTotal epochs: 500
+Step length: 0.1
+
+=== Iteration 0 ===
+Ite Time: 0.09479328393936157
+Back propagation Time: 0.007756070295969645
+Load_path: 1094049.625000
+Total Strain Energy: 0.122189
+Axial Ratio: 0.964468
+Var: 0.000104
+
+=== Iteration 100 ===
+Ite Time: 0.04403812090555827
+Back propagation Time: 0.006432930628458659
+Load_path: 967722.750000
+Total Strain Energy: 0.085075
+Axial Ratio: 0.981007
+Var: 0.000070
+
+=== Iteration 200 ===
+Ite Time: 0.042890532811482744
+Back propagation Time: 0.005341299374898275
+Load_path: 978717.375000
+Total Strain Energy: 0.078556
+Axial Ratio: 0.990655
+Var: 0.000074

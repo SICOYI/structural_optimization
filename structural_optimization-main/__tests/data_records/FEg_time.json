@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "project": "Structural Optimization",
+    "Context": "FE",
+    "device": "cpu",
+    "parameters": {
+      "length": 48,
+      "width": 48,
+      "grid_size": "13x13",
+      "epochs": 1,
+      "step_size": 0.01
+    },
+    "Iteration_time": 25.42492413520813
+  },
+  "iterations": [
+    {
+      "iteration": 0,
+      "SE_g": 7.326932907104492,
+      "Geometry Initialization_time": 0.01609015464782715,
+      "FE_time": 4.627197027206421,
+      "Loss cal_time": 0.00013494491577148438,
+      "Backpropagation_time": 7.383464097976685,
+      "Parametric Update": 0.00019216537475585938,
+      "FE_timing": {
+        "Element_create": 0.6247048377990723,
+        "Stiffness_assembly": 2.244425058364868,
+        "Matrix_solution": 0.033986806869506836,
+        "Metrics_calculation": 1.7117202281951904,
+        "Total_FE_time": 4.614836931228638
+      }
+    },
+    {
+      "iteration": 1,
+      "SE_g": 7.313237190246582,
+      "Geometry Initialization_time": 0.0033500194549560547,
+      "FE_time": 5.566962957382202,
+      "Loss cal_time": 0.06706619262695312,
+      "Backpropagation_time": 7.721518039703369,
+      "Parametric Update": 0.0001609325408935547,
+      "FE_timing": {
+        "Element_create": 0.5509600639343262,
+        "Stiffness_assembly": 2.775413990020752,
+        "Matrix_solution": 0.022230863571166992,
+        "Metrics_calculation": 2.19561505317688,
+        "Total_FE_time": 5.544219970703125
+      }
+    }
+  ]
+}

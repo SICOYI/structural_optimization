@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "project": "Structural Optimization",
+    "Context": "FE",
+    "device": "cpu",
+    "parameters": {
+      "length": 48,
+      "width": 48,
+      "grid_size": "13x13",
+      "epochs": 1,
+      "step_size": 0.01
+    },
+    "Iteration_time": 14.367999076843262
+  },
+  "iterations": [
+    {
+      "iteration": 0,
+      "SE_g": 7.326932907104492,
+      "Geometry Initialization_time": 0.001444101333618164,
+      "FE_time": 0.7804920673370361,
+      "Loss cal_time": 4.315376281738281e-05,
+      "Backpropagation_time": 6.0872766971588135,
+      "Parametric Update": 0.00019979476928710938,
+      "FE_timing": {
+        "Element_create": 0.09198164939880371,
+        "Stiffness_assembly": 0.25478482246398926,
+        "Matrix_solution": 0.023958921432495117,
+        "Metrics_calculation": 0.3976907730102539,
+        "Total_FE_time": 0.768416166305542
+      }
+    },
+    {
+      "iteration": 1,
+      "SE_g": 7.313237190246582,
+      "Geometry Initialization_time": 0.0013949871063232422,
+      "FE_time": 0.7578639984130859,
+      "Loss cal_time": 0.031229019165039062,
+      "Backpropagation_time": 6.683445930480957,
+      "Parametric Update": 0.00017881393432617188,
+      "FE_timing": {
+        "Element_create": 0.09175872802734375,
+        "Stiffness_assembly": 0.23916125297546387,
+        "Matrix_solution": 0.01715707778930664,
+        "Metrics_calculation": 0.39809608459472656,
+        "Total_FE_time": 0.7461731433868408
+      }
+    }
+  ]
+}
