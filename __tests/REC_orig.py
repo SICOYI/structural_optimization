@@ -829,7 +829,7 @@ for iteration in range(epochs + 1):
     N_coords = N_coords.reshape(-1)
     New_Coordinates = torch.zeros(n_nodes * 3, dtype=torch.float32, device=device)
     for n in range(n_nodes):
-        New_Coordinates[3*n : 3*n+3] = N_coords[3*n : 3*n+3] + displacements[6*n : 6*n+3] * 100000
+        New_Coordinates[3*n : 3*n+3] = N_coords[3*n : 3*n+3] + displacements[6*n : 6*n+3] * 0
     New_Coordinates = New_Coordinates.view(n_nodes, 3).clone()
 
     # Backwards
@@ -921,13 +921,13 @@ x_orig = grid_points[:, 0].cpu().detach().numpy()
 y_orig = grid_points[:, 1].cpu().detach().numpy()
 z_orig = grid_points[:, 2].cpu().detach().numpy()
 
-x_fdm = new_node_coords[:, 0].cpu().detach().numpy()  # FDM优化后的坐标（未受力变形）
-y_fdm = new_node_coords[:, 1].cpu().detach().numpy()
-z_fdm = new_node_coords[:, 2].cpu().detach().numpy()
+x_fdm = new_node_coords[:, 0].cpu().detach().numpy() * 0# FDM优化后的坐标（未受力变形）
+y_fdm = new_node_coords[:, 1].cpu().detach().numpy() * 0
+z_fdm = new_node_coords[:, 2].cpu().detach().numpy() * 0
 
-x_deformed = New_Coordinates[:, 0].cpu().detach().numpy()  # 受力变形后的坐标
-y_deformed = New_Coordinates[:, 1].cpu().detach().numpy()
-z_deformed = New_Coordinates[:, 2].cpu().detach().numpy()
+x_deformed = New_Coordinates[:, 0].cpu().detach().numpy() * 0  # 受力变形后的坐标
+y_deformed = New_Coordinates[:, 1].cpu().detach().numpy() * 0
+z_deformed = New_Coordinates[:, 2].cpu().detach().numpy() * 0
 
 # 创建图表
 fig = go.Figure()
@@ -940,7 +940,7 @@ for connection in connectivity:
         y=[y_orig[i-1], y_orig[j-1]],
         z=[z_orig[i-1], z_orig[j-1]],
         mode='lines',
-        line=dict(color='gray', width=1, dash='dot'),
+        line=dict(color='black', width=3),
         name='Original Grid',
         showlegend=True
     ))
@@ -953,7 +953,7 @@ for connection in connectivity:
         y=[y_fdm[i-1], y_fdm[j-1]],
         z=[z_fdm[i-1], z_fdm[j-1]],
         mode='lines',
-        line=dict(color='blue', width=3),
+        line=dict(color='black', width=0.5),
         name='Optimized Shape (FDM)',
         showlegend=True
     ))
@@ -966,7 +966,7 @@ for connection in connectivity:
         y=[y_deformed[i-1], y_deformed[j-1]],
         z=[z_deformed[i-1], z_deformed[j-1]],
         mode='lines',
-        line=dict(color='red', width=3),
+        line=dict(color='blue', width=0.5),
         name='Deformed Shape (FE)',
         showlegend=True
     ))
@@ -974,9 +974,9 @@ for connection in connectivity:
 # 4. 标记固定节点（黑色圆点）
 for node in Fixed_nodes:
     fig.add_trace(go.Scatter3d(
-        x=[x_fdm[node-1]],
-        y=[y_fdm[node-1]],
-        z=[z_fdm[node-1]],
+        x=[x_orig[node-1]],
+        y=[y_orig[node-1]],
+        z=[z_orig[node-1]],
         mode='markers',
         marker=dict(size=5, color='black'),
         name='Fixed Nodes',
@@ -1057,7 +1057,7 @@ fig.update_layout(
 )
 
 fig.show()
-fig.write_html("Optimization_Comparison.html")  # 保存为HTML
+fig.write_html("Undefromed_Comparison.html")  # 保存为HTML
 
 
 
