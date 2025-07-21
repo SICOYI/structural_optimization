@@ -4,20 +4,20 @@ import numpy as np
 import seaborn as sns
 from scipy.stats import gaussian_kde
 
-# 设置 seaborn 样式
+
 sns.set_theme(style="whitegrid")
 
-# 读取JSON文件
+
 with open('strain_energy_optimization_timings.json', 'r') as f:
     data = json.load(f)
 
-# 提取三种时间数据
+
 assembly_times = np.array(data['assembly_times'])
 fe_times = np.array(data['fe_times'])
 backward_times = np.array(data['backward_times'])
 
 
-# 计算统计量
+
 def calculate_stats(times, name):
     return {
         'name': name,
@@ -33,7 +33,7 @@ stats = [
     calculate_stats(backward_times, 'Backward Times')
 ]
 
-# 打印统计结果
+
 print("\nTime Statistics:")
 print("=" * 50)
 for stat in stats:
@@ -43,10 +43,10 @@ for stat in stats:
     print(f"  5th percentile: {stat['p05']:.6f} s")
     print("-" * 50)
 
-# 设置颜色
+
 colors = ['#1f77b4', '#ff7f0e', '#2ca02c']
 
-# 1. 绘制直方图和PDF图（标记关键分位数）
+
 plt.figure(figsize=(18, 5))
 
 for i, (times, color, stat) in enumerate(zip(
@@ -70,20 +70,20 @@ for i, (times, color, stat) in enumerate(zip(
 plt.tight_layout()
 plt.show()
 
-# 2. 绘制单独的PDF曲线比较图
+
 plt.figure(figsize=(10, 6))
 
-# 计算KDE
+
 kde_assembly = gaussian_kde(assembly_times)
 kde_fe = gaussian_kde(fe_times)
 kde_backward = gaussian_kde(backward_times)
 
-# 创建x轴范围
+
 x_assembly = np.linspace(min(assembly_times), max(assembly_times), 100)
 x_fe = np.linspace(min(fe_times), max(fe_times), 100)
 x_backward = np.linspace(min(backward_times), max(backward_times), 100)
 
-# 绘制PDF曲线
+
 plt.plot(x_assembly, kde_assembly(x_assembly), color=colors[0], label='Assembly Times', linewidth=2)
 plt.plot(x_fe, kde_fe(x_fe), color=colors[1], label='FE Times', linewidth=2)
 plt.plot(x_backward, kde_backward(x_backward), color=colors[2], label='Backward Times', linewidth=2)
@@ -95,7 +95,7 @@ plt.legend()
 plt.grid(True, linestyle='--', alpha=0.5)
 plt.show()
 
-# 3. 绘制箱线图（保留原代码）
+
 plt.figure(figsize=(10, 6))
 plt.boxplot([assembly_times, fe_times, backward_times],
             labels=['Assembly Times', 'FE Times', 'Backward Times'],
