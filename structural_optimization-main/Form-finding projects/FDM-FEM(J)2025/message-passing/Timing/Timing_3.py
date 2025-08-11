@@ -961,63 +961,6 @@ def run_experiments():
 
 
 
-
-# def plot_results(results):
-#
-#     plt.figure(figsize=(14, 6))
-#
-#     def replace_failures(data):
-#         return [0 if x >= 10e8 else x for x in data]
-#
-#     plt.subplot(1, 2, 1)
-#     for method, marker, color in zip(['local_cg', 'global_cg', 'global_ln'],
-#                                      ['o', 's', 'D'], ['#1f77b4', '#ff7f0e', '#2ca02c']):
-#         times = replace_failures(results[method]['fe_times'])
-#         plt.plot(results['grid_sizes'], times,
-#                  f'{marker}-', color=color,
-#                  label=method.replace('_', ' ').upper(),
-#                  markersize=8, linewidth=2)
-#
-#         for i, t in enumerate(results[method]['fe_times']):
-#             if t >= 10e8:
-#                 plt.scatter(results['grid_sizes'][i], 0,
-#                             color='red', marker='x', s=100, zorder=10)
-#
-#     plt.xlabel('Grid Size', fontsize=12)
-#     plt.ylabel('Time (s)', fontsize=12)
-#     plt.title('Forward Computation Time\n(0 values indicate failures)', fontsize=14)
-#     plt.legend(fontsize=10)
-#     plt.grid(True, linestyle='--', alpha=0.7)
-#     plt.ylim(bottom=0)  # 确保y轴从0开始
-#
-#
-#     plt.subplot(1, 2, 2)
-#     for method, marker, color in zip(['local_cg', 'global_cg', 'global_ln'],
-#                                      ['o', 's', 'D'], ['#1f77b4', '#ff7f0e', '#2ca02c']):
-#         times = replace_failures(results[method]['back_times'])
-#         plt.plot(results['grid_sizes'], times,
-#                  f'{marker}-', color=color,
-#                  label=method.replace('_', ' ').upper(),
-#                  markersize=8, linewidth=2)
-#
-#         for i, t in enumerate(results[method]['back_times']):
-#             if t >= 10e8:
-#                 plt.scatter(results['grid_sizes'][i], 0,
-#                             color='red', marker='x', s=100, zorder=10)
-#
-#     plt.xlabel('Grid Size', fontsize=12)
-#     plt.ylabel('Time (s)', fontsize=12)
-#     plt.title('Backward Computation Time\n(0 values indicate failures)', fontsize=14)
-#     plt.legend(fontsize=10)
-#     plt.grid(True, linestyle='--', alpha=0.7)
-#     plt.ylim(bottom=0)
-#
-#     plt.tight_layout()
-#
-#     plt.savefig('timing_results.png', dpi=300, bbox_inches='tight')
-#     plt.show()
-
-
 if __name__ == "__main__":
     results = run_experiments()
 
