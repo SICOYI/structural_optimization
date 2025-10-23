@@ -37,8 +37,8 @@ print(f"Using device: {device}")
 torch.autograd.set_detect_anomaly(True)
 
 # 自定义参数
-length = 24
-width = 24
+length = 48
+width = 48
 n1 = 13
 n2 = 13
 judge = 0
