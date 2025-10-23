@@ -1,0 +1,12 @@
+{
+    "iteration_0": {
+        "graph_init_time": 1.1468884944915771,
+        "fem_time": 1.6462104320526123,
+        "force_time": 1.1219842433929443,
+        "strain_energy_time": 0.0,
+        "forward_time": 3.915083169937134,
+        "backward_time": 687.5257060527802,
+        "update_time": 0.0,
+        "iteration_time": 691.4407892227173
+    }
+}
